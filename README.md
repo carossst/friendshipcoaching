@@ -1,8 +1,8 @@
-# Carole Friendship Coach
+# The Friendship Practice
 
-Static website for **Action-Based Friendship Coaching** by Carole Stromboni.
+Static website for **The Friendship Practice**, a practical friendship coaching offer by Carole Stromboni.
 
-Live site : [carolefriendshipcoach.com](https://carolefriendshipcoach.com)
+Live site : [thefriendshippractice.com](https://thefriendshippractice.com)
 
 ## Structure
 
@@ -21,31 +21,36 @@ Live site : [carolefriendshipcoach.com](https://carolefriendshipcoach.com)
 
 ## À remplacer avant le lancement
 
-Cherche ces placeholders dans tous les fichiers `.html` :
+Il reste uniquement ce placeholder dans les fichiers `.html` :
 
-- `[[ADD_STRIPE_CHECKOUT_URL]]` — lien Stripe Checkout (bouton "Start the program for $500" dans `index.html`)
-- `[[ADD_CALENDLY_URL_BEFORE_LAUNCH]]` — lien Calendly (`thank-you.html`)
-- `[[ADD_CONTACT_EMAIL_BEFORE_LAUNCH]]` — email de contact (toutes les pages légales)
-- `[[ADD_EFFECTIVE_DATE_BEFORE_LAUNCH]]` — date d'entrée en vigueur des CGV
-- `[[ADD_JURISDICTION_BEFORE_LAUNCH]]` — juridiction applicable (`terms.html`)
-- `[[ADD_BIO_TEXT]]` — bio personnelle (`index.html`, section À propos)
+- `[[ADD_STRIPE_CHECKOUT_URL]]` - lien Stripe Checkout (bouton "Start the program for $500" dans `index.html`)
 
-## Images à ajouter
+Déjà renseignés :
 
-À déposer à la racine avant le déploiement :
+- Email de contact : `contact@thefriendshippractice.com`
+- Date d'entrée en vigueur : `January 7, 2026`
+- Juridiction indiquée dans les Terms : `the State of Hawaii, United States`
+- Page thank-you : bouton email vers `contact@thefriendshippractice.com`
 
-- `favicon.ico` (32×32)
-- `favicon.svg` (vectoriel, optionnel mais recommandé)
-- `apple-touch-icon.png` (180×180)
-- `og-image.jpg` (1200×630, pour les partages sur réseaux sociaux)
+## Images et icônes
 
-Outil rapide : [favicon.io](https://favicon.io) à partir de `Carolephotobio.jpg`.
+Le site pointe vers un dossier `icons/` pour les favicons :
+
+- `icons/favicon.svg`
+- `icons/favicon.ico`
+- `icons/favicon-32.png`
+- `icons/favicon-16.png`
+- `icons/apple-touch-icon.png`
+
+L'image Open Graph reste attendue à la racine :
+
+- `og-image.jpg`
 
 ## Déploiement (GitHub Pages)
 
 1. Push le repo sur GitHub.
 2. Settings → Pages → Source : `main` branch, `/ (root)`.
-3. Custom domain : `carolefriendshipcoach.com` (le fichier `CNAME` est déjà là).
+3. Custom domain : `thefriendshippractice.com` (le fichier `CNAME` est déjà là).
 4. Activer **Enforce HTTPS**.
 5. Côté DNS du domaine, créer un `CNAME` vers `<username>.github.io`.
 
