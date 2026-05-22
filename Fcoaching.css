@@ -534,31 +534,18 @@ select {
   border-bottom: var(--border);
 }
 
-.c-hero::before,
-.c-hero::after {
+.c-hero::before {
   content: "";
   position: absolute;
   z-index: -1;
-  border-radius: var(--radius-pill);
-  pointer-events: none;
-}
-
-.c-hero::before {
   width: 18rem;
   height: 18rem;
   left: max(-8rem, -12vw);
   bottom: -8rem;
+  border-radius: var(--radius-pill);
   background: rgb(185 84 53 / 0.16);
   filter: blur(1px);
-}
-
-.c-hero::after {
-  width: 11rem;
-  height: 11rem;
-  right: max(-3rem, -4vw);
-  top: 18%;
-  border: 1px solid rgb(111 70 54 / 0.18);
-  background: rgb(255 255 255 / 0.26);
+  pointer-events: none;
 }
 
 .c-hero .u-container {
