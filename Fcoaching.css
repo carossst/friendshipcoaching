@@ -633,9 +633,13 @@ select {
 /* 10. Component - Heading */
 .c-heading {
   font-weight: 780;
-  line-height: var(--leading-tight);
+  line-height: 1.16;
   letter-spacing: var(--tracking-tight);
   color: var(--color-ink);
+}
+
+.c-heading:not([class*="u-mb-"]) {
+  margin-bottom: var(--space-6);
 }
 
 .c-heading--1 {
