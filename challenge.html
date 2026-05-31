@@ -180,6 +180,63 @@
       margin-top: var(--space-6);
     }
 
+
+
+    .c-challenge-recap {
+      display: grid;
+      gap: var(--space-5);
+      margin-top: var(--space-8);
+      padding: var(--space-6);
+      background: var(--gradient-card);
+      border: 2px solid var(--color-border-strong);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .c-challenge-recap[hidden] {
+      display: none;
+    }
+
+    .c-challenge-recap__list {
+      display: grid;
+      gap: var(--space-4);
+    }
+
+    .c-challenge-recap__item {
+      padding: var(--space-4);
+      background: var(--color-surface);
+      border: var(--border);
+      border-radius: var(--radius-lg);
+    }
+
+    .c-challenge-recap__title {
+      margin-bottom: var(--space-2);
+      font-size: var(--text-xs);
+      font-weight: 780;
+      letter-spacing: var(--tracking-wider);
+      text-transform: uppercase;
+      color: var(--color-accent-hover);
+    }
+
+    .c-challenge-recap__note {
+      white-space: pre-wrap;
+      font-size: var(--text-sm);
+      color: var(--color-ink-muted);
+      line-height: var(--leading-base);
+    }
+
+    .c-challenge-recap__empty {
+      font-style: italic;
+      color: var(--color-ink-subtle);
+    }
+
+    .c-challenge-copy-status {
+      min-height: 1.25rem;
+      font-size: var(--text-xs);
+      color: var(--color-ink-subtle);
+      line-height: var(--leading-base);
+    }
+
     .c-challenge-note {
       font-size: var(--text-xs);
       color: var(--color-ink-subtle);
@@ -422,6 +479,24 @@
         </article>
 
       </div>
+
+      <section class="c-challenge-recap" id="recap" hidden aria-live="polite">
+        <div>
+          <p class="c-label">Your recap</p>
+          <h2 class="c-heading c-heading--2">Your 7-Day Friendship Challenge recap</h2>
+          <p class="c-body u-mt-6">
+            Keep this recap. If you decide to do the 4-session practice, you can save it as a PDF or copy it somewhere. It can help us go further in coaching.
+          </p>
+        </div>
+
+        <div class="c-challenge-recap__list" id="challenge-recap-list"></div>
+
+        <div class="c-challenge-actions">
+          <button class="c-btn c-btn--primary c-btn--sm" type="button" id="challenge-copy-recap">Copy my recap</button>
+          <button class="c-btn c-btn--ghost c-btn--sm" type="button" id="challenge-print-recap">Print or save as PDF</button>
+        </div>
+        <p class="c-challenge-copy-status" id="challenge-copy-status" aria-live="polite"></p>
+      </section>
     </div>
   </section>
 
@@ -464,6 +539,21 @@
     var nextText = document.getElementById("challenge-next-text");
     var resetButton = document.getElementById("challenge-reset");
     var startLink = document.getElementById("challenge-start-link");
+    var recapSection = document.getElementById("recap");
+    var recapList = document.getElementById("challenge-recap-list");
+    var copyRecapButton = document.getElementById("challenge-copy-recap");
+    var printRecapButton = document.getElementById("challenge-print-recap");
+    var copyStatus = document.getElementById("challenge-copy-status");
+
+    var recapTitles = {
+      "1": "Day 1/7 - My friendship circle",
+      "2": "Day 2/7 - What feels frustrating",
+      "3": "Day 3/7 - My friendship principles",
+      "4": "Day 4/7 - A real friend should...",
+      "5": "Day 5/7 - What this principle protected",
+      "6": "Day 6/7 - What I need to stop forcing",
+      "7": "Day 7/7 - My main insight"
+    };
 
     function getInitialState() {
       return {
@@ -521,6 +611,68 @@
       });
     }
 
+    function formatNote(note) {
+      var trimmed = (note || "").trim();
+      return trimmed ? trimmed : "No private note saved for this day.";
+    }
+
+    function buildRecapText(state) {
+      var lines = [
+        "The Friendship Practice - 7-Day Friendship Challenge Recap",
+        "",
+        "Keep this recap. If you decide to do the 4-session practice, you can save it as a PDF or copy it somewhere. It can help us go further in coaching.",
+        ""
+      ];
+
+      days.forEach(function (day) {
+        var dayKey = day.getAttribute("data-day");
+        lines.push(recapTitles[dayKey]);
+        lines.push(formatNote(state.notes[dayKey]));
+        lines.push("");
+      });
+
+      return lines.join("\n").trim();
+    }
+
+    function renderRecap(state, completedCount) {
+      if (!recapSection || !recapList) {
+        return;
+      }
+
+      if (completedCount !== days.length) {
+        recapSection.hidden = true;
+        recapList.innerHTML = "";
+        if (copyStatus) {
+          copyStatus.textContent = "";
+        }
+        return;
+      }
+
+      recapSection.hidden = false;
+      recapList.innerHTML = "";
+
+      days.forEach(function (day) {
+        var dayKey = day.getAttribute("data-day");
+        var item = document.createElement("article");
+        item.className = "c-challenge-recap__item";
+
+        var title = document.createElement("h3");
+        title.className = "c-challenge-recap__title";
+        title.textContent = recapTitles[dayKey];
+
+        var note = document.createElement("p");
+        note.className = "c-challenge-recap__note";
+        note.textContent = formatNote(state.notes[dayKey]);
+        if (!state.notes[dayKey] || !state.notes[dayKey].trim()) {
+          note.className += " c-challenge-recap__empty";
+        }
+
+        item.appendChild(title);
+        item.appendChild(note);
+        recapList.appendChild(item);
+      });
+    }
+
     function render() {
       var state = loadState();
       var completedCount = getCompletedCount(state);
@@ -529,11 +681,12 @@
 
       progressText.textContent = completedCount + " of " + days.length + " days complete.";
       progressFill.style.width = progressPercentage + "%";
+      renderRecap(state, completedCount);
 
       if (completedCount === days.length) {
-        nextText.textContent = "Challenge complete. You can revisit your notes anytime from this browser.";
-        startLink.textContent = "Review challenge";
-        startLink.setAttribute("href", "#day-7");
+        nextText.textContent = "Challenge complete. Your recap is ready below.";
+        startLink.textContent = "See my recap";
+        startLink.setAttribute("href", "#recap");
       } else {
         nextText.textContent = "Day " + currentDayNumber + "/7 is ready. The next day will appear only after you check off today’s reflection.";
         startLink.textContent = currentDayNumber === 1 ? "Start Day 1/7" : "Continue Day " + currentDayNumber + "/7";
@@ -581,6 +734,8 @@
 
         if (checkbox.checked && Number(dayKey) < days.length) {
           window.location.hash = "#day-" + (Number(dayKey) + 1);
+        } else if (checkbox.checked && Number(dayKey) === days.length) {
+          window.location.hash = "#recap";
         }
       });
 
@@ -590,6 +745,53 @@
         saveState(state);
       });
     });
+
+    if (copyRecapButton) {
+      copyRecapButton.addEventListener("click", function () {
+        var state = loadState();
+        var recapText = buildRecapText(state);
+
+        function showCopiedMessage() {
+          if (copyStatus) {
+            copyStatus.textContent = "Recap copied. You can paste it into your notes or bring it to coaching.";
+          }
+        }
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(recapText).then(showCopiedMessage).catch(function () {
+            if (copyStatus) {
+              copyStatus.textContent = "Copy did not work in this browser. You can select the recap text manually.";
+            }
+          });
+          return;
+        }
+
+        var temporaryTextarea = document.createElement("textarea");
+        temporaryTextarea.value = recapText;
+        temporaryTextarea.setAttribute("readonly", "readonly");
+        temporaryTextarea.style.position = "absolute";
+        temporaryTextarea.style.left = "-9999px";
+        document.body.appendChild(temporaryTextarea);
+        temporaryTextarea.select();
+
+        try {
+          document.execCommand("copy");
+          showCopiedMessage();
+        } catch (error) {
+          if (copyStatus) {
+            copyStatus.textContent = "Copy did not work in this browser. You can select the recap text manually.";
+          }
+        }
+
+        document.body.removeChild(temporaryTextarea);
+      });
+    }
+
+    if (printRecapButton) {
+      printRecapButton.addEventListener("click", function () {
+        window.print();
+      });
+    }
 
     resetButton.addEventListener("click", function () {
       var confirmed = window.confirm("Reset your challenge progress and private notes on this device?");
