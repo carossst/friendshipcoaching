@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, follow">
 
-  <title>7-Day Friendship Foundations Challenge | The Friendship Practice</title>
+  <title>7-Day Friendship Challenge | The Friendship Practice</title>
 
-  <meta name="description" content="A private, browser-only 7-day friendship foundations challenge to map your friendship life, clarify expectations, and choose what to practice next.">
+  <meta name="description" content="A private, browser-only 7-day friendship challenge to take stock of your friendship life, clarify your principles, and name what friendship practice could mean for you.">
 
   <link rel="canonical" href="https://thefriendshippractice.com/challenge.html">
   <link rel="stylesheet" href="./Fcoaching.css">
@@ -17,7 +17,7 @@
   <link rel="icon" href="./icons/favicon-16.png" sizes="16x16" type="image/png">
   <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
 
-  <meta property="og:title" content="7-Day Friendship Foundations Challenge | The Friendship Practice">
+  <meta property="og:title" content="7-Day Friendship Challenge | The Friendship Practice">
   <meta property="og:description" content="A free 7-day challenge to take stock of your friendship life and clarify what friendship practice could mean for you.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://thefriendshippractice.com/challenge.html">
@@ -67,8 +67,8 @@
       box-shadow: var(--shadow-xs);
     }
 
-    .c-challenge-day[aria-disabled="true"] {
-      opacity: 0.55;
+    .c-challenge-day[hidden] {
+      display: none;
     }
 
     .c-challenge-day__meta {
@@ -149,12 +149,6 @@
       line-height: var(--leading-base);
     }
 
-    .c-challenge-field textarea:disabled {
-      cursor: not-allowed;
-      background: var(--color-bg-alt);
-      color: var(--color-ink-subtle);
-    }
-
     .c-challenge-complete {
       display: flex;
       gap: var(--space-3);
@@ -212,13 +206,13 @@
 
   <section class="c-hero">
     <div class="u-container">
-      <p class="c-hero__label">7-day foundations challenge</p>
+      <p class="c-hero__label">7-day friendship challenge</p>
       <h1 class="c-hero__title">Practice friendship on better foundations.</h1>
       <p class="c-hero__sub">
         You do not need a coach to send one text or suggest one coffee. This page helps you take stock first: your people, your expectations, your frustrations, and what friendship practice could mean for you.
       </p>
       <div class="c-hero__actions u-mt-8">
-        <a class="c-btn c-btn--primary c-btn--lg" href="#day-1">Start Day 1</a>
+        <a class="c-btn c-btn--primary c-btn--lg" href="#day-1" id="challenge-start-link">Start Day 1</a>
         <a class="c-btn c-btn--ghost c-btn--lg" href="#progress">See progress</a>
       </div>
     </div>
@@ -227,13 +221,16 @@
   <section class="u-section" id="progress">
     <div class="u-container u-container--prose">
       <p class="c-label">Your private tracker</p>
-      <h2 class="c-heading c-heading--2">Check off the foundations before the actions.</h2>
+      <h2 class="c-heading c-heading--2">Complete one foundation at a time.</h2>
 
       <div class="c-challenge-progress u-mt-8" aria-live="polite">
         <p class="c-body" id="challenge-progress-text">0 of 7 days complete.</p>
         <div class="c-challenge-progress__bar" aria-hidden="true">
           <span class="c-challenge-progress__fill" id="challenge-progress-fill"></span>
         </div>
+        <p class="c-challenge-note" id="challenge-next-text">
+          Day 1 is ready. The next day will appear after you check off today’s reflection.
+        </p>
         <p class="c-challenge-note">
           Your notes are saved only in this browser on this device. They are not sent to Carole, Kit, or any server.
         </p>
@@ -246,20 +243,20 @@
 
   <section class="u-section u-bg-surface">
     <div class="u-container">
-      <p class="c-label">The 7 days</p>
+      <p class="c-label">Today’s step</p>
       <div class="c-challenge-days" id="challenge-days">
 
         <article class="c-challenge-day" id="day-1" data-day="1">
           <div class="c-challenge-day__meta">
             <span class="c-challenge-day__badge">Day 1</span>
-            <span class="c-challenge-day__status" data-status>Unlocked</span>
+            <span class="c-challenge-day__status" data-status>Ready</span>
           </div>
-          <h2 class="c-challenge-day__title">Map your friendship life as it is today</h2>
+          <h2 class="c-challenge-day__title">See your friendship life clearly</h2>
           <p class="c-body">
-            Before trying to make new friends, start with what exists. Who is close? Who is present but not close? Who has drifted? Who is an acquaintance that could become more?
+            Before trying to make new friends, start with what exists. Who is close? Who is present but not close? Who has drifted? Who is warm but irregular? Who is an acquaintance that could become more?
           </p>
           <p class="c-challenge-day__prompt">
-            Draw concentric circles on paper. Put your closest people in the center, then friends, friendly connections, acquaintances, and people you have drifted from.
+            Draw concentric circles and place your people from closest to farthest.
           </p>
           <div class="c-challenge-field">
             <label for="note-day-1">Optional private note</label>
@@ -271,17 +268,17 @@
           </label>
         </article>
 
-        <article class="c-challenge-day" id="day-2" data-day="2">
+        <article class="c-challenge-day" id="day-2" data-day="2" hidden>
           <div class="c-challenge-day__meta">
             <span class="c-challenge-day__badge">Day 2</span>
-            <span class="c-challenge-day__status" data-status>Locked</span>
+            <span class="c-challenge-day__status" data-status>Ready</span>
           </div>
-          <h2 class="c-challenge-day__title">Name what feels frustrating or painful</h2>
+          <h2 class="c-challenge-day__title">Name what your friendships need</h2>
           <p class="c-body">
-            Friendship frustration is often vague until you name it. Maybe you initiate too much. Maybe you feel forgotten. Maybe conversations stay shallow.
+            Friendship frustration is often vague until you name it. Maybe you initiate too much. Maybe you feel forgotten. Maybe conversations stay shallow. Maybe you know many people, but do not feel truly close to anyone.
           </p>
           <p class="c-challenge-day__prompt">
-            List what bothers you in the friendships you have or the friendships you do not have. Keep it honest and specific.
+            List three things that frustrate you in the friendships you have or do not have.
           </p>
           <div class="c-challenge-field">
             <label for="note-day-2">Optional private note</label>
@@ -293,17 +290,20 @@
           </label>
         </article>
 
-        <article class="c-challenge-day" id="day-3" data-day="3">
+        <article class="c-challenge-day" id="day-3" data-day="3" hidden>
           <div class="c-challenge-day__meta">
             <span class="c-challenge-day__badge">Day 3</span>
-            <span class="c-challenge-day__status" data-status>Locked</span>
+            <span class="c-challenge-day__status" data-status>Ready</span>
           </div>
-          <h2 class="c-challenge-day__title">Define what friendship means to you</h2>
+          <h2 class="c-challenge-day__title">Define the friendship you want</h2>
           <p class="c-body">
-            People use the word “friend” differently. For one person, friendship means regular contact. For another, it means depth, loyalty, humor, or shared history.
+            People use the word “friend” differently. For one person, friendship means regular reaching-out from both sides. For another, it means emotional depth. For another, it means shared history, humor, loyalty, or showing up in hard times.
+          </p>
+          <p class="c-body">
+            These are not roles to assign to people. They are principles: the things that make friendship feel real, safe, and worth tending to you.
           </p>
           <p class="c-challenge-day__prompt">
-            Write three characteristics of a real friendship for you.
+            Write three friendship principles that matter to you.
           </p>
           <div class="c-challenge-field">
             <label for="note-day-3">Optional private note</label>
@@ -311,21 +311,24 @@
           </div>
           <label class="c-challenge-complete">
             <input type="checkbox" data-complete>
-            <span>I wrote my three friendship markers.</span>
+            <span>I wrote three friendship principles that matter to me.</span>
           </label>
         </article>
 
-        <article class="c-challenge-day" id="day-4" data-day="4">
+        <article class="c-challenge-day" id="day-4" data-day="4" hidden>
           <div class="c-challenge-day__meta">
             <span class="c-challenge-day__badge">Day 4</span>
-            <span class="c-challenge-day__status" data-status>Locked</span>
+            <span class="c-challenge-day__status" data-status>Ready</span>
           </div>
-          <h2 class="c-challenge-day__title">Notice your friendship manual</h2>
+          <h2 class="c-challenge-day__title">Release the rules that keep you stuck</h2>
           <p class="c-body">
-            Most of us carry quiet rules about how friends should behave. Some expectations are important. Some are unspoken manuals that other people never agreed to follow.
+            Most of us carry quiet rules about how friends should behave. A real friend should check in. A real friend should remember. A real friend should initiate. A real friend should know when I need support.
+          </p>
+          <p class="c-body">
+            Some expectations are important. Some are unspoken manuals.
           </p>
           <p class="c-challenge-day__prompt">
-            Complete this sentence: “A real friend should...” Then ask: is this a need, a preference, a request, or an unspoken rule?
+            Complete: “A real friend should...” Then ask if it is a need, preference, request, or rule.
           </p>
           <div class="c-challenge-field">
             <label for="note-day-4">Optional private note</label>
@@ -337,69 +340,78 @@
           </label>
         </article>
 
-        <article class="c-challenge-day" id="day-5" data-day="5">
+        <article class="c-challenge-day" id="day-5" data-day="5" hidden>
           <div class="c-challenge-day__meta">
             <span class="c-challenge-day__badge">Day 5</span>
-            <span class="c-challenge-day__status" data-status>Locked</span>
+            <span class="c-challenge-day__status" data-status>Ready</span>
           </div>
-          <h2 class="c-challenge-day__title">See different friendship styles</h2>
+          <h2 class="c-challenge-day__title">Check if your rule still helps</h2>
           <p class="c-body">
-            Some people never initiate, but always show up when called. Some are fun but not emotionally deep. Some are steady but low-frequency.
+            Some friendship rules are like a coat you put on when you were cold. At one point, they protected you. Maybe you learned not to expect too much. Maybe you learned to wait and see who reaches out first. Maybe you learned to protect your energy.
+          </p>
+          <p class="c-body">
+            That makes sense. But sometimes, we keep wearing the coat even when we do not need it anymore.
           </p>
           <p class="c-challenge-day__prompt">
-            Pick one person and identify their friendship style without judging it too fast.
+            Choose one friendship rule and write: “This rule once protected me by...” and “This rule may hold me back by...”
           </p>
           <div class="c-challenge-field">
             <label for="note-day-5">Optional private note</label>
-            <textarea id="note-day-5" data-note placeholder="Example: This person rarely initiates, but when I reach out, they are present and warm."></textarea>
+            <textarea id="note-day-5" data-note placeholder="Example: This rule once protected me by helping me expect less. It may hold me back by making me distant too quickly."></textarea>
           </div>
           <label class="c-challenge-complete">
             <input type="checkbox" data-complete>
-            <span>I identified one friend’s style without judging it too fast.</span>
+            <span>I checked whether one rule still helps me.</span>
           </label>
         </article>
 
-        <article class="c-challenge-day" id="day-6" data-day="6">
+        <article class="c-challenge-day" id="day-6" data-day="6" hidden>
           <div class="c-challenge-day__meta">
             <span class="c-challenge-day__badge">Day 6</span>
-            <span class="c-challenge-day__status" data-status>Locked</span>
+            <span class="c-challenge-day__status" data-status>Ready</span>
           </div>
-          <h2 class="c-challenge-day__title">Decide what you accept and what you need</h2>
+          <h2 class="c-challenge-day__title">Choose what gives you peace</h2>
           <p class="c-body">
-            Friendship practice includes acceptance. But acceptance is not the same as abandoning what matters to you.
+            Friendship is not supposed to be a constant source of suffering. It should add something to your life: warmth, presence, laughter, support, meaning, or ease.
+          </p>
+          <p class="c-body">
+            Some friendships are a bonus. They may not be deep, regular, or perfect, but they still bring something good.
           </p>
           <p class="c-challenge-day__prompt">
-            Choose one frustration. Ask: can I accept this person as they are, do I need to make a request, or is this not the friendship I want to keep chasing?
+            Choose one friendship, past or ideal, and write: “This friendship gives me...” and “What I need to stop forcing is...”
           </p>
           <div class="c-challenge-field">
             <label for="note-day-6">Optional private note</label>
-            <textarea id="note-day-6" data-note placeholder="Example: I can accept low-frequency contact, but I need more honesty when we do speak."></textarea>
+            <textarea id="note-day-6" data-note placeholder="Example: This friendship gives me warmth and humor. What I need to stop forcing is emotional depth it cannot offer."></textarea>
           </div>
           <label class="c-challenge-complete">
             <input type="checkbox" data-complete>
-            <span>I named one thing I can accept, request, or stop chasing.</span>
+            <span>I named what one friendship gives me and what I need to stop forcing.</span>
           </label>
         </article>
 
-        <article class="c-challenge-day" id="day-7" data-day="7">
+        <article class="c-challenge-day" id="day-7" data-day="7" hidden>
           <div class="c-challenge-day__meta">
             <span class="c-challenge-day__badge">Day 7</span>
-            <span class="c-challenge-day__status" data-status>Locked</span>
+            <span class="c-challenge-day__status" data-status>Ready</span>
           </div>
-          <h2 class="c-challenge-day__title">Choose your friendship practice</h2>
+          <h2 class="c-challenge-day__title">What are you taking with you?</h2>
           <p class="c-body">
-            You do not need a coach to send one text or suggest one coffee. The deeper work is knowing what you are practicing and why.
+            You made it to Day Seven. This week, you mapped your friendship life, named what feels frustrating, clarified your friendship principles, looked at one rule you carry, and noticed what you may need to stop forcing.
+          </p>
+          <p class="c-body">
+            That is real work. Today is not about adding another task. It is about noticing what changed in the way you see your friendships.
           </p>
           <p class="c-challenge-day__prompt">
-            Look back at your map, frustrations, definition, expectations, and needs. Choose one area to practice: reaching out, receiving, following up, being honest, making room, accepting difference, or choosing better.
+            Write one sentence: “The main thing I’m taking from this challenge is...”
           </p>
           <div class="c-challenge-field">
             <label for="note-day-7">Optional private note</label>
-            <textarea id="note-day-7" data-note placeholder="Example: I want to practice accepting different friendship styles instead of deciding too quickly that people do not care."></textarea>
+            <textarea id="note-day-7" data-note placeholder="Example: The main thing I’m taking from this challenge is that I can value different kinds of friendship without forcing each one to be everything."></textarea>
           </div>
           <label class="c-challenge-complete">
             <input type="checkbox" data-complete>
-            <span>I chose one friendship practice to explore next.</span>
+            <span>I wrote my main insight from the challenge.</span>
           </label>
         </article>
 
@@ -439,11 +451,13 @@
 
 <script>
   (function () {
-    var storageKey = "tfpFriendshipFoundationsChallengeV1";
+    var storageKey = "tfpFriendshipChallengeV2";
     var days = Array.prototype.slice.call(document.querySelectorAll("[data-day]"));
     var progressText = document.getElementById("challenge-progress-text");
     var progressFill = document.getElementById("challenge-progress-fill");
+    var nextText = document.getElementById("challenge-next-text");
     var resetButton = document.getElementById("challenge-reset");
+    var startLink = document.getElementById("challenge-start-link");
 
     function getInitialState() {
       return {
@@ -483,13 +497,42 @@
       }, 0);
     }
 
+    function getCurrentDayNumber(state) {
+      for (var i = 1; i <= days.length; i += 1) {
+        if (!state.completed[String(i)] && isUnlocked(i, state)) {
+          return i;
+        }
+      }
+      return days.length;
+    }
+
+    function cleanFutureProgress(state, fromDayNumber) {
+      days.forEach(function (futureDay) {
+        var futureKey = futureDay.getAttribute("data-day");
+        if (Number(futureKey) > Number(fromDayNumber)) {
+          delete state.completed[futureKey];
+        }
+      });
+    }
+
     function render() {
       var state = loadState();
       var completedCount = getCompletedCount(state);
       var progressPercentage = Math.round((completedCount / days.length) * 100);
+      var currentDayNumber = getCurrentDayNumber(state);
 
       progressText.textContent = completedCount + " of " + days.length + " days complete.";
       progressFill.style.width = progressPercentage + "%";
+
+      if (completedCount === days.length) {
+        nextText.textContent = "Challenge complete. You can revisit your notes anytime from this browser.";
+        startLink.textContent = "Review challenge";
+        startLink.setAttribute("href", "#day-7");
+      } else {
+        nextText.textContent = "Day " + currentDayNumber + " is ready. The next day will appear only after you check off today’s reflection.";
+        startLink.textContent = currentDayNumber === 1 ? "Start Day 1" : "Continue Day " + currentDayNumber;
+        startLink.setAttribute("href", "#day-" + currentDayNumber);
+      }
 
       days.forEach(function (day) {
         var dayNumber = Number(day.getAttribute("data-day"));
@@ -500,19 +543,17 @@
         var textarea = day.querySelector("[data-note]");
         var status = day.querySelector("[data-status]");
 
-        day.setAttribute("aria-disabled", unlocked ? "false" : "true");
-        checkbox.disabled = !unlocked;
-        checkbox.checked = complete;
-        textarea.disabled = !unlocked;
-        textarea.value = state.notes[dayKey] || "";
-
-        if (complete) {
-          status.textContent = "Complete";
-        } else if (unlocked) {
-          status.textContent = "Unlocked";
-        } else {
-          status.textContent = "Locked until Day " + (dayNumber - 1) + " is complete";
+        if (!unlocked && !complete) {
+          day.hidden = true;
+          return;
         }
+
+        day.hidden = false;
+        checkbox.disabled = false;
+        checkbox.checked = complete;
+        textarea.disabled = false;
+        textarea.value = state.notes[dayKey] || "";
+        status.textContent = complete ? "Complete" : "Ready";
       });
     }
 
@@ -526,16 +567,15 @@
         state.completed[dayKey] = checkbox.checked;
 
         if (!checkbox.checked) {
-          days.forEach(function (futureDay) {
-            var futureKey = futureDay.getAttribute("data-day");
-            if (Number(futureKey) > Number(dayKey)) {
-              delete state.completed[futureKey];
-            }
-          });
+          cleanFutureProgress(state, Number(dayKey));
         }
 
         saveState(state);
         render();
+
+        if (checkbox.checked && Number(dayKey) < days.length) {
+          window.location.hash = "#day-" + (Number(dayKey) + 1);
+        }
       });
 
       textarea.addEventListener("input", function () {
