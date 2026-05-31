@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+
+  <title>7-Day Friendship Foundations Challenge | The Friendship Practice</title>
+
+  <meta name="description" content="A private, browser-only 7-day friendship foundations challenge to map your friendship life, clarify expectations, and choose what to practice next.">
+
+  <link rel="canonical" href="https://thefriendshippractice.com/challenge.html">
+  <link rel="stylesheet" href="./Fcoaching.css">
+  <link rel="icon" href="./icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="./icons/favicon.ico" sizes="32x32">
+  <link rel="icon" href="./icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="./icons/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+
+  <meta property="og:title" content="7-Day Friendship Foundations Challenge | The Friendship Practice">
+  <meta property="og:description" content="A free 7-day challenge to take stock of your friendship life and clarify what friendship practice could mean for you.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thefriendshippractice.com/challenge.html">
+  <meta property="og:image" content="https://thefriendshippractice.com/og-image.jpg">
+
+  <style>
+    .c-challenge-progress {
+      display: grid;
+      gap: var(--space-4);
+      padding: var(--space-6);
+      background: var(--gradient-card);
+      border: var(--border);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .c-challenge-progress__bar {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 0.8rem;
+      background: var(--color-accent-wash);
+      border: var(--border);
+      border-radius: var(--radius-pill);
+    }
+
+    .c-challenge-progress__fill {
+      display: block;
+      width: 0%;
+      height: 100%;
+      background: var(--color-accent);
+      border-radius: var(--radius-pill);
+      transition: width var(--duration-base) var(--ease-out);
+    }
+
+    .c-challenge-days {
+      display: grid;
+      gap: var(--space-5);
+    }
+
+    .c-challenge-day {
+      position: relative;
+      padding: var(--space-6);
+      background: var(--gradient-card);
+      border: var(--border);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-xs);
+    }
+
+    .c-challenge-day[aria-disabled="true"] {
+      opacity: 0.55;
+    }
+
+    .c-challenge-day__meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-3);
+      margin-bottom: var(--space-4);
+    }
+
+    .c-challenge-day__badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 4.5rem;
+      padding: var(--space-2) var(--space-3);
+      font-size: var(--text-xs);
+      font-weight: 780;
+      letter-spacing: var(--tracking-wider);
+      text-transform: uppercase;
+      color: var(--color-accent-hover);
+      background: var(--color-accent-wash);
+      border: var(--border);
+      border-radius: var(--radius-pill);
+    }
+
+    .c-challenge-day__status {
+      font-size: var(--text-xs);
+      font-weight: 720;
+      letter-spacing: var(--tracking-wide);
+      text-transform: uppercase;
+      color: var(--color-ink-subtle);
+    }
+
+    .c-challenge-day__title {
+      margin-bottom: var(--space-3);
+      font-family: var(--font-serif);
+      font-size: var(--text-xl);
+      font-weight: 700;
+      line-height: var(--leading-tight);
+      color: var(--color-ink);
+    }
+
+    .c-challenge-day__prompt {
+      margin-top: var(--space-5);
+      padding: var(--space-4);
+      background: var(--color-accent-wash);
+      border: var(--border);
+      border-radius: var(--radius-lg);
+      font-size: var(--text-sm);
+      color: var(--color-ink-muted);
+      line-height: var(--leading-base);
+    }
+
+    .c-challenge-field {
+      display: grid;
+      gap: var(--space-2);
+      margin-top: var(--space-5);
+    }
+
+    .c-challenge-field label {
+      font-size: var(--text-xs);
+      font-weight: 780;
+      letter-spacing: var(--tracking-wider);
+      text-transform: uppercase;
+      color: var(--color-ink-muted);
+    }
+
+    .c-challenge-field textarea {
+      width: 100%;
+      min-height: 8rem;
+      padding: var(--space-4);
+      resize: vertical;
+      background: var(--color-surface);
+      border: var(--border);
+      border-radius: var(--radius-md);
+      color: var(--color-ink);
+      line-height: var(--leading-base);
+    }
+
+    .c-challenge-field textarea:disabled {
+      cursor: not-allowed;
+      background: var(--color-bg-alt);
+      color: var(--color-ink-subtle);
+    }
+
+    .c-challenge-complete {
+      display: flex;
+      gap: var(--space-3);
+      align-items: flex-start;
+      margin-top: var(--space-5);
+      padding: var(--space-4);
+      background: var(--color-surface);
+      border: var(--border);
+      border-radius: var(--radius-lg);
+    }
+
+    .c-challenge-complete input {
+      width: 1.15rem;
+      height: 1.15rem;
+      margin-top: 0.25rem;
+      accent-color: var(--color-accent);
+    }
+
+    .c-challenge-complete span {
+      font-size: var(--text-sm);
+      color: var(--color-ink-muted);
+      line-height: var(--leading-base);
+    }
+
+    .c-challenge-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      margin-top: var(--space-6);
+    }
+
+    .c-challenge-note {
+      font-size: var(--text-xs);
+      color: var(--color-ink-subtle);
+      line-height: var(--leading-base);
+    }
+  </style>
+</head>
+
+<body>
+
+<a class="u-sr-only" href="#main-content">Skip to content</a>
+
+<header class="c-nav">
+  <nav class="c-nav__inner" aria-label="Primary navigation">
+    <a class="c-nav__logo" href="./index.html" aria-label="The Friendship Practice home">
+      <img class="c-nav__logo-img" src="./icons/favicon.svg" alt="" width="36" height="36">
+      <span class="c-nav__logo-text">The Friendship Practice</span>
+    </a>
+    <a class="c-btn c-btn--ghost c-btn--sm" href="./index.html#challenge">Start the challenge</a>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <section class="c-hero">
+    <div class="u-container">
+      <p class="c-hero__label">7-day foundations challenge</p>
+      <h1 class="c-hero__title">Practice friendship on better foundations.</h1>
+      <p class="c-hero__sub">
+        You do not need a coach to send one text or suggest one coffee. This page helps you take stock first: your people, your expectations, your frustrations, and what friendship practice could mean for you.
+      </p>
+      <div class="c-hero__actions u-mt-8">
+        <a class="c-btn c-btn--primary c-btn--lg" href="#day-1">Start Day 1</a>
+        <a class="c-btn c-btn--ghost c-btn--lg" href="#progress">See progress</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="u-section" id="progress">
+    <div class="u-container u-container--prose">
+      <p class="c-label">Your private tracker</p>
+      <h2 class="c-heading c-heading--2">Check off the foundations before the actions.</h2>
+
+      <div class="c-challenge-progress u-mt-8" aria-live="polite">
+        <p class="c-body" id="challenge-progress-text">0 of 7 days complete.</p>
+        <div class="c-challenge-progress__bar" aria-hidden="true">
+          <span class="c-challenge-progress__fill" id="challenge-progress-fill"></span>
+        </div>
+        <p class="c-challenge-note">
+          Your notes are saved only in this browser on this device. They are not sent to Carole, Kit, or any server.
+        </p>
+        <div class="c-challenge-actions">
+          <button class="c-btn c-btn--ghost c-btn--sm" type="button" id="challenge-reset">Reset my progress</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="u-section u-bg-surface">
+    <div class="u-container">
+      <p class="c-label">The 7 days</p>
+      <div class="c-challenge-days" id="challenge-days">
+
+        <article class="c-challenge-day" id="day-1" data-day="1">
+          <div class="c-challenge-day__meta">
+            <span class="c-challenge-day__badge">Day 1</span>
+            <span class="c-challenge-day__status" data-status>Unlocked</span>
+          </div>
+          <h2 class="c-challenge-day__title">Map your friendship life as it is today</h2>
+          <p class="c-body">
+            Before trying to make new friends, start with what exists. Who is close? Who is present but not close? Who has drifted? Who is an acquaintance that could become more?
+          </p>
+          <p class="c-challenge-day__prompt">
+            Draw concentric circles on paper. Put your closest people in the center, then friends, friendly connections, acquaintances, and people you have drifted from.
+          </p>
+          <div class="c-challenge-field">
+            <label for="note-day-1">Optional private note</label>
+            <textarea id="note-day-1" data-note placeholder="Example: My closest circle is smaller than I thought, but I do have warm connections around me."></textarea>
+          </div>
+          <label class="c-challenge-complete">
+            <input type="checkbox" data-complete>
+            <span>I mapped my current friendship circle.</span>
+          </label>
+        </article>
+
+        <article class="c-challenge-day" id="day-2" data-day="2">
+          <div class="c-challenge-day__meta">
+            <span class="c-challenge-day__badge">Day 2</span>
+            <span class="c-challenge-day__status" data-status>Locked</span>
+          </div>
+          <h2 class="c-challenge-day__title">Name what feels frustrating or painful</h2>
+          <p class="c-body">
+            Friendship frustration is often vague until you name it. Maybe you initiate too much. Maybe you feel forgotten. Maybe conversations stay shallow.
+          </p>
+          <p class="c-challenge-day__prompt">
+            List what bothers you in the friendships you have or the friendships you do not have. Keep it honest and specific.
+          </p>
+          <div class="c-challenge-field">
+            <label for="note-day-2">Optional private note</label>
+            <textarea id="note-day-2" data-note placeholder="Example: I know a lot of people, but I do not feel deeply known."></textarea>
+          </div>
+          <label class="c-challenge-complete">
+            <input type="checkbox" data-complete>
+            <span>I named what feels frustrating.</span>
+          </label>
+        </article>
+
+        <article class="c-challenge-day" id="day-3" data-day="3">
+          <div class="c-challenge-day__meta">
+            <span class="c-challenge-day__badge">Day 3</span>
+            <span class="c-challenge-day__status" data-status>Locked</span>
+          </div>
+          <h2 class="c-challenge-day__title">Define what friendship means to you</h2>
+          <p class="c-body">
+            People use the word “friend” differently. For one person, friendship means regular contact. For another, it means depth, loyalty, humor, or shared history.
+          </p>
+          <p class="c-challenge-day__prompt">
+            Write three characteristics of a real friendship for you.
+          </p>
+          <div class="c-challenge-field">
+            <label for="note-day-3">Optional private note</label>
+            <textarea id="note-day-3" data-note placeholder="Example: Presence, honesty, and the feeling that we both choose the relationship."></textarea>
+          </div>
+          <label class="c-challenge-complete">
+            <input type="checkbox" data-complete>
+            <span>I wrote my three friendship markers.</span>
+          </label>
+        </article>
+
+        <article class="c-challenge-day" id="day-4" data-day="4">
+          <div class="c-challenge-day__meta">
+            <span class="c-challenge-day__badge">Day 4</span>
+            <span class="c-challenge-day__status" data-status>Locked</span>
+          </div>
+          <h2 class="c-challenge-day__title">Notice your friendship manual</h2>
+          <p class="c-body">
+            Most of us carry quiet rules about how friends should behave. Some expectations are important. Some are unspoken manuals that other people never agreed to follow.
+          </p>
+          <p class="c-challenge-day__prompt">
+            Complete this sentence: “A real friend should...” Then ask: is this a need, a preference, a request, or an unspoken rule?
+          </p>
+          <div class="c-challenge-field">
+            <label for="note-day-4">Optional private note</label>
+            <textarea id="note-day-4" data-note placeholder="Example: A real friend should check in. Is that a need, a preference, or a request I never made?"></textarea>
+          </div>
+          <label class="c-challenge-complete">
+            <input type="checkbox" data-complete>
+            <span>I noticed one rule I carry into friendship.</span>
+          </label>
+        </article>
+
+        <article class="c-challenge-day" id="day-5" data-day="5">
+          <div class="c-challenge-day__meta">
+            <span class="c-challenge-day__badge">Day 5</span>
+            <span class="c-challenge-day__status" data-status>Locked</span>
+          </div>
+          <h2 class="c-challenge-day__title">See different friendship styles</h2>
+          <p class="c-body">
+            Some people never initiate, but always show up when called. Some are fun but not emotionally deep. Some are steady but low-frequency.
+          </p>
+          <p class="c-challenge-day__prompt">
+            Pick one person and identify their friendship style without judging it too fast.
+          </p>
+          <div class="c-challenge-field">
+            <label for="note-day-5">Optional private note</label>
+            <textarea id="note-day-5" data-note placeholder="Example: This person rarely initiates, but when I reach out, they are present and warm."></textarea>
+          </div>
+          <label class="c-challenge-complete">
+            <input type="checkbox" data-complete>
+            <span>I identified one friend’s style without judging it too fast.</span>
+          </label>
+        </article>
+
+        <article class="c-challenge-day" id="day-6" data-day="6">
+          <div class="c-challenge-day__meta">
+            <span class="c-challenge-day__badge">Day 6</span>
+            <span class="c-challenge-day__status" data-status>Locked</span>
+          </div>
+          <h2 class="c-challenge-day__title">Decide what you accept and what you need</h2>
+          <p class="c-body">
+            Friendship practice includes acceptance. But acceptance is not the same as abandoning what matters to you.
+          </p>
+          <p class="c-challenge-day__prompt">
+            Choose one frustration. Ask: can I accept this person as they are, do I need to make a request, or is this not the friendship I want to keep chasing?
+          </p>
+          <div class="c-challenge-field">
+            <label for="note-day-6">Optional private note</label>
+            <textarea id="note-day-6" data-note placeholder="Example: I can accept low-frequency contact, but I need more honesty when we do speak."></textarea>
+          </div>
+          <label class="c-challenge-complete">
+            <input type="checkbox" data-complete>
+            <span>I named one thing I can accept, request, or stop chasing.</span>
+          </label>
+        </article>
+
+        <article class="c-challenge-day" id="day-7" data-day="7">
+          <div class="c-challenge-day__meta">
+            <span class="c-challenge-day__badge">Day 7</span>
+            <span class="c-challenge-day__status" data-status>Locked</span>
+          </div>
+          <h2 class="c-challenge-day__title">Choose your friendship practice</h2>
+          <p class="c-body">
+            You do not need a coach to send one text or suggest one coffee. The deeper work is knowing what you are practicing and why.
+          </p>
+          <p class="c-challenge-day__prompt">
+            Look back at your map, frustrations, definition, expectations, and needs. Choose one area to practice: reaching out, receiving, following up, being honest, making room, accepting difference, or choosing better.
+          </p>
+          <div class="c-challenge-field">
+            <label for="note-day-7">Optional private note</label>
+            <textarea id="note-day-7" data-note placeholder="Example: I want to practice accepting different friendship styles instead of deciding too quickly that people do not care."></textarea>
+          </div>
+          <label class="c-challenge-complete">
+            <input type="checkbox" data-complete>
+            <span>I chose one friendship practice to explore next.</span>
+          </label>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="u-section">
+    <div class="u-container u-container--prose">
+      <p class="c-label">After the challenge</p>
+      <h2 class="c-heading c-heading--2">Apply this to one real friendship situation.</h2>
+      <p class="c-body u-mt-6">
+        This page helps you map the foundations. The private 4-session coaching package is where we apply those foundations to your real friendship life: one person, one relationship, one clearer practice.
+      </p>
+      <p class="c-disclaimer u-mt-10">
+        <strong>This is coaching-related educational content.</strong> It is not therapy, mental health care, or crisis support. If you feel unsafe, call or text 988 in the U.S. In immediate danger, call 911.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="c-footer">
+  <div class="c-footer__inner">
+    <div>
+      <p class="c-footer__copy">© 2026 Carole Stromboni · The Friendship Practice</p>
+      <p class="c-footer__note u-mt-2">Published January 7, 2026. This is coaching, not therapy or crisis support.</p>
+    </div>
+    <nav class="c-footer__links" aria-label="Legal">
+      <a href="./terms.html">Terms</a>
+      <a href="./privacy.html">Privacy</a>
+      <a href="./disclaimer.html">Disclaimer</a>
+      <a href="./refund-cancellation.html">Refund and cancellation</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var storageKey = "tfpFriendshipFoundationsChallengeV1";
+    var days = Array.prototype.slice.call(document.querySelectorAll("[data-day]"));
+    var progressText = document.getElementById("challenge-progress-text");
+    var progressFill = document.getElementById("challenge-progress-fill");
+    var resetButton = document.getElementById("challenge-reset");
+
+    function getInitialState() {
+      return {
+        completed: {},
+        notes: {}
+      };
+    }
+
+    function loadState() {
+      try {
+        var stored = window.localStorage.getItem(storageKey);
+        return stored ? JSON.parse(stored) : getInitialState();
+      } catch (error) {
+        return getInitialState();
+      }
+    }
+
+    function saveState(state) {
+      try {
+        window.localStorage.setItem(storageKey, JSON.stringify(state));
+      } catch (error) {
+        return;
+      }
+    }
+
+    function isUnlocked(dayNumber, state) {
+      if (dayNumber === 1) {
+        return true;
+      }
+      return Boolean(state.completed[String(dayNumber - 1)]);
+    }
+
+    function getCompletedCount(state) {
+      return days.reduce(function (count, day) {
+        var dayNumber = day.getAttribute("data-day");
+        return state.completed[dayNumber] ? count + 1 : count;
+      }, 0);
+    }
+
+    function render() {
+      var state = loadState();
+      var completedCount = getCompletedCount(state);
+      var progressPercentage = Math.round((completedCount / days.length) * 100);
+
+      progressText.textContent = completedCount + " of " + days.length + " days complete.";
+      progressFill.style.width = progressPercentage + "%";
+
+      days.forEach(function (day) {
+        var dayNumber = Number(day.getAttribute("data-day"));
+        var dayKey = String(dayNumber);
+        var unlocked = isUnlocked(dayNumber, state);
+        var complete = Boolean(state.completed[dayKey]);
+        var checkbox = day.querySelector("[data-complete]");
+        var textarea = day.querySelector("[data-note]");
+        var status = day.querySelector("[data-status]");
+
+        day.setAttribute("aria-disabled", unlocked ? "false" : "true");
+        checkbox.disabled = !unlocked;
+        checkbox.checked = complete;
+        textarea.disabled = !unlocked;
+        textarea.value = state.notes[dayKey] || "";
+
+        if (complete) {
+          status.textContent = "Complete";
+        } else if (unlocked) {
+          status.textContent = "Unlocked";
+        } else {
+          status.textContent = "Locked until Day " + (dayNumber - 1) + " is complete";
+        }
+      });
+    }
+
+    days.forEach(function (day) {
+      var dayKey = day.getAttribute("data-day");
+      var checkbox = day.querySelector("[data-complete]");
+      var textarea = day.querySelector("[data-note]");
+
+      checkbox.addEventListener("change", function () {
+        var state = loadState();
+        state.completed[dayKey] = checkbox.checked;
+
+        if (!checkbox.checked) {
+          days.forEach(function (futureDay) {
+            var futureKey = futureDay.getAttribute("data-day");
+            if (Number(futureKey) > Number(dayKey)) {
+              delete state.completed[futureKey];
+            }
+          });
+        }
+
+        saveState(state);
+        render();
+      });
+
+      textarea.addEventListener("input", function () {
+        var state = loadState();
+        state.notes[dayKey] = textarea.value;
+        saveState(state);
+      });
+    });
+
+    resetButton.addEventListener("click", function () {
+      var confirmed = window.confirm("Reset your challenge progress and private notes on this device?");
+      if (!confirmed) {
+        return;
+      }
+      try {
+        window.localStorage.removeItem(storageKey);
+      } catch (error) {
+        return;
+      }
+      render();
+      window.location.hash = "#progress";
+    });
+
+    render();
+  }());
+</script>
+
+</body>
+</html>
