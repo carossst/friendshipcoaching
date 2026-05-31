@@ -23,254 +23,6 @@
   <meta property="og:url" content="https://thefriendshippractice.com/challenge.html">
   <meta property="og:image" content="https://thefriendshippractice.com/og-image.jpg">
 
-  <style>
-    .c-challenge-progress {
-      display: grid;
-      gap: var(--space-4);
-      padding: var(--space-6);
-      background: var(--gradient-card);
-      border: var(--border);
-      border-radius: var(--radius-xl);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .c-challenge-progress__bar {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      height: 0.8rem;
-      background: var(--color-accent-wash);
-      border: var(--border);
-      border-radius: var(--radius-pill);
-    }
-
-    .c-challenge-progress__fill {
-      display: block;
-      width: 0%;
-      height: 100%;
-      background: var(--color-accent);
-      border-radius: var(--radius-pill);
-      transition: width var(--duration-base) var(--ease-out);
-    }
-
-    .c-challenge-days {
-      display: grid;
-      gap: var(--space-5);
-    }
-
-    .c-challenge-day {
-      position: relative;
-      padding: var(--space-6);
-      background: var(--gradient-card);
-      border: var(--border);
-      border-radius: var(--radius-xl);
-      box-shadow: var(--shadow-xs);
-    }
-
-    .c-challenge-day[hidden] {
-      display: none;
-    }
-
-    .c-challenge-day__meta {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: var(--space-3);
-      margin-bottom: var(--space-4);
-    }
-
-    .c-challenge-day__badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 4.5rem;
-      padding: var(--space-2) var(--space-3);
-      font-size: var(--text-xs);
-      font-weight: 780;
-      letter-spacing: var(--tracking-wider);
-      text-transform: uppercase;
-      color: var(--color-accent-hover);
-      background: var(--color-accent-wash);
-      border: var(--border);
-      border-radius: var(--radius-pill);
-    }
-
-    .c-challenge-day__status {
-      font-size: var(--text-xs);
-      font-weight: 720;
-      letter-spacing: var(--tracking-wide);
-      text-transform: uppercase;
-      color: var(--color-ink-subtle);
-    }
-
-    .c-challenge-day__title {
-      margin-bottom: var(--space-3);
-      font-family: var(--font-serif);
-      font-size: var(--text-xl);
-      font-weight: 700;
-      line-height: var(--leading-tight);
-      color: var(--color-ink);
-    }
-
-    .c-challenge-day__prompt {
-      margin-top: var(--space-5);
-      padding: var(--space-4);
-      background: var(--color-accent-wash);
-      border: var(--border);
-      border-radius: var(--radius-lg);
-      font-size: var(--text-sm);
-      color: var(--color-ink-muted);
-      line-height: var(--leading-base);
-    }
-
-    .c-challenge-field {
-      display: grid;
-      gap: var(--space-2);
-      margin-top: var(--space-5);
-    }
-
-    .c-challenge-field label {
-      font-size: var(--text-xs);
-      font-weight: 780;
-      letter-spacing: var(--tracking-wider);
-      text-transform: uppercase;
-      color: var(--color-ink-muted);
-    }
-
-    .c-challenge-field textarea {
-      width: 100%;
-      min-height: 8rem;
-      padding: var(--space-4);
-      resize: vertical;
-      background: var(--color-surface);
-      border: var(--border);
-      border-radius: var(--radius-md);
-      color: var(--color-ink);
-      line-height: var(--leading-base);
-    }
-
-    .c-challenge-complete {
-      display: flex;
-      gap: var(--space-3);
-      align-items: flex-start;
-      margin-top: var(--space-5);
-      padding: var(--space-4);
-      background: var(--color-surface);
-      border: var(--border);
-      border-radius: var(--radius-lg);
-    }
-
-    .c-challenge-complete input {
-      width: 1.15rem;
-      height: 1.15rem;
-      margin-top: 0.25rem;
-      accent-color: var(--color-accent);
-    }
-
-    .c-challenge-complete span {
-      font-size: var(--text-sm);
-      color: var(--color-ink-muted);
-      line-height: var(--leading-base);
-    }
-
-    .c-challenge-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: var(--space-3);
-      margin-top: var(--space-6);
-    }
-
-
-
-    .c-challenge-recap {
-      display: grid;
-      gap: var(--space-5);
-      margin-top: var(--space-8);
-      padding: var(--space-6);
-      background: var(--gradient-card);
-      border: 2px solid var(--color-border-strong);
-      border-radius: var(--radius-xl);
-      box-shadow: var(--shadow-sm);
-    }
-
-    .c-challenge-recap[hidden] {
-      display: none;
-    }
-
-
-
-    .c-challenge-final-badge {
-      display: inline-flex;
-      width: fit-content;
-      align-items: center;
-      justify-content: center;
-      padding: var(--space-2) var(--space-4);
-      font-size: var(--text-xs);
-      font-weight: 780;
-      letter-spacing: var(--tracking-wider);
-      text-transform: uppercase;
-      color: var(--color-accent-inv);
-      background: var(--color-accent);
-      border-radius: var(--radius-pill);
-      box-shadow: var(--shadow-xs);
-    }
-
-
-    .c-challenge-recap__list {
-      display: grid;
-      gap: var(--space-4);
-    }
-
-    .c-challenge-recap__item {
-      padding: var(--space-4);
-      background: var(--color-surface);
-      border: var(--border);
-      border-radius: var(--radius-lg);
-    }
-
-    .c-challenge-recap__title {
-      margin-bottom: var(--space-2);
-      font-size: var(--text-xs);
-      font-weight: 780;
-      letter-spacing: var(--tracking-wider);
-      text-transform: uppercase;
-      color: var(--color-accent-hover);
-    }
-
-    .c-challenge-recap__label {
-      margin-bottom: var(--space-2);
-      font-size: var(--text-xs);
-      font-weight: 780;
-      letter-spacing: var(--tracking-wider);
-      text-transform: uppercase;
-      color: var(--color-accent-hover);
-    }
-
-    .c-challenge-recap__note {
-      white-space: pre-wrap;
-      font-size: var(--text-sm);
-      color: var(--color-ink-muted);
-      line-height: var(--leading-base);
-    }
-
-    .c-challenge-recap__empty {
-      font-style: italic;
-      color: var(--color-ink-subtle);
-    }
-
-    .c-challenge-copy-status {
-      min-height: 1.25rem;
-      font-size: var(--text-xs);
-      color: var(--color-ink-subtle);
-      line-height: var(--leading-base);
-    }
-
-    .c-challenge-note {
-      font-size: var(--text-xs);
-      color: var(--color-ink-subtle);
-      line-height: var(--leading-base);
-    }
-  </style>
 </head>
 
 <body>
@@ -338,7 +90,13 @@
           </div>
           <h2 class="c-challenge-day__title">See your friendship life clearly</h2>
           <p class="c-body">
-            Before trying to make new friends, start with what exists. Who is close? Who is present but not close? Who has drifted? Who is warm but irregular? Who is an acquaintance that could become more?
+            Before trying to make new friends, start with what exists.
+          </p>
+          <p class="c-body">
+            Who is close? Who is present but not close? Who has drifted? Who is warm but irregular? Who is an acquaintance that could become more?
+          </p>
+          <p class="c-body">
+            Today is not about judging your social life. It is about seeing it clearly.
           </p>
           <p class="c-challenge-day__prompt">
             Draw concentric circles and place your people from closest to farthest.
@@ -350,7 +108,7 @@
           </div>
           <label class="c-challenge-complete">
             <input type="checkbox" data-complete>
-            <span>I mapped my current friendship circle.</span>
+            <span>I drew concentric circles and placed my people from closest to farthest.</span>
           </label>
         </article>
 
@@ -359,21 +117,27 @@
             <span class="c-challenge-day__badge">Day 2/7</span>
             <span class="c-challenge-day__status" data-status>Ready</span>
           </div>
-          <h2 class="c-challenge-day__title">Name what your friendships need</h2>
+          <h2 class="c-challenge-day__title">Name what feels off</h2>
           <p class="c-body">
-            Friendship frustration is often vague until you name it. Maybe you initiate too much. Maybe you feel forgotten. Maybe conversations stay shallow. Maybe you know many people, but do not feel truly close to anyone.
+            Friendship frustration is often vague until you name it.
+          </p>
+          <p class="c-body">
+            Maybe you initiate too much. Maybe you feel forgotten. Maybe conversations stay shallow. Maybe you know many people, but do not feel truly close to anyone.
+          </p>
+          <p class="c-body">
+            Clarity matters. You cannot practice friendship well if you do not know what feels off.
           </p>
           <p class="c-challenge-day__prompt">
-            List three things that frustrate you in the friendships you have or do not have.
+            List three things that frustrate you in your current and former friendships.
           </p>
           <div class="c-challenge-field">
             <label for="note-day-2">Optional private note</label>
-            <textarea id="note-day-2" data-note placeholder="Example: I know a lot of people, but I do not feel deeply known."></textarea>
+            <textarea id="note-day-2" data-note placeholder="Example: I know a lot of people, but I do not feel truly close to anyone."></textarea>
             <p class="c-challenge-note">A few words are enough. This is for you, and you can print it at the end.</p>
           </div>
           <label class="c-challenge-complete">
             <input type="checkbox" data-complete>
-            <span>I named what feels frustrating.</span>
+            <span>I listed three things that frustrate me in my current and former friendships.</span>
           </label>
         </article>
 
@@ -382,24 +146,27 @@
             <span class="c-challenge-day__badge">Day 3/7</span>
             <span class="c-challenge-day__status" data-status>Ready</span>
           </div>
-          <h2 class="c-challenge-day__title">Define the friendship you want</h2>
+          <h2 class="c-challenge-day__title">Define what friendship means to you</h2>
           <p class="c-body">
-            People use the word “friend” differently. For one person, friendship means regular reaching-out from both sides. For another, it means emotional depth. For another, it means shared history, humor, loyalty, or showing up in hard times.
+            People use the word “friend” differently.
           </p>
           <p class="c-body">
-            These are not roles to assign to people. They are principles: the things that make friendship feel real, safe, and worth tending to you.
+            For one person, friendship means regular reaching-out from both sides. For another, it means emotional depth. For another, it means shared history, humor, loyalty, or showing up in hard times.
+          </p>
+          <p class="c-body">
+            There is no single definition. But you need to know yours.
           </p>
           <p class="c-challenge-day__prompt">
-            Write three friendship principles that matter to you.
+            Write three characteristics of a real friendship for you.
           </p>
           <div class="c-challenge-field">
             <label for="note-day-3">Optional private note</label>
-            <textarea id="note-day-3" data-note placeholder="Example: Presence, honesty, and the feeling that we both choose the relationship."></textarea>
+            <textarea id="note-day-3" data-note placeholder="Example: For me, a real friendship includes presence, humor, and showing up when life is hard."></textarea>
             <p class="c-challenge-note">A few words are enough. This is for you, and you can print it at the end.</p>
           </div>
           <label class="c-challenge-complete">
             <input type="checkbox" data-complete>
-            <span>I wrote three friendship principles that matter to me.</span>
+            <span>I wrote three characteristics of a real friendship for me.</span>
           </label>
         </article>
 
@@ -410,13 +177,13 @@
           </div>
           <h2 class="c-challenge-day__title">Make your principles visible</h2>
           <p class="c-body">
-            Most of us carry quiet principles about how friends should behave.
+            Most of us carry secret principles about how friends should behave.
           </p>
           <p class="c-body">
             A real friend should check in. A real friend should remember. A real friend should initiate. A real friend should know when I need support.
           </p>
           <p class="c-body">
-            This can create a lot of suffering.
+            This can create a lot of suffering. Today, make three principles visible.
           </p>
           <p class="c-challenge-day__prompt">
             Complete “A real friend should...” three times.
@@ -428,7 +195,7 @@
           </div>
           <label class="c-challenge-complete">
             <input type="checkbox" data-complete>
-            <span>I made three friendship principles visible.</span>
+            <span>I completed “A real friend should...” three times.</span>
           </label>
         </article>
 
@@ -439,10 +206,16 @@
           </div>
           <h2 class="c-challenge-day__title">Check if your principles still help</h2>
           <p class="c-body">
-            Yesterday, you named three principles you carry into friendship. Today, ask a simpler question: do those principles still help me?
+            Yesterday, you named three principles you carry into friendship.
           </p>
           <p class="c-body">
-            Principles are like a coat you put on when you were cold. At one point, they protected you. Maybe you learned not to expect too much. Maybe you learned to wait and see who reaches out first. Maybe you learned to protect your energy.
+            Today, ask a simpler question: do those principles still help me?
+          </p>
+          <p class="c-body">
+            Principles are like a coat you put on when you were cold.
+          </p>
+          <p class="c-body">
+            At one point, they protected you. Maybe you learned not to expect too much. Maybe you learned to wait and see who reaches out first. Maybe you learned to protect your energy.
           </p>
           <p class="c-body">
             That makes sense. But sometimes, we keep wearing the coat even when we do not need it anymore.
@@ -452,7 +225,7 @@
           </p>
           <div class="c-challenge-field">
             <label for="note-day-5">Optional private note</label>
-            <textarea id="note-day-5" data-note placeholder="Example: This principle once protected me by helping me expect less. It may hold me back by making me distant too quickly."></textarea>
+            <textarea id="note-day-5" data-note placeholder="Example: This principle once protected me by helping me expect less. This principle may hold me back by making me distant too quickly."></textarea>
             <p class="c-challenge-note">A few words are enough. This is for you, and you can print it at the end.</p>
           </div>
           <label class="c-challenge-complete">
@@ -468,13 +241,22 @@
           </div>
           <h2 class="c-challenge-day__title">Choose what gives you peace</h2>
           <p class="c-body">
-            Friendship is not supposed to be a constant source of suffering. It should add something to your life: warmth, presence, laughter, support, meaning, or ease.
+            Friendship is not supposed to be a constant source of suffering.
           </p>
           <p class="c-body">
-            Some friendships are a bonus. They may not be deep, regular, or perfect, but they still bring something good.
+            It should add something to your life: warmth, presence, laughter, support, meaning, or ease.
+          </p>
+          <p class="c-body">
+            That does not mean every friend must meet every principle you named.
+          </p>
+          <p class="c-body">
+            Friendships are a gift in life. They may not be deep, regular, or perfect, but they still bring something good.
+          </p>
+          <p class="c-body">
+            The balance is knowing what you can enjoy, what you can ask for, and what hurts too much to keep chasing.
           </p>
           <p class="c-challenge-day__prompt">
-            Choose one friendship, past or ideal, and write: “This friendship gives me...” and “What I need to stop forcing is...”
+            Choose one friendship (past or ideal) and write: “This friendship gives me...” and “What I need to stop forcing is...”
           </p>
           <div class="c-challenge-field">
             <label for="note-day-6">Optional private note</label>
@@ -494,13 +276,19 @@
           </div>
           <h2 class="c-challenge-day__title">What are you taking with you?</h2>
           <p class="c-body">
-            You made it to Day Seven. This week, you mapped your friendship life, named what feels frustrating, clarified your friendship principles, looked at one principle you carry, and noticed what you may need to stop forcing.
+            You made it to Day Seven! Congratulations!
           </p>
           <p class="c-body">
-            That is real work. Today is not about adding another task. It is about noticing what changed in the way you see your friendships.
+            This week, you mapped your friendship life, named what feels frustrating, clarified your friendship principles, looked at what you carry, and noticed what you may need to stop forcing.
+          </p>
+          <p class="c-body">
+            That is real work.
+          </p>
+          <p class="c-body">
+            Today is not about adding another task. It is about noticing what changed in the way you see your friendships.
           </p>
           <p class="c-challenge-day__prompt">
-            Write one sentence: “The main thing I’m taking from this challenge is...”
+            Write one sentence: “The main thing I’m taking from this challenge is...” If you want, reply to the Day 7 email with it. Yes, I am curious :)
           </p>
           <div class="c-challenge-field">
             <label for="note-day-7">Optional private note</label>
@@ -574,7 +362,7 @@
     var storageKey = "tfpFriendshipChallengeV2";
     var days = Array.prototype.slice.call(document.querySelectorAll("[data-day]"));
     var progressText = document.getElementById("challenge-progress-text");
-    var progressFill = document.getElementById("challenge-progress-fill");
+    var progressBox = document.querySelector(".c-challenge-progress");
     var nextText = document.getElementById("challenge-next-text");
     var resetButton = document.getElementById("challenge-reset");
     var startLink = document.getElementById("challenge-start-link");
@@ -587,10 +375,10 @@
     var recapTitles = {
       "1": "Day 1/7 - My friendship circle",
       "2": "Day 2/7 - What feels frustrating",
-      "3": "Day 3/7 - My friendship principles",
+      "3": "Day 3/7 - My definition of friendship",
       "4": "Day 4/7 - A real friend should...",
       "5": "Day 5/7 - What this principle protected",
-      "6": "Day 6/7 - What I need to stop forcing",
+      "6": "Day 6/7 - Friendship as a gift",
       "7": "Day 7/7 - My main insight"
     };
 
@@ -733,14 +521,70 @@
       });
     }
 
+
+    function removeExistingCelebration() {
+      var existingToast = document.querySelector("[data-challenge-toast]");
+      var existingConfetti = document.querySelector("[data-challenge-confetti]");
+
+      if (existingToast) {
+        existingToast.remove();
+      }
+
+      if (existingConfetti) {
+        existingConfetti.remove();
+      }
+    }
+
+    function showCelebration(dayNumber) {
+      removeExistingCelebration();
+
+      var toast = document.createElement("div");
+      toast.className = "c-challenge-toast";
+      toast.setAttribute("data-challenge-toast", "true");
+      toast.setAttribute("role", "status");
+      toast.setAttribute("aria-live", "polite");
+
+      var title = document.createElement("p");
+      title.className = "c-challenge-toast__title";
+      title.textContent = dayNumber === days.length ? "Challenge complete" : "Day " + dayNumber + "/7 complete";
+
+      var message = document.createElement("p");
+      message.className = "c-challenge-toast__text";
+      message.textContent = dayNumber === days.length
+        ? "You made it through the full challenge. Your recap is ready."
+        : "Good work. You gave this some attention, and that counts.";
+
+      toast.appendChild(title);
+      toast.appendChild(message);
+      document.body.appendChild(toast);
+
+      var prefersReducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!prefersReducedMotion) {
+        var confetti = document.createElement("div");
+        confetti.className = "c-challenge-confetti";
+        confetti.setAttribute("data-challenge-confetti", "true");
+        confetti.setAttribute("aria-hidden", "true");
+
+        var symbols = ["✦", "•", "✧", "·", "✦", "•"];
+        for (var i = 0; i < 18; i += 1) {
+          var piece = document.createElement("span");
+          piece.className = "c-challenge-confetti__piece c-challenge-confetti__piece--" + (i + 1);
+          piece.textContent = symbols[i % symbols.length];
+          confetti.appendChild(piece);
+        }
+        document.body.appendChild(confetti);
+      }
+
+      window.setTimeout(removeExistingCelebration, 1900);
+    }
+
     function render() {
       var state = loadState();
       var completedCount = getCompletedCount(state);
-      var progressPercentage = Math.round((completedCount / days.length) * 100);
       var currentDayNumber = getCurrentDayNumber(state);
 
       progressText.textContent = completedCount + " of " + days.length + " days complete.";
-      progressFill.style.width = progressPercentage + "%";
+      progressBox.setAttribute("data-progress", String(completedCount));
       renderRecap(state, completedCount);
 
       if (completedCount === days.length) {
@@ -793,6 +637,10 @@
         saveState(state);
         render();
 
+        if (checkbox.checked) {
+          showCelebration(Number(dayKey));
+        }
+
         if (checkbox.checked && Number(dayKey) < days.length) {
           window.location.hash = "#day-" + (Number(dayKey) + 1);
         } else if (checkbox.checked && Number(dayKey) === days.length) {
@@ -833,8 +681,7 @@
         var temporaryTextarea = document.createElement("textarea");
         temporaryTextarea.value = recapText;
         temporaryTextarea.setAttribute("readonly", "readonly");
-        temporaryTextarea.style.position = "absolute";
-        temporaryTextarea.style.left = "-9999px";
+        temporaryTextarea.className = "c-challenge-copy-buffer";
         document.body.appendChild(temporaryTextarea);
         temporaryTextarea.select();
 
