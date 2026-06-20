@@ -1,0 +1,27 @@
+# The Friendship Practice
+
+> The Friendship Practice is a practical friendship coaching website for adults who want to make new friends, reconnect with old friends, and deepen current friendships.
+
+## Offer
+The core offer is a 4-session private coaching package. The public entry point is a free 7-day Friendship Challenge delivered by email.
+
+## Audience
+Adults looking for practical support around friendship, connection, reconnection, and follow-through.
+
+## Contact
+contact@thefriendshippractice.com
+
+## Public Pages
+- https://thefriendshippractice.com/ — The Friendship Practice helps adults make new friends, reconnect with old friends, and deepen current friendships through simple, real-life practice.
+- https://thefriendshippractice.com/challenge.html — A private, browser-only 7-day friendship challenge to take stock of your friendship life, clarify your principles, and name what friendship practice could mean for you.
+- https://thefriendshippractice.com/terms.html — Terms of service for The Friendship Practice by Carole Stromboni.
+- https://thefriendshippractice.com/privacy.html — Privacy policy for The Friendship Practice by Carole Stromboni.
+- https://thefriendshippractice.com/disclaimer.html — Disclaimer for The Friendship Practice by Carole Stromboni.
+- https://thefriendshippractice.com/refund-cancellation.html — Refund and cancellation policy for The Friendship Practice by Carole Stromboni.
+- https://thefriendshippractice.com/guides/how-to-make-friends-as-an-adult/ — A practical guide to making friends as an adult, with specific steps for meeting people, following up, and turning early connection into real friendship.
+- https://thefriendshippractice.com/guides/how-to-reconnect-with-old-friends/ — A practical guide to reconnecting with old friends without overexplaining the distance or waiting for the perfect message.
+- https://thefriendshippractice.com/guides/why-making-friends-as-an-adult-is-hard/ — Why adult friendship can feel so difficult, and what changes when you stop treating friendship as luck and start treating it as practice.
+
+## Notes
+- The coaching offer is practical support, not therapy or crisis care.
+- Transactional pages such as confirmation and intake pages are intentionally excluded from search indexing.

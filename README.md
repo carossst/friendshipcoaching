@@ -18,6 +18,12 @@ Live site : [thefriendshippractice.com](https://thefriendshippractice.com)
 | `404.html` | Page d'erreur 404 |
 | `Fcoaching.css` | Feuille de style unique (mobile-first, sans JS) |
 | `CNAME` | Domaine personnalisé pour GitHub Pages |
+| `seo-pages.json` | Source de vérité SEO par page |
+| `SEO-PLAYBOOK.md` | Workflow SEO et statuts des pages |
+| `IMPLEMENTATION_MEMORY.md` | Mémoire technique durable du projet |
+| `scripts/` | Génération sitemap / robots / llms + validation SEO |
+| `guides/` | Pages SEO éditoriales générées |
+| `coding/CHANTIER_A_FAIRE.md` | Priorités et prochains chantiers |
 
 ## À remplacer avant le lancement
 
@@ -42,9 +48,9 @@ Le site pointe vers un dossier `icons/` pour les favicons :
 - `icons/favicon-16.png`
 - `icons/apple-touch-icon.png`
 
-L'image Open Graph reste attendue à la racine :
+L'image Open Graph utilisée par les balises sociales est :
 
-- `og-image.jpg`
+- `icons/og-image.jpg`
 
 ## Déploiement (GitHub Pages)
 
@@ -60,6 +66,15 @@ L'image Open Graph reste attendue à la racine :
 - CSS unique avec design tokens (variables CSS)
 - Polices système (zéro requête externe)
 - FAQ accessible via `<details>` natif
+
+## SEO
+
+- Générer les fichiers SEO :
+  - `npm run publish:seo`
+- Vérifier les balises des pages :
+  - `npm run test:seo`
+- Générer ou régénérer les guides SEO :
+  - `npm run generate:guides`
 
 ## Licence
 
