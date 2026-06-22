@@ -1,0 +1,36 @@
+# robots.txt - thefriendshippractice.com
+# Public pages may be crawled. Transactional pages stay out of search.
+
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+Disallow: /intake.html
+Disallow: /waitlist-confirmed.html
+Disallow: /challenge-confirmed.html
+Disallow: /404.html
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://thefriendshippractice.com/sitemap.xml
