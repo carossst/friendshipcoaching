@@ -46,16 +46,22 @@ function renderGuide(guide, allGuides) {
         description: guide.description,
         author: {
           "@type": "Person",
-          name: "Carole Stromboni"
+          name: "Carole Stromboni",
+          url: `${BASE}/`
         },
         publisher: {
           "@type": "Organization",
-          name: "The Friendship Practice"
+          name: "The Friendship Practice",
+          url: `${BASE}/`
         },
         dateModified: guide.lastmod,
         datePublished: guide.lastmod,
         mainEntityOfPage: canonical,
-        image: ogImage
+        image: ogImage,
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: [".c-hero__title", ".c-hero__sub"]
+        }
       },
       {
         "@type": "FAQPage",
@@ -90,6 +96,9 @@ function renderGuide(guide, allGuides) {
 ${section.paragraphs
   .map((paragraph) => `          <p class="c-body u-mt-6">${paragraph}</p>`)
   .join("\n")}
+${section.quote ? `          <blockquote class="c-quote u-mt-10">
+            <p class="c-quote__text">${esc(section.quote)}</p>
+          </blockquote>` : ""}
         </div>
       </section>`
     )

@@ -11,7 +11,39 @@
     "summary": "The Friendship Practice is a practical friendship coaching website for adults who want to make new friends, reconnect with old friends, and deepen current friendships.",
     "offer": "The core offer is a 4-session private coaching package. The public entry point is a free 7-day Friendship Challenge delivered by email.",
     "audience": "Adults looking for practical support around friendship, connection, reconnection, and follow-through.",
-    "contactEmail": "contact@thefriendshippractice.com"
+    "contactEmail": "contact@thefriendshippractice.com",
+    "quotes": [
+      "Friendship is not something that falls into your lap. It's something you practice.",
+      "Following up after a good conversation is not neediness. It is the single most underused friendship skill adults have.",
+      "Most adult loneliness is not about missing people. It is about missing the repetition that turns people into friends.",
+      "You do not need a more charismatic personality. You need a more deliberate practice.",
+      "A friendship does not need to be intense to stay alive. It needs to be consistent.",
+      "Reaching out to an old friend is almost always less complicated than the story you tell yourself before you do it.",
+      "Friendship deepens through ordinary acts: inviting, checking in, remembering, and showing up. Not through one perfect emotional moment.",
+      "What separates an acquaintance from a friend is usually not chemistry. It is someone being willing to suggest the next time."
+    ],
+    "keyQA": [
+      {
+        "q": "What is The Friendship Practice?",
+        "a": "The Friendship Practice is a practical friendship coaching service for adults. The core offer is a 4-session private coaching package. The public entry point is a free 7-day Friendship Challenge delivered by email. It was founded by Carole Stromboni."
+      },
+      {
+        "q": "Why is making friends as an adult so hard?",
+        "a": "Adult friendship is harder because there is less built-in time, less repetition, and more competing responsibilities than earlier in life. School and early adulthood created repeated contact automatically. In adult life, that repetition has to be created on purpose."
+      },
+      {
+        "q": "How do you make friends as an adult?",
+        "a": "The most reliable way is to choose repeatable environments where you can see the same people more than once, follow up quickly after a warm interaction, and suggest one small next step. Adult friendship grows through repetition and follow-through, not through one strong first impression."
+      },
+      {
+        "q": "Is friendship coaching the same as therapy?",
+        "a": "No. The Friendship Practice is coaching, not therapy, mental health care, diagnosis, or crisis support. The work is practical: real-life friendship practices, clearer choices, and action steps."
+      },
+      {
+        "q": "How do you reconnect with an old friend?",
+        "a": "Keep the message simple and specific. Say you thought of them, mention something real you remember, and ask if they would like to catch up. A short acknowledgment of the distance is fine, but a long apology is usually not necessary."
+      }
+    ]
   },
   "pages": [
     {
@@ -152,14 +184,16 @@
           "paragraphs": [
             "The easiest adult friendships usually begin where you see the same people more than once: classes, clubs, sports, volunteering, coworking spaces, recurring neighborhood events, or professional communities with a social edge.",
             "One good conversation matters less than repeated light contact. Familiarity lowers awkwardness. It gives both people time to notice each other, recognize interest, and build trust without forcing intimacy too early."
-          ]
+          ],
+          "quote": "Most adult loneliness is not about missing people. It is about missing the repetition that turns people into friends."
         },
         {
           "h2": "Treat the follow-up as part of the friendship, not as a test",
           "paragraphs": [
             "Many adults assume that if a connection were real, it would continue naturally. In practice, many good beginnings die because no one follows up. A message after meeting is not neediness. It is how adult friendship keeps moving.",
             "Keep the follow-up concrete. Mention something specific you enjoyed, then suggest a small next step: coffee, a walk, another class, a game, a market, a lunch, a check-in next week."
-          ]
+          ],
+          "quote": "Following up after a good conversation is not neediness. It is the single most underused friendship skill adults have."
         },
         {
           "h2": "Build from mutual interest, not from perfection",
@@ -173,7 +207,8 @@
           "paragraphs": [
             "Friendship deepens through repeated acts: inviting, checking in, remembering something small, following through, showing up, and staying in contact after a good interaction.",
             "That is the central idea behind The Friendship Practice: friendship is not just something you understand. It is something you do on purpose."
-          ]
+          ],
+          "quote": "Friendship is not something that falls into your lap. It's something you practice."
         }
       ],
       "faq": [
@@ -184,6 +219,14 @@
         {
           "q": "How do I turn a good conversation into a friendship?",
           "a": "Follow up while the interaction is still warm. Mention something specific you liked, then suggest one small next step. Adult friendship usually grows through repetition, not through one strong first impression."
+        },
+        {
+          "q": "What do I do if I am shy or find it hard to initiate?",
+          "a": "Start with environments where repeated contact happens naturally, so you do not have to initiate from zero. A recurring class or group gives you a reason to be there again without a formal invitation. Small follow-ups are easier than big ones."
+        },
+        {
+          "q": "How long does it take to make a real friend as an adult?",
+          "a": "Research suggests it can take 50 hours or more of contact to move from acquaintance to casual friend, and more to feel close. That number sounds large, but it accumulates through repeated light contact over months, not through long intense sessions."
         }
       ]
     },
@@ -202,7 +245,8 @@
           "paragraphs": [
             "A good reconnection message does not need to explain every missing month or year. It can be short: you thought of them, you would love to catch up, and you want to see if they are open to it.",
             "Specificity helps. Mention a memory, a place, a habit you shared, or something that made you think of them. It reminds the other person that the relationship was real."
-          ]
+          ],
+          "quote": "Reaching out to an old friend is almost always less complicated than the story you tell yourself before you do it."
         },
         {
           "h2": "Do not turn the message into a guilt performance",
@@ -234,6 +278,14 @@
         {
           "q": "Do I need to apologize for losing touch?",
           "a": "A brief acknowledgment can help, but a long apology is usually not necessary. What matters most is warmth, clarity, and a concrete next step."
+        },
+        {
+          "q": "What if the friend does not respond?",
+          "a": "It happens. Some people are not in a place to reconnect, or the friendship may have naturally run its course. One unanswered message is not a verdict. Sending it is still the right thing to do."
+        },
+        {
+          "q": "Is it worth reconnecting with a friend I have not spoken to in years?",
+          "a": "Usually yes. The awkwardness you imagine is almost always less than the real interaction. Most people are glad to hear from someone they once cared about, even after a long gap."
         }
       ]
     },
@@ -252,7 +304,8 @@
           "paragraphs": [
             "Friendship grows through seeing people again. School, campus life, and early jobs often create repeated contact automatically. Later in life, those structures are weaker or disappear altogether.",
             "When repetition disappears, friendship requires more intention. Someone has to suggest the next coffee, the next walk, the next plan."
-          ]
+          ],
+          "quote": "Most adult loneliness is not about missing people. It is about missing the repetition that turns people into friends."
         },
         {
           "h2": "Many adults are afraid of seeming awkward, eager, or needy",
@@ -273,7 +326,8 @@
           "paragraphs": [
             "You do not need a perfect personality to build adult friendship. You need a few repeatable behaviors: noticing mutual interest, following up, inviting, reconnecting, and staying present over time.",
             "This is the shift The Friendship Practice is built around: friendship is not a miracle that happens to lucky people. It is a set of actions that can be practiced in real life."
-          ]
+          ],
+          "quote": "You do not need a more charismatic personality. You need a more deliberate practice."
         }
       ],
       "faq": [
@@ -284,6 +338,14 @@
         {
           "q": "Can adult friendship actually get easier?",
           "a": "Yes, usually when you stop waiting for friendship to happen by itself and start practicing specific behaviors like following up, inviting, and reconnecting."
+        },
+        {
+          "q": "Why do I feel lonely even when I have people around me?",
+          "a": "Loneliness often comes from the absence of close, repeating contact, not the absence of people. You can be surrounded by acquaintances and still feel alone. The gap between knowing people and feeling close to them is usually filled by consistent, intentional connection."
+        },
+        {
+          "q": "What is the biggest mistake adults make with friendship?",
+          "a": "Waiting. Waiting for someone else to reach out, waiting for the right moment, waiting until they have more time. Most adult friendships that drift do so not because of conflict, but because nobody made the next move."
         }
       ]
     },
@@ -302,7 +364,8 @@
           "paragraphs": [
             "A friendship does not need constant emotional depth to stay alive. It often needs something simpler: regular contact that feels sustainable. A short message, a recurring walk, a check-in after a trip, a small invitation next week.",
             "If every interaction has to be meaningful, thoughtful, and perfectly timed, the relationship becomes too heavy to maintain. Repetition is more useful than intensity."
-          ]
+          ],
+          "quote": "A friendship does not need to be intense to stay alive. It needs to be consistent."
         },
         {
           "h2": "Do not confuse warmth with maintenance",
@@ -323,7 +386,8 @@
           "paragraphs": [
             "Friendship often deepens through ordinary reliability: answering, checking in, remembering, inviting, showing up, and doing what you said you would do.",
             "That is why The Friendship Practice treats friendship as something you practice. Keeping a friendship alive is often a chain of small, repeatable acts rather than one big emotional declaration."
-          ]
+          ],
+          "quote": "Friendship deepens through ordinary acts: inviting, checking in, remembering, and showing up. Not through one perfect emotional moment."
         }
       ],
       "faq": [
@@ -334,6 +398,14 @@
         {
           "q": "How often should I reach out to a friend?",
           "a": "There is no single rule. What matters most is finding a rhythm that fits both people and keeps the relationship alive in real life."
+        },
+        {
+          "q": "How do I maintain friendships when I am very busy?",
+          "a": "Lower the bar for what counts as contact. A short message, a shared article, a voice note, a quick check-in — these keep a friendship present without requiring a full evening. Frequency matters more than depth during busy seasons."
+        },
+        {
+          "q": "What if the friendship feels one-sided?",
+          "a": "It is worth naming. One-sided maintenance is exhausting and builds resentment. A direct, kind conversation about needing more reciprocity is usually better than quietly pulling away or staying frustrated."
         }
       ]
     },
@@ -384,6 +456,14 @@
         {
           "q": "Why is it so hard to make friends after moving?",
           "a": "It is often hard because you have lost the routines and repeated contact that supported friendship before. In a new city, you usually have to rebuild those conditions on purpose."
+        },
+        {
+          "q": "How long does it take to feel settled socially in a new city?",
+          "a": "It usually takes longer than people expect — often six months to a year before a social life starts to feel genuinely comfortable. That is normal. The first phase is mostly logistical: showing up, recognizing faces, and becoming easier to place."
+        },
+        {
+          "q": "What if I work remotely and do not naturally meet many people?",
+          "a": "Remote work removes one of the most reliable sources of repeated adult contact. Replacing it requires choosing a recurring community outside of work: a class, a sport, a volunteer group, a coworking space, or any place you can return to consistently."
         }
       ]
     },
@@ -434,6 +514,14 @@
         {
           "q": "Can I improve at friendship even if I feel awkward?",
           "a": "Yes. Friendship gets easier when you practice specific actions like reaching out, remembering, inviting, and following through. You do not need to become socially perfect to become a better friend."
+        },
+        {
+          "q": "How do I show care without it feeling forced?",
+          "a": "Start small and specific. Remember something the person mentioned last time. Ask about it. Send a message when you think of them. Care feels natural when it is specific, not when it is grand. Small acts of attention are more convincing than large gestures."
+        },
+        {
+          "q": "What should I do if I have been a bad friend recently?",
+          "a": "Acknowledge it simply and move forward. You do not need a long explanation. A short, honest message and a genuine next step are usually enough. People respond better to warmth and action than to elaborate apologies."
         }
       ]
     },
@@ -484,6 +572,100 @@
         {
           "q": "Where can I make friends after 30?",
           "a": "Look for places you can return to: classes, sports, volunteering, local groups, coworking spaces, recurring events, and communities built around shared interests."
+        },
+        {
+          "q": "Is it harder to make friends after 40 or 50?",
+          "a": "The structural challenges are similar, but the social circles can feel more fixed and the tolerance for awkwardness can be lower. The solution is the same: repeated environments, clear follow-ups, and a willingness to be the one who moves first."
+        },
+        {
+          "q": "How do I make friends after 30 when everyone already seems to have their social circle?",
+          "a": "Most adult social circles have more room than they appear to. People are genuinely open to new friendship, even if they look settled. The key is to show up consistently in the same place and follow up when something feels warm."
+        }
+      ]
+    },
+    {
+      "slug": "friendship-quotes",
+      "status": "live",
+      "lastmod": "2026-06-27",
+      "title": "Friendship Quotes | The Friendship Practice",
+      "description": "Original quotes on adult friendship, connection, and the practice of keeping people close. From Carole Stromboni at The Friendship Practice.",
+      "h1": "Friendship quotes",
+      "lead": "These are not inspirational posters. They are observations about what friendship actually asks of adults — and what it gives back when it is practiced honestly.",
+      "intro": "Every quote on this page comes from the same core idea: friendship is not something that happens to lucky people. It is something anyone can practice, with a little more intention and a little less waiting.",
+      "sections": [
+        {
+          "h2": "On the nature of adult friendship",
+          "paragraphs": [
+            "Friendship in adulthood is less automatic than it was earlier in life. The conditions that once made closeness easy — school, shared routines, unstructured time — mostly disappear. What replaces them is intention."
+          ],
+          "quote": "Friendship is not something that falls into your lap. It's something you practice."
+        },
+        {
+          "h2": "On following up",
+          "paragraphs": [
+            "One of the most overlooked friendship skills is the follow-up. A good conversation without a next step is just a pleasant memory. Following up is how adults turn a warm moment into something real."
+          ],
+          "quote": "Following up after a good conversation is not neediness. It is the single most underused friendship skill adults have."
+        },
+        {
+          "h2": "On loneliness and repetition",
+          "paragraphs": [
+            "Adult loneliness is rarely about a shortage of people. Most adults encounter plenty of people. What they lack is the repeated contact that turns encounters into familiarity, and familiarity into friendship."
+          ],
+          "quote": "Most adult loneliness is not about missing people. It is about missing the repetition that turns people into friends."
+        },
+        {
+          "h2": "On personality and practice",
+          "paragraphs": [
+            "Many adults assume that being good at friendship is a personality trait — something you either have or you do not. But the adults who maintain strong friendships are rarely the most charismatic. They are the most consistent."
+          ],
+          "quote": "You do not need a more charismatic personality. You need a more deliberate practice."
+        },
+        {
+          "h2": "On keeping friendships alive",
+          "paragraphs": [
+            "Friendship does not need to be deep and intense every time to stay healthy. It needs to be recurring. A short message, a walk, a check-in, a plan for next month — that is often enough to keep something real alive."
+          ],
+          "quote": "A friendship does not need to be intense to stay alive. It needs to be consistent."
+        },
+        {
+          "h2": "On reconnecting",
+          "paragraphs": [
+            "Reconnecting with someone after a long gap usually feels more complicated in your head than it is in reality. A simple, specific message — without a lengthy apology for the silence — is almost always enough to reopen the door."
+          ],
+          "quote": "Reaching out to an old friend is almost always less complicated than the story you tell yourself before you do it."
+        },
+        {
+          "h2": "On what builds closeness",
+          "paragraphs": [
+            "People often wait for the right emotional moment to deepen a friendship. But closeness builds through accumulation, not through a single breakthrough. Inviting, remembering, checking in, showing up — that is the real currency of adult friendship."
+          ],
+          "quote": "Friendship deepens through ordinary acts: inviting, checking in, remembering, and showing up. Not through one perfect emotional moment."
+        },
+        {
+          "h2": "On the gap between acquaintances and friends",
+          "paragraphs": [
+            "A lot of adult friendship stays at the acquaintance level not because both people are uninterested, but because neither one is willing to suggest the next time. The chemistry is usually there. The action is not."
+          ],
+          "quote": "What separates an acquaintance from a friend is usually not chemistry. It is someone being willing to suggest the next time."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Are these quotes by Carole Stromboni?",
+          "a": "Yes. All quotes on this page are original observations from Carole Stromboni, founder of The Friendship Practice."
+        },
+        {
+          "q": "Can I share these quotes?",
+          "a": "Yes. If you share these quotes, please attribute them to The Friendship Practice or to Carole Stromboni."
+        },
+        {
+          "q": "Where do these ideas come from?",
+          "a": "These observations come from Carole Stromboni's work as a friendship coach and her experience living between continents while maintaining long-term friendships across distance and time."
+        },
+        {
+          "q": "Is there more content like this on the site?",
+          "a": "Yes. The friendship guides on this site go deeper into specific topics: making friends as an adult, reconnecting with old friends, keeping friends as an adult, and more."
         }
       ]
     }
