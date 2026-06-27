@@ -185,10 +185,18 @@ ${section.quote ? `          <blockquote class="c-quote u-mt-10">
     <section class="u-section">
       <div class="u-container u-container--prose">
         <p class="c-body">${guide.intro}</p>
+${guide.authorNote ? `        <p class="c-body u-mt-6 c-body--author-note">${esc(guide.authorNote)}</p>` : ""}
       </div>
     </section>
 
 ${sectionsHtml}
+
+    <section class="u-section u-bg-surface">
+      <div class="u-container u-container--prose">
+        <p class="c-label">About the author</p>
+        <p class="c-body"><strong>Carole Stromboni</strong> is the founder of The Friendship Practice. She is the author of <em>Innover en pratique</em> (Eyrolles) and splits her time between Hawaii and Paris. Her work focuses on helping adults turn good intentions into concrete friendship practice. <a href="/index.html">Learn more about The Friendship Practice.</a></p>
+      </div>
+    </section>
 
     <section class="u-section u-bg-alt">
       <div class="u-container u-container--prose">
