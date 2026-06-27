@@ -447,6 +447,23 @@ select {
   }
 }
 
+.c-nav__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+}
+
+.c-nav__link {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.c-nav__link:hover {
+  color: var(--color-accent);
+}
+
 /* 7. Component - Button */
 .c-btn {
   display: inline-flex;

@@ -113,6 +113,17 @@
       "lastmod": "2026-06-20"
     },
     {
+      "file": "guides/index.html",
+      "path": "/guides/",
+      "status": "live",
+      "title": "Friendship Guides | The Friendship Practice",
+      "description": "Practical guides on making friends as an adult, keeping friendships alive, reconnecting with old friends, and more. By Carole Stromboni at The Friendship Practice.",
+      "ogDescription": "Practical friendship guides for adults, by Carole Stromboni.",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-06-27"
+    },
+    {
       "file": "about.html",
       "path": "/about.html",
       "status": "live",
@@ -236,7 +247,7 @@
           "h2": "Let friendship grow through practice",
           "paragraphs": [
             "Friendship deepens through repeated acts: inviting, checking in, remembering something small, following through, showing up, and staying in contact after a good interaction.",
-            "That is the central idea behind The Friendship Practice: friendship is not just something you understand. It is something you do on purpose."
+            "That is the central idea behind The Friendship Practice: friendship is not just something you understand. It is something you do on purpose. If you want to understand why it feels so hard first, read <a href=\"/guides/why-making-friends-as-an-adult-is-hard/\">why making friends as an adult is hard</a>."
           ],
           "quote": "Friendship is not something that falls into your lap. It's something you practice."
         }
@@ -371,7 +382,7 @@
           "h2": "The answer is not to force it. It is to practice it.",
           "paragraphs": [
             "You do not need a perfect personality to build adult friendship. You need a few repeatable behaviors: noticing mutual interest, following up, inviting, reconnecting, and staying present over time.",
-            "This is the shift The Friendship Practice is built around: friendship is not a miracle that happens to lucky people. It is a set of actions that can be practiced in real life."
+            "This is the shift The Friendship Practice is built around: friendship is not a miracle that happens to lucky people. It is a set of actions that can be practiced in real life. The most practical place to start is <a href=\"/guides/how-to-make-friends-as-an-adult/\">how to make friends as an adult</a>."
           ],
           "quote": "You do not need a more charismatic personality. You need a more deliberate practice."
         }
@@ -403,7 +414,7 @@
       "description": "A practical guide to keeping adult friendships alive through repetition, follow-through, invitations, and small acts of consistency.",
       "h1": "How to keep friends as an adult",
       "lead": "Keeping friends as an adult is usually less about intensity and more about continuity. Most friendships do not disappear because something dramatic happened. They fade because contact became accidental.",
-      "intro": "Adult friendship rarely survives on affection alone. It usually needs repetition, invitations, follow-through, and enough structure that the relationship stays present even during busy seasons.",
+      "intro": "Adult friendship rarely survives on affection alone. It usually needs repetition, invitations, follow-through, and enough structure that the relationship stays present even during busy seasons. If you are also trying to meet new people, the guide on <a href=\"/guides/how-to-make-friends-as-an-adult/\">how to make friends as an adult</a> covers that ground.",
       "authorNote": "Keeping friendships alive across distance is something I've practiced for years. Living between Hawaii and Paris means most of my closest friendships involve time zones, long gaps, and reunions that have to be planned. What I've learned: consistency beats frequency every time. A short message every few weeks does more for a friendship than one long conversation every six months. And here's what always surprises people — friendship is simpler to keep than you think, once you stop waiting for the right moment to reach out.",
       "sections": [
         {
@@ -513,7 +524,7 @@
           "h2": "Accept that building a social life takes repetition",
           "paragraphs": [
             "A new city can make you feel behind, but friendship usually grows slowly. The first phase is often logistical: showing up, recognizing faces, having short conversations, and becoming easier to place in other people's minds.",
-            "That is why practical friendship support matters. The shift is not from lonely to socially finished overnight. The shift is from waiting passively to creating conditions where connection can keep happening."
+            "That is why practical friendship support matters. The shift is not from lonely to socially finished overnight. The shift is from waiting passively to creating conditions where connection can keep happening. For a broader look at how to make friends in any context, see <a href=\"/guides/how-to-make-friends-as-an-adult/\">how to make friends as an adult</a>."
           ]
         }
       ],
@@ -593,7 +604,7 @@
           "h2": "Let care be practical, not only emotional",
           "paragraphs": [
             "Being a good friend is not only about saying the right thing. It is also about showing up in usable ways: making time, remembering, asking, inviting, and staying present.",
-            "The Friendship Practice is built on that idea. Friendship improves when care becomes visible in real actions."
+            "The Friendship Practice is built on that idea. Friendship improves when care becomes visible in real actions. If you want to go deeper on the maintenance side, read <a href=\"/guides/how-to-keep-friends-as-an-adult/\">how to keep friends as an adult</a>."
           ]
         }
       ],
@@ -659,7 +670,7 @@
           "h2": "Build slowly, but keep building",
           "paragraphs": [
             "Friendship after 30 usually grows through repeated modest acts, not through instant intensity. A few good interactions, a couple of plans, some follow-through, and a growing sense of ease can be enough to start something real.",
-            "That is why The Friendship Practice focuses on action. Adult friendship often does not need a new personality. It needs visible practice."
+            "That is why The Friendship Practice focuses on action. Adult friendship often does not need a new personality. It needs visible practice. For a step-by-step approach, see <a href=\"/guides/how-to-make-friends-as-an-adult/\">how to make friends as an adult</a>."
           ]
         }
       ],
@@ -858,7 +869,7 @@
           "h2": "When distance is not the end — just a long pause",
           "paragraphs": [
             "Not every period of silence is a fade. Some friendships can survive long gaps because the shared context is strong enough to hold. A friendship that goes quiet for a year and then picks up again is not a failed friendship. It is just a friendship with a longer rhythm.",
-            "Before deciding a friendship has ended, it is worth asking whether you actually want it to continue, and whether a single honest message might reopen it. Often the answer is yes to both."
+            "Before deciding a friendship has ended, it is worth asking whether you actually want it to continue, and whether a single honest message might reopen it. Often the answer is yes to both. The guide on <a href=\"/guides/how-to-reconnect-with-old-friends/\">how to reconnect with old friends</a> explains how to do that without overcomplicating it."
           ],
           "quote": "Reaching out to an old friend is almost always less complicated than the story you tell yourself before you do it."
         },
