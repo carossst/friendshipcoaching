@@ -237,6 +237,7 @@ ${relatedHtml}
         <p class="c-footer__note u-mt-2">Friendship coaching, not therapy or crisis support.</p>
       </div>
       <nav class="c-footer__links" aria-label="Legal">
+        <a href="/about.html">About</a>
         <a href="/terms.html">Terms</a>
         <a href="/privacy.html">Privacy</a>
         <a href="/disclaimer.html">Disclaimer</a>

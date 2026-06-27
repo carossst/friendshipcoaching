@@ -113,6 +113,17 @@
       "lastmod": "2026-06-20"
     },
     {
+      "file": "about.html",
+      "path": "/about.html",
+      "status": "live",
+      "title": "About Carole Stromboni | The Friendship Practice",
+      "description": "Carole Stromboni is a friendship coach, author, and the founder of The Friendship Practice. She splits her time between Hawaii and Paris and has spent years thinking seriously about what friendship actually asks of adults.",
+      "ogDescription": "Friendship coach, author of Innover en pratique (Eyrolles), and founder of The Friendship Practice.",
+      "changefreq": "yearly",
+      "priority": "0.6",
+      "lastmod": "2026-06-27"
+    },
+    {
       "file": "thank-you.html",
       "path": "/thank-you.html",
       "status": "private",
