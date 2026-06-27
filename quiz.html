@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>What's Your Friendship Challenge? | The Friendship Practice</title>
+  <meta name="description" content="A short quiz to find out where your friendship life most needs attention — and what to do about it.">
+  <link rel="canonical" href="https://thefriendshippractice.com/quiz.html">
+  <meta name="theme-color" content="#faf7f2">
+  <meta name="author" content="Carole Stromboni">
+  <link rel="stylesheet" href="/Fcoaching.css">
+  <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/icons/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/icons/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <meta property="og:title" content="What's Your Friendship Challenge? | The Friendship Practice">
+  <meta property="og:description" content="A short quiz to find out where your friendship life most needs attention — and what to do about it.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thefriendshippractice.com/quiz.html">
+  <meta property="og:image" content="https://thefriendshippractice.com/icons/og-image.jpg">
+  <meta property="og:image:alt" content="The Friendship Practice">
+  <meta property="og:site_name" content="The Friendship Practice">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What's Your Friendship Challenge? | The Friendship Practice">
+  <meta name="twitter:description" content="A short quiz to find out where your friendship life most needs attention — and what to do about it.">
+  <meta name="twitter:image" content="https://thefriendshippractice.com/icons/og-image.jpg">
+  <style>
+    .c-quiz { display: flex; flex-direction: column; gap: var(--space-10); }
+    .c-quiz__q { border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-8); background: var(--color-surface); }
+    .c-quiz__q-text { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 600; color: var(--color-ink); margin-bottom: var(--space-6); line-height: 1.45; }
+    .c-quiz__option { display: flex; align-items: flex-start; gap: var(--space-3); cursor: pointer; padding: var(--space-3) 0; }
+    .c-quiz__option input[type="radio"] { margin-top: 0.25rem; accent-color: var(--color-accent); width: 1.1rem; height: 1.1rem; flex-shrink: 0; cursor: pointer; }
+    .c-quiz__option-label { font-size: 0.9375rem; color: var(--color-ink); cursor: pointer; line-height: 1.5; }
+    .c-quiz__option:has(input:checked) .c-quiz__option-label { color: var(--color-accent); font-weight: 500; }
+    .c-quiz__submit { margin-top: var(--space-4); }
+    .c-result { display: none; }
+    .c-result.is-visible { display: block; }
+    .c-result__tag { display: inline-block; background: var(--color-accent-wash); color: var(--color-accent); font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: var(--space-1) var(--space-3); border-radius: var(--radius-pill); margin-bottom: var(--space-4); border: 1px solid var(--color-accent-soft); }
+    .c-result__profile { font-family: var(--font-serif); font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; color: var(--color-ink); margin-bottom: var(--space-6); line-height: 1.25; }
+    .c-result__body { font-size: 1rem; color: var(--color-ink); line-height: 1.7; margin-bottom: var(--space-6); }
+    .c-result__guide-link { display: inline-block; font-size: 0.9375rem; font-weight: 600; color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; margin-bottom: var(--space-8); }
+    .c-result__guide-link:hover { color: var(--color-accent-hover); }
+    .c-quiz-err { display: none; color: var(--color-accent); font-size: 0.875rem; margin-top: var(--space-4); font-weight: 500; }
+    .c-quiz-err.is-visible { display: block; }
+    .c-quiz-step { counter-increment: question; }
+    .c-quiz__q-number { font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-ink-subtle); margin-bottom: var(--space-2); }
+  </style>
+</head>
+<body>
+  <a class="u-sr-only" href="#main-content">Skip to content</a>
+  <header class="c-nav">
+    <nav class="c-nav__inner" aria-label="Primary navigation">
+      <a class="c-nav__logo" href="/index.html" aria-label="The Friendship Practice home">
+        <img class="c-nav__logo-img" src="/icons/favicon.svg" alt="" width="36" height="36">
+        <span class="c-nav__logo-text">The Friendship Practice</span>
+      </a>
+      <a class="c-btn c-btn--ghost c-btn--sm" href="/challenge.html">Start the free challenge</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <section class="c-hero">
+      <div class="u-container u-container--prose">
+        <p class="c-hero__label">5-question quiz</p>
+        <h1 class="c-hero__title">What's your friendship challenge?</h1>
+        <p class="c-hero__sub">Answer five questions and find out where your friendship life most needs attention — and what to read or do about it.</p>
+      </div>
+    </section>
+
+    <section class="u-section">
+      <div class="u-container u-container--prose">
+
+        <form class="c-quiz" id="quiz-form" novalidate>
+
+          <div class="c-quiz__q c-quiz-step">
+            <p class="c-quiz__q-number">Question 1 of 5</p>
+            <p class="c-quiz__q-text">When you think about your friendship life right now, what feels most true?</p>
+            <label class="c-quiz__option"><input type="radio" name="q1" value="A"> <span class="c-quiz__option-label">I'd like to meet new people but I'm not sure how to start.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q1" value="B"> <span class="c-quiz__option-label">I have people I like, but we drift — I mean to reach out and then don't.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q1" value="C"> <span class="c-quiz__option-label">I put in a lot of effort but it doesn't always feel mutual.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q1" value="D"> <span class="c-quiz__option-label">I'm in a new place and starting from scratch.</span></label>
+          </div>
+
+          <div class="c-quiz__q c-quiz-step">
+            <p class="c-quiz__q-number">Question 2 of 5</p>
+            <p class="c-quiz__q-text">What usually happens after a good conversation with someone new?</p>
+            <label class="c-quiz__option"><input type="radio" name="q2" value="A"> <span class="c-quiz__option-label">I hope we run into each other again.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q2" value="B"> <span class="c-quiz__option-label">I think about following up but often don't get around to it.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q2" value="C"> <span class="c-quiz__option-label">I follow up right away — but then feel like I'm the one doing all the work.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q2" value="D"> <span class="c-quiz__option-label">I enjoy it, but worry I won't see them again in this new city.</span></label>
+          </div>
+
+          <div class="c-quiz__q c-quiz-step">
+            <p class="c-quiz__q-number">Question 3 of 5</p>
+            <p class="c-quiz__q-text">What does your current social life feel like most days?</p>
+            <label class="c-quiz__option"><input type="radio" name="q3" value="A"> <span class="c-quiz__option-label">A bit thin — not many people to call.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q3" value="B"> <span class="c-quiz__option-label">There are people I like, but things fade when I'm not pushing them.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q3" value="C"> <span class="c-quiz__option-label">I have people, but the energy isn't always reciprocal.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q3" value="D"> <span class="c-quiz__option-label">Very new — I'm just getting started somewhere.</span></label>
+          </div>
+
+          <div class="c-quiz__q c-quiz-step">
+            <p class="c-quiz__q-number">Question 4 of 5</p>
+            <p class="c-quiz__q-text">What feels most like the friction in your friendship life right now?</p>
+            <label class="c-quiz__option"><input type="radio" name="q4" value="A"> <span class="c-quiz__option-label">I don't know where to meet people who would actually fit.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q4" value="B"> <span class="c-quiz__option-label">I initiate, then let it drop. Things never quite solidify.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q4" value="C"> <span class="c-quiz__option-label">I show up, I remember, I check in — but I'm not sure others do the same.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q4" value="D"> <span class="c-quiz__option-label">Everything feels unfamiliar — the city, the routines, the people.</span></label>
+          </div>
+
+          <div class="c-quiz__q c-quiz-step">
+            <p class="c-quiz__q-number">Question 5 of 5</p>
+            <p class="c-quiz__q-text">If you could change one thing about your friendship life right now, it would be...</p>
+            <label class="c-quiz__option"><input type="radio" name="q5" value="A"> <span class="c-quiz__option-label">Having more promising people in my orbit.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q5" value="B"> <span class="c-quiz__option-label">Actually following through on the connections I already have.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q5" value="C"> <span class="c-quiz__option-label">Feeling less like the one who always makes the effort.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q5" value="D"> <span class="c-quiz__option-label">Having at least one real local friend to count on.</span></label>
+          </div>
+
+          <div class="c-quiz__submit">
+            <button type="submit" class="c-btn c-btn--primary c-btn--lg">See my result</button>
+            <p class="c-quiz-err" id="quiz-err" role="alert">Please answer all five questions before continuing.</p>
+          </div>
+
+        </form>
+
+        <div id="quiz-results" aria-live="polite">
+
+          <div class="c-result" id="result-A">
+            <span class="c-result__tag">Your challenge</span>
+            <h2 class="c-result__profile">The Waiting Game</h2>
+            <p class="c-result__body">You have good instincts and you can feel when a connection is promising — but you tend to wait for things to continue on their own rather than taking the small step that would move it forward. The gap between a good encounter and a real friendship is almost always one follow-up. You don't need more opportunities. You need to take the ones you already have.</p>
+            <a class="c-result__guide-link" href="/guides/how-to-make-friends-as-an-adult/">Read: How to make friends as an adult &rarr;</a>
+            <div class="c-hero__actions u-mt-2">
+              <a class="c-btn c-btn--primary c-btn--lg" href="/challenge.html">Start the free 7-day challenge</a>
+            </div>
+          </div>
+
+          <div class="c-result" id="result-B">
+            <span class="c-result__tag">Your challenge</span>
+            <h2 class="c-result__profile">The Follow-through Gap</h2>
+            <p class="c-result__body">You're good at starting — you like people, you mean to stay in touch, and the warmth is real. But somewhere between intention and action, things slip. Life gets busy, the moment passes, and the friendship fades a little more each time. The connections you want are already there. What's missing is the small act of follow-through that keeps them alive.</p>
+            <a class="c-result__guide-link" href="/guides/how-to-keep-friends-as-an-adult/">Read: How to keep friends as an adult &rarr;</a>
+            <div class="c-hero__actions u-mt-2">
+              <a class="c-btn c-btn--primary c-btn--lg" href="/challenge.html">Start the free 7-day challenge</a>
+            </div>
+          </div>
+
+          <div class="c-result" id="result-C">
+            <span class="c-result__tag">Your challenge</span>
+            <h2 class="c-result__profile">The One-Sided Effort</h2>
+            <p class="c-result__body">You show up. You remember. You check in. But you often end up feeling like the friendship only moves when you push it — and that's exhausting over time. This isn't a sign that you're bad at friendship. It might mean something about the specific people you've chosen to invest in, or something about the pattern of how you show up. Either way, there's a clearer way through it.</p>
+            <a class="c-result__guide-link" href="/guides/how-to-be-a-better-friend/">Read: How to be a better friend &rarr;</a>
+            <div class="c-hero__actions u-mt-2">
+              <a class="c-btn c-btn--primary c-btn--lg" href="/challenge.html">Start the free 7-day challenge</a>
+            </div>
+          </div>
+
+          <div class="c-result" id="result-D">
+            <span class="c-result__tag">Your challenge</span>
+            <h2 class="c-result__profile">Starting Over</h2>
+            <p class="c-result__body">You're in a new place, or it feels like one. The social life you're looking for doesn't exist yet here — not because there's anything wrong with you, but because you haven't had time to build the repetition that turns a city into somewhere that feels like home. It's a specific kind of lonely. And it's very common. There are concrete ways to start.</p>
+            <a class="c-result__guide-link" href="/guides/how-to-meet-people-in-a-new-city/">Read: How to meet people in a new city &rarr;</a>
+            <div class="c-hero__actions u-mt-2">
+              <a class="c-btn c-btn--primary c-btn--lg" href="/challenge.html">Start the free 7-day challenge</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="u-section u-bg-surface">
+      <div class="u-container u-container--prose">
+        <p class="c-label">About this quiz</p>
+        <p class="c-body">This quiz was designed by <strong>Carole Stromboni</strong>, founder of The Friendship Practice. It's a starting point — not a diagnosis. If you recognize yourself in more than one profile, that's normal. Start with the one that feels most true right now.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="c-footer">
+    <div class="c-footer__inner">
+      <div>
+        <p class="c-footer__copy">© 2026 Carole Stromboni · The Friendship Practice</p>
+        <p class="c-footer__note u-mt-2">Friendship coaching, not therapy or crisis support.</p>
+      </div>
+      <nav class="c-footer__links" aria-label="Legal">
+        <a href="/about.html">About</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/disclaimer.html">Disclaimer</a>
+        <a href="/refund-cancellation.html">Refund and cancellation</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var form = document.getElementById('quiz-form');
+      var errMsg = document.getElementById('quiz-err');
+      var resultsBox = document.getElementById('quiz-results');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        var counts = { A: 0, B: 0, C: 0, D: 0 };
+        var unanswered = false;
+
+        ['q1','q2','q3','q4','q5'].forEach(function (name) {
+          var checked = form.querySelector('input[name="' + name + '"]:checked');
+          if (!checked) { unanswered = true; return; }
+          counts[checked.value]++;
+        });
+
+        if (unanswered) {
+          errMsg.classList.add('is-visible');
+          errMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          return;
+        }
+
+        errMsg.classList.remove('is-visible');
+
+        var winner = Object.keys(counts).reduce(function (a, b) {
+          return counts[a] >= counts[b] ? a : b;
+        });
+
+        document.querySelectorAll('.c-result').forEach(function (el) {
+          el.classList.remove('is-visible');
+        });
+
+        var target = document.getElementById('result-' + winner);
+        if (target) {
+          form.style.display = 'none';
+          target.classList.add('is-visible');
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>

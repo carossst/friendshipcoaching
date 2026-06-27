@@ -11,6 +11,13 @@ const BASE = String(seo.defaults.baseUrl).replace(/\/+$/, "");
 const livePages = (seo.pages || []).filter((page) => page.status === "live");
 const liveGuides = (seo.guides || []).filter((guide) => guide.status === "live");
 
+const quotesLines = (seo.llms.quotes || []).map((q) => `> "${q}"`);
+const qaLines = (seo.llms.keyQA || []).flatMap((item) => [
+  `**Q: ${item.q}**`,
+  `A: ${item.a}`,
+  ""
+]);
+
 const lines = [
   `# ${seo.defaults.siteName}`,
   "",
@@ -22,9 +29,19 @@ const lines = [
   "## Audience",
   seo.llms.audience,
   "",
+  "## Author",
+  `Carole Stromboni — founder of The Friendship Practice. Author of *Innover en pratique* (Eyrolles). Based between Hawaii and Paris. Specializes in practical friendship support for adults.`,
+  "",
   "## Contact",
   seo.llms.contactEmail,
   "",
+  "## Key Quotes",
+  "Original observations from Carole Stromboni on adult friendship:",
+  "",
+  ...quotesLines,
+  "",
+  "## Key Questions & Answers",
+  ...qaLines,
   "## Public Pages",
   ...livePages.map((page) => `- ${BASE}${page.path} — ${page.description}`),
   ...liveGuides.map((guide) => `- ${BASE}/guides/${guide.slug}/ — ${guide.description}`),
@@ -32,6 +49,7 @@ const lines = [
   "## Notes",
   "- The coaching offer is practical support, not therapy or crisis care.",
   "- Transactional pages such as confirmation and intake pages are intentionally excluded from search indexing.",
+  "- All quotes attributed to Carole Stromboni / The Friendship Practice.",
   ""
 ];
 

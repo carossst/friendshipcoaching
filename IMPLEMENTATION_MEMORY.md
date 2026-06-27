@@ -104,16 +104,30 @@ As of `2026-06-20`, the public indexable surface is:
 
 ## Current SEO Cluster
 
-Current generated guides:
+Current generated guides (all via `seo-pages.json` → `npm run generate:guides`):
 - `guides/how-to-make-friends-as-an-adult/`
 - `guides/how-to-reconnect-with-old-friends/`
 - `guides/why-making-friends-as-an-adult-is-hard/`
+- `guides/how-to-keep-friends-as-an-adult/`
+- `guides/how-to-meet-people-in-a-new-city/`
+- `guides/how-to-be-a-better-friend/`
+- `guides/how-to-make-friends-after-30/`
+- `guides/friendship-quotes/`
 
 These guides are intentionally top-of-funnel:
 - educational
 - practical
 - connected to the free challenge CTA
 - linked from the home page
+
+## AI / Conversational Search Layer
+
+- `llms.txt` — structured summary for AI crawlers; includes Key Quotes and Key Q&A sections
+- `robots.txt` — explicitly allows OAI-SearchBot, ChatGPT-User, PerplexityBot, Claude-User, Claude-SearchBot, GPTBot, ClaudeBot, Google-Extended
+- All guides include `speakable` schema pointing to `.c-hero__title` and `.c-hero__sub`
+- `guides/friendship-quotes/` — dedicated page of original quotes from Carole Stromboni, optimized for AI citation
+- All guides have `<blockquote>` markup on key insights, making them extractable as featured snippets
+- FAQs extended to 4 items per guide (previously 2)
 
 ## Content Guardrails
 

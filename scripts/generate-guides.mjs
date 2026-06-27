@@ -46,16 +46,22 @@ function renderGuide(guide, allGuides) {
         description: guide.description,
         author: {
           "@type": "Person",
-          name: "Carole Stromboni"
+          name: "Carole Stromboni",
+          url: `${BASE}/`
         },
         publisher: {
           "@type": "Organization",
-          name: "The Friendship Practice"
+          name: "The Friendship Practice",
+          url: `${BASE}/`
         },
         dateModified: guide.lastmod,
         datePublished: guide.lastmod,
         mainEntityOfPage: canonical,
-        image: ogImage
+        image: ogImage,
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: [".c-hero__title", ".c-hero__sub"]
+        }
       },
       {
         "@type": "FAQPage",
@@ -90,6 +96,9 @@ function renderGuide(guide, allGuides) {
 ${section.paragraphs
   .map((paragraph) => `          <p class="c-body u-mt-6">${paragraph}</p>`)
   .join("\n")}
+${section.quote ? `          <blockquote class="c-quote u-mt-10">
+            <p class="c-quote__text">${esc(section.quote)}</p>
+          </blockquote>` : ""}
         </div>
       </section>`
     )
@@ -176,10 +185,18 @@ ${section.paragraphs
     <section class="u-section">
       <div class="u-container u-container--prose">
         <p class="c-body">${guide.intro}</p>
+${guide.authorNote ? `        <p class="c-body u-mt-6 c-body--author-note">${esc(guide.authorNote)}</p>` : ""}
       </div>
     </section>
 
 ${sectionsHtml}
+
+    <section class="u-section u-bg-surface">
+      <div class="u-container u-container--prose">
+        <p class="c-label">About the author</p>
+        <p class="c-body"><strong>Carole Stromboni</strong> is the founder of The Friendship Practice. She is the author of <em>Innover en pratique</em> (Eyrolles) and splits her time between Hawaii and Paris. Her work focuses on helping adults turn good intentions into concrete friendship practice. <a href="/index.html">Learn more about The Friendship Practice.</a></p>
+      </div>
+    </section>
 
     <section class="u-section u-bg-alt">
       <div class="u-container u-container--prose">
@@ -220,6 +237,7 @@ ${relatedHtml}
         <p class="c-footer__note u-mt-2">Friendship coaching, not therapy or crisis support.</p>
       </div>
       <nav class="c-footer__links" aria-label="Legal">
+        <a href="/about.html">About</a>
         <a href="/terms.html">Terms</a>
         <a href="/privacy.html">Privacy</a>
         <a href="/disclaimer.html">Disclaimer</a>
