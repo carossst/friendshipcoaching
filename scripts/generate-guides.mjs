@@ -188,7 +188,7 @@ ${section.quote ? `          <blockquote class="c-quote u-mt-10">
 ${guide.pullQuote ? `    <section class="u-section u-section--sm">
       <div class="u-container u-container--prose">
         <div class="c-author-quote">
-          <img class="c-author-quote__photo" src="/Carolephotobio.jpg" alt="Carole Stromboni" width="64" height="64">
+          <img class="c-author-quote__photo" src="/Carolephotobio.jpg" alt="Carole Stromboni" width="112" height="112">
           <div class="c-author-quote__body">
             <p class="c-author-quote__text">"${esc(guide.pullQuote)}"</p>
             <cite class="c-author-quote__cite">Carole Stromboni</cite>
