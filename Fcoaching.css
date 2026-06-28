@@ -746,8 +746,8 @@ select {
 
 .c-author-quote__photo {
   flex-shrink: 0;
-  width: 4rem;
-  height: 4rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: var(--radius-pill);
   object-fit: cover;
   object-position: center top;
@@ -965,6 +965,23 @@ select {
   text-transform: uppercase;
   color: var(--color-ink-subtle);
   text-align: center;
+}
+
+/* 17. Component - About Page Hero Photo */
+.c-about-photo {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.c-about-photo__img {
+  width: 100%;
+  max-width: 20rem;
+  height: auto;
+  border-radius: var(--radius-xl);
+  border: 0.5rem solid var(--color-surface);
+  box-shadow: var(--shadow-md);
+  object-fit: cover;
+  object-position: center top;
 }
 
 .c-about__body .c-heading {
