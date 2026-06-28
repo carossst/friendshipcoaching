@@ -3,10 +3,11 @@
   "private": true,
   "scripts": {
     "generate:guides": "node scripts/generate-guides.mjs",
+    "generate:guides-index": "node scripts/generate-guides-index.mjs",
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
     "generate:robots": "node scripts/generate-robots.mjs",
     "generate:llms": "node scripts/generate-llms-txt.mjs",
     "test:seo": "node scripts/validate-seo.mjs",
-    "publish:seo": "npm run generate:guides && npm run generate:sitemap && npm run generate:robots && npm run generate:llms && npm run test:seo"
+    "publish:seo": "npm run generate:guides && npm run generate:guides-index && npm run generate:sitemap && npm run generate:robots && npm run generate:llms && npm run test:seo"
   }
 }
