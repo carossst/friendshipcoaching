@@ -746,8 +746,8 @@ select {
 
 .c-author-quote__photo {
   flex-shrink: 0;
-  width: 4rem;
-  height: 4rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: var(--radius-pill);
   object-fit: cover;
   object-position: center top;
