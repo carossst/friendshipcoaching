@@ -808,56 +808,112 @@
           "paragraphs": [
             "Friendship in adulthood is less automatic than it was earlier in life. The conditions that once made closeness easy, school, shared routines, unstructured time, mostly disappear. What replaces them is intention."
           ],
-          "quote": "Friendship is not something that falls into your lap. It's something you practice."
+          "quote": "Friendship is not something that falls into your lap. It's something you practice.",
+          "quoteAuthor": "Carole Stromboni",
+          "connection": {
+            "author": "Aristotle",
+            "role": "Ancient Philosopher, Nicomachean Ethics",
+            "quote": "Wishing to be friends is quick work, but friendship is a slow-ripening fruit.",
+            "why": "Aristotle argued that true friendship requires time, shared experiences, and active engagement. When the routines of school and early adulthood disappear, deliberate intention must take their place. Practice is not a consolation for missing chemistry. It is the thing itself."
+          }
         },
         {
           "h2": "On following up",
           "paragraphs": [
             "One of the most overlooked friendship skills is the follow-up. A good conversation without a next step is just a pleasant memory. Following up is how adults turn a warm moment into something real."
           ],
-          "quote": "Following up after a good conversation is not neediness. It is the single most underused friendship skill adults have."
+          "quote": "Following up after a good conversation is not neediness. It is the single most underused friendship skill adults have.",
+          "quoteAuthor": "Carole Stromboni",
+          "connection": {
+            "author": "Dale Carnegie",
+            "role": "How to Win Friends and Influence People, 1936",
+            "quote": "You can make more friends in two months by becoming interested in other people than you can in two years by trying to get other people interested in you.",
+            "why": "Carnegie identified what modern social psychology has since confirmed: the obstacle to friendship is rarely a lack of charm. It is a failure to show genuine, consistent interest. Following up is the simplest form that interest can take."
+          }
         },
         {
           "h2": "On loneliness and repetition",
           "paragraphs": [
             "Adult loneliness is rarely about a shortage of people. Most adults encounter plenty of people. What they lack is the repeated contact that turns encounters into familiarity, and familiarity into friendship."
           ],
-          "quote": "Most adult loneliness is not about missing people. It is about missing the repetition that turns people into friends."
+          "quote": "Most adult loneliness is not about missing people. It is about missing the repetition that turns people into friends.",
+          "quoteAuthor": "Carole Stromboni",
+          "connection": {
+            "author": "Antoine de Saint-Exupéry",
+            "role": "The Little Prince, 1943",
+            "quote": "It is the time you have wasted for your rose that makes your rose so important.",
+            "why": "In the story, the Fox explains that connection requires rites: returning at the same time every day until familiarity becomes closeness. Adult loneliness is often structural, not personal. It is a deficit of repetition, not a deficit of people."
+          }
         },
         {
           "h2": "On personality and practice",
           "paragraphs": [
             "Many adults assume that being good at friendship is a personality trait, something you either have or you do not. But the adults who maintain strong friendships are rarely the most charismatic. They are the most consistent."
           ],
-          "quote": "You do not need a more charismatic personality. You need a more deliberate practice."
+          "quote": "You do not need a more charismatic personality. You need a more deliberate practice.",
+          "quoteAuthor": "Carole Stromboni",
+          "connection": {
+            "author": "Dr. Marisa G. Franco",
+            "role": "Psychologist, Platonic, 2022",
+            "quote": "Friendship does not happen organically; it happens through conscious effort.",
+            "why": "Research in social psychology shows that people systematically underestimate how much others like them, a phenomenon known as the liking gap. The barrier to friendship is rarely chemistry or charisma. It is consistency and conscious effort."
+          }
         },
         {
           "h2": "On keeping friendships alive",
           "paragraphs": [
             "Friendship does not need to be deep and intense every time to stay healthy. It needs to be recurring. A short message, a walk, a check-in, a plan for next month, that is often enough to keep something real alive."
           ],
-          "quote": "A friendship does not need to be intense to stay alive. It needs to be consistent."
+          "quote": "A friendship does not need to be intense to stay alive. It needs to be consistent.",
+          "quoteAuthor": "Carole Stromboni",
+          "connection": {
+            "author": "Voltaire",
+            "role": "Candide, 1759",
+            "quote": "We must cultivate our garden.",
+            "why": "Voltaire's conclusion is not romantic. It is practical: life is maintained through modest, routine care. Friendship is the same. Grand gestures and deep conversations are the flowers. The watering is the short message, the quick check-in, the plan made and kept."
+          }
         },
         {
           "h2": "On reconnecting",
           "paragraphs": [
             "Reconnecting with someone after a long gap usually feels more complicated in your head than it is in reality. A simple, specific message, without a lengthy apology for the silence, is almost always enough to reopen the door."
           ],
-          "quote": "Reaching out to an old friend is almost always less complicated than the story you tell yourself before you do it."
+          "quote": "Reaching out to an old friend is almost always less complicated than the story you tell yourself before you do it.",
+          "quoteAuthor": "Carole Stromboni",
+          "connection": {
+            "author": "Seneca",
+            "role": "Stoic Philosopher, Letters to Lucilius",
+            "quote": "We suffer more often in imagination than in reality.",
+            "why": "Stoic philosophy was built on the gap between what we fear and what actually happens. The barriers we build before reaching out, it has been too long, they will find it strange, I do not know what to say, are almost never confirmed by reality. A simple, warm message is almost always received with relief."
+          }
         },
         {
           "h2": "On what builds closeness",
           "paragraphs": [
             "People often wait for the right emotional moment to deepen a friendship. But closeness builds through accumulation, not through a single breakthrough. Inviting, remembering, checking in, showing up, that is the real currency of adult friendship."
           ],
-          "quote": "Friendship deepens through ordinary acts: inviting, checking in, remembering, and showing up. Not through one perfect emotional moment."
+          "quote": "Friendship deepens through ordinary acts: inviting, checking in, remembering, and showing up. Not through one perfect emotional moment.",
+          "quoteAuthor": "Carole Stromboni",
+          "connection": {
+            "author": "Montaigne",
+            "role": "On Friendship, Essays, 1580",
+            "quote": "Because it was him, because it was me.",
+            "why": "Montaigne was describing his extraordinary friendship with La Boétie, built through years of conversation, letters, and mutual presence. What made it singular was not one defining moment but the accumulated texture of showing up for each other over time."
+          }
         },
         {
           "h2": "On the gap between acquaintances and friends",
           "paragraphs": [
             "A lot of adult friendship stays at the acquaintance level not because both people are uninterested, but because neither one is willing to suggest the next time. The chemistry is usually there. The action is not."
           ],
-          "quote": "What separates an acquaintance from a friend is usually not chemistry. It is someone being willing to suggest the next time."
+          "quote": "What separates an acquaintance from a friend is usually not chemistry. It is someone being willing to suggest the next time.",
+          "quoteAuthor": "Carole Stromboni",
+          "connection": {
+            "author": "Jane Austen",
+            "role": "Northanger Abbey, 1817",
+            "quote": "There is nothing I would not do for those who are really my friends. I have no notion of loving people by halves.",
+            "why": "Austen points directly to commitment. Real friendship requires someone to cross the line from passive warmth into active investment. Suggesting the next time is that crossing. It costs almost nothing and signals everything."
+          }
         }
       ],
       "faq": [
