@@ -8,6 +8,7 @@ Disallow: /intake.html
 Disallow: /waitlist-confirmed.html
 Disallow: /challenge-confirmed.html
 Disallow: /404.html
+Disallow: /early-list-confirmed.html
 
 User-agent: OAI-SearchBot
 Allow: /

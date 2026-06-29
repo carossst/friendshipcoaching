@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <!-- GENERATED FILE - do not hand-edit. Run: npm run generate:sitemap -->
   <url>
     <loc>https://thefriendshippractice.com/</loc>
@@ -60,77 +61,129 @@
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://thefriendshippractice.com/Carolephotobio.jpg</image:loc>
+      <image:title>Carole Stromboni, The Friendship Practice</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://thefriendshippractice.com/guides/how-to-reconnect-with-old-friends/</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://thefriendshippractice.com/Carolephotobio.jpg</image:loc>
+      <image:title>Carole Stromboni, The Friendship Practice</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://thefriendshippractice.com/guides/why-making-friends-as-an-adult-is-hard/</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://thefriendshippractice.com/Carolephotobio.jpg</image:loc>
+      <image:title>Carole Stromboni, The Friendship Practice</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://thefriendshippractice.com/guides/how-to-keep-friends-as-an-adult/</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://thefriendshippractice.com/Carolephotobio.jpg</image:loc>
+      <image:title>Carole Stromboni, The Friendship Practice</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://thefriendshippractice.com/guides/how-to-meet-people-in-a-new-city/</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://thefriendshippractice.com/Carolephotobio.jpg</image:loc>
+      <image:title>Carole Stromboni, The Friendship Practice</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://thefriendshippractice.com/guides/how-to-be-a-better-friend/</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://thefriendshippractice.com/Carolephotobio.jpg</image:loc>
+      <image:title>Carole Stromboni, The Friendship Practice</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://thefriendshippractice.com/guides/how-to-make-friends-after-30/</loc>
     <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://thefriendshippractice.com/Carolephotobio.jpg</image:loc>
+      <image:title>Carole Stromboni, The Friendship Practice</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://thefriendshippractice.com/guides/friendship-quotes/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://thefriendshippractice.com/Carolephotobio.jpg</image:loc>
+      <image:title>Carole Stromboni, The Friendship Practice</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://thefriendshippractice.com/guides/how-to-introduce-friends-to-each-other/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://thefriendshippractice.com/Carolephotobio.jpg</image:loc>
+      <image:title>Carole Stromboni, The Friendship Practice</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://thefriendshippractice.com/guides/when-a-friendship-ends/</loc>
     <lastmod>2026-06-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://thefriendshippractice.com/Carolephotobio.jpg</image:loc>
+      <image:title>Carole Stromboni, The Friendship Practice</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://thefriendshippractice.com/guides/how-to-stay-friends-after-a-baby/</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://thefriendshippractice.com/Carolephotobio.jpg</image:loc>
+      <image:title>Carole Stromboni, The Friendship Practice</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://thefriendshippractice.com/guides/one-sided-friendship/</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://thefriendshippractice.com/Carolephotobio.jpg</image:loc>
+      <image:title>Carole Stromboni, The Friendship Practice</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://thefriendshippractice.com/guides/how-to-make-friends-when-you-work-from-home/</loc>
     <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://thefriendshippractice.com/Carolephotobio.jpg</image:loc>
+      <image:title>Carole Stromboni, The Friendship Practice</image:title>
+    </image:image>
   </url>
 </urlset>

@@ -7,7 +7,9 @@
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
     "generate:robots": "node scripts/generate-robots.mjs",
     "generate:llms": "node scripts/generate-llms-txt.mjs",
+    "generate:rss": "node scripts/generate-rss.mjs",
     "test:seo": "node scripts/validate-seo.mjs",
-    "publish:seo": "npm run generate:guides && npm run generate:guides-index && npm run generate:sitemap && npm run generate:robots && npm run generate:llms && npm run test:seo"
+    "submit:indexnow": "node scripts/submit-indexnow.mjs",
+    "publish:seo": "npm run generate:guides && npm run generate:guides-index && npm run generate:sitemap && npm run generate:robots && npm run generate:llms && npm run generate:rss && npm run test:seo"
   }
 }

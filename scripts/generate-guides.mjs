@@ -98,7 +98,14 @@ ${section.paragraphs
   .join("\n")}
 ${section.quote ? `          <blockquote class="c-quote u-mt-10">
             <p class="c-quote__text">${esc(section.quote)}</p>
+            ${section.quoteAuthor ? `<cite class="c-quote__cite">${esc(section.quoteAuthor)}</cite>` : ""}
           </blockquote>` : ""}
+${section.connection ? `          <div class="c-connection u-mt-6">
+            <p class="c-connection__label">In conversation with</p>
+            <p class="c-connection__text">"${esc(section.connection.quote)}"</p>
+            <p class="c-connection__cite">${esc(section.connection.author)}, ${esc(section.connection.role)}</p>
+            <p class="c-connection__why">${esc(section.connection.why)}</p>
+          </div>` : ""}
         </div>
       </section>`
     )
