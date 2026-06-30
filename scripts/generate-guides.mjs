@@ -267,6 +267,7 @@ ${relatedHtml}
       </nav>
     </div>
   </footer>
+  <script data-goatcounter="https://friendc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
 `;
