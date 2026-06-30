@@ -25,11 +25,14 @@ Live site : [thefriendshippractice.com](https://thefriendshippractice.com)
 | `guides/` | Pages SEO éditoriales générées |
 | `coding/CHANTIER_A_FAIRE.md` | Priorités et prochains chantiers |
 
-## À remplacer avant le lancement
+## Mode actuel : liste d'attente
 
-Il reste uniquement ce placeholder dans les fichiers `.html` :
+Le site est en mode **liste d'attente**. Le bouton principal pointe vers `#waitlist` (formulaire Kit). Stripe n'est pas encore actif.
 
-- `[[ADD_STRIPE_CHECKOUT_URL]]` - lien Stripe Checkout (bouton "Start the program for $500" dans `index.html`)
+Quand une place se libère :
+- Remplacer `[[ADD_STRIPE_CHECKOUT_URL]]` par le lien Stripe Checkout dans `index.html`
+- Mettre à jour la section `#waitlist` en `#price` dans index.html
+- Mettre à jour les CTAs de nav dans les pages légales
 
 Déjà renseignés :
 
