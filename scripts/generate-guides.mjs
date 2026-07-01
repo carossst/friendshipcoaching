@@ -229,7 +229,7 @@ ${guide.pullQuote ? `    <section class="u-section u-section--sm">
 
     <section class="u-section">
       <div class="u-container u-container--prose">
-        <p class="c-body">${guide.intro}</p>
+        ${guide.intro.split(/\n\n+/).map((p, i) => `<p class="c-body${i > 0 ? " u-mt-6" : ""}">${p}</p>`).join("\n        ")}
 ${guide.authorNote ? `        <p class="c-body u-mt-6 c-body--author-note">${esc(guide.authorNote)}</p>` : ""}
       </div>
     </section>
