@@ -1152,7 +1152,62 @@ select {
   line-height: var(--leading-loose);
 }
 
-/* 19. Component - Disclaimer */
+/* 19. Component - Table of Contents */
+.c-toc {
+  background: var(--color-surface);
+  border: var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+
+.c-toc__label {
+  font-size: var(--text-sm);
+  font-weight: 720;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-muted);
+  margin-bottom: var(--space-4);
+}
+
+.c-toc__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--space-2);
+  counter-reset: toc;
+}
+
+.c-toc__item {
+  counter-increment: toc;
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+}
+
+.c-toc__item::before {
+  content: counter(toc);
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  font-weight: 500;
+  min-width: 1.2rem;
+  flex-shrink: 0;
+}
+
+.c-toc__link {
+  font-size: var(--text-base);
+  color: var(--color-ink);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--color-accent) 40%, transparent);
+  text-underline-offset: 3px;
+}
+
+.c-toc__link:hover {
+  color: var(--color-accent-hover);
+  text-decoration-color: var(--color-accent-hover);
+}
+
+/* 20. Component - Disclaimer */
 .c-disclaimer {
   position: relative;
   padding: var(--space-6);
