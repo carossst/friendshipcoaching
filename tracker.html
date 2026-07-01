@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>The Friendship Tracker | The Friendship Practice</title>
+  <meta name="description" content="Track the shared time that turns acquaintances into friends. Based on Dr. Jeffrey Hall's research on how friendships form.">
+  <link rel="stylesheet" href="/Fcoaching.css">
+  <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/icons/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/icons/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <style>
+    .c-tracker-form {
+      display: grid;
+      gap: var(--space-5);
+    }
+    .c-tracker-field label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: var(--space-2);
+      color: var(--color-ink);
+      font-size: var(--text-sm);
+      letter-spacing: var(--tracking-wide);
+      text-transform: uppercase;
+    }
+    .c-tracker-field input,
+    .c-tracker-field select {
+      width: 100%;
+      padding: var(--space-3) var(--space-4);
+      border: var(--border);
+      border-radius: var(--radius-sm);
+      background: var(--color-surface);
+      font-size: var(--text-base);
+      color: var(--color-ink);
+      transition: border-color var(--duration-fast) var(--ease-out);
+    }
+    .c-tracker-field input:focus,
+    .c-tracker-field select:focus {
+      outline: 3px solid var(--color-focus);
+      outline-offset: 2px;
+      border-color: var(--color-accent);
+    }
+    .c-contact-card {
+      background: var(--color-surface);
+      border: var(--border);
+      border-radius: var(--radius-md);
+      padding: var(--space-6);
+      margin-bottom: var(--space-4);
+      box-shadow: var(--shadow-xs);
+    }
+    .c-contact-card__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: var(--space-4);
+      gap: var(--space-4);
+    }
+    .c-contact-card__name {
+      font-weight: 760;
+      font-size: var(--text-md);
+      color: var(--color-ink);
+    }
+    .c-contact-card__status {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: var(--tracking-wider);
+      color: var(--color-accent);
+      white-space: nowrap;
+      padding-top: 0.2em;
+    }
+    .c-progress {
+      background: var(--color-accent-soft);
+      border-radius: var(--radius-pill);
+      height: 10px;
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: var(--space-3);
+    }
+    .c-progress__bar {
+      background: var(--color-accent);
+      height: 100%;
+      border-radius: var(--radius-pill);
+      transition: width 0.5s var(--ease-out);
+    }
+    .c-contact-card__meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: var(--text-sm);
+      color: var(--color-ink-muted);
+      margin-bottom: var(--space-5);
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+    .c-contact-card__actions {
+      display: flex;
+      gap: var(--space-3);
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .c-script-box {
+      background: var(--color-accent-wash);
+      border-left: 3px solid var(--color-accent);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: var(--space-4) var(--space-5);
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: var(--text-base);
+      line-height: var(--leading-loose);
+      color: var(--color-ink);
+      margin-top: var(--space-4);
+      display: none;
+    }
+    .c-script-box__note {
+      display: block;
+      font-family: var(--font-sans);
+      font-style: normal;
+      font-size: var(--text-sm);
+      color: var(--color-ink-muted);
+      margin-top: var(--space-3);
+    }
+    .c-form-error {
+      color: var(--color-accent);
+      font-size: var(--text-sm);
+      display: none;
+    }
+    .c-empty-state {
+      text-align: center;
+      padding: var(--space-12) var(--space-4);
+      color: var(--color-ink-muted);
+      border: 1px dashed var(--color-border);
+      border-radius: var(--radius-md);
+    }
+    .c-tracker-remove-btn {
+      font-size: var(--text-sm);
+      color: var(--color-ink-subtle);
+      text-decoration: underline;
+      text-decoration-color: transparent;
+      padding: 0;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: color var(--duration-fast);
+    }
+    .c-tracker-remove-btn:hover {
+      color: var(--color-ink-muted);
+      text-decoration-color: currentColor;
+    }
+  </style>
+</head>
+<body>
+
+<a class="u-sr-only" href="#main-content">Skip to content</a>
+
+<header class="c-nav">
+  <nav class="c-nav__inner" aria-label="Primary navigation">
+    <a class="c-nav__logo" href="/index.html" aria-label="The Friendship Practice home">
+      <img class="c-nav__logo-img" src="/icons/favicon.svg" alt="" width="36" height="36">
+      <span class="c-nav__logo-text">The Friendship Practice</span>
+    </a>
+    <div class="c-nav__actions">
+      <a class="c-nav__link" href="/about.html">About</a>
+      <a class="c-btn c-btn--ghost c-btn--sm" href="/challenge.html">Start the free challenge</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <section class="c-hero">
+    <div class="u-container u-container--prose">
+      <p class="c-hero__label">The Friendship Practice</p>
+      <h1 class="c-hero__title">The Friendship Tracker</h1>
+      <p class="c-hero__sub">Adult friendship is not a feeling you wait for. It is a habit you build. Dr. Jeffrey Hall at the University of Kansas found it takes roughly 50 hours of shared time to become casual friends, and around 200 hours to become close. This tool tracks the repetition, removes the guesswork, and tells you what to do next.</p>
+    </div>
+  </section>
+
+  <section class="u-section u-bg-surface">
+    <div class="u-container u-container--prose">
+      <p class="c-label">Your situation</p>
+      <h2 class="c-heading c-heading--2">Where are you right now?</h2>
+      <p class="c-body u-mt-6">Your situation shapes what follow-up looks like. Select the one that fits best. It adjusts the suggested follow-up messages below.</p>
+      <div class="c-tracker-form u-mt-8">
+        <div class="c-tracker-field">
+          <label for="personaSelect">Your current life season:</label>
+          <select id="personaSelect">
+            <option value="general">Adult life in general</option>
+            <option value="expat">Expat, living in a country that is not yours yet</option>
+            <option value="remote">Remote worker, mostly working from home</option>
+            <option value="parent">New parent, navigating a busy schedule</option>
+            <option value="newcity">Just moved to a new city</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="u-section">
+    <div class="u-container u-container--prose">
+      <p class="c-label">Log shared time</p>
+      <h2 class="c-heading c-heading--2">Who did you spend time with?</h2>
+      <p class="c-body u-mt-6">Enter a first name and how many hours you spent together. Each log adds to their total. Half-hours count: enter 0.5 for 30 minutes.</p>
+      <form id="logForm" class="c-tracker-form u-mt-8" novalidate>
+        <div class="c-tracker-field">
+          <label for="contactName">First name or nickname:</label>
+          <input type="text" id="contactName" placeholder="e.g., Sofia" autocomplete="off" maxlength="60" required>
+        </div>
+        <div class="c-tracker-field">
+          <label for="hoursSpent">Hours spent together:</label>
+          <input type="number" id="hoursSpent" min="0.5" max="72" step="0.5" placeholder="e.g., 2.5" required>
+        </div>
+        <div>
+          <button type="submit" class="c-btn c-btn--primary c-btn--lg">Add to tracker</button>
+        </div>
+        <p id="formError" class="c-form-error" role="alert"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="u-section u-bg-surface">
+    <div class="u-container u-container--prose">
+      <p class="c-label">Your connections</p>
+      <h2 class="c-heading c-heading--2">Your social workout log</h2>
+      <p class="c-body u-mt-4">Each bar shows where you are between thresholds: 0 to 50 hours (acquaintance to casual friend), then 50 to 200 hours (casual to close friend).</p>
+      <div id="contactList" class="u-mt-10"></div>
+      <div class="u-mt-10" style="border-top:var(--border);padding-top:var(--space-8);">
+        <p class="c-label" style="margin-bottom:var(--space-3);">Backup</p>
+        <p class="c-body" style="font-size:var(--text-sm);color:var(--color-ink-muted);margin-bottom:var(--space-5);">Your data is stored in this browser only. Export it to keep a backup or move it to another device. If you clear your browser cache or open this page from an email app, your data may not be visible — restore it with an import.</p>
+        <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;align-items:center;">
+          <button id="exportBtn" class="c-btn c-btn--ghost c-btn--sm">Export backup</button>
+          <label class="c-btn c-btn--ghost c-btn--sm" style="cursor:pointer;margin:0;">
+            Import backup
+            <input type="file" accept=".json" id="importFile" style="display:none;">
+          </label>
+        </div>
+        <p id="importMsg" style="font-size:var(--text-sm);color:var(--color-accent);margin-top:var(--space-3);display:none;"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="u-section u-bg-alt">
+    <div class="u-container u-container--prose">
+      <p class="c-label">Want to go further?</p>
+      <h2 class="c-heading c-heading--2">Knowing the hours is not the hard part.</h2>
+      <p class="c-body u-mt-6">If you are logging time but the connection is not deepening, the obstacle is rarely how much time you are spending. It is what happens during that time, and what you do in the two days after. That is what the coaching is for.</p>
+      <div class="c-hero__actions u-mt-8">
+        <a class="c-btn c-btn--primary c-btn--lg" href="/challenge.html">Start the free challenge</a>
+        <a class="c-btn c-btn--ghost c-btn--lg" href="/guides/">Read the guides</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="c-footer">
+  <div class="c-footer__inner">
+    <div>
+      <p class="c-footer__copy">© 2026 Carole Stromboni · The Friendship Practice</p>
+      <p class="c-footer__note u-mt-2">Friendship coaching, not therapy or crisis support.</p>
+    </div>
+    <nav class="c-footer__links" aria-label="Legal">
+      <a href="/about.html">About</a>
+      <a href="/terms.html">Terms</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/disclaimer.html">Disclaimer</a>
+      <a href="/refund-cancellation.html">Refund and cancellation</a>
+    </nav>
+  </div>
+</footer>
+
+<script data-goatcounter="https://friendc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  var STORAGE_KEY = 'tfp_tracker_v1';
+  var PERSONA_KEY = 'tfp_persona_v1';
+
+  function esc(str) {
+    return String(str)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  function uid() {
+    return Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+  }
+
+  var scripts = {
+    general: function (name) {
+      return 'Hi ' + name + ', really enjoyed our time together. I\'m [free on day / going to place] — would love to do it again soon if you\'re around.';
+    },
+    expat: function (name) {
+      return 'Hi ' + name + '! It was great to connect. I\'m checking out [local spot] on [day] — let me know if you want to join. No pressure, just thought of you.';
+    },
+    remote: function (name) {
+      return 'Hey ' + name + ', it was good to actually see a human today. I\'m taking my laptop to [café or workspace] on [day] to get out of the house. Feel free to come work alongside if you\'re free.';
+    },
+    parent: function (name) {
+      return 'Hey ' + name + ', so good running into you. I\'m heading to [park or playground] on [day] around [time], just to get some air. Let me know if you want to meet there.';
+    },
+    newcity: function (name) {
+      return 'Hi ' + name + ', I\'m still finding my way around. I\'m trying out [place] on [day] — if you happen to be free, I\'d love the company.';
+    }
+  };
+
+  function getPersona() {
+    return localStorage.getItem(PERSONA_KEY) || 'general';
+  }
+
+  function getContacts() {
+    try {
+      return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+    } catch (e) {
+      return [];
+    }
+  }
+
+  function saveContacts(contacts) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(contacts));
+  }
+
+  function getStatus(hours) {
+    if (hours < 50) {
+      return {
+        label: 'Acquaintance',
+        progress: (hours / 50) * 100,
+        next: (50 - hours).toFixed(1) + 'h to casual friend'
+      };
+    }
+    if (hours < 200) {
+      return {
+        label: 'Casual friend',
+        progress: ((hours - 50) / 150) * 100,
+        next: (200 - hours).toFixed(1) + 'h to close friend'
+      };
+    }
+    return {
+      label: 'Close friend',
+      progress: 100,
+      next: 'Close friend'
+    };
+  }
+
+  function today() {
+    return new Date().toISOString().slice(0, 10);
+  }
+
+  function renderContacts() {
+    var contacts = getContacts();
+    var list = document.getElementById('contactList');
+    list.innerHTML = '';
+
+    if (contacts.length === 0) {
+      list.innerHTML = '<div class="c-empty-state"><p>No connections logged yet. Start above by entering a name and the time you spent together.</p></div>';
+      return;
+    }
+
+    contacts.forEach(function (contact) {
+      var s = getStatus(contact.hours);
+      var card = document.createElement('div');
+      card.className = 'c-contact-card';
+      card.dataset.id = contact.id;
+
+      card.innerHTML =
+        '<div class="c-contact-card__header">' +
+          '<span class="c-contact-card__name">' + esc(contact.name) + '</span>' +
+          '<span class="c-contact-card__status">' + esc(s.label) + '</span>' +
+        '</div>' +
+        '<div class="c-progress">' +
+          '<div class="c-progress__bar" style="width:' + s.progress.toFixed(1) + '%"></div>' +
+        '</div>' +
+        '<div class="c-contact-card__meta">' +
+          '<span><strong>' + contact.hours + 'h</strong> logged</span>' +
+          '<span>' + esc(s.next) + '</span>' +
+        '</div>' +
+        '<div class="c-contact-card__actions">' +
+          '<button class="c-btn c-btn--ghost c-btn--sm js-script" data-id="' + esc(contact.id) + '">Get follow-up message</button>' +
+          '<button class="c-btn c-btn--ghost c-btn--sm js-log" data-id="' + esc(contact.id) + '">+ Add time</button>' +
+          '<button class="c-tracker-remove-btn js-delete" data-id="' + esc(contact.id) + '">Remove</button>' +
+        '</div>' +
+        '<div class="c-script-box js-script-box" data-id="' + esc(contact.id) + '">' +
+          '<span class="c-script-box__note">Replace the brackets with real details before sending.</span>' +
+        '</div>';
+
+      list.appendChild(card);
+    });
+  }
+
+  document.getElementById('contactList').addEventListener('click', function (e) {
+    var btn = e.target.closest('button');
+    if (!btn) return;
+    var id = btn.dataset.id;
+    if (!id) return;
+
+    if (btn.classList.contains('js-delete')) {
+      var contacts = getContacts().filter(function (c) { return c.id !== id; });
+      saveContacts(contacts);
+      renderContacts();
+      return;
+    }
+
+    if (btn.classList.contains('js-script')) {
+      var box = document.querySelector('.c-script-box[data-id="' + id + '"]');
+      if (!box) return;
+      if (box.style.display === 'block') {
+        box.style.display = 'none';
+        btn.textContent = 'Get follow-up message';
+        return;
+      }
+      var contact = getContacts().find(function (c) { return c.id === id; });
+      if (!contact) return;
+      var persona = getPersona();
+      var fn = scripts[persona] || scripts.general;
+      var note = box.querySelector('.c-script-box__note');
+      var text = document.createTextNode(fn(contact.name));
+      box.insertBefore(text, note);
+      box.style.display = 'block';
+      btn.textContent = 'Hide message';
+      return;
+    }
+
+    if (btn.classList.contains('js-log')) {
+      var c = getContacts().find(function (x) { return x.id === id; });
+      if (!c) return;
+      document.getElementById('contactName').value = c.name;
+      var hoursField = document.getElementById('hoursSpent');
+      hoursField.focus();
+      document.getElementById('logForm').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  });
+
+  document.getElementById('logForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var errorEl = document.getElementById('formError');
+    errorEl.style.display = 'none';
+    errorEl.textContent = '';
+
+    var nameRaw = document.getElementById('contactName').value.trim();
+    var hoursRaw = parseFloat(document.getElementById('hoursSpent').value);
+
+    if (!nameRaw || nameRaw.length > 60) {
+      errorEl.textContent = 'Please enter a name (60 characters max).';
+      errorEl.style.display = 'block';
+      return;
+    }
+    if (isNaN(hoursRaw) || hoursRaw < 0.5 || hoursRaw > 72) {
+      errorEl.textContent = 'Please enter a number of hours between 0.5 and 72.';
+      errorEl.style.display = 'block';
+      return;
+    }
+
+    var contacts = getContacts();
+    var existing = null;
+    for (var i = 0; i < contacts.length; i++) {
+      if (contacts[i].name.toLowerCase() === nameRaw.toLowerCase()) {
+        existing = contacts[i];
+        break;
+      }
+    }
+
+    if (existing) {
+      existing.hours = Math.round((existing.hours + hoursRaw) * 10) / 10;
+      existing.lastUpdated = today();
+    } else {
+      contacts.push({
+        id: uid(),
+        name: nameRaw,
+        hours: hoursRaw,
+        dateAdded: today(),
+        lastUpdated: today()
+      });
+    }
+
+    saveContacts(contacts);
+    document.getElementById('logForm').reset();
+    renderContacts();
+    document.getElementById('contactList').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  document.getElementById('personaSelect').addEventListener('change', function () {
+    localStorage.setItem(PERSONA_KEY, this.value);
+  });
+
+  // Export
+  document.getElementById('exportBtn').addEventListener('click', function () {
+    var data = {
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      persona: getPersona(),
+      contacts: getContacts()
+    };
+    var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'friendship-tracker-backup.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+
+  // Import
+  document.getElementById('importFile').addEventListener('change', function (e) {
+    var file = e.target.files[0];
+    var msg = document.getElementById('importMsg');
+    msg.style.display = 'none';
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function (ev) {
+      try {
+        var data = JSON.parse(ev.target.result);
+        if (!data.contacts || !Array.isArray(data.contacts)) throw new Error('invalid');
+        saveContacts(data.contacts);
+        if (data.persona) {
+          localStorage.setItem(PERSONA_KEY, data.persona);
+          document.getElementById('personaSelect').value = data.persona;
+        }
+        renderContacts();
+        msg.textContent = 'Data restored successfully.';
+        msg.style.color = 'var(--color-ink-muted)';
+        msg.style.display = 'block';
+      } catch (err) {
+        msg.textContent = 'Could not read the file. Make sure it is a valid backup exported from this tool.';
+        msg.style.color = 'var(--color-accent)';
+        msg.style.display = 'block';
+      }
+      e.target.value = '';
+    };
+    reader.readAsText(file);
+  });
+
+  // Init
+  document.getElementById('personaSelect').value = getPersona();
+  renderContacts();
+}());
+</script>
+
+</body>
+</html>
