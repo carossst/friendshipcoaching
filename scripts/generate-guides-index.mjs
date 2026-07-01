@@ -18,19 +18,81 @@ function esc(value) {
 }
 
 const liveGuides = (seo.guides || []).filter((g) => g.status === "live");
+const guidesBySlug = Object.fromEntries(liveGuides.map((g) => [g.slug, g]));
+
 const pageMeta = (seo.pages || []).find((p) => p.path === "/guides/") || {};
 const pageTitle = pageMeta.title || "Friendship Guides | The Friendship Practice";
 const pageDescription = pageMeta.description || "Practical guides on friendship, by Carole Stromboni.";
 
-const guidesHtml = liveGuides
-  .map(
-    (guide) => `
-      <a class="c-feature" href="/guides/${guide.slug}/">
-        <h2 class="c-feature__title">${esc(guide.h1)}</h2>
-        <p class="c-feature__text">${esc(guide.description)}</p>
-      </a>`
-  )
-  .join("\n");
+const categories = [
+  {
+    label: "Starting somewhere new",
+    slugs: [
+      "how-to-make-friends-as-an-adult",
+      "how-to-meet-people-in-a-new-city",
+      "how-to-make-friends-after-30",
+      "how-to-make-friends-as-an-expat",
+      "how-to-make-friends-when-you-work-from-home",
+      "how-to-stay-friends-after-a-baby",
+      "how-to-make-friends-as-a-new-parent",
+      "how-to-keep-work-friendships-after-going-remote"
+    ]
+  },
+  {
+    label: "Building connection",
+    slugs: [
+      "how-to-follow-up-after-meeting-someone",
+      "how-to-turn-acquaintances-into-friends",
+      "how-to-know-if-someone-wants-to-be-your-friend",
+      "how-to-be-a-better-friend",
+      "how-to-introduce-friends-to-each-other"
+    ]
+  },
+  {
+    label: "Keeping friendships alive",
+    slugs: [
+      "how-to-keep-friends-as-an-adult",
+      "why-do-friendships-fade",
+      "how-to-reconnect-with-old-friends",
+      "one-sided-friendship",
+      "when-a-friendship-ends",
+      "how-to-make-friends-after-a-friendship-ends"
+    ]
+  },
+  {
+    label: "Understanding friendship",
+    slugs: [
+      "why-making-friends-as-an-adult-is-hard",
+      "what-is-friendship-coaching",
+      "friendship-quotes"
+    ]
+  }
+];
+
+function renderCategory(cat) {
+  const guides = cat.slugs.map((slug) => guidesBySlug[slug]).filter(Boolean);
+  const cards = guides
+    .map(
+      (guide) => `
+        <a class="c-feature" href="/guides/${guide.slug}/">
+          <h3 class="c-feature__title">${esc(guide.h1)}</h3>
+          <p class="c-feature__text">${esc(guide.description)}</p>
+        </a>`
+    )
+    .join("\n");
+
+  return `
+    <section class="u-section">
+      <div class="u-container">
+        <p class="c-label">${esc(cat.label)}</p>
+        <div class="c-features u-mt-8">
+${cards}
+        </div>
+      </div>
+    </section>`;
+}
+
+const categoriesHtml = categories.map(renderCategory).join("\n");
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -127,13 +189,7 @@ const html = `<!doctype html>
       </div>
     </section>
 
-    <section class="u-section">
-      <div class="u-container">
-        <div class="c-features">
-${guidesHtml}
-        </div>
-      </div>
-    </section>
+${categoriesHtml}
 
     <section class="u-section u-bg-surface">
       <div class="u-container u-container--prose">
@@ -163,6 +219,7 @@ ${guidesHtml}
       </nav>
     </div>
   </footer>
+  <script data-goatcounter="https://friendc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
 `;
