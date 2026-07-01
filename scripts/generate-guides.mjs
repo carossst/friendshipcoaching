@@ -104,6 +104,10 @@ function renderGuide(guide, allGuides) {
 ${section.paragraphs
   .map((paragraph) => `          <p class="c-body u-mt-6">${paragraph}</p>`)
   .join("\n")}
+${section.cultureRef ? `          <aside class="c-culture-ref u-mt-8" aria-label="Pop culture example">
+            <p class="c-culture-ref__label">${esc(section.cultureRef.show)}</p>
+            <p class="c-culture-ref__body">${section.cultureRef.body}</p>
+          </aside>` : ""}
 ${section.quote ? `          <blockquote class="c-quote u-mt-10">
             <p class="c-quote__text">${esc(section.quote)}</p>
             ${section.quoteAuthor ? `<cite class="c-quote__cite">${esc(section.quoteAuthor)}</cite>` : ""}

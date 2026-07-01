@@ -1752,6 +1752,36 @@ select {
 
 
 /* Connection block — quotes guide */
+.c-culture-ref {
+  margin-top: var(--space-8);
+  padding: var(--space-5) var(--space-6);
+  background-color: var(--color-bg-alt);
+  border-radius: var(--radius-md);
+  border-left: 0.25rem solid var(--color-border-strong);
+}
+
+.c-culture-ref__label {
+  margin-bottom: var(--space-2);
+  font-size: var(--text-xs);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+}
+
+.c-culture-ref__body {
+  font-size: var(--text-sm);
+  line-height: var(--leading-base);
+  color: var(--color-ink);
+}
+
+.c-culture-ref__body a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .c-connection {
   margin-top: var(--space-8);
   padding: var(--space-6) var(--space-8);
