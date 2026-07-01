@@ -712,13 +712,23 @@ select {
 }
 
 .c-quote__text {
-  max-width: 56ch;
+  max-width: 52ch;
   margin-bottom: var(--space-4);
   font-family: var(--font-serif);
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
   font-style: italic;
   line-height: var(--leading-snug);
   color: var(--color-ink);
+}
+
+.c-quote__text::before {
+  content: "\201C";
+  display: block;
+  font-size: var(--text-4xl);
+  line-height: 0.7;
+  margin-bottom: var(--space-4);
+  color: var(--color-accent);
+  font-style: normal;
 }
 
 .c-quote__cite {
