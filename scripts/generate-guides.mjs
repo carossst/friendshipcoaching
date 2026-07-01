@@ -107,7 +107,8 @@ ${section.paragraphs
 ${section.quote ? `          <blockquote class="c-quote u-mt-10">
             <p class="c-quote__text">${esc(section.quote)}</p>
             ${section.quoteAuthor ? `<cite class="c-quote__cite">${esc(section.quoteAuthor)}</cite>` : ""}
-          </blockquote>` : ""}
+          </blockquote>
+          ${section.quoteAuthor ? `<p class="c-share-quote u-mt-4"><a class="c-share-quote__link" href="https://twitter.com/intent/tweet?text=${encodeURIComponent('"' + section.quote + '" — ' + section.quoteAuthor + ', thefriendshippractice.com')}" rel="noopener noreferrer" target="_blank">Share on X →</a></p>` : ""}` : ""}
 ${section.connection ? `          <div class="c-connection u-mt-6">
             <p class="c-connection__label">In conversation with</p>
             <p class="c-connection__text">"${esc(section.connection.quote)}"</p>

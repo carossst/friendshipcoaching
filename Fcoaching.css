@@ -1207,6 +1207,28 @@ select {
   text-decoration-color: var(--color-accent-hover);
 }
 
+/* 20. Share quote */
+.c-share-quote {
+  margin: 0;
+}
+.c-share-quote__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-ink-muted);
+  text-decoration: none;
+  border: var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-4);
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+.c-share-quote__link:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  background: var(--color-accent-wash);
+}
+
 /* 20. Component - Disclaimer */
 .c-disclaimer {
   position: relative;
