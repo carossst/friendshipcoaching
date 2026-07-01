@@ -2,6 +2,9 @@
 
 > The Friendship Practice is a practical friendship coaching website for adults who want to make new friends, reconnect with old friends, and deepen current friendships.
 
+## Mission
+The Friendship Practice translates the social science of adult connection into concrete, repeatable action. So that better friendships stop being an intention and start being a practice.
+
 ## Offer
 The core offer is a 4-session private coaching package. The public entry point is a free 7-day Friendship Challenge delivered by email.
 
@@ -62,7 +65,7 @@ A: Keep the message simple and specific. Say you thought of them, mention someth
 - https://thefriendshippractice.com/guides/how-to-make-friends-after-30/, A practical guide to making friends after 30, with clear ways to create repetition, follow up, and build connection without pretending adult life is simple.
 - https://thefriendshippractice.com/guides/why-male-friendships-fade/, Male friendships don't end in a fight. They fade through distance, cancelled plans, and the slow disappearance of shared contexts. Here's what the research shows.
 - https://thefriendshippractice.com/guides/how-men-can-rebuild-friendships/, You don't need a deep conversation or a vulnerability retreat. You need a recurring activity, one invitation, and a follow-up. Here's how to rebuild male friendship practically.
-- https://thefriendshippractice.com/guides/friendship-quotes/, Eight counter-intuitive observations on adult friendship from Carole Stromboni, friendship coach. On following up, loneliness, consistency, and what actually builds closeness — not inspiration, but clarity.
+- https://thefriendshippractice.com/guides/friendship-quotes/, Eight counter-intuitive observations on adult friendship from Carole Stromboni, friendship coach. On following up, loneliness, consistency, and what actually builds closeness, not inspiration, but clarity.
 - https://thefriendshippractice.com/guides/how-to-introduce-friends-to-each-other/, A practical guide to introducing two friends who do not know each other yet, when to do it, how to ask both people first, and why it strengthens your whole social network.
 - https://thefriendshippractice.com/guides/when-a-friendship-ends/, How to understand, navigate, and sometimes consciously close a friendship, whether it fades, falls apart, or simply runs its course.
 - https://thefriendshippractice.com/guides/how-to-stay-friends-after-a-baby/, Friendships often fade after one person has a child. Here is how to adjust your expectations, lower the bar for contact, and keep the connection real without overwhelming a new parent.
