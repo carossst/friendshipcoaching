@@ -47,7 +47,7 @@ function renderGuide(guide, allGuides) {
         author: {
           "@type": "Person",
           name: "Carole Stromboni",
-          url: `${BASE}/`
+          url: `${BASE}/about.html`
         },
         publisher: {
           "@type": "Organization",
