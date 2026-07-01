@@ -190,6 +190,17 @@
       "lastmod": "2026-06-27"
     },
     {
+      "file": "press.html",
+      "path": "/press.html",
+      "status": "live",
+      "title": "Press & Media | Carole Stromboni | The Friendship Practice",
+      "description": "Press resources for journalists and media covering adult friendship, loneliness, and social connection. Expert quotes, key statistics, and contact information for Carole Stromboni, friendship coach.",
+      "ogDescription": "Expert resources on adult friendship for journalists. Key statistics, ready-to-quote perspectives, and interview contact.",
+      "changefreq": "yearly",
+      "priority": "0.5",
+      "lastmod": "2026-07-01"
+    },
+    {
       "file": "404.html",
       "path": "/404.html",
       "status": "private",
@@ -401,7 +412,8 @@
           "paragraphs": [
             "Friendship grows through seeing people again. School, campus life, and early jobs often create repeated contact automatically. Later in life, those structures are weaker or disappear altogether.",
             "When repetition disappears, friendship requires more intention. Someone has to suggest the next coffee, the next walk, the next plan.",
-            "Research by Professor Jeffrey Hall at the University of Kansas found that moving from acquaintance to friend requires roughly 50 hours of shared time — time that school and early work life once generated automatically, without anyone having to plan for it. In adult life, that time has to be created on purpose."
+            "Research by Professor Jeffrey Hall at the University of Kansas found that moving from acquaintance to friend requires roughly 50 hours of shared time — time that school and early work life once generated automatically, without anyone having to plan for it. In adult life, that time has to be created on purpose.",
+            "Hall's research also distinguishes between what he calls closed-system relationships — those formed at work or school, where people are grouped by obligation rather than choice — and freely chosen friendships. The data show that hours spent in closed systems are poor predictors of closeness. Spending forty hours a week alongside a coworker does not produce the same friendship trajectory as twenty hours chosen freely. This explains why so many adults feel lonely despite a full calendar. They are surrounded by people they did not choose, in contexts that do not generate closeness."
           ],
           "quote": "Most adult loneliness is not about missing people. It is about missing the repetition that turns people into friends."
         },
@@ -696,7 +708,8 @@
           "h2": "Let care be practical, not only emotional",
           "paragraphs": [
             "Being a good friend is not only about saying the right thing. It is also about showing up in usable ways: making time, remembering, asking, inviting, and staying present.",
-            "The Friendship Practice is built on that idea. Friendship improves when care becomes visible in real actions. If you want to go deeper on the maintenance side, read <a href=\"/guides/how-to-keep-friends-as-an-adult/\">how to keep friends as an adult</a>."
+            "The Friendship Practice is built on that idea. Friendship improves when care becomes visible in real actions. If you want to go deeper on the maintenance side, read <a href=\"/guides/how-to-keep-friends-as-an-adult/\">how to keep friends as an adult</a>.",
+            "Research on what actually builds closeness in friendship points toward a specific kind of conversation that Professor Jeffrey Hall calls striving communication episodes: catching up on what has actually been happening, joking around to release tension, and engaging seriously when the moment calls for it. His data show that these forms of talk predict increased closeness over time — while an excess of small talk predicts the opposite. Being a better friend is partly a matter of resisting the social reflex to keep things polite and light, and choosing instead to be genuinely curious about what is real for the other person."
           ]
         }
       ],
@@ -1285,6 +1298,7 @@
             "The office worked for social connection not because coworkers are particularly well-matched friends, but because it created repeated contact automatically. You saw the same people daily, had small conversations, shared complaints and jokes, and some of those interactions accumulated into genuine closeness.",
             "Remote work removes that repetition. And without repetition, acquaintances stay acquaintances. The warmth from a good video call does not compound the way physical presence does.",
             "The fix is not to find a perfect community or meet the right people. It is to engineer the repetition that remote work removed.",
+            "A related finding from Professor Jeffrey Hall's research helps explain this more precisely. His data show that time spent in what he calls \"closed systems\" — environments like offices or classrooms where people are grouped by obligation rather than choice — is a significantly weaker predictor of friendship closeness than freely chosen time. Hours at the office were never converting reliably into deep friendship. What the office provided was a scaffold: repeated proximity that made freely chosen moments — a spontaneous lunch, a conversation after a meeting — more likely. Remote work removed the scaffold. The task for remote workers is not to replicate the office. It is to build the voluntary, recurring contact that the office was masking as inevitable.",
             "Research on communication and workplace social dynamics consistently shows that what remote work primarily eliminates is not collaboration but unplanned, ambient contact — the spontaneous exchange in a hallway, the conversation before a meeting starts, the brief encounter at the coffee machine. These low-stakes, unscheduled interactions are what build social familiarity over time. Research published in the Harvard Business Review has found that remote workers lose a significant portion of these informal touchpoints, which are disproportionately responsible for building interpersonal trust. (<a href=\"https://hbr.org\" rel=\"noopener noreferrer\" target=\"_blank\">Harvard Business Review</a>)"
           ]
         },
@@ -1364,6 +1378,7 @@
           "paragraphs": [
             "The best time to follow up is within 24 to 48 hours of meeting someone. The interaction is still fresh, the other person remembers you clearly, and a message feels natural rather than out of nowhere.",
             "Waiting longer is not necessarily fatal, but the window of easy connection closes as time passes. A message sent a week later requires a brief acknowledgment of the gap. A message sent the next day requires nothing except warmth and a small ask.",
+            "At The Friendship Practice, this window is called the 48-Hour Rule: the period immediately after a warm interaction when reaching out feels most natural, least intrusive, and most likely to land well. Within 48 hours, the shared context is still fresh for both people. The message does not need to explain itself or reference how long it has been. After that window closes, a follow-up can still work — but it requires slightly more effort to re-establish the warmth. Acting inside the window is simply easier. The 48-Hour Rule is not a social hack. It is a practical observation about how memory and goodwill decay when two people go back to their separate lives.",
             "If you missed the immediate window, still send the message. A slightly delayed follow-up is far better than no follow-up at all."
           ]
         },
@@ -1547,7 +1562,8 @@
           "paragraphs": [
             "Acquaintances tend to stay in safe, surface-level territory: jobs, news, shared events. Friendship starts to form when someone shares something more personal: a real opinion, a difficulty, a genuine experience.",
             "You do not need to make a dramatic disclosure. A small moment of honesty, something that goes slightly beyond the polite and impersonal, is often enough to shift the register of a conversation and make both people feel more like they are actually talking.",
-            "Psychologist Arthur Aron at Stony Brook University found that closeness between two people can be meaningfully accelerated through a structured exchange of progressively personal disclosures — research that became widely known as the \"36 questions.\" The key finding was not the questions themselves but the mechanism: when someone shares something genuine and the other person receives it with real interest, the sense of connection that follows is measurable and durable. Small honest moments work by the same principle."
+            "Psychologist Arthur Aron at Stony Brook University found that closeness between two people can be meaningfully accelerated through a structured exchange of progressively personal disclosures — research that became widely known as the \"36 questions.\" The key finding was not the questions themselves but the mechanism: when someone shares something genuine and the other person receives it with real interest, the sense of connection that follows is measurable and durable. Small honest moments work by the same principle.",
+            "Research by Professor Jeffrey Hall also identifies which kinds of conversation actually accelerate closeness — and which ones quietly stall it. His longitudinal data found that what he calls striving communication episodes — catching up on each other's lives, joking around, having a serious conversation where both people are genuinely present — predicted meaningful increases in friendship closeness over time. Small talk, by contrast, predicted a decrease in closeness when it dominated. The implication for turning an acquaintance into a friend is direct: don't try to seem low-maintenance by keeping it light indefinitely. A moment of real catching up — asking what has actually been going on for them — moves the relationship further in ten minutes than months of safe surface talk. (<a href=\"https://journals.sagepub.com/doi/full/10.1177/0265407518761225\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Social and Personal Relationships</a>)"
           ]
         },
         {
