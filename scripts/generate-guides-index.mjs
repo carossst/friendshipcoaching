@@ -33,7 +33,9 @@ const categories = [
       "how-to-make-friends-after-30",
       "how-to-make-friends-as-an-expat",
       "how-to-make-friends-when-you-work-from-home",
-      "how-to-stay-friends-after-a-baby"
+      "how-to-stay-friends-after-a-baby",
+      "how-to-make-friends-as-a-new-parent",
+      "how-to-keep-work-friendships-after-going-remote"
     ]
   },
   {
@@ -53,7 +55,8 @@ const categories = [
       "why-do-friendships-fade",
       "how-to-reconnect-with-old-friends",
       "one-sided-friendship",
-      "when-a-friendship-ends"
+      "when-a-friendship-ends",
+      "how-to-make-friends-after-a-friendship-ends"
     ]
   },
   {
