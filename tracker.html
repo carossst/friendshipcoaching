@@ -174,7 +174,7 @@
     <div class="u-container u-container--prose">
       <p class="c-hero__label">The Friendship Practice</p>
       <h1 class="c-hero__title">The Friendship Tracker</h1>
-      <p class="c-hero__sub">Dr. Jeffrey Hall at the University of Kansas found it takes roughly 50 hours of shared time to become casual friends, and around 200 hours to become close. This tool tracks where you actually are, without the guesswork.</p>
+      <p class="c-hero__sub">Adult friendship is not a feeling you wait for. It is a habit you build. Dr. Jeffrey Hall at the University of Kansas found it takes roughly 50 hours of shared time to become casual friends, and around 200 hours to become close. This tool tracks the repetition, removes the guesswork, and tells you what to do next.</p>
     </div>
   </section>
 
@@ -223,9 +223,21 @@
   <section class="u-section u-bg-surface">
     <div class="u-container u-container--prose">
       <p class="c-label">Your connections</p>
-      <h2 class="c-heading c-heading--2">Progress toward friendship</h2>
+      <h2 class="c-heading c-heading--2">Your social workout log</h2>
       <p class="c-body u-mt-4">Each bar shows where you are between thresholds: 0 to 50 hours (acquaintance to casual friend), then 50 to 200 hours (casual to close friend).</p>
       <div id="contactList" class="u-mt-10"></div>
+      <div class="u-mt-10" style="border-top:var(--border);padding-top:var(--space-8);">
+        <p class="c-label" style="margin-bottom:var(--space-3);">Backup</p>
+        <p class="c-body" style="font-size:var(--text-sm);color:var(--color-ink-muted);margin-bottom:var(--space-5);">Your data is stored in this browser only. Export it to keep a backup or move it to another device. If you clear your browser cache or open this page from an email app, your data may not be visible — restore it with an import.</p>
+        <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;align-items:center;">
+          <button id="exportBtn" class="c-btn c-btn--ghost c-btn--sm">Export backup</button>
+          <label class="c-btn c-btn--ghost c-btn--sm" style="cursor:pointer;margin:0;">
+            Import backup
+            <input type="file" accept=".json" id="importFile" style="display:none;">
+          </label>
+        </div>
+        <p id="importMsg" style="font-size:var(--text-sm);color:var(--color-accent);margin-top:var(--space-3);display:none;"></p>
+      </div>
     </div>
   </section>
 
@@ -474,6 +486,55 @@
 
   document.getElementById('personaSelect').addEventListener('change', function () {
     localStorage.setItem(PERSONA_KEY, this.value);
+  });
+
+  // Export
+  document.getElementById('exportBtn').addEventListener('click', function () {
+    var data = {
+      version: 1,
+      exportedAt: new Date().toISOString(),
+      persona: getPersona(),
+      contacts: getContacts()
+    };
+    var blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = 'friendship-tracker-backup.json';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  });
+
+  // Import
+  document.getElementById('importFile').addEventListener('change', function (e) {
+    var file = e.target.files[0];
+    var msg = document.getElementById('importMsg');
+    msg.style.display = 'none';
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function (ev) {
+      try {
+        var data = JSON.parse(ev.target.result);
+        if (!data.contacts || !Array.isArray(data.contacts)) throw new Error('invalid');
+        saveContacts(data.contacts);
+        if (data.persona) {
+          localStorage.setItem(PERSONA_KEY, data.persona);
+          document.getElementById('personaSelect').value = data.persona;
+        }
+        renderContacts();
+        msg.textContent = 'Data restored successfully.';
+        msg.style.color = 'var(--color-ink-muted)';
+        msg.style.display = 'block';
+      } catch (err) {
+        msg.textContent = 'Could not read the file. Make sure it is a valid backup exported from this tool.';
+        msg.style.color = 'var(--color-accent)';
+        msg.style.display = 'block';
+      }
+      e.target.value = '';
+    };
+    reader.readAsText(file);
   });
 
   // Init
