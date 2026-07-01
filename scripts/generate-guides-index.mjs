@@ -71,20 +71,13 @@ const categories = [
     ]
   },
   {
-    label: "Men and friendship",
-    headline: "The structures that worked at 25 are usually gone by 35. Here's how to rebuild.",
-    slugs: [
-      "why-male-friendships-fade",
-      "how-men-can-rebuild-friendships"
-    ]
-  },
-  {
     label: "Building connection",
     slugs: [
       "how-to-follow-up-after-meeting-someone",
       "how-to-turn-acquaintances-into-friends",
       "how-to-know-if-someone-wants-to-be-your-friend",
       "how-to-be-a-better-friend",
+      "how-men-can-rebuild-friendships",
       "how-to-introduce-friends-to-each-other"
     ]
   },
@@ -103,6 +96,7 @@ const categories = [
     label: "Understanding friendship",
     slugs: [
       "why-making-friends-as-an-adult-is-hard",
+      "why-male-friendships-fade",
       "what-is-friendship-coaching",
       "friendship-quotes"
     ]
