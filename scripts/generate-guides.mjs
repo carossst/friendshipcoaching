@@ -16,6 +16,14 @@ function esc(value) {
     .replace(/"/g, "&quot;");
 }
 
+function toId(text) {
+  return text
+    .toLowerCase()
+    .replace(/['']/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 function formatDate(dateText) {
   const date = new Date(`${dateText}T00:00:00Z`);
   return new Intl.DateTimeFormat("en-US", {
@@ -47,7 +55,7 @@ function renderGuide(guide, allGuides) {
         author: {
           "@type": "Person",
           name: "Carole Stromboni",
-          url: `${BASE}/`
+          url: `${BASE}/about.html`
         },
         publisher: {
           "@type": "Organization",
@@ -92,14 +100,15 @@ function renderGuide(guide, allGuides) {
       (section) => `
       <section class="u-section u-section--sm">
         <div class="u-container u-container--prose">
-          <h2 class="c-heading c-heading--2">${esc(section.h2)}</h2>
+          <h2 class="c-heading c-heading--2" id="${toId(section.h2)}">${esc(section.h2)}</h2>
 ${section.paragraphs
   .map((paragraph) => `          <p class="c-body u-mt-6">${paragraph}</p>`)
   .join("\n")}
 ${section.quote ? `          <blockquote class="c-quote u-mt-10">
             <p class="c-quote__text">${esc(section.quote)}</p>
             ${section.quoteAuthor ? `<cite class="c-quote__cite">${esc(section.quoteAuthor)}</cite>` : ""}
-          </blockquote>` : ""}
+          </blockquote>
+          ${section.quoteAuthor ? `<p class="c-share-quote u-mt-4"><a class="c-share-quote__link" href="https://twitter.com/intent/tweet?text=${encodeURIComponent('"' + section.quote + '" — ' + section.quoteAuthor + ', thefriendshippractice.com')}" rel="noopener noreferrer" target="_blank">Share on X →</a></p>` : ""}` : ""}
 ${section.connection ? `          <div class="c-connection u-mt-6">
             <p class="c-connection__label">In conversation with</p>
             <p class="c-connection__text">"${esc(section.connection.quote)}"</p>
@@ -110,6 +119,20 @@ ${section.connection ? `          <div class="c-connection u-mt-6">
       </section>`
     )
     .join("\n");
+
+  const tocHtml = (guide.sections || []).length > 2
+    ? `
+    <section class="u-section u-section--sm">
+      <div class="u-container u-container--prose">
+        <nav class="c-toc" aria-label="Table of contents">
+          <p class="c-toc__label">In this guide</p>
+          <ol class="c-toc__list">
+${(guide.sections || []).map((s) => `            <li class="c-toc__item"><a class="c-toc__link" href="#${toId(s.h2)}">${esc(s.h2)}</a></li>`).join("\n")}
+          </ol>
+        </nav>
+      </div>
+    </section>`
+    : "";
 
   const faqHtml = (guide.faq || [])
     .map(
@@ -206,10 +229,12 @@ ${guide.pullQuote ? `    <section class="u-section u-section--sm">
 
     <section class="u-section">
       <div class="u-container u-container--prose">
-        <p class="c-body">${guide.intro}</p>
+        ${guide.intro.split(/\n\n+/).map((p, i) => `<p class="c-body${i > 0 ? " u-mt-6" : ""}">${p}</p>`).join("\n        ")}
 ${guide.authorNote ? `        <p class="c-body u-mt-6 c-body--author-note">${esc(guide.authorNote)}</p>` : ""}
       </div>
     </section>
+
+${tocHtml}
 
 ${sectionsHtml}
 

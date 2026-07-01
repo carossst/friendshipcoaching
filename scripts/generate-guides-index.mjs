@@ -26,16 +26,48 @@ const pageDescription = pageMeta.description || "Practical guides on friendship,
 
 const categories = [
   {
-    label: "Starting somewhere new",
+    label: "Are you an expat?",
+    headline: "Making friends in a country that isn't yours yet.",
     slugs: [
-      "how-to-make-friends-as-an-adult",
-      "how-to-meet-people-in-a-new-city",
-      "how-to-make-friends-after-30",
       "how-to-make-friends-as-an-expat",
+      "how-to-meet-people-in-a-new-city",
+      "how-to-reconnect-with-old-friends"
+    ]
+  },
+  {
+    label: "Working from home?",
+    headline: "Remote work removed the social structure. Here's how to replace it.",
+    slugs: [
       "how-to-make-friends-when-you-work-from-home",
-      "how-to-stay-friends-after-a-baby",
+      "how-to-keep-work-friendships-after-going-remote",
+      "how-to-follow-up-after-meeting-someone"
+    ]
+  },
+  {
+    label: "Are you a new parent?",
+    headline: "Friendship changes after a baby. Here's how to navigate it.",
+    slugs: [
       "how-to-make-friends-as-a-new-parent",
-      "how-to-keep-work-friendships-after-going-remote"
+      "how-to-stay-friends-after-a-baby",
+      "how-to-keep-friends-as-an-adult"
+    ]
+  },
+  {
+    label: "Just turned 30?",
+    headline: "The social structures of your 20s are gone. These ones actually work.",
+    slugs: [
+      "how-to-make-friends-after-30",
+      "how-to-make-friends-as-an-adult",
+      "why-making-friends-as-an-adult-is-hard"
+    ]
+  },
+  {
+    label: "New to a city?",
+    headline: "Starting a social life in a place where you know almost no one.",
+    slugs: [
+      "how-to-meet-people-in-a-new-city",
+      "how-to-turn-acquaintances-into-friends",
+      "how-to-make-friends-as-an-adult"
     ]
   },
   {
@@ -45,6 +77,7 @@ const categories = [
       "how-to-turn-acquaintances-into-friends",
       "how-to-know-if-someone-wants-to-be-your-friend",
       "how-to-be-a-better-friend",
+      "how-men-can-rebuild-friendships",
       "how-to-introduce-friends-to-each-other"
     ]
   },
@@ -63,6 +96,7 @@ const categories = [
     label: "Understanding friendship",
     slugs: [
       "why-making-friends-as-an-adult-is-hard",
+      "why-male-friendships-fade",
       "what-is-friendship-coaching",
       "friendship-quotes"
     ]
@@ -85,7 +119,8 @@ function renderCategory(cat) {
     <section class="u-section">
       <div class="u-container">
         <p class="c-label">${esc(cat.label)}</p>
-        <div class="c-features u-mt-8">
+        ${cat.headline ? `<h2 class="c-heading c-heading--2 u-mb-10">${esc(cat.headline)}</h2>` : ""}
+        <div class="c-features${cat.headline ? "" : " u-mt-8"}">
 ${cards}
         </div>
       </div>
@@ -185,7 +220,7 @@ const html = `<!doctype html>
       <div class="u-container u-container--prose">
         <p class="c-hero__label">The Friendship Practice</p>
         <h1 class="c-hero__title">Friendship guides</h1>
-        <p class="c-hero__sub">Practical guides on making friends as an adult, keeping friendships alive, meeting people in a new city, and more. Written by Carole Stromboni.</p>
+        <p class="c-hero__sub">Practical guides for the five situations that make adult friendship genuinely hard: expat life, remote work, new parenthood, life after 30, and starting over in a new city. Written by Carole Stromboni.</p>
       </div>
     </section>
 
