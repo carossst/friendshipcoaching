@@ -218,6 +218,39 @@
       "title": "You're on the Early List | The Friendship Practice",
       "description": "You are confirmed on the early list for The Friendship Practice coaching. I will be in touch shortly.",
       "lastmod": "2026-06-29"
+    },
+    {
+      "file": "fr/index.html",
+      "path": "/fr/",
+      "status": "live",
+      "title": "Se faire des amis à l'âge adulte | The Friendship Practice",
+      "description": "The Friendship Practice aide les adultes à se faire de nouveaux amis, renouer avec les anciens et approfondir leurs amitiés. Simple, concret, dans la vraie vie.",
+      "ogDescription": "The Friendship Practice aide les adultes à se faire de nouveaux amis, renouer avec les anciens et approfondir leurs amitiés.",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/defi.html",
+      "path": "/fr/defi.html",
+      "status": "live",
+      "title": "Défi amitié 7 jours | The Friendship Practice",
+      "description": "Un défi gratuit de 7 jours pour voir clair dans votre vie amicale : vos proches, vos attentes, votre prochain pas. Une courte réflexion par jour.",
+      "ogDescription": "Un défi gratuit de 7 jours pour voir clair dans votre vie amicale, une courte réflexion par jour.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/se-faire-des-amis-adulte/index.html",
+      "path": "/fr/guides/se-faire-des-amis-adulte/",
+      "status": "live",
+      "title": "Comment se faire des amis à l'âge adulte | The Friendship Practice",
+      "description": "Se faire des amis adulte, ce n'est pas une question de charisme. Environ 50 heures partagées font un ami. Voici comment créer ces heures, pas à pas.",
+      "ogDescription": "Se faire des amis adulte, ce n'est pas une question de charisme. Environ 50 heures partagées font un ami. Voici comment créer ces heures.",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "lastmod": "2026-07-02"
     }
   ],
   "guides": [
@@ -310,7 +343,8 @@
           "a": "Most people who call themselves bad at making friends were never given a method, just the conditions that made friendship automatic when they were younger. What feels like a personality deficit is almost always a structural gap. You're not behind. You just haven't had a structure yet."
         }
       ],
-      "pullQuote": "Friendship is not something that falls into your lap. It's something you practice."
+      "pullQuote": "Friendship is not something that falls into your lap. It's something you practice.",
+      "alternateFr": "/fr/guides/se-faire-des-amis-adulte/"
     },
     {
       "slug": "how-to-reconnect-with-old-friends",

@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <title>Défi amitié 7 jours | The Friendship Practice</title>
+  <meta name="description" content="Un défi gratuit de 7 jours pour voir clair dans votre vie amicale : vos proches, vos attentes, votre prochain pas. Une courte réflexion par jour.">
+  <link rel="canonical" href="https://thefriendshippractice.com/fr/defi.html">
+  <link rel="alternate" hreflang="en" href="https://thefriendshippractice.com/challenge.html">
+  <link rel="alternate" hreflang="fr" href="https://thefriendshippractice.com/fr/defi.html">
+  <link rel="alternate" hreflang="x-default" href="https://thefriendshippractice.com/challenge.html">
+  <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#201711" media="(prefers-color-scheme: dark)">
+  <meta name="author" content="Carole Stromboni">
+  <link rel="stylesheet" href="/Fcoaching.css">
+  <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/icons/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/icons/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/icons/favicon-16.png" sizes="16x16" type="image/png">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <meta property="og:title" content="Défi amitié 7 jours | The Friendship Practice">
+  <meta property="og:description" content="Un défi gratuit de 7 jours pour voir clair dans votre vie amicale, une courte réflexion par jour.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://thefriendshippractice.com/fr/defi.html">
+  <meta property="og:image" content="https://thefriendshippractice.com/icons/og-image.jpg">
+  <meta property="og:image:alt" content="The Friendship Practice">
+  <meta property="og:site_name" content="The Friendship Practice">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Défi amitié 7 jours | The Friendship Practice">
+  <meta name="twitter:description" content="Un défi gratuit de 7 jours pour voir clair dans votre vie amicale, une courte réflexion par jour.">
+  <meta name="twitter:image" content="https://thefriendshippractice.com/icons/og-image.jpg">
+</head>
+
+<body>
+
+<a class="u-sr-only" href="#main-content">Aller au contenu</a>
+
+<header class="c-nav">
+  <nav class="c-nav__inner" aria-label="Navigation principale">
+    <a class="c-nav__logo" href="/fr/" aria-label="The Friendship Practice, accueil">
+      <img class="c-nav__logo-img" src="/icons/favicon.svg" alt="" width="36" height="36">
+      <span class="c-nav__logo-text">The Friendship Practice</span>
+    </a>
+    <div class="c-nav__actions">
+      <a class="c-nav__link" href="/challenge.html" lang="en">English</a>
+      <a class="c-btn c-btn--ghost c-btn--sm" href="/fr/">Accueil</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <section class="c-hero">
+    <div class="u-container">
+      <p class="c-hero__label">Défi amitié · 7 jours</p>
+      <h1 class="c-hero__title">Voyez clair dans votre vie amicale. Puis changez-la.</h1>
+      <p class="c-hero__sub">
+        Avant d'écrire, de renouer ou de construire du neuf, il faut savoir où vous en êtes vraiment. Sept courtes réflexions, une par jour, sur vos proches, vos attentes, et ce que vous voulez de l'amitié à partir de maintenant.
+      </p>
+      <div class="c-hero__actions u-mt-8">
+        <a class="c-btn c-btn--primary c-btn--lg" href="#jour-1" id="defi-start-link">Commencer le jour 1/7</a>
+        <a class="c-btn c-btn--ghost c-btn--lg" href="#progression">Voir ma progression</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="u-section" id="progression">
+    <div class="u-container u-container--prose">
+      <p class="c-label">Votre journal de défi</p>
+      <h2 class="c-heading c-heading--2">Une réflexion par jour, sept jours de suite.</h2>
+
+      <div class="c-challenge-progress u-mt-8" aria-live="polite">
+        <p class="c-body" id="defi-progress-text">0 jour sur 7 terminé.</p>
+        <div class="c-challenge-progress__bar" aria-hidden="true">
+          <span class="c-challenge-progress__fill" id="defi-progress-fill"></span>
+        </div>
+        <p class="c-challenge-note" id="defi-next-text">
+          Le jour 1 est prêt. Le jour suivant apparaît quand vous cochez la réflexion du jour.
+        </p>
+        <p class="c-challenge-note">
+          Vos notes sont enregistrées uniquement dans ce navigateur, sur cet appareil. Elles ne sont envoyées ni à Carole, ni à aucun serveur.
+        </p>
+        <p class="c-challenge-note">
+          Ce défi s'adresse aux adultes de tout genre. Y compris à ceux qui veulent plus d'amitié dans leur vie, sans conseils vagues ni confidences forcées.
+        </p>
+        <div class="c-challenge-actions">
+          <button class="c-btn c-btn--ghost c-btn--sm" type="button" id="defi-reset">Réinitialiser ma progression</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="u-section u-bg-surface">
+    <div class="u-container">
+      <p class="c-label">L'étape du jour</p>
+      <div class="c-challenge-days" id="defi-days">
+
+        <article class="c-challenge-day" id="jour-1" data-day="1">
+          <div class="c-challenge-day__meta">
+            <span class="c-challenge-day__badge">Jour 1/7</span>
+            <span class="c-challenge-day__status" data-status>Prêt</span>
+          </div>
+          <h2 class="c-challenge-day__title">Voyez clair dans votre vie amicale</h2>
+          <p class="c-body">
+            Avant d'essayer de vous faire de nouveaux amis, commencez par ce qui existe.
+          </p>
+          <p class="c-body">
+            Qui est proche ? Qui est présent, mais pas proche ? Qui s'est éloigné ? Qui est chaleureux, mais irrégulier ? Quelle connaissance pourrait devenir plus ?
+          </p>
+          <p class="c-body">
+            Aujourd'hui, il ne s'agit pas de juger votre vie sociale. Il s'agit de la voir clairement.
+          </p>
+          <p class="c-challenge-day__prompt">
+            Dessinez des cercles concentriques et placez vos proches, du plus proche au plus lointain.
+          </p>
+          <div class="c-challenge-field">
+            <label for="note-jour-1">Note privée (facultatif)</label>
+            <textarea id="note-jour-1" data-note placeholder="Exemple : Mon cercle proche est plus petit que je pensais, mais j'ai de vraies connexions chaleureuses autour de moi."></textarea>
+            <p class="c-challenge-note">Quelques mots suffisent. C'est pour vous, et vous pourrez tout imprimer à la fin.</p>
+          </div>
+          <label class="c-challenge-complete">
+            <input type="checkbox" data-complete>
+            <span>J'ai dessiné mes cercles et placé mes proches, du plus proche au plus lointain.</span>
+          </label>
+        </article>
+
+        <article class="c-challenge-day" id="jour-2" data-day="2" hidden>
+          <div class="c-challenge-day__meta">
+            <span class="c-challenge-day__badge">Jour 2/7</span>
+            <span class="c-challenge-day__status" data-status>Prêt</span>
+          </div>
+          <h2 class="c-challenge-day__title">Nommez ce qui coince</h2>
+          <p class="c-body">
+            La frustration amicale reste souvent floue tant qu'on ne la nomme pas.
+          </p>
+          <p class="c-body">
+            Peut-être que c'est toujours vous qui proposez. Peut-être que vous vous sentez oublié. Peut-être que les conversations restent en surface. Peut-être que vous connaissez beaucoup de monde, sans vous sentir vraiment proche de personne.
+          </p>
+          <p class="c-body">
+            La clarté compte. On ne peut pas bien pratiquer l'amitié sans savoir ce qui coince.
+          </p>
+          <p class="c-challenge-day__prompt">
+            Listez trois choses qui vous pèsent dans vos amitiés, actuelles ou passées.
+          </p>
+          <div class="c-challenge-field">
+            <label for="note-jour-2">Note privée (facultatif)</label>
+            <textarea id="note-jour-2" data-note placeholder="Exemple : Je connais beaucoup de monde, mais je ne me sens vraiment proche de personne."></textarea>
+            <p class="c-challenge-note">Quelques mots suffisent. C'est pour vous, et vous pourrez tout imprimer à la fin.</p>
+          </div>
+          <label class="c-challenge-complete">
+            <input type="checkbox" data-complete>
+            <span>J'ai listé trois choses qui me pèsent dans mes amitiés.</span>
+          </label>
+        </article>
+
+        <article class="c-challenge-day" id="jour-3" data-day="3" hidden>
+          <div class="c-challenge-day__meta">
+            <span class="c-challenge-day__badge">Jour 3/7</span>
+            <span class="c-challenge-day__status" data-status>Prêt</span>
+          </div>
+          <h2 class="c-challenge-day__title">Définissez ce que l'amitié veut dire pour vous</h2>
+          <p class="c-body">
+            Chacun met quelque chose de différent derrière le mot « ami ».
+          </p>
+          <p class="c-body">
+            Pour l'un, l'amitié veut dire prendre des nouvelles des deux côtés. Pour l'autre, c'est la profondeur émotionnelle. Pour un troisième, c'est l'histoire partagée, l'humour, la loyauté, ou être là dans les moments durs.
+          </p>
+          <p class="c-body">
+            Il n'y a pas de définition unique. Mais vous avez besoin de connaître la vôtre.
+          </p>
+          <p class="c-challenge-day__prompt">
+            Écrivez trois choses qui rendent une amitié réelle, pour vous.
+          </p>
+          <div class="c-challenge-field">
+            <label for="note-jour-3">Note privée (facultatif)</label>
+            <textarea id="note-jour-3" data-note placeholder="Exemple : Pour moi, une vraie amitié inclut la présence, l'humour, et être là quand la vie est dure."></textarea>
+            <p class="c-challenge-note">Quelques mots suffisent. C'est pour vous, et vous pourrez tout imprimer à la fin.</p>
+          </div>
+          <label class="c-challenge-complete">
+            <input type="checkbox" data-complete>
+            <span>J'ai écrit trois choses qui rendent une amitié réelle pour moi.</span>
+          </label>
+        </article>
+
+        <article class="c-challenge-day" id="jour-4" data-day="4" hidden>
+          <div class="c-challenge-day__meta">
+            <span class="c-challenge-day__badge">Jour 4/7</span>
+            <span class="c-challenge-day__status" data-status>Prêt</span>
+          </div>
+          <h2 class="c-challenge-day__title">Rendez vos principes visibles</h2>
+          <p class="c-body">
+            La plupart d'entre nous portent des principes secrets sur la façon dont les amis devraient se comporter.
+          </p>
+          <p class="c-body">
+            Un vrai ami devrait prendre des nouvelles. Un vrai ami devrait se souvenir. Un vrai ami devrait proposer. Un vrai ami devrait sentir quand j'ai besoin de soutien.
+          </p>
+          <p class="c-body">
+            Ces principes peuvent créer beaucoup de souffrance. Aujourd'hui, rendez-en trois visibles.
+          </p>
+          <p class="c-challenge-day__prompt">
+            Complétez « Un vrai ami devrait... » trois fois.
+          </p>
+          <div class="c-challenge-field">
+            <label for="note-jour-4">Note privée (facultatif)</label>
+            <textarea id="note-jour-4" data-note placeholder="Exemple : Un vrai ami devrait prendre des nouvelles. Un vrai ami devrait proposer. Un vrai ami devrait sentir quand j'ai besoin de soutien."></textarea>
+            <p class="c-challenge-note">Quelques mots suffisent. C'est pour vous, et vous pourrez tout imprimer à la fin.</p>
+          </div>
+          <label class="c-challenge-complete">
+            <input type="checkbox" data-complete>
+            <span>J'ai complété « Un vrai ami devrait... » trois fois.</span>
+          </label>
+        </article>
+
+        <article class="c-challenge-day" id="jour-5" data-day="5" hidden>
+          <div class="c-challenge-day__meta">
+            <span class="c-challenge-day__badge">Jour 5/7</span>
+            <span class="c-challenge-day__status" data-status>Prêt</span>
+          </div>
+          <h2 class="c-challenge-day__title">Vérifiez si vos principes vous aident encore</h2>
+          <p class="c-body">
+            Hier, vous avez nommé trois croyances sur la façon dont les amis devraient se comporter.
+          </p>
+          <p class="c-body">
+            Aujourd'hui, posez une question plus simple : est-ce que ces principes m'aident encore ?
+          </p>
+          <p class="c-body">
+            Un principe, c'est comme un manteau qu'on a enfilé un jour où il faisait froid.
+          </p>
+          <p class="c-body">
+            À un moment, il vous a protégé. Peut-être que vous avez appris à ne pas trop attendre. À laisser l'autre faire le premier pas. À protéger votre énergie.
+          </p>
+          <p class="c-body">
+            C'était logique. Mais parfois, on garde le manteau alors qu'on n'en a plus besoin.
+          </p>
+          <p class="c-challenge-day__prompt">
+            Choisissez un principe et écrivez : « Ce principe m'a protégé en... » puis « Ce principe me freine peut-être en... »
+          </p>
+          <div class="c-challenge-field">
+            <label for="note-jour-5">Note privée (facultatif)</label>
+            <textarea id="note-jour-5" data-note placeholder="Exemple : Ce principe m'a protégé en m'apprenant à moins attendre. Ce principe me freine peut-être en me rendant distant trop vite."></textarea>
+            <p class="c-challenge-note">Quelques mots suffisent. C'est pour vous, et vous pourrez tout imprimer à la fin.</p>
+          </div>
+          <label class="c-challenge-complete">
+            <input type="checkbox" data-complete>
+            <span>J'ai vérifié si un de mes principes d'amitié m'aide encore.</span>
+          </label>
+        </article>
+
+        <article class="c-challenge-day" id="jour-6" data-day="6" hidden>
+          <div class="c-challenge-day__meta">
+            <span class="c-challenge-day__badge">Jour 6/7</span>
+            <span class="c-challenge-day__status" data-status>Prêt</span>
+          </div>
+          <h2 class="c-challenge-day__title">Choisissez ce qui vous fait du bien</h2>
+          <p class="c-body">
+            L'amitié n'est pas censée être une source constante de souffrance.
+          </p>
+          <p class="c-body">
+            Elle devrait apporter quelque chose à votre vie : de la chaleur, de la présence, des rires, du soutien, du sens, ou de la légèreté.
+          </p>
+          <p class="c-body">
+            Ça ne veut pas dire que chaque ami doit cocher tous les principes que vous avez nommés.
+          </p>
+          <p class="c-body">
+            Les amitiés sont un cadeau de la vie. Elles ne sont pas toujours profondes, régulières ou parfaites, mais elles apportent quand même quelque chose de bon.
+          </p>
+          <p class="c-body">
+            L'équilibre, c'est de savoir ce que vous pouvez savourer, ce que vous pouvez demander, et ce qui fait trop mal pour continuer à courir après.
+          </p>
+          <p class="c-challenge-day__prompt">
+            Choisissez une amitié (passée ou idéale) et écrivez : « Cette amitié m'apporte... » puis « Ce que je dois arrêter de forcer, c'est... »
+          </p>
+          <div class="c-challenge-field">
+            <label for="note-jour-6">Note privée (facultatif)</label>
+            <textarea id="note-jour-6" data-note placeholder="Exemple : Cette amitié m'apporte de la chaleur et de l'humour. Ce que je dois arrêter de forcer, c'est une profondeur qu'elle ne peut pas offrir."></textarea>
+            <p class="c-challenge-note">Quelques mots suffisent. C'est pour vous, et vous pourrez tout imprimer à la fin.</p>
+          </div>
+          <label class="c-challenge-complete">
+            <input type="checkbox" data-complete>
+            <span>J'ai nommé ce qu'une amitié m'apporte et ce que je dois arrêter de forcer.</span>
+          </label>
+        </article>
+
+        <article class="c-challenge-day" id="jour-7" data-day="7" hidden>
+          <div class="c-challenge-day__meta">
+            <span class="c-challenge-day__badge">Jour 7/7</span>
+            <span class="c-challenge-day__status" data-status>Prêt</span>
+          </div>
+          <h2 class="c-challenge-day__title">Qu'est-ce que vous emportez ?</h2>
+          <p class="c-body">
+            Vous êtes arrivé au jour 7. Bravo, sincèrement !
+          </p>
+          <p class="c-body">
+            Cette semaine, vous avez cartographié votre vie amicale, nommé ce qui vous pèse, clarifié vos principes, regardé ce que vous portez, et remarqué ce que vous devez peut-être arrêter de forcer.
+          </p>
+          <p class="c-body">
+            C'est un vrai travail.
+          </p>
+          <p class="c-body">
+            Aujourd'hui, il ne s'agit pas d'ajouter une tâche. Il s'agit de remarquer ce qui a changé dans votre façon de voir vos amitiés.
+          </p>
+          <p class="c-challenge-day__prompt">
+            Écrivez une phrase : « Ce que je retiens surtout de ce défi, c'est... »
+          </p>
+          <div class="c-challenge-field">
+            <label for="note-jour-7">Note privée (facultatif)</label>
+            <textarea id="note-jour-7" data-note placeholder="Exemple : Ce que je retiens surtout de ce défi, c'est que je peux apprécier différentes formes d'amitié sans exiger de chacune qu'elle soit tout."></textarea>
+            <p class="c-challenge-note">Quelques mots suffisent. C'est pour vous, et vous pourrez tout imprimer à la fin.</p>
+          </div>
+          <p class="c-body">
+            Maintenant, choisissez une personne de vos cercles du jour 1. Pas la plus difficile. Pas la plus lointaine. Quelqu'un dont vous aimeriez être un peu plus proche. Envoyez-lui un message cette semaine. Pas un long message. Juste celui qui ouvre une porte.
+          </p>
+          <p class="c-body">
+            C'est ça, la pratique. C'est là que tout commence.
+          </p>
+          <label class="c-challenge-complete">
+            <input type="checkbox" data-complete>
+            <span>J'ai écrit ce que je retiens, et je sais à qui je vais écrire cette semaine.</span>
+          </label>
+        </article>
+
+      </div>
+
+      <section class="c-challenge-recap" id="recap" hidden aria-live="polite">
+        <div>
+          <p class="c-label">Votre récap</p>
+          <p class="c-challenge-final-badge">Défi amitié 7 jours terminé</p>
+          <h2 class="c-heading c-heading--2 u-mt-4">Votre récap du défi amitié</h2>
+          <p class="c-body u-mt-6">
+            Ce n'est pas un test. C'est un point de départ.
+          </p>
+          <p class="c-body">
+            Gardez ce récap. Si vous décidez un jour de faire le programme de 4 séances, vous pouvez l'enregistrer en PDF ou le copier quelque part. Il nous aidera à aller plus loin en coaching.
+          </p>
+        </div>
+
+        <div class="c-challenge-recap__list" id="defi-recap-list"></div>
+
+        <div class="c-challenge-actions">
+          <button class="c-btn c-btn--primary c-btn--sm" type="button" id="defi-copy-recap">Copier mon récap</button>
+          <button class="c-btn c-btn--ghost c-btn--sm" type="button" id="defi-print-recap">Imprimer ou enregistrer en PDF</button>
+        </div>
+        <p class="c-challenge-copy-status" id="defi-copy-status" aria-live="polite"></p>
+      </section>
+    </div>
+  </section>
+
+  <section class="u-section">
+    <div class="u-container u-container--prose">
+      <p class="c-label">Après le défi</p>
+      <h2 class="c-heading c-heading--2">Appliquez tout ça à une vraie situation.</h2>
+      <p class="c-body u-mt-6">
+        Cette page vous aide à poser les fondations. Pour aller plus loin :
+      </p>
+      <p class="c-body">
+        Si vous voulez avancer sur votre situation avec une vraie personne, c'est exactement le rôle du programme privé de 4 séances. On applique ces fondations à votre vraie vie amicale : une personne, une relation, une pratique plus claire. Les séances existent en français comme en anglais.
+      </p>
+      <div class="c-hero__actions u-mt-8">
+        <a class="c-btn c-btn--primary c-btn--lg" href="/fr/#programme">Découvrir le programme</a>
+        <a class="c-btn c-btn--ghost c-btn--lg" href="/fr/guides/se-faire-des-amis-adulte/">Lire le guide</a>
+      </div>
+      <p class="c-disclaimer u-mt-10">
+        <strong>Ceci est du contenu éducatif lié au coaching.</strong> Ce n'est ni une thérapie, ni un suivi de santé mentale, ni un soutien de crise. Si vous vous sentez en danger, appelez le 3114 (gratuit, 24h/24). En danger immédiat, appelez le 15 ou le 112.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="c-footer">
+  <div class="c-footer__inner">
+    <div>
+      <p class="c-footer__copy">© 2026 Carole Stromboni · The Friendship Practice</p>
+      <p class="c-footer__note u-mt-2">Du coaching, pas une thérapie ni un soutien de crise. <a href="/challenge.html" lang="en">English version</a></p>
+    </div>
+    <nav class="c-footer__links" aria-label="Pages légales">
+      <a href="/about.html" lang="en">About</a>
+      <a href="/terms.html" lang="en">Terms</a>
+      <a href="/privacy.html" lang="en">Privacy</a>
+      <a href="/disclaimer.html" lang="en">Disclaimer</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var storageKey = "tfpDefiAmitieV1";
+    var days = Array.prototype.slice.call(document.querySelectorAll("[data-day]"));
+    var progressText = document.getElementById("defi-progress-text");
+    var progressBox = document.querySelector(".c-challenge-progress");
+    var nextText = document.getElementById("defi-next-text");
+    var resetButton = document.getElementById("defi-reset");
+    var startLink = document.getElementById("defi-start-link");
+    var recapSection = document.getElementById("recap");
+    var recapList = document.getElementById("defi-recap-list");
+    var copyRecapButton = document.getElementById("defi-copy-recap");
+    var printRecapButton = document.getElementById("defi-print-recap");
+    var copyStatus = document.getElementById("defi-copy-status");
+
+    var recapTitles = {
+      "1": "Jour 1/7 - Ma carte amicale",
+      "2": "Jour 2/7 - Ce qui me pèse",
+      "3": "Jour 3/7 - Ma définition de l'amitié",
+      "4": "Jour 4/7 - Un vrai ami devrait...",
+      "5": "Jour 5/7 - Ce que ce principe protégeait",
+      "6": "Jour 6/7 - L'amitié comme cadeau",
+      "7": "Jour 7/7 - Ce que je retiens"
+    };
+
+    function getInitialState() {
+      return { completed: {}, notes: {} };
+    }
+
+    function loadState() {
+      try {
+        var stored = window.localStorage.getItem(storageKey);
+        return stored ? JSON.parse(stored) : getInitialState();
+      } catch (error) {
+        return getInitialState();
+      }
+    }
+
+    function saveState(state) {
+      try {
+        window.localStorage.setItem(storageKey, JSON.stringify(state));
+      } catch (error) {
+        return;
+      }
+    }
+
+    function isUnlocked(dayNumber, state) {
+      if (dayNumber === 1) return true;
+      return Boolean(state.completed[String(dayNumber - 1)]);
+    }
+
+    function getCompletedCount(state) {
+      return days.reduce(function (count, day) {
+        var dayNumber = day.getAttribute("data-day");
+        return state.completed[dayNumber] ? count + 1 : count;
+      }, 0);
+    }
+
+    function getCurrentDayNumber(state) {
+      for (var i = 1; i <= days.length; i += 1) {
+        if (!state.completed[String(i)] && isUnlocked(i, state)) return i;
+      }
+      return days.length;
+    }
+
+    function cleanFutureProgress(state, fromDayNumber) {
+      days.forEach(function (futureDay) {
+        var futureKey = futureDay.getAttribute("data-day");
+        if (Number(futureKey) > Number(fromDayNumber)) {
+          delete state.completed[futureKey];
+        }
+      });
+    }
+
+    function formatNote(note) {
+      var trimmed = (note || "").trim();
+      return trimmed ? trimmed : "Pas de note privée pour ce jour.";
+    }
+
+    function syncVisibleNotes(state) {
+      days.forEach(function (day) {
+        var dayKey = day.getAttribute("data-day");
+        var textarea = day.querySelector("[data-note]");
+        if (textarea) {
+          state.notes[dayKey] = textarea.value;
+        }
+      });
+      saveState(state);
+      return state;
+    }
+
+    function buildRecapText(state) {
+      state = syncVisibleNotes(state);
+      var lines = [
+        "The Friendship Practice - Récap du défi amitié 7 jours",
+        "",
+        "Défi amitié 7 jours terminé",
+        "Ce n'est pas un test. C'est un point de départ.",
+        "Gardez ce récap. Si vous décidez un jour de faire le programme de 4 séances, il nous aidera à aller plus loin en coaching.",
+        ""
+      ];
+      days.forEach(function (day) {
+        var dayKey = day.getAttribute("data-day");
+        lines.push(recapTitles[dayKey]);
+        lines.push(formatNote(state.notes[dayKey]));
+        lines.push("");
+      });
+      return lines.join("\n").trim();
+    }
+
+    function renderRecap(state, completedCount) {
+      if (!recapSection || !recapList) return;
+      if (completedCount !== days.length) {
+        recapSection.hidden = true;
+        recapList.innerHTML = "";
+        if (copyStatus) copyStatus.textContent = "";
+        return;
+      }
+      recapSection.hidden = false;
+      recapList.innerHTML = "";
+      days.forEach(function (day) {
+        var dayKey = day.getAttribute("data-day");
+        var item = document.createElement("article");
+        item.className = "c-challenge-recap__item";
+        var title = document.createElement("h3");
+        title.className = "c-challenge-recap__title";
+        title.textContent = recapTitles[dayKey];
+        var note = document.createElement("p");
+        note.className = "c-challenge-recap__note";
+        var label = document.createElement("p");
+        label.className = "c-challenge-recap__label";
+        label.textContent = "Note privée";
+        note.textContent = formatNote(state.notes[dayKey]);
+        if (!state.notes[dayKey] || !state.notes[dayKey].trim()) {
+          note.className += " c-challenge-recap__empty";
+        }
+        item.appendChild(title);
+        item.appendChild(label);
+        item.appendChild(note);
+        recapList.appendChild(item);
+      });
+    }
+
+    function removeExistingCelebration() {
+      var existingToast = document.querySelector("[data-challenge-toast]");
+      var existingConfetti = document.querySelector("[data-challenge-confetti]");
+      if (existingToast) existingToast.remove();
+      if (existingConfetti) existingConfetti.remove();
+    }
+
+    function showCelebration(dayNumber) {
+      removeExistingCelebration();
+      var toast = document.createElement("div");
+      toast.className = "c-challenge-toast";
+      toast.setAttribute("data-challenge-toast", "true");
+      toast.setAttribute("role", "status");
+      toast.setAttribute("aria-live", "polite");
+      var title = document.createElement("p");
+      title.className = "c-challenge-toast__title";
+      title.textContent = dayNumber === days.length ? "Défi terminé" : "Jour " + dayNumber + "/7 terminé";
+      var message = document.createElement("p");
+      message.className = "c-challenge-toast__text";
+      message.textContent = dayNumber === days.length
+        ? "Vous êtes allé au bout du défi. Votre récap est prêt."
+        : "Bien joué. Vous avez pris ce temps, et ça compte.";
+      toast.appendChild(title);
+      toast.appendChild(message);
+      document.body.appendChild(toast);
+
+      var prefersReducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      if (!prefersReducedMotion) {
+        var confetti = document.createElement("div");
+        confetti.className = "c-challenge-confetti";
+        confetti.setAttribute("data-challenge-confetti", "true");
+        confetti.setAttribute("aria-hidden", "true");
+        var symbols = ["✦", "•", "✧", "·", "✦", "•"];
+        for (var i = 0; i < 18; i += 1) {
+          var piece = document.createElement("span");
+          piece.className = "c-challenge-confetti__piece c-challenge-confetti__piece--" + (i + 1);
+          piece.textContent = symbols[i % symbols.length];
+          confetti.appendChild(piece);
+        }
+        document.body.appendChild(confetti);
+      }
+      window.setTimeout(removeExistingCelebration, 1900);
+    }
+
+    function render() {
+      var state = loadState();
+      var completedCount = getCompletedCount(state);
+      var currentDayNumber = getCurrentDayNumber(state);
+
+      progressText.textContent = completedCount + " jour" + (completedCount > 1 ? "s" : "") + " sur " + days.length + " terminé" + (completedCount > 1 ? "s" : "") + ".";
+      progressBox.setAttribute("data-progress", String(completedCount));
+      renderRecap(state, completedCount);
+
+      if (completedCount === days.length) {
+        nextText.textContent = "Défi terminé. Votre récap est prêt ci-dessous.";
+        startLink.textContent = "Voir mon récap";
+        startLink.setAttribute("href", "#recap");
+      } else {
+        nextText.textContent = "Le jour " + currentDayNumber + "/7 est prêt. Le jour suivant apparaît quand vous cochez la réflexion du jour.";
+        startLink.textContent = currentDayNumber === 1 ? "Commencer le jour 1/7" : "Continuer le jour " + currentDayNumber + "/7";
+        startLink.setAttribute("href", "#jour-" + currentDayNumber);
+      }
+
+      days.forEach(function (day) {
+        var dayNumber = Number(day.getAttribute("data-day"));
+        var dayKey = String(dayNumber);
+        var unlocked = isUnlocked(dayNumber, state);
+        var complete = Boolean(state.completed[dayKey]);
+        var checkbox = day.querySelector("[data-complete]");
+        var textarea = day.querySelector("[data-note]");
+        var status = day.querySelector("[data-status]");
+
+        if (!unlocked && !complete) {
+          day.hidden = true;
+          return;
+        }
+        day.hidden = false;
+        checkbox.disabled = false;
+        checkbox.checked = complete;
+        textarea.disabled = false;
+        textarea.value = state.notes[dayKey] || "";
+        status.textContent = complete ? "Terminé" : "Prêt";
+      });
+    }
+
+    days.forEach(function (day) {
+      var dayKey = day.getAttribute("data-day");
+      var checkbox = day.querySelector("[data-complete]");
+      var textarea = day.querySelector("[data-note]");
+
+      checkbox.addEventListener("change", function () {
+        var state = loadState();
+        state.notes[dayKey] = textarea.value;
+        state.completed[dayKey] = checkbox.checked;
+        if (!checkbox.checked) {
+          cleanFutureProgress(state, Number(dayKey));
+        }
+        saveState(state);
+        render();
+        if (checkbox.checked) {
+          showCelebration(Number(dayKey));
+        }
+        if (checkbox.checked && Number(dayKey) < days.length) {
+          window.location.hash = "#jour-" + (Number(dayKey) + 1);
+        } else if (checkbox.checked && Number(dayKey) === days.length) {
+          window.location.hash = "#recap";
+        }
+      });
+
+      textarea.addEventListener("input", function () {
+        var state = loadState();
+        state.notes[dayKey] = textarea.value;
+        saveState(state);
+        if (getCompletedCount(state) === days.length) {
+          renderRecap(state, days.length);
+        }
+      });
+    });
+
+    if (copyRecapButton) {
+      copyRecapButton.addEventListener("click", function () {
+        var state = loadState();
+        var recapText = buildRecapText(state);
+
+        function showCopiedMessage() {
+          if (copyStatus) {
+            copyStatus.textContent = "Récap copié. Vous pouvez le coller dans vos notes ou l'apporter en coaching.";
+          }
+        }
+
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(recapText).then(showCopiedMessage).catch(function () {
+            if (copyStatus) {
+              copyStatus.textContent = "La copie n'a pas fonctionné dans ce navigateur. Vous pouvez sélectionner le texte manuellement.";
+            }
+          });
+          return;
+        }
+
+        var temporaryTextarea = document.createElement("textarea");
+        temporaryTextarea.value = recapText;
+        temporaryTextarea.setAttribute("readonly", "readonly");
+        temporaryTextarea.className = "c-challenge-copy-buffer";
+        document.body.appendChild(temporaryTextarea);
+        temporaryTextarea.select();
+        try {
+          document.execCommand("copy");
+          showCopiedMessage();
+        } catch (error) {
+          if (copyStatus) {
+            copyStatus.textContent = "La copie n'a pas fonctionné dans ce navigateur. Vous pouvez sélectionner le texte manuellement.";
+          }
+        }
+        document.body.removeChild(temporaryTextarea);
+      });
+    }
+
+    if (printRecapButton) {
+      printRecapButton.addEventListener("click", function () {
+        window.print();
+      });
+    }
+
+    resetButton.addEventListener("click", function () {
+      var confirmed = window.confirm("Réinitialiser votre progression et vos notes privées sur cet appareil ?");
+      if (!confirmed) return;
+      try {
+        window.localStorage.removeItem(storageKey);
+      } catch (error) {
+        return;
+      }
+      render();
+      window.location.hash = "#progression";
+    });
+
+    render();
+  }());
+</script>
+
+  <script data-goatcounter="https://friendc.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
