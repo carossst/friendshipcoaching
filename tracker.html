@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
   <title>The Friendship Tracker | The Friendship Practice</title>
-  <meta name="description" content="Track the shared time that turns acquaintances into friends. Based on Dr. Jeffrey Hall's research on how friendships form.">
+  <meta name="description" content="Track the shared time that turns acquaintances into friends. Friendship is something you practice, and this free tool shows you where you are.">
   <link rel="stylesheet" href="/Fcoaching.css">
   <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/icons/favicon.ico" sizes="32x32">
@@ -228,7 +228,7 @@
       <div id="contactList" class="u-mt-10"></div>
       <div class="u-mt-10" style="border-top:var(--border);padding-top:var(--space-8);">
         <p class="c-label" style="margin-bottom:var(--space-3);">Backup</p>
-        <p class="c-body" style="font-size:var(--text-sm);color:var(--color-ink-muted);margin-bottom:var(--space-5);">Your data is stored in this browser only. Export it to keep a backup or move it to another device. If you clear your browser cache or open this page from an email app, your data may not be visible — restore it with an import.</p>
+        <p class="c-body" style="font-size:var(--text-sm);color:var(--color-ink-muted);margin-bottom:var(--space-5);">Your data is stored in this browser only. Export it to keep a backup or move it to another device. If you clear your browser cache or open this page from an email app, your data may not be visible. Restore it with an import.</p>
         <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;align-items:center;">
           <button id="exportBtn" class="c-btn c-btn--ghost c-btn--sm">Export backup</button>
           <label class="c-btn c-btn--ghost c-btn--sm" style="cursor:pointer;margin:0;">
@@ -294,10 +294,10 @@
 
   var scripts = {
     general: function (name) {
-      return 'Hi ' + name + ', really enjoyed our time together. I\'m [free on day / going to place] — would love to do it again soon if you\'re around.';
+      return 'Hi ' + name + ', really enjoyed our time together. I\'m [free on day / going to place], would love to do it again soon if you\'re around.';
     },
     expat: function (name) {
-      return 'Hi ' + name + '! It was great to connect. I\'m checking out [local spot] on [day] — let me know if you want to join. No pressure, just thought of you.';
+      return 'Hi ' + name + '! It was great to connect. I\'m checking out [local spot] on [day], let me know if you want to join. No pressure, just thought of you.';
     },
     remote: function (name) {
       return 'Hey ' + name + ', it was good to actually see a human today. I\'m taking my laptop to [café or workspace] on [day] to get out of the house. Feel free to come work alongside if you\'re free.';
@@ -306,7 +306,7 @@
       return 'Hey ' + name + ', so good running into you. I\'m heading to [park or playground] on [day] around [time], just to get some air. Let me know if you want to meet there.';
     },
     newcity: function (name) {
-      return 'Hi ' + name + ', I\'m still finding my way around. I\'m trying out [place] on [day] — if you happen to be free, I\'d love the company.';
+      return 'Hi ' + name + ', I\'m still finding my way around. I\'m trying out [place] on [day], if you happen to be free I\'d love the company.';
     }
   };
 

@@ -62,7 +62,7 @@
       "path": "/challenge.html",
       "status": "live",
       "title": "7-Day Friendship Challenge | The Friendship Practice",
-      "description": "A private, browser-only 7-day friendship challenge to take stock of your friendship life, clarify your principles, and name what friendship practice could mean for you.",
+      "description": "A free, private 7-day friendship challenge: take stock of your friendship life, clarify what you want, and name your next step. One short reflection a day.",
       "ogDescription": "A free 7-day challenge to take stock of your friendship life and clarify what friendship practice could mean for you.",
       "changefreq": "monthly",
       "priority": "0.7",
@@ -128,7 +128,7 @@
       "path": "/about.html",
       "status": "live",
       "title": "Carole Stromboni | Friendship Coach | The Friendship Practice",
-      "description": "Carole Stromboni is a friendship coach and the founder of The Friendship Practice. She works with adults navigating the real challenges of friendship: new cities, remote work, new parenthood, and rebuilding after a friendship ends. Sessions online.",
+      "description": "Carole Stromboni is a friendship coach and founder of The Friendship Practice. She helps adults make new friends, reconnect, and deepen the friendships they have.",
       "ogDescription": "Friendship coach, author of Innover en pratique (Eyrolles), and founder of The Friendship Practice.",
       "changefreq": "yearly",
       "priority": "0.6",
@@ -194,7 +194,7 @@
       "path": "/press.html",
       "status": "live",
       "title": "Press & Media | Carole Stromboni | The Friendship Practice",
-      "description": "Press resources for journalists and media covering adult friendship, loneliness, and social connection. Expert quotes, key statistics, and contact information for Carole Stromboni, friendship coach.",
+      "description": "Press resources on adult friendship and loneliness: expert bio, key statistics, and ready-to-quote perspectives from friendship coach Carole Stromboni.",
       "ogDescription": "Expert resources on adult friendship for journalists. Key statistics, ready-to-quote perspectives, and interview contact.",
       "changefreq": "yearly",
       "priority": "0.5",
@@ -424,7 +424,7 @@
           "paragraphs": [
             "Friendship grows through seeing people again. School, campus life, and early jobs often create repeated contact automatically. Later in life, those structures are weaker or disappear altogether.",
             "When repetition disappears, friendship requires more intention. Someone has to suggest the next coffee, the next walk, the next plan.",
-            "Research by Professor Jeffrey Hall at the University of Kansas found that moving from acquaintance to friend requires roughly 50 hours of shared time, time that school and early work life once generated automatically, without anyone having to plan for it. In adult life, that time has to be created on purpose. (<a href=\"https://journals.sagepub.com/doi/full/10.1177/0265407518761225\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Social and Personal Relationships</a>)",
+            "Research shows that moving from acquaintance to friend takes roughly 50 hours of shared time, time that school and early work life once generated automatically, without anyone having to plan for it. In adult life, that time has to be created on purpose. (<a href=\"https://journals.sagepub.com/doi/full/10.1177/0265407518761225\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Social and Personal Relationships</a>)",
             "Hall's research makes a second distinction. He separates friendships formed by obligation, at work or school, from friendships that are freely chosen. His data show that hours in an obligatory context are poor predictors of closeness. Forty hours a week next to a coworker does not produce the same friendship as twenty hours chosen freely. This explains why a full calendar can still feel lonely. The people are there. The choice is not. (<a href=\"https://journals.sagepub.com/doi/full/10.1177/0265407518761225\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Social and Personal Relationships</a>)"
           ],
           "quote": "Most adult loneliness is not about missing people. It is about missing the repetition that turns people into friends.",
@@ -967,7 +967,7 @@
         },
         {
           "q": "How many hours does it take to build a close male friendship?",
-          "a": "Professor Jeffrey Hall at the University of Kansas found it takes roughly 50 hours of shared time to form a casual friendship, and around 200 hours to build a close one. For men, shared activity is typically the most efficient way to accumulate those hours, a regular game, a shared project, or a standing weekly activity."
+          "a": "Research shows it takes roughly 50 hours of shared time to form a casual friendship, and around 200 hours to build a close one. For men, shared activity is typically the most efficient way to accumulate those hours, a regular game, a shared project, or a standing weekly activity."
         },
         {
           "q": "Do men need therapy to rebuild friendships?",
@@ -980,7 +980,7 @@
       "status": "live",
       "lastmod": "2026-07-01",
       "title": "How Men Can Rebuild Friendships Without Making It Awkward | The Friendship Practice",
-      "description": "You don't need a deep conversation or a vulnerability retreat. You need a recurring activity, one invitation, and a follow-up. Here's how to rebuild male friendship practically.",
+      "description": "You don't need a deep conversation or a vulnerability retreat. You need a recurring activity, one invitation, and a follow-up. Here's how to rebuild.",
       "h1": "How men can rebuild friendships without making it awkward",
       "lead": "Rebuilding male friendship is not about opening up, admitting you are lonely, or scheduling a feelings conversation. It is about recreating the conditions that made friendship easy before, this time with a little more intention.",
       "intro": "Most men who want more friendship in their lives are not looking for a therapist substitute. They want the kind of relationship that used to happen naturally: doing something alongside someone, seeing each other enough that it becomes normal, without making a big deal out of any of it.",
@@ -1547,7 +1547,7 @@
       "status": "live",
       "title": "How to Make Friends When You Work From Home | The Friendship Practice",
       "h1": "How to Make Friends When You Work From Home",
-      "description": "Remote work removes the easiest structure for repeated contact in adult life. Here is how to build a real social life deliberately when your home is also your office.",
+      "description": "Remote work removes the easiest structure for repeated contact in adult life. Here is how to build a real social life when home is also your office.",
       "lead": "Making friends when you work from home is harder because remote work eliminates the most reliable source of repeated contact adults have: the workplace. The solution is not to replicate the office. It is to build new structures on purpose.",
       "pullQuote": "Remote work is not a social life problem. It is a structure problem. The office was doing most of the social infrastructure work without you having to think about it. Now you have to build that infrastructure yourself.",
       "intro": "Before remote work, the office did a lot of the friendship infrastructure work without anyone having to think about it. You saw the same people every day, conversations happened naturally, and some of them became real. When that structure disappears, the social life built on it disappears with it.",
@@ -1900,7 +1900,7 @@
       "status": "live",
       "lastmod": "2026-06-30",
       "title": "How to Make Friends as an Expat | The Friendship Practice",
-      "description": "Making friends as an expat adds a layer to an already difficult challenge: no existing network, different cultural scripts, and often a clock ticking on how long you'll stay.",
+      "description": "Making friends as an expat is a real challenge: no existing network, different cultural scripts, a ticking clock. Here is what actually works abroad.",
       "h1": "How to make friends as an expat",
       "lead": "Making friends as an expat is harder than making friends in a new city at home. You are navigating language, cultural codes, an absence of shared references, and the particular loneliness of starting over in a place where everyone already has their people.",
       "intro": "Making friends as an expat is possible, and the method is more deliberate than most people expect. You cannot rely on organic connection. You have to create the conditions for it: find recurring contexts, invest in them consistently, follow up quickly, and give things more time than you would at home.",
