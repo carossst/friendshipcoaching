@@ -167,7 +167,8 @@ ${(guide.sections || []).map((s) => `            <li class="c-toc__item"><a clas
   <title>${esc(guide.title)}</title>
   <meta name="description" content="${esc(guide.description)}">
   <link rel="canonical" href="${canonical}">
-  <meta name="theme-color" content="#faf7f2">
+  <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#201711" media="(prefers-color-scheme: dark)">
   <meta name="author" content="Carole Stromboni">
   <link rel="stylesheet" href="/Fcoaching.css">
   <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">

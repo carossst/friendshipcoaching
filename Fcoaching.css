@@ -7,6 +7,7 @@
 
 /* 1. Design tokens */
 :root {
+  color-scheme: light;
   /* Color palette */
   --color-bg: #FBF4EA;
   --color-bg-alt: #F3E7D8;
@@ -1824,4 +1825,58 @@ select {
   font-size: var(--text-sm);
   line-height: var(--leading-base);
   color: var(--color-ink-subtle);
+}
+
+/* ============================================================
+   Dark mode: warm dark palette, follows the system setting.
+   Same brand, lower light. All pairs pass WCAG AA.
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --color-bg: #201711;
+    --color-bg-alt: #281D15;
+    --color-bg-soft: #241A13;
+    --color-surface: #2B211A;
+    --color-surface-warm: #2E241C;
+
+    --color-ink: #F2E7DC;
+    --color-ink-muted: #CBB4A3;
+    --color-ink-subtle: #A98F7C;
+
+    --color-accent: #E8875D;
+    --color-accent-hover: #EF9C77;
+    --color-accent-soft: #6B3A24;
+    --color-accent-wash: #3A2618;
+    --color-accent-inv: #2A1B12;
+
+    --color-border: #3E2F23;
+    --color-border-strong: #A98F7C;
+    --color-focus: #C4A5F0;
+
+    --color-danger-bg: #3A221A;
+    --color-danger-border: #8C4F3C;
+
+    --shadow-xs: 0 1px 2px rgb(0 0 0 / 0.4);
+    --shadow-sm: 0 8px 22px rgb(0 0 0 / 0.45);
+    --shadow-md: 0 18px 44px rgb(0 0 0 / 0.5);
+    --shadow-lg: 0 26px 70px rgb(0 0 0 / 0.55);
+
+    --gradient-page:
+      radial-gradient(circle at top left, rgb(107 58 36 / 0.35), transparent 34rem),
+      radial-gradient(circle at 92% 12%, rgb(46 36 28 / 0.9), transparent 28rem),
+      linear-gradient(180deg, var(--color-bg) 0%, var(--color-bg-soft) 48%, var(--color-bg) 100%);
+    --gradient-hero:
+      radial-gradient(circle at 16% 20%, rgb(107 58 36 / 0.5), transparent 22rem),
+      radial-gradient(circle at 86% 10%, rgb(46 36 28 / 0.95), transparent 24rem),
+      linear-gradient(135deg, #241A13 0%, #2B1F16 56%, #32231A 100%);
+    --gradient-card:
+      linear-gradient(180deg, var(--color-surface) 0%, var(--color-surface-warm) 100%);
+  }
+
+  /* Photos: slightly dimmed so they sit comfortably on the dark page */
+  img {
+    filter: brightness(0.92);
+  }
 }
