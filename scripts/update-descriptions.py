@@ -24,7 +24,7 @@ DESCS = {
 
     # Friendship breakup as real grief — under-used angle
     "when-a-friendship-ends":
-        "Friendship breakups hurt as much as romantic ones, but nobody talks about them. Here is how to navigate the grief, accept the closure, and heal.",
+        "Friendship breakups can hurt as much as romantic ones, but nobody talks about them. Here is how to navigate the grief, accept the closure, and heal.",
 
     # Practical + specific, addresses the real adaptation needed
     "how-to-stay-friends-after-a-baby":
