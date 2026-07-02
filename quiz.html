@@ -27,25 +27,41 @@
   <meta name="twitter:description" content="A short quiz to find out where your friendship life most needs attention, and what to do about it.">
   <meta name="twitter:image" content="https://thefriendshippractice.com/icons/og-image.jpg">
   <style>
-    .c-quiz { display: flex; flex-direction: column; gap: var(--space-10); }
-    .c-quiz__q { border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-8); background: var(--color-surface); }
+    /* Progress bar */
+    .c-progress { display: flex; gap: var(--space-2); margin-bottom: var(--space-10); }
+    .c-progress__dot { height: 4px; flex: 1; border-radius: 2px; background: var(--color-border); transition: background 0.35s, opacity 0.35s; }
+    .c-progress__dot.is-done { background: var(--color-accent); }
+    .c-progress__dot.is-current { background: var(--color-accent); opacity: 0.4; }
+
+    /* Questions: one at a time */
+    .c-quiz__q { display: none; }
+    .c-quiz__q.is-active { display: block; animation: q-in 0.22s ease; }
+    @keyframes q-in { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .c-quiz__q-number { font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-ink-subtle); margin-bottom: var(--space-2); }
     .c-quiz__q-text { font-family: var(--font-serif); font-size: 1.1rem; font-weight: 600; color: var(--color-ink); margin-bottom: var(--space-6); line-height: 1.45; }
     .c-quiz__option { display: flex; align-items: flex-start; gap: var(--space-3); cursor: pointer; padding: var(--space-3) 0; }
     .c-quiz__option input[type="radio"] { margin-top: 0.25rem; accent-color: var(--color-accent); width: 1.1rem; height: 1.1rem; flex-shrink: 0; cursor: pointer; }
     .c-quiz__option-label { font-size: 0.9375rem; color: var(--color-ink); cursor: pointer; line-height: 1.5; }
     .c-quiz__option:has(input:checked) .c-quiz__option-label { color: var(--color-accent); font-weight: 500; }
-    .c-quiz__submit { margin-top: var(--space-4); }
+    .c-quiz__hint { font-size: 0.8125rem; color: var(--color-ink-subtle); margin-top: var(--space-5); }
+    .c-quiz__submit { margin-top: var(--space-6); display: none; }
+    .c-quiz-err { display: none; color: var(--color-accent); font-size: 0.875rem; margin-top: var(--space-4); font-weight: 500; }
+    .c-quiz-err.is-visible { display: block; }
+
+    /* Results */
     .c-result { display: none; }
-    .c-result.is-visible { display: block; }
+    .c-result.is-visible { display: block; animation: q-in 0.3s ease; }
     .c-result__tag { display: inline-block; background: var(--color-accent-wash); color: var(--color-accent); font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: var(--space-1) var(--space-3); border-radius: var(--radius-pill); margin-bottom: var(--space-4); border: 1px solid var(--color-accent-soft); }
     .c-result__profile { font-family: var(--font-serif); font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; color: var(--color-ink); margin-bottom: var(--space-6); line-height: 1.25; }
     .c-result__body { font-size: 1rem; color: var(--color-ink); line-height: 1.7; margin-bottom: var(--space-6); }
-    .c-result__guide-link { display: inline-block; font-size: 0.9375rem; font-weight: 600; color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; margin-bottom: var(--space-8); }
+    .c-result__guides { display: flex; flex-direction: column; gap: 0; margin-bottom: var(--space-8); }
+    .c-result__guide-link { display: inline-block; font-size: 0.9375rem; font-weight: 600; color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; margin-bottom: var(--space-4); }
     .c-result__guide-link:hover { color: var(--color-accent-hover); }
-    .c-quiz-err { display: none; color: var(--color-accent); font-size: 0.875rem; margin-top: var(--space-4); font-weight: 500; }
-    .c-quiz-err.is-visible { display: block; }
-    .c-quiz-step { counter-increment: question; }
-    .c-quiz__q-number { font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-ink-subtle); margin-bottom: var(--space-2); }
+    .c-result__secondary { display: none; margin-top: var(--space-2); margin-bottom: var(--space-8); padding: var(--space-5); background: var(--color-surface); border-radius: var(--radius-md); border: 1px solid var(--color-border); font-size: 0.9375rem; line-height: 1.6; color: var(--color-ink-subtle); }
+    .c-result__secondary strong { color: var(--color-ink); }
+    .c-result__secondary a { color: var(--color-accent); text-decoration: underline; text-underline-offset: 3px; font-weight: 500; }
+    .c-result__retake { background: none; border: none; font-size: 0.875rem; color: var(--color-ink-subtle); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; padding: 0; margin-top: var(--space-5); display: block; }
+    .c-result__retake:hover { color: var(--color-ink); }
   </style>
 </head>
 <body>
@@ -76,18 +92,29 @@
     <section class="u-section">
       <div class="u-container u-container--prose">
 
+        <div class="c-progress" aria-hidden="true">
+          <div class="c-progress__dot"></div>
+          <div class="c-progress__dot"></div>
+          <div class="c-progress__dot"></div>
+          <div class="c-progress__dot"></div>
+          <div class="c-progress__dot"></div>
+          <div class="c-progress__dot"></div>
+          <div class="c-progress__dot"></div>
+        </div>
+
         <form class="c-quiz" id="quiz-form" novalidate>
 
-          <div class="c-quiz__q c-quiz-step">
+          <div class="c-quiz__q">
             <p class="c-quiz__q-number">Question 1 of 5</p>
             <p class="c-quiz__q-text">When you think about your friendship life right now, what feels most true?</p>
             <label class="c-quiz__option"><input type="radio" name="q1" value="A"> <span class="c-quiz__option-label">I'd like to meet new people but I'm not sure how to start.</span></label>
-            <label class="c-quiz__option"><input type="radio" name="q1" value="B"> <span class="c-quiz__option-label">I have people I like, but we drift, I mean to reach out and then don't.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q1" value="B"> <span class="c-quiz__option-label">I have people I like, but we drift. I mean to reach out and then don't.</span></label>
             <label class="c-quiz__option"><input type="radio" name="q1" value="C"> <span class="c-quiz__option-label">I put in a lot of effort but it doesn't always feel mutual.</span></label>
             <label class="c-quiz__option"><input type="radio" name="q1" value="D"> <span class="c-quiz__option-label">I'm in a new place and starting from scratch.</span></label>
+            <p class="c-quiz__hint">Select one to continue.</p>
           </div>
 
-          <div class="c-quiz__q c-quiz-step">
+          <div class="c-quiz__q">
             <p class="c-quiz__q-number">Question 2 of 5</p>
             <p class="c-quiz__q-text">What usually happens after a good conversation with someone new?</p>
             <label class="c-quiz__option"><input type="radio" name="q2" value="A"> <span class="c-quiz__option-label">I hope we run into each other again.</span></label>
@@ -96,25 +123,25 @@
             <label class="c-quiz__option"><input type="radio" name="q2" value="D"> <span class="c-quiz__option-label">I enjoy it, but worry I won't see them again in this new city.</span></label>
           </div>
 
-          <div class="c-quiz__q c-quiz-step">
+          <div class="c-quiz__q">
             <p class="c-quiz__q-number">Question 3 of 5</p>
             <p class="c-quiz__q-text">What does your current social life feel like most days?</p>
-            <label class="c-quiz__option"><input type="radio" name="q3" value="A"> <span class="c-quiz__option-label">A bit thin, not many people to call.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q3" value="A"> <span class="c-quiz__option-label">A bit thin. Not many people to call.</span></label>
             <label class="c-quiz__option"><input type="radio" name="q3" value="B"> <span class="c-quiz__option-label">There are people I like, but things fade when I'm not pushing them.</span></label>
             <label class="c-quiz__option"><input type="radio" name="q3" value="C"> <span class="c-quiz__option-label">I have people, but the energy isn't always reciprocal.</span></label>
-            <label class="c-quiz__option"><input type="radio" name="q3" value="D"> <span class="c-quiz__option-label">Very new, I'm just getting started somewhere.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q3" value="D"> <span class="c-quiz__option-label">Very new. I'm just getting started somewhere.</span></label>
           </div>
 
-          <div class="c-quiz__q c-quiz-step">
+          <div class="c-quiz__q">
             <p class="c-quiz__q-number">Question 4 of 5</p>
             <p class="c-quiz__q-text">What feels most like the friction in your friendship life right now?</p>
             <label class="c-quiz__option"><input type="radio" name="q4" value="A"> <span class="c-quiz__option-label">I don't know where to meet people who would actually fit.</span></label>
             <label class="c-quiz__option"><input type="radio" name="q4" value="B"> <span class="c-quiz__option-label">I initiate, then let it drop. Things never quite solidify.</span></label>
             <label class="c-quiz__option"><input type="radio" name="q4" value="C"> <span class="c-quiz__option-label">I show up, I remember, I check in, but I'm not sure others do the same.</span></label>
-            <label class="c-quiz__option"><input type="radio" name="q4" value="D"> <span class="c-quiz__option-label">Everything feels unfamiliar, the city, the routines, the people.</span></label>
+            <label class="c-quiz__option"><input type="radio" name="q4" value="D"> <span class="c-quiz__option-label">Everything feels unfamiliar: the city, the routines, the people.</span></label>
           </div>
 
-          <div class="c-quiz__q c-quiz-step">
+          <div class="c-quiz__q">
             <p class="c-quiz__q-number">Question 5 of 5</p>
             <p class="c-quiz__q-text">If you could change one thing about your friendship life right now, it would be...</p>
             <label class="c-quiz__option"><input type="radio" name="q5" value="A"> <span class="c-quiz__option-label">Having more promising people in my orbit.</span></label>
@@ -123,7 +150,7 @@
             <label class="c-quiz__option"><input type="radio" name="q5" value="D"> <span class="c-quiz__option-label">Having at least one real local friend to count on.</span></label>
           </div>
 
-          <div class="c-quiz__submit">
+          <div class="c-quiz__submit" id="quiz-submit">
             <button type="submit" class="c-btn c-btn--primary c-btn--lg">See my result</button>
             <p class="c-quiz-err" id="quiz-err" role="alert">Please answer all five questions before continuing.</p>
           </div>
@@ -136,44 +163,60 @@
             <span class="c-result__tag">Your challenge</span>
             <h2 class="c-result__profile">The Waiting Game</h2>
             <p class="c-result__body">You have good instincts and you can feel when a connection is promising, but you tend to wait for things to continue on their own rather than taking the small step that would move it forward. The gap between a good encounter and a real friendship is almost always one follow-up. You don't need more opportunities. You need to take the ones you already have.</p>
-            <a class="c-result__guide-link" href="/guides/how-to-make-friends-as-an-adult/">Read: How to make friends as an adult &rarr;</a>
-            <a class="c-result__guide-link" href="/guides/how-to-follow-up-after-meeting-someone/">Read: How to follow up after meeting someone &rarr;</a>
+            <div class="c-result__guides">
+              <a class="c-result__guide-link" href="/guides/how-to-make-friends-as-an-adult/">Read: How to make friends as an adult &rarr;</a>
+              <a class="c-result__guide-link" href="/guides/how-to-follow-up-after-meeting-someone/">Read: How to follow up after meeting someone &rarr;</a>
+            </div>
+            <div class="c-result__secondary" id="secondary-A"></div>
             <div class="c-hero__actions u-mt-2">
               <a class="c-btn c-btn--primary c-btn--lg" href="/challenge.html">Start the free 7-day challenge</a>
             </div>
+            <button class="c-result__retake" type="button">Take the quiz again</button>
           </div>
 
           <div class="c-result" id="result-B">
             <span class="c-result__tag">Your challenge</span>
             <h2 class="c-result__profile">The Follow-through Gap</h2>
-            <p class="c-result__body">You're good at starting, you like people, you mean to stay in touch, and the warmth is real. But somewhere between intention and action, things slip. Life gets busy, the moment passes, and the friendship fades a little more each time. The connections you want are already there. What's missing is the small act of follow-through that keeps them alive.</p>
-            <a class="c-result__guide-link" href="/guides/how-to-keep-friends-as-an-adult/">Read: How to keep friends as an adult &rarr;</a>
-            <a class="c-result__guide-link" href="/guides/why-do-friendships-fade/">Read: Why do friendships fade &rarr;</a>
+            <p class="c-result__body">You're good at starting. You like people, you mean to stay in touch, and the warmth is real. But somewhere between intention and action, things slip. Life gets busy, the moment passes, and the friendship fades a little more each time. The connections you want are already there. What's missing is the small act of follow-through that keeps them alive.</p>
+            <div class="c-result__guides">
+              <a class="c-result__guide-link" href="/guides/how-to-keep-friends-as-an-adult/">Read: How to keep friends as an adult &rarr;</a>
+              <a class="c-result__guide-link" href="/guides/why-do-friendships-fade/">Read: Why do friendships fade &rarr;</a>
+            </div>
+            <div class="c-result__secondary" id="secondary-B"></div>
             <div class="c-hero__actions u-mt-2">
               <a class="c-btn c-btn--primary c-btn--lg" href="/challenge.html">Start the free 7-day challenge</a>
             </div>
+            <button class="c-result__retake" type="button">Take the quiz again</button>
           </div>
 
           <div class="c-result" id="result-C">
             <span class="c-result__tag">Your challenge</span>
             <h2 class="c-result__profile">The One-Sided Effort</h2>
             <p class="c-result__body">You show up. You remember. You check in. But you often end up feeling like the friendship only moves when you push it, and that's exhausting over time. This isn't a sign that you're bad at friendship. It might mean something about the specific people you've chosen to invest in, or something about the pattern of how you show up. Either way, there's a clearer way through it.</p>
-            <a class="c-result__guide-link" href="/guides/one-sided-friendship/">Read: One-sided friendship &rarr;</a>
-            <a class="c-result__guide-link" href="/guides/how-to-be-a-better-friend/">Read: How to be a better friend &rarr;</a>
+            <div class="c-result__guides">
+              <a class="c-result__guide-link" href="/guides/one-sided-friendship/">Read: One-sided friendship &rarr;</a>
+              <a class="c-result__guide-link" href="/guides/how-to-be-a-better-friend/">Read: How to be a better friend &rarr;</a>
+            </div>
+            <div class="c-result__secondary" id="secondary-C"></div>
             <div class="c-hero__actions u-mt-2">
               <a class="c-btn c-btn--primary c-btn--lg" href="/challenge.html">Start the free 7-day challenge</a>
             </div>
+            <button class="c-result__retake" type="button">Take the quiz again</button>
           </div>
 
           <div class="c-result" id="result-D">
             <span class="c-result__tag">Your challenge</span>
             <h2 class="c-result__profile">Starting Over</h2>
-            <p class="c-result__body">You're in a new place, or it feels like one. The social life you're looking for doesn't exist yet here, not because there's anything wrong with you, but because you haven't had time to build the repetition that turns a city into somewhere that feels like home. It's a specific kind of lonely. And it's very common. There are concrete ways to start.</p>
-            <a class="c-result__guide-link" href="/guides/how-to-meet-people-in-a-new-city/">Read: How to meet people in a new city &rarr;</a>
-            <a class="c-result__guide-link" href="/guides/how-to-make-friends-after-30/">Read: How to make friends after 30 &rarr;</a>
+            <p class="c-result__body">You're in a new place, or it feels like one. The social life you're looking for doesn't exist yet, not because there's anything wrong with you, but because you haven't had time to build the repetition that turns a city into somewhere that feels like home. It's a specific kind of lonely. And it's very common. There are concrete ways to start.</p>
+            <div class="c-result__guides">
+              <a class="c-result__guide-link" href="/guides/how-to-meet-people-in-a-new-city/">Read: How to meet people in a new city &rarr;</a>
+              <a class="c-result__guide-link" href="/guides/how-to-make-friends-after-30/">Read: How to make friends after 30 &rarr;</a>
+            </div>
+            <div class="c-result__secondary" id="secondary-D"></div>
             <div class="c-hero__actions u-mt-2">
               <a class="c-btn c-btn--primary c-btn--lg" href="/challenge.html">Start the free 7-day challenge</a>
             </div>
+            <button class="c-result__retake" type="button">Take the quiz again</button>
           </div>
 
         </div>
@@ -193,7 +236,7 @@
   <footer class="c-footer">
     <div class="c-footer__inner">
       <div>
-        <p class="c-footer__copy">© 2026 Carole Stromboni · The Friendship Practice</p>
+        <p class="c-footer__copy">&copy; 2026 Carole Stromboni &middot; The Friendship Practice</p>
         <p class="c-footer__note u-mt-2">Friendship coaching, not therapy or crisis support.</p>
       </div>
       <nav class="c-footer__links" aria-label="Legal">
@@ -208,45 +251,151 @@
 
   <script>
     (function () {
-      var form = document.getElementById('quiz-form');
-      var errMsg = document.getElementById('quiz-err');
-      var resultsBox = document.getElementById('quiz-results');
+      var NAMES = ['q1', 'q2', 'q3', 'q4', 'q5'];
+      var PROFILES = {
+        A: { name: 'The Waiting Game',      guide: '/guides/how-to-make-friends-as-an-adult/',       label: 'How to make friends as an adult' },
+        B: { name: 'The Follow-through Gap', guide: '/guides/how-to-keep-friends-as-an-adult/',       label: 'How to keep friends as an adult' },
+        C: { name: 'The One-Sided Effort',  guide: '/guides/one-sided-friendship/',                   label: 'One-sided friendship' },
+        D: { name: 'Starting Over',         guide: '/guides/how-to-meet-people-in-a-new-city/',       label: 'How to meet people in a new city' }
+      };
 
+      var form    = document.getElementById('quiz-form');
+      var submit  = document.getElementById('quiz-submit');
+      var errMsg  = document.getElementById('quiz-err');
+      var dots    = document.querySelectorAll('.c-progress__dot');
+      var qs      = document.querySelectorAll('.c-quiz__q');
+      var current = 0;
+      var answers = {};
+
+      /* ── Restore from sessionStorage ──────────────────────────────── */
+      try {
+        var saved = JSON.parse(sessionStorage.getItem('quiz_v1') || 'null');
+        if (saved && saved.result) {
+          renderResult(saved.result, saved.secondary);
+          return;
+        }
+        if (saved && saved.answers) {
+          answers = saved.answers;
+          current = saved.current || 0;
+          NAMES.forEach(function (name) {
+            if (answers[name]) {
+              var inp = form.querySelector('input[name="' + name + '"][value="' + answers[name] + '"]');
+              if (inp) inp.checked = true;
+            }
+          });
+          if (answers['q5']) {
+            showQ(4);
+            dotsAwaitingSubmit();
+            submit.style.display = 'block';
+          } else {
+            showQ(current);
+          }
+        } else {
+          showQ(current);
+        }
+      } catch (e) {
+        showQ(current);
+      }
+
+      /* ── Radio: record answer and auto-advance ─────────────────────── */
+      NAMES.forEach(function (name, idx) {
+        form.querySelectorAll('input[name="' + name + '"]').forEach(function (input) {
+          input.addEventListener('change', function () {
+            answers[name] = this.value;
+            saveState();
+            if (idx < NAMES.length - 1) {
+              setTimeout(function () { showQ(idx + 1); }, 280);
+            } else {
+              dotsAwaitingSubmit();
+              submit.style.display = 'block';
+            }
+          });
+        });
+      });
+
+      /* ── Submit ────────────────────────────────────────────────────── */
       form.addEventListener('submit', function (e) {
         e.preventDefault();
-
-        var counts = { A: 0, B: 0, C: 0, D: 0 };
-        var unanswered = false;
-
-        ['q1','q2','q3','q4','q5'].forEach(function (name) {
-          var checked = form.querySelector('input[name="' + name + '"]:checked');
-          if (!checked) { unanswered = true; return; }
-          counts[checked.value]++;
-        });
-
+        var unanswered = NAMES.some(function (n) { return !answers[n]; });
         if (unanswered) {
           errMsg.classList.add('is-visible');
           errMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
           return;
         }
-
         errMsg.classList.remove('is-visible');
 
-        var winner = Object.keys(counts).reduce(function (a, b) {
-          return counts[a] >= counts[b] ? a : b;
-        });
+        var counts = { A: 0, B: 0, C: 0, D: 0 };
+        NAMES.forEach(function (n) { counts[answers[n]]++; });
+        var sorted = Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; });
+        var winner = sorted[0];
+        var runner = (counts[sorted[1]] >= counts[winner] - 1 && counts[sorted[1]] > 0) ? sorted[1] : null;
 
-        document.querySelectorAll('.c-result').forEach(function (el) {
-          el.classList.remove('is-visible');
+        try { sessionStorage.setItem('quiz_v1', JSON.stringify({ answers: answers, result: winner, secondary: runner })); } catch (e) {}
+        try { window.goatcounter.count({ path: 'quiz-result-' + winner, title: 'Quiz result: ' + winner, event: true }); } catch (e) {}
+
+        renderResult(winner, runner);
+      });
+
+      /* ── Retake ─────────────────────────────────────────────────────── */
+      document.querySelectorAll('.c-result__retake').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          try { sessionStorage.removeItem('quiz_v1'); } catch (e) {}
+          answers = {};
+          current = 0;
+          form.querySelectorAll('input[type="radio"]').forEach(function (r) { r.checked = false; });
+          document.querySelectorAll('.c-result').forEach(function (el) { el.classList.remove('is-visible'); });
+          document.querySelectorAll('.c-result__secondary').forEach(function (el) { el.style.display = ''; el.innerHTML = ''; });
+          form.style.display = '';
+          submit.style.display = 'none';
+          showQ(0);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+      });
+
+      /* ── Helpers ─────────────────────────────────────────────────────── */
+      function showQ(idx) {
+        current = idx;
+        qs.forEach(function (q, i) { q.classList.toggle('is-active', i === idx); });
+        // 7 dots: dot[0]=started, dots[1-5]=Q1-Q5, dot[6]=result
+        // dots[0..idx] = done (started + answered), dots[idx+1] = current Q
+        dots.forEach(function (dot, i) {
+          dot.classList.remove('is-done', 'is-current');
+          if (i <= idx) dot.classList.add('is-done');
+          else if (i === idx + 1) dot.classList.add('is-current');
+        });
+      }
+
+      function dotsAwaitingSubmit() {
+        dots.forEach(function (dot, i) {
+          dot.classList.remove('is-done', 'is-current');
+          if (i <= 5) dot.classList.add('is-done');
+          else dot.classList.add('is-current');
+        });
+      }
+
+      function renderResult(winner, secondary) {
+        form.style.display = 'none';
+        dots.forEach(function (dot) { dot.classList.add('is-done'); dot.classList.remove('is-current'); });
+
+        if (secondary) {
+          var p = PROFILES[secondary];
+          var box = document.getElementById('secondary-' + winner);
+          if (box && p) {
+            box.innerHTML = 'You also showed signs of <strong>' + p.name + '</strong>. <a href="' + p.guide + '">Read: ' + p.label + ' &rarr;</a>';
+            box.style.display = 'block';
+          }
+        }
 
         var target = document.getElementById('result-' + winner);
         if (target) {
-          form.style.display = 'none';
           target.classList.add('is-visible');
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
-      });
+      }
+
+      function saveState() {
+        try { sessionStorage.setItem('quiz_v1', JSON.stringify({ answers: answers, current: current })); } catch (e) {}
+      }
     })();
   </script>
 
