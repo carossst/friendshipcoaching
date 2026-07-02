@@ -284,6 +284,39 @@
       "changefreq": "monthly",
       "priority": "0.7",
       "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/garder-ses-amis-adulte/index.html",
+      "path": "/fr/guides/garder-ses-amis-adulte/",
+      "status": "live",
+      "title": "Garder ses amis à l'âge adulte | The Friendship Practice",
+      "description": "Garder ses amis adulte tient moins aux grands moments qu'au contact régulier. La plupart des amitiés se perdent parce que personne ne propose la suite.",
+      "ogDescription": "Garder ses amis adulte tient moins aux grands moments qu'au contact régulier.",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/pourquoi-les-amities-se-perdent/index.html",
+      "path": "/fr/guides/pourquoi-les-amities-se-perdent/",
+      "status": "live",
+      "title": "Pourquoi les amitiés se perdent | The Friendship Practice",
+      "description": "La plupart des amitiés adultes ne se terminent pas. Elles s'éloignent doucement, sans dispute ni décision. Voici pourquoi, et comment les rattraper à temps.",
+      "ogDescription": "La plupart des amitiés adultes ne se terminent pas. Elles s'éloignent doucement. Voici pourquoi, et comment les rattraper.",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/amitie-a-sens-unique/index.html",
+      "path": "/fr/guides/amitie-a-sens-unique/",
+      "status": "live",
+      "title": "Amitié à sens unique : la reconnaître et agir | The Friendship Practice",
+      "description": "Vous êtes la seule personne qui écrit, propose et relance ? Voici comment reconnaître une amitié à sens unique, et décider quoi en faire.",
+      "ogDescription": "Vous êtes la seule personne qui écrit, propose et relance ? Comment reconnaître une amitié à sens unique, et décider quoi en faire.",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "lastmod": "2026-07-02"
     }
   ],
   "guides": [
@@ -675,7 +708,8 @@
           "a": "Surface friendships stay surface when both people stick to safe topics. The shift happens when one person shares something a bit more real: a genuine difficulty, an honest opinion. One small honest moment usually changes the register, and the other person tends to match it. For more on that move, see <a href=\"/guides/how-to-turn-acquaintances-into-friends/\">how to turn acquaintances into friends</a>."
         }
       ],
-      "pullQuote": "The friendships that last in adult life are almost never the most intense ones. They're the ones where someone kept showing up in small ways when it would have been easy not to."
+      "pullQuote": "The friendships that last in adult life are almost never the most intense ones. They're the ones where someone kept showing up in small ways when it would have been easy not to.",
+      "alternateFr": "/fr/guides/garder-ses-amis-adulte/"
     },
     {
       "slug": "how-to-meet-people-in-a-new-city",
@@ -1610,7 +1644,8 @@
           "q": "My friend never texts first. Does that mean they don't care?",
           "a": "Not necessarily. Some people are naturally low-initiators across all their relationships, it doesn't mean they don't value you. The more useful question is: when you do reach out, are they genuinely warm and engaged? If yes, the friendship may be worth maintaining even with the asymmetry in initiation. If the response is consistently lukewarm or absent, that tells you more than who texts first."
         }
-      ]
+      ],
+      "alternateFr": "/fr/guides/amitie-a-sens-unique/"
     },
     {
       "slug": "how-to-make-friends-when-you-work-from-home",
@@ -1873,7 +1908,8 @@
           "q": "Why did my friend suddenly stop talking to me?",
           "a": "A sudden silence is usually one of a few things: life took their full attention, something shifted and went unnamed, or they're pulling back for reasons that aren't about you. A short, warm message with no accusation answers the question better than any amount of analysis. Warm reply? The silence was circumstantial. No reply? That's information too."
         }
-      ]
+      ],
+      "alternateFr": "/fr/guides/pourquoi-les-amities-se-perdent/"
     },
     {
       "slug": "how-to-turn-acquaintances-into-friends",
