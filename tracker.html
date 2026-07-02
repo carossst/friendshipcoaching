@@ -223,8 +223,8 @@
   <section class="u-section u-bg-surface">
     <div class="u-container u-container--prose">
       <p class="c-label">Your connections</p>
-      <h2 class="c-heading c-heading--2">Your social workout log</h2>
-      <p class="c-body u-mt-4">Each bar shows where you are between thresholds: 0 to 50 hours (acquaintance to casual friend), then 50 to 200 hours (casual to close friend).</p>
+      <h2 class="c-heading c-heading--2">Where each friendship stands</h2>
+      <p class="c-body u-mt-4">Each bar shows where you are between thresholds: 0 to 50 hours (acquaintance to casual friend), then 50 to 200 hours (casual to close friend). The bar isn't the friendship. It's a reminder to keep creating the next hour.</p>
       <div id="contactList" class="u-mt-10"></div>
       <div class="u-mt-10" style="border-top:var(--border);padding-top:var(--space-8);">
         <p class="c-label" style="margin-bottom:var(--space-3);">Backup</p>
@@ -344,7 +344,7 @@
     return {
       label: 'Close friend',
       progress: 100,
-      next: 'Close friend'
+      next: 'You made it. Keep showing up.'
     };
   }
 
@@ -358,7 +358,7 @@
     list.innerHTML = '';
 
     if (contacts.length === 0) {
-      list.innerHTML = '<div class="c-empty-state"><p>No connections logged yet. Start above by entering a name and the time you spent together.</p></div>';
+      list.innerHTML = '<div class="c-empty-state"><p>Nobody here yet. Add the first person above: a name and the time you spent together. That\'s all it takes to start.</p></div>';
       return;
     }
 
