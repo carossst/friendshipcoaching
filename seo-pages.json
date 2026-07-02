@@ -251,6 +251,39 @@
       "changefreq": "monthly",
       "priority": "0.7",
       "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/pourquoi-se-faire-des-amis-adulte-est-difficile/index.html",
+      "path": "/fr/guides/pourquoi-se-faire-des-amis-adulte-est-difficile/",
+      "status": "live",
+      "title": "Pourquoi se faire des amis adulte est si difficile | The Friendship Practice",
+      "description": "Se faire des amis adulte semble difficile pour des raisons de structure, pas de personnalité. Voici ce qui a changé depuis l'école, et quoi faire.",
+      "ogDescription": "Se faire des amis adulte semble difficile pour des raisons de structure, pas de personnalité. Voici ce qui a changé, et quoi faire.",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/renouer-avec-un-ancien-ami/index.html",
+      "path": "/fr/guides/renouer-avec-un-ancien-ami/",
+      "status": "live",
+      "title": "Renouer avec un ancien ami | The Friendship Practice",
+      "description": "Renouer avec un ancien ami est presque toujours plus simple que l'histoire qu'on se raconte avant d'écrire. Voici quoi dire, et comment proposer la suite.",
+      "ogDescription": "Renouer avec un ancien ami est presque toujours plus simple que l'histoire qu'on se raconte avant d'écrire. Voici quoi dire.",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/se-faire-des-amis-apres-30-ans/index.html",
+      "path": "/fr/guides/se-faire-des-amis-apres-30-ans/",
+      "status": "live",
+      "title": "Se faire des amis après 30 ans | The Friendship Practice",
+      "description": "Se faire de vrais amis après 30 ans est tout à fait possible. Il faut plus d'intention et moins d'attente. Voici ce qui marche vraiment.",
+      "ogDescription": "Se faire de vrais amis après 30 ans est tout à fait possible. Il faut plus d'intention et moins d'attente. Voici ce qui marche vraiment.",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "lastmod": "2026-07-02"
     }
   ],
   "guides": [
@@ -429,7 +462,8 @@
           "a": "Almost never. People rarely resent a genuine message from someone they once cared about. The main risk is that they don't respond, which isn't a rejection of you. It just means the timing isn't right for them."
         }
       ],
-      "pullQuote": "Old friendships don't need a long explanation to reopen. They need a short message, and the willingness to find out if the warmth is still there."
+      "pullQuote": "Old friendships don't need a long explanation to reopen. They need a short message, and the willingness to find out if the warmth is still there.",
+      "alternateFr": "/fr/guides/renouer-avec-un-ancien-ami/"
     },
     {
       "slug": "why-making-friends-as-an-adult-is-hard",
@@ -534,7 +568,8 @@
           "a": "You are not alone in this, far more adults feel this way than talk about it. The most useful starting point is to separate two questions: do I have people I could become closer to, or do I need to meet new people entirely? Most adults have some of both. For the practical approach to each, start with <a href=\"/guides/how-to-make-friends-as-an-adult/\">how to make friends as an adult</a>."
         }
       ],
-      "pullQuote": "You are not uniquely bad at this. You're doing something that used to happen automatically and now takes effort. That is not a character flaw. It's an infrastructure problem."
+      "pullQuote": "You are not uniquely bad at this. You're doing something that used to happen automatically and now takes effort. That is not a character flaw. It's an infrastructure problem.",
+      "alternateFr": "/fr/guides/pourquoi-se-faire-des-amis-adulte-est-difficile/"
     },
     {
       "slug": "how-to-keep-friends-as-an-adult",
@@ -928,7 +963,8 @@
           "a": "Yes, genuinely. The friendships that form in adulthood are often more intentionally chosen and more stable than earlier ones. They take longer to develop, but that depth is real. Many people report that their closest friendships were made after 30, not before."
         }
       ],
-      "pullQuote": "Friendship after 30 doesn't happen the way it did at 20. It rarely starts with instant closeness. It starts with deliberate repetition, and someone willing to suggest the next thing."
+      "pullQuote": "Friendship after 30 doesn't happen the way it did at 20. It rarely starts with instant closeness. It starts with deliberate repetition, and someone willing to suggest the next thing.",
+      "alternateFr": "/fr/guides/se-faire-des-amis-apres-30-ans/"
     },
     {
       "slug": "why-male-friendships-fade",
