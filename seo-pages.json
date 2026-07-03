@@ -317,6 +317,204 @@
       "changefreq": "monthly",
       "priority": "0.7",
       "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/rencontrer-du-monde-dans-une-nouvelle-ville/index.html",
+      "path": "/fr/guides/rencontrer-du-monde-dans-une-nouvelle-ville/",
+      "status": "live",
+      "title": "Rencontrer du monde dans une nouvelle ville | The Friendship Practice",
+      "description": "Rencontrer du monde dans une nouvelle ville, ce n'est pas trouver l'événement parfait. C'est devenir un visage familier quelque part. Voici comment.",
+      "ogDescription": "Rencontrer du monde dans une nouvelle ville, ce n'est pas trouver l'événement parfait. C'est devenir un visage familier quelque part. Voici comment.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/ecrire-apres-une-rencontre/index.html",
+      "path": "/fr/guides/ecrire-apres-une-rencontre/",
+      "status": "live",
+      "title": "Écrire après une rencontre : le message qui change tout | The Friendship Practice",
+      "description": "La plupart des amitiés ne ratent pas à la première rencontre. Elles ratent dans le silence d'après. Voici quoi écrire, quand, et comment proposer la suite.",
+      "ogDescription": "La plupart des amitiés ne ratent pas à la première rencontre. Elles ratent dans le silence d'après. Voici quoi écrire, quand, et comment proposer la suite.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/transformer-une-connaissance-en-ami/index.html",
+      "path": "/fr/guides/transformer-une-connaissance-en-ami/",
+      "status": "live",
+      "title": "Transformer une connaissance en ami | The Friendship Practice",
+      "description": "On connaît tous des gens qu'on apprécie sans les appeler des amis. L'écart n'est pas une question d'alchimie. C'est un pas que personne n'ose faire. Voici lequel.",
+      "ogDescription": "On connaît tous des gens qu'on apprécie sans les appeler des amis. L'écart n'est pas une question d'alchimie. C'est un pas que personne n'ose faire. Voici lequel.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/se-faire-des-amis-en-teletravail/index.html",
+      "path": "/fr/guides/se-faire-des-amis-en-teletravail/",
+      "status": "live",
+      "title": "Se faire des amis quand on travaille de chez soi | The Friendship Practice",
+      "description": "Le télétravail supprime la source la plus fiable de contact répété : le bureau. La solution n'est pas de le recréer, mais de construire autre chose. Voici quoi.",
+      "ogDescription": "Le télétravail supprime la source la plus fiable de contact répété : le bureau. La solution n'est pas de le recréer, mais de construire autre chose. Voici quoi.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/se-faire-des-amis-expatrie/index.html",
+      "path": "/fr/guides/se-faire-des-amis-expatrie/",
+      "status": "live",
+      "title": "Se faire des amis quand on est expatrié | The Friendship Practice",
+      "description": "Se faire des amis en expatriation est un vrai défi : pas de réseau, d'autres codes, une horloge qui tourne. Voici ce qui fonctionne vraiment à l'étranger.",
+      "ogDescription": "Se faire des amis en expatriation est un vrai défi : pas de réseau, d'autres codes, une horloge qui tourne. Voici ce qui fonctionne vraiment à l'étranger.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/se-faire-des-amis-jeune-parent/index.html",
+      "path": "/fr/guides/se-faire-des-amis-jeune-parent/",
+      "status": "live",
+      "title": "Se faire des amis quand on devient parent | The Friendship Practice",
+      "description": "La jeune parentalité est une des périodes les plus isolantes de la vie adulte. Pas par manque de gens : par manque d'énergie et de structure. Voici comment faire.",
+      "ogDescription": "La jeune parentalité est une des périodes les plus isolantes de la vie adulte. Pas par manque de gens : par manque d'énergie et de structure. Voici comment faire.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/rester-amis-apres-un-bebe/index.html",
+      "path": "/fr/guides/rester-amis-apres-un-bebe/",
+      "status": "live",
+      "title": "Rester amis quand l'autre vient d'avoir un bébé | The Friendship Practice",
+      "description": "Quand votre ami a un bébé, son temps libre disparaît du jour au lendemain. Pour garder le lien, il faut changer les règles. Voici comment.",
+      "ogDescription": "Quand votre ami a un bébé, son temps libre disparaît du jour au lendemain. Pour garder le lien, il faut changer les règles. Voici comment.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/garder-ses-amities-de-bureau-en-teletravail/index.html",
+      "path": "/fr/guides/garder-ses-amities-de-bureau-en-teletravail/",
+      "status": "live",
+      "title": "Garder ses amitiés de bureau en télétravail | The Friendship Practice",
+      "description": "En passant en télétravail, on perd les moments de couloir qui faisaient vivre les amitiés de bureau. Voici comment remplacer cette structure avant qu'elles s'éteignent.",
+      "ogDescription": "En passant en télétravail, on perd les moments de couloir qui faisaient vivre les amitiés de bureau. Voici comment remplacer cette structure avant qu'elles s'éteignent.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/devenir-un-meilleur-ami/index.html",
+      "path": "/fr/guides/devenir-un-meilleur-ami/",
+      "status": "live",
+      "title": "Devenir un meilleur ami | The Friendship Practice",
+      "description": "Devenir un meilleur ami, ce n'est pas les grands gestes. C'est la fiabilité ordinaire : faire attention, tenir parole, écrire en premier. Voici comment.",
+      "ogDescription": "Devenir un meilleur ami, ce n'est pas les grands gestes. C'est la fiabilité ordinaire : faire attention, tenir parole, écrire en premier. Voici comment.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/savoir-si-quelquun-veut-devenir-votre-ami/index.html",
+      "path": "/fr/guides/savoir-si-quelquun-veut-devenir-votre-ami/",
+      "status": "live",
+      "title": "Savoir si quelqu'un veut devenir votre ami | The Friendship Practice",
+      "description": "Est-ce de la politesse ou une vraie envie d'amitié ? Les signaux sont presque toujours là. Voici ce qu'il faut regarder, et quoi faire du doute.",
+      "ogDescription": "Est-ce de la politesse ou une vraie envie d'amitié ? Les signaux sont presque toujours là. Voici ce qu'il faut regarder, et quoi faire du doute.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/quand-une-amitie-se-termine/index.html",
+      "path": "/fr/guides/quand-une-amitie-se-termine/",
+      "status": "live",
+      "title": "Quand une amitié se termine | The Friendship Practice",
+      "description": "Les ruptures d'amitié peuvent faire aussi mal que les ruptures amoureuses, et personne n'en parle. Voici comment traverser la fin, et ce qui peut rouvrir.",
+      "ogDescription": "Les ruptures d'amitié peuvent faire aussi mal que les ruptures amoureuses, et personne n'en parle. Voici comment traverser la fin, et ce qui peut rouvrir.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/se-faire-des-amis-apres-une-amitie-perdue/index.html",
+      "path": "/fr/guides/se-faire-des-amis-apres-une-amitie-perdue/",
+      "status": "live",
+      "title": "Se faire des amis après une amitié perdue | The Friendship Practice",
+      "description": "Perdre un ami proche laisse un vide réel. Reconstruire est possible, mais différemment. Voici comment repartir, en portant la perte sans qu'elle décide de tout.",
+      "ogDescription": "Perdre un ami proche laisse un vide réel. Reconstruire est possible, mais différemment. Voici comment repartir, en portant la perte sans qu'elle décide de tout.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/pourquoi-les-hommes-perdent-leurs-amis/index.html",
+      "path": "/fr/guides/pourquoi-les-hommes-perdent-leurs-amis/",
+      "status": "live",
+      "title": "Pourquoi les hommes perdent leurs amis après 30 ans | The Friendship Practice",
+      "description": "La plupart des hommes ne perdent pas leurs amis d'un coup. Ils les perdent lentement, quand les contextes partagés disparaissent. Voici le mécanisme, et la sortie.",
+      "ogDescription": "La plupart des hommes ne perdent pas leurs amis d'un coup. Ils les perdent lentement, quand les contextes partagés disparaissent. Voici le mécanisme, et la sortie.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/comment-les-hommes-reconstruisent-leurs-amities/index.html",
+      "path": "/fr/guides/comment-les-hommes-reconstruisent-leurs-amities/",
+      "status": "live",
+      "title": "Comment les hommes reconstruisent leurs amitiés | The Friendship Practice",
+      "description": "Pas besoin de grande conversation ni de stage d'émotions. Il faut une activité récurrente, une invitation, et un message d'après. Voici la méthode.",
+      "ogDescription": "Pas besoin de grande conversation ni de stage d'émotions. Il faut une activité récurrente, une invitation, et un message d'après. Voici la méthode.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/presenter-ses-amis-entre-eux/index.html",
+      "path": "/fr/guides/presenter-ses-amis-entre-eux/",
+      "status": "live",
+      "title": "Présenter ses amis entre eux | The Friendship Practice",
+      "description": "Présenter deux personnes qu'on apprécie est un des gestes d'amitié les plus sous-estimés. Bien fait, il enrichit tout le monde. Voici la méthode douce.",
+      "ogDescription": "Présenter deux personnes qu'on apprécie est un des gestes d'amitié les plus sous-estimés. Bien fait, il enrichit tout le monde. Voici la méthode douce.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/quest-ce-que-le-coaching-en-amitie/index.html",
+      "path": "/fr/guides/quest-ce-que-le-coaching-en-amitie/",
+      "status": "live",
+      "title": "Qu'est-ce que le coaching en amitié ? | The Friendship Practice",
+      "description": "Le coaching en amitié n'est pas une thérapie. C'est une stratégie pas à pas pour votre vie sociale, comme un coach sportif pour vos amitiés.",
+      "ogDescription": "Le coaching en amitié n'est pas une thérapie. C'est une stratégie pas à pas pour votre vie sociale, comme un coach sportif pour vos amitiés.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/citations-sur-lamitie/index.html",
+      "path": "/fr/guides/citations-sur-lamitie/",
+      "status": "live",
+      "title": "Citations sur l'amitié adulte, par Carole Stromboni | The Friendship Practice",
+      "description": "Des citations sur l'amitié qui ne cherchent pas à inspirer, mais à clarifier : ce que l'amitié demande vraiment aux adultes, et ce qu'elle rend.",
+      "ogDescription": "Des citations sur l'amitié qui ne cherchent pas à inspirer, mais à clarifier : ce que l'amitié demande vraiment aux adultes, et ce qu'elle rend.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/guides/index.html",
+      "path": "/fr/guides/",
+      "status": "live",
+      "title": "Tous les guides amitié en français | The Friendship Practice",
+      "description": "Les 24 guides pratiques de The Friendship Practice en français : se faire des amis, renouer, garder ses amitiés vivantes, et traverser les fins.",
+      "ogDescription": "Les guides pratiques de The Friendship Practice en français : se faire des amis, renouer, garder ses amitiés vivantes.",
+      "changefreq": "weekly",
+      "priority": "0.7",
+      "lastmod": "2026-07-02"
     }
   ],
   "guides": [
@@ -793,7 +991,8 @@
           "a": "Choose activities with a built-in task, so the socializing happens around something. Classes, sports, volunteering, book clubs. It's easier to talk when there's something to do."
         }
       ],
-      "pullQuote": "You don't find friends in a new city. You become a regular somewhere, and then you find them."
+      "pullQuote": "You don't find friends in a new city. You become a regular somewhere, and then you find them.",
+      "alternateFr": "/fr/guides/rencontrer-du-monde-dans-une-nouvelle-ville/"
     },
     {
       "slug": "how-to-be-a-better-friend",
@@ -908,7 +1107,8 @@
           "a": "That's worth a careful look. Maybe the people around you can't reciprocate, and the question is who you're choosing to invest in. Or maybe your needs aren't visible, and the work is asking for things out loud instead of hoping they get noticed."
         }
       ],
-      "pullQuote": "Being a better friend is a practice problem, not a personality problem. You don't need a different character. You need more visible, consistent action."
+      "pullQuote": "Being a better friend is a practice problem, not a personality problem. You don't need a different character. You need more visible, consistent action.",
+      "alternateFr": "/fr/guides/devenir-un-meilleur-ami/"
     },
     {
       "slug": "how-to-make-friends-after-30",
@@ -1077,7 +1277,8 @@
           "q": "Do men need therapy to rebuild friendships?",
           "a": "No. Rebuilding male friendship is mostly a structure problem, not a feelings problem. You need to replace the shared contexts that used to feed the friendship, not process emotions about it. Coaching works on that practical layer: which contexts and habits would give you the repetition friendship needs."
         }
-      ]
+      ],
+      "alternateFr": "/fr/guides/pourquoi-les-hommes-perdent-leurs-amis/"
     },
     {
       "slug": "how-men-can-rebuild-friendships",
@@ -1155,7 +1356,8 @@
           "q": "What is the most practical way for a man to make a new friend?",
           "a": "Pick one recurring activity you truly enjoy and invite one specific person. Follow up after the first time. Research says a close friendship takes about 50 hours together. A weekly activity stacks those hours fast. One-off coffees don't."
         }
-      ]
+      ],
+      "alternateFr": "/fr/guides/comment-les-hommes-reconstruisent-leurs-amities/"
     },
     {
       "slug": "friendship-quotes",
@@ -1309,7 +1511,8 @@
           "a": "A good quote doesn't motivate. It clarifies. When you read something that names what you have been feeling but could not articulate, it makes the problem smaller and more workable. That's what these are for."
         }
       ],
-      "pullQuote": "These are not quotes about friendship as an ideal. They're quotes about friendship as a practice: what it actually takes to build it and keep it as an adult."
+      "pullQuote": "These are not quotes about friendship as an ideal. They're quotes about friendship as a practice: what it actually takes to build it and keep it as an adult.",
+      "alternateFr": "/fr/guides/citations-sur-lamitie/"
     },
     {
       "slug": "how-to-introduce-friends-to-each-other",
@@ -1395,7 +1598,8 @@
           "a": "That fear is common and almost never plays out the way you imagine. People who connect through you don't replace you. They associate you with something good, which usually deepens both friendships. A well-made introduction almost always reflects well on the person who made it."
         }
       ],
-      "pullQuote": "Introducing two people you care about costs you almost nothing, and it can change the shape of someone's entire social life. Not many friendship moves give back that much."
+      "pullQuote": "Introducing two people you care about costs you almost nothing, and it can change the shape of someone's entire social life. Not many friendship moves give back that much.",
+      "alternateFr": "/fr/guides/presenter-ses-amis-entre-eux/"
     },
     {
       "slug": "when-a-friendship-ends",
@@ -1488,7 +1692,8 @@
           "a": "The same way you grieve anything: by letting yourself feel it rather than minimizing it. Friendship loss is rarely treated as seriously as romantic loss, but it can hurt just as much. Naming it as a real loss, talking about it with someone you trust, and giving yourself time are all legitimate responses."
         }
       ],
-      "pullQuote": "Most friendship endings are not chosen. They're accumulated: too many gaps, too much time, until both people quietly assume it's over. That is not an ending. It's a default. And defaults can be changed."
+      "pullQuote": "Most friendship endings are not chosen. They're accumulated: too many gaps, too much time, until both people quietly assume it's over. That is not an ending. It's a default. And defaults can be changed.",
+      "alternateFr": "/fr/guides/quand-une-amitie-se-termine/"
     },
     {
       "slug": "how-to-stay-friends-after-a-baby",
@@ -1562,7 +1767,8 @@
           "q": "My friend with kids only wants to talk about their children. What do I do?",
           "a": "Let it be that way for a while. Early parenthood is all-consuming and their world has genuinely become very small. If you show up for that small world with genuine curiosity, you become a person they trust. That trust is the foundation for a friendship that can hold other things again later."
         }
-      ]
+      ],
+      "alternateFr": "/fr/guides/rester-amis-apres-un-bebe/"
     },
     {
       "slug": "one-sided-friendship",
@@ -1725,7 +1931,8 @@
           "q": "I had a good social life before I went remote. How do I rebuild it?",
           "a": "The foundation is already there: you know you can connect with people. What changed is the structure that made it easy. Identify what that structure was, what you were doing regularly that put you around people, and build a new version of it deliberately. If you specifically want to hold on to the friendships you already had at work, see <a href=\"/guides/how-to-keep-work-friendships-after-going-remote/\">how to keep work friendships after going remote</a>."
         }
-      ]
+      ],
+      "alternateFr": "/fr/guides/se-faire-des-amis-en-teletravail/"
     },
     {
       "slug": "how-to-follow-up-after-meeting-someone",
@@ -1813,7 +2020,8 @@
           "q": "What if I do not have their number or contact details?",
           "a": "If you met through a mutual friend, ask for an introduction. If you met in a public context, LinkedIn or Instagram DMs are acceptable if the interaction was genuinely warm. A short message explaining where you met and what you talked about is enough."
         }
-      ]
+      ],
+      "alternateFr": "/fr/guides/ecrire-apres-une-rencontre/"
     },
     {
       "slug": "why-do-friendships-fade",
@@ -1999,7 +2207,8 @@
           "a": "Pick one or two people you truly enjoy and suggest something outside work. Lunch away from the office. A coffee away from the group. A shared activity after hours. A new setting makes a new kind of talk possible."
         }
       ],
-      "authorNote": "The acquaintance-to-friend gap is the one I see most often. People have plenty of warm contacts and almost no one they would call a real friend. The gap isn't about chemistry. It's about one person being willing to go a step further. That step is smaller than most people think. It just requires doing it."
+      "authorNote": "The acquaintance-to-friend gap is the one I see most often. People have plenty of warm contacts and almost no one they would call a real friend. The gap isn't about chemistry. It's about one person being willing to go a step further. That step is smaller than most people think. It just requires doing it.",
+      "alternateFr": "/fr/guides/transformer-une-connaissance-en-ami/"
     },
     {
       "slug": "how-to-make-friends-as-an-expat",
@@ -2085,7 +2294,8 @@
           "q": "How do I maintain friendships back home while building new ones abroad?",
           "a": "Use the same principles: short, regular contact beats infrequent long catch-ups. A quick message, a shared link, a brief voice note. Your home friendships won't maintain themselves, but they also don't require a lot if you keep showing up in small ways."
         }
-      ]
+      ],
+      "alternateFr": "/fr/guides/se-faire-des-amis-expatrie/"
     },
     {
       "slug": "how-to-know-if-someone-wants-to-be-your-friend",
@@ -2165,7 +2375,8 @@
           "a": "Many things can interrupt an emerging friendship: a demanding period at work, a relationship change, a health issue, or simply a shift in priorities. One period of quiet isn't necessarily a signal that the friendship is over. A simple check-in message can reopen contact without any pressure."
         }
       ],
-      "authorNote": "This is one of the most common uncertainties I work through with people: whether someone is genuinely interested or just being polite. The signals are almost always there. You just have to know what to look for, and trust what you see rather than waiting for complete certainty before making any move."
+      "authorNote": "This is one of the most common uncertainties I work through with people: whether someone is genuinely interested or just being polite. The signals are almost always there. You just have to know what to look for, and trust what you see rather than waiting for complete certainty before making any move.",
+      "alternateFr": "/fr/guides/savoir-si-quelquun-veut-devenir-votre-ami/"
     },
     {
       "slug": "what-is-friendship-coaching",
@@ -2244,7 +2455,8 @@
           "q": "How do I know if I am ready for friendship coaching?",
           "a": "Start with the free 7-day Friendship Challenge. It helps you look clearly at your friendship life before deciding whether coaching is the right next step. If after the challenge you want support applying what you noticed to one real friendship situation, coaching is a natural next step."
         }
-      ]
+      ],
+      "alternateFr": "/fr/guides/quest-ce-que-le-coaching-en-amitie/"
     },
     {
       "slug": "how-to-make-friends-as-a-new-parent",
@@ -2335,7 +2547,8 @@
           "q": "Does this apply to dads too? How do I make friends as a new dad?",
           "a": "The challenge is the same regardless of gender, the social structures have disappeared and the energy is low. The cultural expectation that men should not need to reach out for new friendship can add an extra layer of awkwardness, but the approach is identical: find recurring contexts where other parents are, follow up when something feels warm, and keep the invitation low-stakes. The barrier isn't a skill gap. It's the first move."
         }
-      ]
+      ],
+      "alternateFr": "/fr/guides/se-faire-des-amis-jeune-parent/"
     },
     {
       "slug": "how-to-keep-work-friendships-after-going-remote",
@@ -2421,7 +2634,8 @@
           "q": "How often should I check in with work friends when I am remote?",
           "a": "Once a month is usually enough to keep a friendship alive without it feeling like a chore. Once every three months is the minimum before each contact feels like starting over. More than twice a month only makes sense if the friendship runs deep and both people are investing."
         }
-      ]
+      ],
+      "alternateFr": "/fr/guides/garder-ses-amities-de-bureau-en-teletravail/"
     },
     {
       "slug": "how-to-make-friends-after-a-friendship-ends",
@@ -2507,7 +2721,8 @@
           "q": "Can a friendship coach help with this?",
           "a": "Yes. Rebuilding a social life after a friendship ends is exactly what friendship coaching is for: you know what you want, but following through feels harder than usual. See <a href=\"/guides/what-is-friendship-coaching/\">what is friendship coaching</a> for what that support looks like."
         }
-      ]
+      ],
+      "alternateFr": "/fr/guides/se-faire-des-amis-apres-une-amitie-perdue/"
     }
   ]
 }
