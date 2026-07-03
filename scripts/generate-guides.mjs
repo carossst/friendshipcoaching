@@ -167,7 +167,11 @@ ${(guide.sections || []).map((s) => `            <li class="c-toc__item"><a clas
   <title>${esc(guide.title)}</title>
   <meta name="description" content="${esc(guide.description)}">
   <link rel="canonical" href="${canonical}">
-  <meta name="theme-color" content="#faf7f2">
+${guide.alternateFr ? `  <link rel="alternate" hreflang="en" href="${canonical}">
+  <link rel="alternate" hreflang="fr" href="${BASE}${guide.alternateFr}">
+  <link rel="alternate" hreflang="x-default" href="${canonical}">` : ""}
+  <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#201711" media="(prefers-color-scheme: dark)">
   <meta name="author" content="Carole Stromboni">
   <link rel="stylesheet" href="/Fcoaching.css">
   <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
@@ -272,10 +276,10 @@ ${relatedHtml}
     <section class="u-section u-bg-surface">
       <div class="u-container u-container--prose">
         <p class="c-label">Next step</p>
-        <h2 class="c-heading c-heading--2">Practice friendship on better foundations.</h2>
-        <p class="c-body u-mt-6">If you want more than general advice, start with the free 7-day Friendship Challenge. It helps you look clearly at your friendship life before trying to fix it.</p>
+        <h2 class="c-heading c-heading--2">See your friendship life clearly. Then change it.</h2>
+        <p class="c-body u-mt-6">The free 7-day Friendship Challenge is a short daily reflection: who is in your circle, what feels off, and what you actually want from friendship before you try to change anything. Seven days, one step at a time.</p>
         <div class="c-hero__actions u-mt-8">
-          <a class="c-btn c-btn--primary c-btn--lg" href="/challenge.html">Start the challenge</a>
+          <a class="c-btn c-btn--primary c-btn--lg" href="/challenge.html">Start the free 7-day challenge</a>
         </div>
       </div>
     </section>

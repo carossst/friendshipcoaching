@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>The Friendship Tracker | The Friendship Practice</title>
-  <meta name="description" content="Track the shared time that turns acquaintances into friends. Based on Dr. Jeffrey Hall's research on how friendships form.">
+  <title>Friends in the Making | The Friendship Practice</title>
+  <meta name="description" content="Friends in the Making: a free tool to track the shared time and real conversations that turn acquaintances into friends.">
   <link rel="stylesheet" href="/Fcoaching.css">
   <link rel="icon" href="/icons/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/icons/favicon.ico" sizes="32x32">
@@ -173,8 +173,8 @@
   <section class="c-hero">
     <div class="u-container u-container--prose">
       <p class="c-hero__label">The Friendship Practice</p>
-      <h1 class="c-hero__title">The Friendship Tracker</h1>
-      <p class="c-hero__sub">Adult friendship is not a feeling you wait for. It is a habit you build. Dr. Jeffrey Hall at the University of Kansas found it takes roughly 50 hours of shared time to become casual friends, and around 200 hours to become close. This tool tracks the repetition, removes the guesswork, and tells you what to do next.</p>
+      <h1 class="c-hero__title">Friends in the Making</h1>
+      <p class="c-hero__sub">Friendship is not something that falls into your lap. It is something you practice. Research shows it takes roughly 50 hours of shared time to become casual friends, and around 200 hours to become close. This tool tracks several friends in the making at once, hours and real conversations, and tells you what to do next.</p>
     </div>
   </section>
 
@@ -202,7 +202,7 @@
     <div class="u-container u-container--prose">
       <p class="c-label">Log shared time</p>
       <h2 class="c-heading c-heading--2">Who did you spend time with?</h2>
-      <p class="c-body u-mt-6">Enter a first name and how many hours you spent together. Each log adds to their total. Half-hours count: enter 0.5 for 30 minutes.</p>
+      <p class="c-body u-mt-6">Enter a first name and how many hours you spent together. Each log adds to their total. Half-hours count: enter 0.5 for 30 minutes. And track more than one person: friendship in the making grows from several warm connections, not from betting everything on one.</p>
       <form id="logForm" class="c-tracker-form u-mt-8" novalidate>
         <div class="c-tracker-field">
           <label for="contactName">First name or nickname:</label>
@@ -211,6 +211,14 @@
         <div class="c-tracker-field">
           <label for="hoursSpent">Hours spent together:</label>
           <input type="number" id="hoursSpent" min="0.5" max="72" step="0.5" placeholder="e.g., 2.5" required>
+        </div>
+        <div class="c-tracker-field">
+          <label for="qualityFelt">How did the time feel?</label>
+          <select id="qualityFelt">
+            <option value="real">We really talked, caught up on real life</option>
+            <option value="easy">Easy and fun, mostly surface</option>
+            <option value="off">A bit forced or one-sided</option>
+          </select>
         </div>
         <div>
           <button type="submit" class="c-btn c-btn--primary c-btn--lg">Add to tracker</button>
@@ -223,12 +231,13 @@
   <section class="u-section u-bg-surface">
     <div class="u-container u-container--prose">
       <p class="c-label">Your connections</p>
-      <h2 class="c-heading c-heading--2">Your social workout log</h2>
-      <p class="c-body u-mt-4">Each bar shows where you are between thresholds: 0 to 50 hours (acquaintance to casual friend), then 50 to 200 hours (casual to close friend).</p>
+      <h2 class="c-heading c-heading--2">Where each friendship stands</h2>
+      <p class="c-body u-mt-4">Each bar shows where you are between thresholds: 0 to 50 hours (acquaintance to casual friend), then 50 to 200 hours (casual to close friend). The bar isn't the friendship. It's a reminder to keep creating the next hour.</p>
+      <p class="c-body u-mt-4">And expect some of these to stay put. Sometimes the fit isn't there, or the effort stays one-sided. That's not a failure, it's information. Letting one go makes room for the ones that feel easy.</p>
       <div id="contactList" class="u-mt-10"></div>
       <div class="u-mt-10" style="border-top:var(--border);padding-top:var(--space-8);">
         <p class="c-label" style="margin-bottom:var(--space-3);">Backup</p>
-        <p class="c-body" style="font-size:var(--text-sm);color:var(--color-ink-muted);margin-bottom:var(--space-5);">Your data is stored in this browser only. Export it to keep a backup or move it to another device. If you clear your browser cache or open this page from an email app, your data may not be visible — restore it with an import.</p>
+        <p class="c-body" style="font-size:var(--text-sm);color:var(--color-ink-muted);margin-bottom:var(--space-5);">Your data is stored in this browser only. Export it to keep a backup or move it to another device. If you clear your browser cache or open this page from an email app, your data may not be visible. Restore it with an import.</p>
         <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;align-items:center;">
           <button id="exportBtn" class="c-btn c-btn--ghost c-btn--sm">Export backup</button>
           <label class="c-btn c-btn--ghost c-btn--sm" style="cursor:pointer;margin:0;">
@@ -294,10 +303,10 @@
 
   var scripts = {
     general: function (name) {
-      return 'Hi ' + name + ', really enjoyed our time together. I\'m [free on day / going to place] — would love to do it again soon if you\'re around.';
+      return 'Hi ' + name + ', really enjoyed our time together. I\'m [free on day / going to place], would love to do it again soon if you\'re around.';
     },
     expat: function (name) {
-      return 'Hi ' + name + '! It was great to connect. I\'m checking out [local spot] on [day] — let me know if you want to join. No pressure, just thought of you.';
+      return 'Hi ' + name + '! It was great to connect. I\'m checking out [local spot] on [day], let me know if you want to join. No pressure, just thought of you.';
     },
     remote: function (name) {
       return 'Hey ' + name + ', it was good to actually see a human today. I\'m taking my laptop to [café or workspace] on [day] to get out of the house. Feel free to come work alongside if you\'re free.';
@@ -306,7 +315,7 @@
       return 'Hey ' + name + ', so good running into you. I\'m heading to [park or playground] on [day] around [time], just to get some air. Let me know if you want to meet there.';
     },
     newcity: function (name) {
-      return 'Hi ' + name + ', I\'m still finding my way around. I\'m trying out [place] on [day] — if you happen to be free, I\'d love the company.';
+      return 'Hi ' + name + ', I\'m still finding my way around. I\'m trying out [place] on [day], if you happen to be free I\'d love the company.';
     }
   };
 
@@ -344,12 +353,28 @@
     return {
       label: 'Close friend',
       progress: 100,
-      next: 'Close friend'
+      next: 'You made it. Keep showing up.'
     };
   }
 
   function today() {
     return new Date().toISOString().slice(0, 10);
+  }
+
+  function qualityInfo(contact) {
+    var logs = contact.logs || 0;
+    if (!logs) return '';
+    var real = contact.realCount || 0;
+    var off = contact.offCount || 0;
+    var html = '<p style="font-size:var(--text-sm);color:var(--color-ink-muted);margin-bottom:var(--space-4);">' +
+      real + ' of ' + logs + (logs === 1 ? ' time' : ' times') + ' together felt like real conversation.</p>';
+    if (logs >= 3 && real === 0) {
+      html += '<p style="font-size:var(--text-sm);color:var(--color-ink);background:var(--color-accent-wash);border-radius:var(--radius-sm);padding:var(--space-3) var(--space-4);margin-bottom:var(--space-4);">The hours are adding up, but it\'s staying surface. Research shows real catching up builds closeness and small talk alone doesn\'t. Next time, ask about their actual life.</p>';
+    }
+    if (off >= 3 && off > real) {
+      html += '<p style="font-size:var(--text-sm);color:var(--color-ink);background:var(--color-accent-wash);border-radius:var(--radius-sm);padding:var(--space-3) var(--space-4);margin-bottom:var(--space-4);">This one keeps feeling forced or one-sided. It\'s okay to let it go. Not every connection grows, and that\'s not a failure. Give the hours to the people who feel easy.</p>';
+    }
+    return html;
   }
 
   function renderContacts() {
@@ -358,7 +383,7 @@
     list.innerHTML = '';
 
     if (contacts.length === 0) {
-      list.innerHTML = '<div class="c-empty-state"><p>No connections logged yet. Start above by entering a name and the time you spent together.</p></div>';
+      list.innerHTML = '<div class="c-empty-state"><p>Nobody here yet. Add the first person above: a name and the time you spent together. That\'s all it takes to start.</p></div>';
       return;
     }
 
@@ -380,10 +405,11 @@
           '<span><strong>' + contact.hours + 'h</strong> logged</span>' +
           '<span>' + esc(s.next) + '</span>' +
         '</div>' +
+        qualityInfo(contact) +
         '<div class="c-contact-card__actions">' +
           '<button class="c-btn c-btn--ghost c-btn--sm js-script" data-id="' + esc(contact.id) + '">Get follow-up message</button>' +
           '<button class="c-btn c-btn--ghost c-btn--sm js-log" data-id="' + esc(contact.id) + '">+ Add time</button>' +
-          '<button class="c-tracker-remove-btn js-delete" data-id="' + esc(contact.id) + '">Remove</button>' +
+          '<button class="c-tracker-remove-btn js-delete" data-id="' + esc(contact.id) + '">Let go</button>' +
         '</div>' +
         '<div class="c-script-box js-script-box" data-id="' + esc(contact.id) + '">' +
           '<span class="c-script-box__note">Replace the brackets with real details before sending.</span>' +
@@ -400,6 +426,10 @@
     if (!id) return;
 
     if (btn.classList.contains('js-delete')) {
+      var target = getContacts().find(function (c) { return c.id === id; });
+      var who = target ? target.name : 'this person';
+      var ok = window.confirm('Let go of ' + who + '? Some connections don\'t grow, and that\'s okay. This clears them from the tracker and makes room.');
+      if (!ok) return;
       var contacts = getContacts().filter(function (c) { return c.id !== id; });
       saveContacts(contacts);
       renderContacts();
@@ -465,14 +495,22 @@
       }
     }
 
+    var quality = document.getElementById('qualityFelt').value;
+
     if (existing) {
       existing.hours = Math.round((existing.hours + hoursRaw) * 10) / 10;
       existing.lastUpdated = today();
+      existing.logs = (existing.logs || 0) + 1;
+      if (quality === 'real') existing.realCount = (existing.realCount || 0) + 1;
+      if (quality === 'off') existing.offCount = (existing.offCount || 0) + 1;
     } else {
       contacts.push({
         id: uid(),
         name: nameRaw,
         hours: hoursRaw,
+        logs: 1,
+        realCount: quality === 'real' ? 1 : 0,
+        offCount: quality === 'off' ? 1 : 0,
         dateAdded: today(),
         lastUpdated: today()
       });
