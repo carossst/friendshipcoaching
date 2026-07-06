@@ -25,7 +25,7 @@
   </header>
   <main id="main-content">
     <section class="c-hero">
-      <div class="u-container u-container--prose">
+      <div class="u-container u-container--prose" id="en-404">
         <p class="c-hero__label">404</p>
         <h1 class="c-hero__title">This page does not exist.</h1>
         <p class="c-hero__sub">This page has drifted, like some friendships do. The difference is, getting back on track here takes one click.</p>
@@ -34,6 +34,23 @@
           <a class="c-btn c-btn--ghost c-btn--lg" href="/guides/">Browse the guides</a>
         </div>
       </div>
+      <div class="u-container u-container--prose" id="fr-404" hidden lang="fr">
+        <p class="c-hero__label">404</p>
+        <h1 class="c-hero__title">Cette page n'existe pas.</h1>
+        <p class="c-hero__sub">Cette page s'est éloignée, comme certaines amitiés. La différence, c'est qu'ici, revenir sur les rails prend un clic.</p>
+        <div class="c-hero__actions">
+          <a class="c-btn c-btn--primary c-btn--lg" href="/fr/">Retour à l'accueil</a>
+          <a class="c-btn c-btn--ghost c-btn--lg" href="/fr/guides/">Voir les guides</a>
+        </div>
+      </div>
+      <script>
+        if (location.pathname.indexOf('/fr/') === 0 || location.pathname === '/fr') {
+          document.documentElement.lang = 'fr';
+          var en = document.getElementById('en-404');
+          var fr = document.getElementById('fr-404');
+          if (en && fr) { en.hidden = true; fr.hidden = false; }
+        }
+      </script>
     </section>
   </main>
   <footer class="c-footer">
