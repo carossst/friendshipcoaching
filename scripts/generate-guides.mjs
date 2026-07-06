@@ -95,9 +95,19 @@ function renderGuide(guide, allGuides) {
     ]
   };
 
+  const inlineCta = `
+      <section class="u-section u-section--sm">
+        <div class="u-container u-container--prose">
+          <aside class="c-inline-cta">
+            <p class="c-inline-cta__text">Reading is a good start. Doing is better. The free 7-day Friendship Challenge turns all of this into one small step a day.</p>
+            <a class="c-btn c-btn--primary" href="/challenge.html">Start the free 7-day challenge</a>
+          </aside>
+        </div>
+      </section>`;
+  const ctaAt = Math.floor(((guide.sections || []).length - 1) / 2);
   const sectionsHtml = (guide.sections || [])
     .map(
-      (section) => `
+      (section, i) => `
       <section class="u-section u-section--sm">
         <div class="u-container u-container--prose">
           <h2 class="c-heading c-heading--2" id="${toId(section.h2)}">${esc(section.h2)}</h2>
@@ -120,7 +130,7 @@ ${section.connection ? `          <div class="c-connection u-mt-6">
             <p class="c-connection__why">${esc(section.connection.why)}</p>
           </div>` : ""}
         </div>
-      </section>`
+      </section>${(guide.sections || []).length >= 4 && i === ctaAt ? "\n" + inlineCta : ""}`
     )
     .join("\n");
 
