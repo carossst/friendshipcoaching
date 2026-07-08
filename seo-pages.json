@@ -246,8 +246,8 @@
       "path": "/fr/guides/se-faire-des-amis-adulte/",
       "status": "live",
       "title": "Comment se faire des amis à l'âge adulte | The Friendship Practice",
-      "description": "Se faire des amis adulte, ce n'est pas une question de charisme. Environ 50 heures partagées font un ami. Voici comment créer ces heures, pas à pas.",
-      "ogDescription": "Se faire des amis adulte, ce n'est pas une question de charisme. Environ 50 heures partagées font un ami. Voici comment créer ces heures.",
+      "description": "Se faire des amis adulte, ce n'est pas une question de charisme. C'est du temps partagé, répété, et de la qualité de présence. Voici comment, pas à pas.",
+      "ogDescription": "Se faire des amis adulte, ce n'est pas une question de charisme. C'est du temps partagé, répété, et de la qualité de présence. Voici comment.",
       "changefreq": "monthly",
       "priority": "0.7",
       "lastmod": "2026-07-02"
@@ -261,7 +261,7 @@
       "ogDescription": "Se faire des amis adulte semble difficile pour des raisons de structure, pas de personnalité. Voici ce qui a changé, et quoi faire.",
       "changefreq": "monthly",
       "priority": "0.7",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-08"
     },
     {
       "file": "fr/guides/renouer-avec-un-ancien-ami/index.html",
@@ -305,7 +305,7 @@
       "ogDescription": "La plupart des amitiés adultes ne se terminent pas. Elles s'éloignent doucement. Voici pourquoi, et comment les rattraper.",
       "changefreq": "monthly",
       "priority": "0.7",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-08"
     },
     {
       "file": "fr/guides/amitie-a-sens-unique/index.html",
@@ -316,7 +316,7 @@
       "ogDescription": "Vous êtes la seule personne qui écrit, propose et relance ? Comment reconnaître une amitié à sens unique, et décider quoi en faire.",
       "changefreq": "monthly",
       "priority": "0.7",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-08"
     },
     {
       "file": "fr/guides/rencontrer-du-monde-dans-une-nouvelle-ville/index.html",
@@ -360,7 +360,7 @@
       "ogDescription": "Le télétravail supprime la source la plus fiable de contact répété : le bureau. La solution n'est pas de le recréer, mais de construire autre chose. Voici quoi.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-08"
     },
     {
       "file": "fr/guides/se-faire-des-amis-expatrie/index.html",
@@ -371,7 +371,7 @@
       "ogDescription": "Se faire des amis en expatriation est un vrai défi : pas de réseau, d'autres codes, une horloge qui tourne. Voici ce qui fonctionne vraiment à l'étranger.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-08"
     },
     {
       "file": "fr/guides/se-faire-des-amis-jeune-parent/index.html",
@@ -404,7 +404,7 @@
       "ogDescription": "En passant en télétravail, on perd les moments de couloir qui faisaient vivre les amitiés de bureau. Voici comment remplacer cette structure avant qu'elles s'éteignent.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-08"
     },
     {
       "file": "fr/guides/devenir-un-meilleur-ami/index.html",
@@ -492,7 +492,7 @@
       "ogDescription": "Le coaching en amitié n'est pas une thérapie. C'est une stratégie pas à pas pour votre vie sociale, comme un coach sportif pour vos amitiés.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-08"
     },
     {
       "file": "fr/guides/citations-sur-lamitie/index.html",
@@ -521,12 +521,12 @@
     {
       "slug": "how-to-make-friends-as-an-adult",
       "status": "live",
-      "lastmod": "2026-07-02",
+      "lastmod": "2026-07-08",
       "title": "How to Make Friends as an Adult | The Friendship Practice",
-      "description": "It takes roughly 50 hours of shared time to move from stranger to casual friend, and 200 for a close one. Here's how to make those hours happen.",
+      "description": "Making friends as an adult isn't about charm. It's about repeated, relaxed time with the same people, and the quality of attention you bring to it. Here's how.",
       "h1": "How to make friends as an adult",
       "lead": "Making friends as an adult isn't about being more charming. It's about being more deliberate. Put yourself near people you could click with. Follow up when something feels warm. See each other again before the connection goes cold.",
-      "intro": "Research shows it takes roughly 50 hours of shared time to move from stranger to casual friend, and around 200 hours for a close one (<a href=\"https://journals.sagepub.com/doi/full/10.1177/0265407518761225\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Social and Personal Relationships</a>). That sounds like a lot, but those hours aren't built in grand gestures. They accumulate in ordinary ones: find a place where you'll see the same person more than once, follow up after a warm exchange, and let the hours add up.",
+      "intro": "Making friends as an adult rarely fails for lack of charm. It grows from ordinary, repeated time with the same people, and from the quality of attention you bring to it. There is no set number of hours to reach, and some friendships click faster than others. What helps is simple and doable: find a place where you will see the same person again, follow up after a warm exchange, and let closeness build at its own pace.",
       "authorNote": "I split my time between Hawaii and Paris, which means I've had to make new friends in new places more times than most people. And here's what I've learned: it's almost never about personality. It's about showing up to the same place twice and sending the message after a good conversation. You're not behind. You just haven't had a structure yet.",
       "sections": [
         {
@@ -588,7 +588,7 @@
         },
         {
           "q": "How long does it take to make a real friend as an adult?",
-          "a": "Research says about 50 hours together makes a casual friend. Around 200 makes a close one. That sounds like a lot. But it adds up through easy, repeated contact over months, not marathon sessions."
+          "a": "There is no fixed number. Friendship grows from repeated, relaxed time together, and just as much from the quality of that time. Some friendships form quickly, others slowly. What matters is seeing the same people again and showing real interest, not hitting an hours target."
         },
         {
           "q": "I had a great first conversation with someone but do not know how to follow up. What should I do?",
@@ -699,7 +699,7 @@
     {
       "slug": "why-making-friends-as-an-adult-is-hard",
       "status": "live",
-      "lastmod": "2026-06-20",
+      "lastmod": "2026-07-08",
       "title": "Why Making Friends as an Adult Is Hard | The Friendship Practice",
       "description": "Adulthood didn't kill your social skills. It destroyed your infrastructure. Here is why adult friendship requires deliberate design, not just more willpower.",
       "h1": "Why making friends as an adult is hard",
@@ -723,13 +723,13 @@
           "paragraphs": [
             "Friendship grows through seeing people again. School, campus life, and early jobs created that for free. Later in life, those structures get weaker or disappear.",
             "When repetition disappears, friendship requires more intention. Someone has to suggest the next coffee, the next walk, the next plan.",
-            "Research shows that moving from acquaintance to friend takes about 50 hours of shared time. School and early work life once created that time automatically. Nobody had to plan it. As an adult, you do. (<a href=\"https://journals.sagepub.com/doi/full/10.1177/0265407518761225\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Social and Personal Relationships</a>)",
+            "Research suggests friendship tends to grow with repeated shared time. One well-known study put it at roughly 50 hours to move from acquaintance to friend (<a href=\"https://journals.sagepub.com/doi/full/10.1177/0265407518761225\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Social and Personal Relationships</a>). But hours are only the opportunity, not a quota. What turns time into friendship is the quality of the attention you bring and simply showing up, and some friendships form much faster. School and early work once created that shared time automatically. Nobody had to plan it. As an adult, you do.",
             "Hall's research makes a second distinction. He separates friendships formed by obligation, at work or school, from friendships that are freely chosen. His data show that hours in an obligatory context are poor predictors of closeness. Forty hours a week next to a coworker doesn't produce the same friendship as twenty hours chosen freely. This explains why a full calendar can still feel lonely. The people are there. The choice is not. (<a href=\"https://journals.sagepub.com/doi/full/10.1177/0265407518761225\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Social and Personal Relationships</a>)"
           ],
           "quote": "Most adult loneliness is not about missing people. It's about missing the repetition that turns people into friends.",
           "cultureRef": {
             "show": "TV show · Friends (NBC)",
-            "body": "Friends shows what passive infrastructure looks like. Monica's group lives across the hall from each other. They share the same spot at Central Perk. Nobody plans their time together. It just happens. That contact adds up to the 50 hours Jeffrey Hall found it takes to build a real friendship. When Monica and Chandler move to the suburbs, the group starts to fracture. The friendship wasn't the special part. The infrastructure was. Without it, adults have to create contact on purpose."
+            "body": "Friends shows what passive infrastructure looks like. Monica's group lives across the hall from each other. They share the same spot at Central Perk. Nobody plans their time together. It just happens. All that repeated, easy contact is exactly what real friendship grows from. When Monica and Chandler move to the suburbs, the group starts to fracture. The friendship wasn't the special part. The infrastructure was. Without it, adults have to create contact on purpose."
           }
         },
         {
@@ -1203,7 +1203,7 @@
     {
       "slug": "why-male-friendships-fade",
       "status": "live",
-      "lastmod": "2026-07-01",
+      "lastmod": "2026-07-08",
       "title": "Why Male Friendships Fade After 30 | The Friendship Practice",
       "description": "Male friendships don't end in a fight. They fade through distance, cancelled plans, and the slow disappearance of shared contexts. Here's what the research shows.",
       "h1": "Why male friendships fade after 30",
@@ -1251,7 +1251,7 @@
           "h2": "What actually works",
           "paragraphs": [
             "The research on male friendship points to one consistent answer: shared activity in a recurring context. Not deep talks. Not scheduled feelings check-ins. Just doing something alongside another person, often enough that the friendship has somewhere to grow.",
-            "Research shows it takes around 50 hours of shared time to build a genuine close friendship. A Pickleball game every Sunday, a recreational sports league, a standing lunch: these are the conditions under which real friendship happens, not substitutes for it. (<a href=\"https://journals.sagepub.com/doi/full/10.1177/0265407518761225\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Social and Personal Relationships</a>)",
+            "Close friendships grow from regular, relaxed time doing something you both enjoy, not from hitting a target. A pickleball game every Sunday, a recreational sports league, a standing lunch: these are the conditions under which real friendship happens, not substitutes for it. The format matters less than showing up again and again.",
             "The practical starting point is small: identify one person you have been meaning to see more of, and suggest one recurring activity. Not a catch-up. An activity. Then suggest it again the next time. For a step-by-step guide to rebuilding from here, see <a href=\"/guides/how-men-can-rebuild-friendships/\">how men can rebuild friendships without making it awkward</a>."
           ],
           "cultureRef": {
@@ -1270,8 +1270,8 @@
           "a": "Because most male friendship runs on shared context, not regular emotional contact. When the context goes away, a move, a new job, marriage, kids, the friendship loses its engine. There's no conflict. Just less and less contact, until the friendship lives mostly in the past tense."
         },
         {
-          "q": "How many hours does it take to build a close male friendship?",
-          "a": "Research says about 50 hours of shared time makes a casual friend, and around 200 makes a close one. For men, shared activity is the fastest way to stack those hours: a regular game, a shared project, a standing weekly thing."
+          "q": "What is the most reliable way to build a close male friendship?",
+          "a": "Regular, relaxed time doing something you both enjoy, more than any set number of hours. A standing game, a shared project, a weekly ritual. Showing up again and again is what builds closeness, and for men a shared activity is often the easiest way to create that kind of time."
         },
         {
           "q": "Do men need therapy to rebuild friendships?",
@@ -1283,7 +1283,7 @@
     {
       "slug": "how-men-can-rebuild-friendships",
       "status": "live",
-      "lastmod": "2026-07-01",
+      "lastmod": "2026-07-08",
       "title": "How Men Can Rebuild Friendships Without Making It Awkward | The Friendship Practice",
       "description": "You don't need a deep conversation or a vulnerability retreat. You need a recurring activity, one invitation, and a follow-up. Here's how to rebuild.",
       "h1": "How men can rebuild friendships without making it awkward",
@@ -1304,8 +1304,8 @@
         {
           "h2": "Pick one recurring activity and invite one person",
           "paragraphs": [
-            "Research shows it takes about 50 hours of shared time to build a real, close friendship. For most guys over 30, that number sounds impossible. Broken into a recurring activity, it isn't. A weekly Pickleball game. A monthly golf round. A Sunday run. A volunteer shift that repeats. A few months, and you're there. (<a href=\"https://journals.sagepub.com/doi/full/10.1177/0265407518761225\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Social and Personal Relationships</a>)",
-            "You don't need to tell the other person about the 50 hours. Just pick an activity you would genuinely enjoy and invite one person to join you. Make it recurring if you can. The repetition does the work.",
+            "Close friendship grows from regular, relaxed time together, and for most guys over 30 that can sound impossible to fit in. Built into a recurring activity, it isn't. A weekly pickleball game. A monthly golf round. A Sunday run. A volunteer shift that repeats. Give it a few months and the friendship has room to grow.",
+            "You don't need a formula or a target. Just pick an activity you would genuinely enjoy and invite one person to join you. Make it recurring if you can. The repetition does the work.",
             "The key is that the activity matters on its own. If you're only there for the social outcome, you'll feel the absence of it on every visit. If you genuinely like what you're doing, the social layer builds on top of something already worth your time."
           ],
           "cultureRef": {
@@ -1354,7 +1354,7 @@
         },
         {
           "q": "What is the most practical way for a man to make a new friend?",
-          "a": "Pick one recurring activity you truly enjoy and invite one specific person. Follow up after the first time. Research says a close friendship takes about 50 hours together. A weekly activity stacks those hours fast. One-off coffees don't."
+          "a": "Pick one recurring activity you truly enjoy and invite one specific person. Follow up after the first time. A close friendship grows from regular, relaxed time together, and a weekly activity builds that far better than one-off coffees."
         }
       ],
       "alternateFr": "/fr/guides/comment-les-hommes-reconstruisent-leurs-amities/"
@@ -2122,7 +2122,7 @@
     {
       "slug": "how-to-turn-acquaintances-into-friends",
       "status": "live",
-      "lastmod": "2026-06-30",
+      "lastmod": "2026-07-08",
       "title": "How to Turn Acquaintances Into Friends | The Friendship Practice",
       "description": "How do you cross from someone you know to someone you trust? It takes more than hello. Here is what actually moves an acquaintance into a real friend.",
       "h1": "How to turn acquaintances into friends",
@@ -2161,7 +2161,7 @@
             "Many people try to make a strong impression in one conversation, hoping that will carry things forward. It rarely does. Adult friendship deepens through light contact that repeats, not one big moment.",
             "Seeing someone multiple times builds familiarity, trust, and ease. It gives both people time to notice what they like about each other and what they might have in common beyond the obvious.",
             "If the first coffee goes well, suggest the next one before you leave or soon after. Don't leave it to chance.",
-            "Research shows that moving from acquaintance to friend takes about 50 hours of shared time. Not 50 hours of depth. Just 50 hours of presence. That's why repeated casual contact builds more friendship than one excellent conversation, and why the pattern over time matters more than any single moment. (<a href=\"https://journals.sagepub.com/doi/full/10.1177/0265407518761225\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Social and Personal Relationships</a>)"
+            "Turning an acquaintance into a friend takes repeated, relaxed time together, not one perfect moment. It is not about deep talks or a set number of hours. It is ordinary, easy contact, repeated, which is why a steady pattern over time builds more friendship than a single excellent conversation."
           ],
           "cultureRef": {
             "show": "TV show · Lupin (Netflix)",
@@ -2200,7 +2200,7 @@
         },
         {
           "q": "How many times do I need to see someone before the friendship feels real?",
-          "a": "Research suggests about 50 hours of contact to go from acquaintance to real friend. That sounds like a lot, but it adds up through repeated light contact: recurring coffees, shared activities, regular check-ins over a few months."
+          "a": "There is no magic count. Friendship tends to grow through repeated light contact: recurring coffees, shared activities, regular check-ins over a few months. What matters is the steady pattern and real interest, not reaching a number."
         },
         {
           "q": "I have a lot of acquaintances at work but no real work friends. How do I fix that?",
