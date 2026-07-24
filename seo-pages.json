@@ -250,7 +250,7 @@
       "ogDescription": "Se faire des amis adulte, ce n'est pas une question de charisme. C'est du temps partagé, répété, et de la qualité de présence. Voici comment.",
       "changefreq": "monthly",
       "priority": "0.7",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-09"
     },
     {
       "file": "fr/guides/pourquoi-se-faire-des-amis-adulte-est-difficile/index.html",
@@ -294,7 +294,7 @@
       "ogDescription": "Garder ses amis adulte tient moins aux grands moments qu'au contact régulier.",
       "changefreq": "monthly",
       "priority": "0.7",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-09"
     },
     {
       "file": "fr/guides/pourquoi-les-amities-se-perdent/index.html",
@@ -338,7 +338,7 @@
       "ogDescription": "La plupart des amitiés ne ratent pas à la première rencontre. Elles ratent dans le silence d'après. Voici quoi écrire, quand, et comment proposer la suite.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-09"
     },
     {
       "file": "fr/guides/transformer-une-connaissance-en-ami/index.html",
@@ -371,7 +371,7 @@
       "ogDescription": "Se faire des amis en expatriation est un vrai défi : pas de réseau, d'autres codes, une horloge qui tourne. Voici ce qui fonctionne vraiment à l'étranger.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-08"
+      "lastmod": "2026-07-09"
     },
     {
       "file": "fr/guides/se-faire-des-amis-jeune-parent/index.html",
@@ -521,7 +521,7 @@
     {
       "slug": "how-to-make-friends-as-an-adult",
       "status": "live",
-      "lastmod": "2026-07-08",
+      "lastmod": "2026-07-09",
       "title": "How to Make Friends as an Adult | The Friendship Practice",
       "description": "Making friends as an adult isn't about charm. It's about repeated, relaxed time with the same people, and the quality of attention you bring to it. Here's how.",
       "h1": "How to make friends as an adult",
@@ -568,6 +568,7 @@
           "h2": "Let friendship grow through practice",
           "paragraphs": [
             "Friendship deepens through small repeated acts: inviting, checking in, remembering something small, following through, showing up. None of them looks impressive on its own. Together, they're the whole thing.",
+            "Repetition creates the opportunity. What turns that opportunity into closeness is what happens once you're actually talking: asking something a little more personal than the situation strictly requires, and being willing to answer honestly when someone asks you the same. You don't need a big confession. A real opinion, a real difficulty, a genuine reaction offered instead of the polite version is usually enough to shift a friendly acquaintance into someone who feels like a friend.",
             "That's the idea behind The Friendship Practice: friendship isn't just something you understand. It's something you do on purpose. If you want to understand why it feels so hard first, read <a href=\"/guides/why-making-friends-as-an-adult-is-hard/\">why making friends as an adult is hard</a>. If you already have people you like but the connection never deepens, see <a href=\"/guides/how-to-turn-acquaintances-into-friends/\">how to turn acquaintances into friends</a>."
           ],
           "quote": "You don't need a more charismatic personality. You need a more deliberate practice."
@@ -805,7 +806,7 @@
     {
       "slug": "how-to-keep-friends-as-an-adult",
       "status": "live",
-      "lastmod": "2026-06-20",
+      "lastmod": "2026-07-09",
       "title": "How to Keep Friends as an Adult | The Friendship Practice",
       "description": "Adult friendships don't end in fights. They end in drift. Here is how to maintain them through consistent small acts, not grand gestures or perfect timing.",
       "h1": "How to keep friends as an adult",
@@ -817,7 +818,8 @@
           "h2": "Make contact repeatable, not heroic",
           "paragraphs": [
             "A friendship doesn't need constant emotional depth to stay alive. It often needs something simpler: regular contact that feels sustainable. A short message, a recurring walk, a check-in after a trip, a small invitation next week.",
-            "If every chat has to be deep and perfectly timed, the friendship gets too heavy to carry. Showing up often beats showing up perfectly."
+            "If every chat has to be deep and perfectly timed, the friendship gets too heavy to carry. Showing up often beats showing up perfectly.",
+            "That said, light contact keeps a friendship alive, but it's the occasional real moment, a genuine question, an honest answer, that keeps it meaningful. You don't need depth every time. You do need it sometimes."
           ],
           "quote": "A friendship doesn't need to be intense to stay alive. It needs to be consistent.",
           "cultureRef": {
@@ -1937,7 +1939,7 @@
     {
       "slug": "how-to-follow-up-after-meeting-someone",
       "status": "live",
-      "lastmod": "2026-06-30",
+      "lastmod": "2026-07-09",
       "title": "How to Follow Up After Meeting Someone | The Friendship Practice",
       "description": "Afraid to text someone you just met in case you seem too eager? Research shows people like us more than we think. Here is how to follow up without the stress.",
       "h1": "How to follow up after meeting someone",
@@ -1989,7 +1991,7 @@
           "h2": "What happens after the follow-up",
           "paragraphs": [
             "If the person responds warmly and you meet again, a friendship is beginning. The next move is to keep the contact going: suggest the next plan before too much time passes, remember something they told you, and treat the repetition as normal.",
-            "Most adult friendships that last are built through this kind of low-key persistence. Not one perfect conversation. A series of small acts that say: still interested.",
+            "Most adult friendships that last are built through this kind of low-key persistence, not one perfect conversation. Part of that persistence is letting the conversation move past logistics: ask something a little more personal once in a while, and answer honestly when they do the same. That's usually what turns polite meetups into a real friendship.",
             "Once the follow-up has created a second meeting, the work shifts to deepening the connection. See <a href=\"/guides/how-to-turn-acquaintances-into-friends/\">how to turn acquaintances into friends</a> for the specific moves that cross that gap."
           ],
           "quote": "What separates an acquaintance from a friend is usually not chemistry. It's someone willing to suggest the next time."
@@ -2213,7 +2215,7 @@
     {
       "slug": "how-to-make-friends-as-an-expat",
       "status": "live",
-      "lastmod": "2026-06-30",
+      "lastmod": "2026-07-09",
       "title": "How to Make Friends as an Expat | The Friendship Practice",
       "description": "Making friends as an expat is a real challenge: no existing network, different cultural scripts, a ticking clock. Here is what actually works abroad.",
       "h1": "How to make friends as an expat",
@@ -2256,6 +2258,7 @@
           "paragraphs": [
             "Expat friendship often feels slower than friendship at home. People are more guarded. The codes are different. Trust across cultures takes time.",
             "What feels like failure at three months is often just the normal arc. The friendships that form after six months to a year are usually more solid than the instant ones that don't survive your first hard stretch abroad.",
+            "Part of what takes longer abroad is the shift from friendly logistics to something more personal. Sharing a real opinion, a real difficulty, a genuine reaction, is what turns repeated contact into closeness, and it can feel riskier in a second language or an unfamiliar culture. Push a little past the polite version when you can. It's usually welcomed more than you expect, even if it takes a beat longer to land.",
             "Give the process more time than feels comfortable. Most expats who later say they built a real social life abroad also say it took longer than they expected.",
             "Research on adapting to a new culture found this stage, before you've rebuilt a reliable circle, is one of the hardest things adults go through. That mix you feel? Excitement, confusion, low-grade loneliness. It isn't a personal failure. It's a normal human response to starting over somewhere new. (<a href=\"https://journals.sagepub.com/home/jcc\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Cross-Cultural Psychology</a>)"
           ],
