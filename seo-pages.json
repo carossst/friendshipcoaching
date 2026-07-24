@@ -272,7 +272,7 @@
       "ogDescription": "Renouer avec un ancien ami est presque toujours plus simple que l'histoire qu'on se raconte avant d'écrire. Voici quoi dire.",
       "changefreq": "monthly",
       "priority": "0.7",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-24"
     },
     {
       "file": "fr/guides/se-faire-des-amis-apres-30-ans/index.html",
@@ -283,7 +283,7 @@
       "ogDescription": "Se faire de vrais amis après 30 ans est tout à fait possible. Il faut plus d'intention et moins d'attente. Voici ce qui marche vraiment.",
       "changefreq": "monthly",
       "priority": "0.7",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-24"
     },
     {
       "file": "fr/guides/garder-ses-amis-adulte/index.html",
@@ -305,7 +305,7 @@
       "ogDescription": "La plupart des amitiés adultes ne se terminent pas. Elles s'éloignent doucement. Voici pourquoi, et comment les rattraper.",
       "changefreq": "monthly",
       "priority": "0.7",
-      "lastmod": "2026-07-08"
+      "lastmod": "2026-07-24"
     },
     {
       "file": "fr/guides/amitie-a-sens-unique/index.html",
@@ -360,7 +360,7 @@
       "ogDescription": "Le télétravail supprime la source la plus fiable de contact répété : le bureau. La solution n'est pas de le recréer, mais de construire autre chose. Voici quoi.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-08"
+      "lastmod": "2026-07-24"
     },
     {
       "file": "fr/guides/se-faire-des-amis-expatrie/index.html",
@@ -382,7 +382,7 @@
       "ogDescription": "La jeune parentalité est une des périodes les plus isolantes de la vie adulte. Pas par manque de gens : par manque d'énergie et de structure. Voici comment faire.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-24"
     },
     {
       "file": "fr/guides/rester-amis-apres-un-bebe/index.html",
@@ -393,7 +393,7 @@
       "ogDescription": "Quand votre ami a un bébé, son temps libre disparaît du jour au lendemain. Pour garder le lien, il faut changer les règles. Voici comment.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-24"
     },
     {
       "file": "fr/guides/garder-ses-amities-de-bureau-en-teletravail/index.html",
@@ -404,7 +404,7 @@
       "ogDescription": "En passant en télétravail, on perd les moments de couloir qui faisaient vivre les amitiés de bureau. Voici comment remplacer cette structure avant qu'elles s'éteignent.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-08"
+      "lastmod": "2026-07-24"
     },
     {
       "file": "fr/guides/devenir-un-meilleur-ami/index.html",
@@ -459,7 +459,7 @@
       "ogDescription": "La plupart des hommes ne perdent pas leurs amis d'un coup. Ils les perdent lentement, quand les contextes partagés disparaissent. Voici le mécanisme, et la sortie.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-24"
     },
     {
       "file": "fr/guides/comment-les-hommes-reconstruisent-leurs-amities/index.html",
@@ -470,7 +470,7 @@
       "ogDescription": "Pas besoin de grande conversation ni de stage d'émotions. Il faut une activité récurrente, une invitation, et un message d'après. Voici la méthode.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-24"
     },
     {
       "file": "fr/guides/presenter-ses-amis-entre-eux/index.html",
@@ -614,7 +614,7 @@
     {
       "slug": "how-to-reconnect-with-old-friends",
       "status": "live",
-      "lastmod": "2026-06-20",
+      "lastmod": "2026-07-24",
       "title": "How to Reconnect With Old Friends | The Friendship Practice",
       "description": "The story you tell yourself before you send the message is always harder than the message itself. Here is how to reconnect without guilt or a long explanation.",
       "h1": "How to reconnect with old friends",
@@ -626,7 +626,8 @@
           "h2": "The shared foundation does not disappear",
           "paragraphs": [
             "Even after years of silence, the shared history between two people doesn't vanish. You have memories in common, experiences that shaped you both, a sense of who the other person was at a specific point in your lives. That context still exists.",
-            "This is one reason reconnection is often easier than people expect. You aren't starting from zero. You're picking up a thread that was set down, not cut. The warmth of an old friendship is often still there, waiting to be reactivated by something as simple as an honest message."
+            "This is one reason reconnection is often easier than people expect. You aren't starting from zero. You're picking up a thread that was set down, not cut. The warmth of an old friendship is often still there, waiting to be reactivated by something as simple as an honest message.",
+            "An honest message works better than a polished one. Say why you're reaching out. Mention something real you remember. That small bit of honesty often does more than a perfect message ever could."
           ],
           "cultureRef": {
             "show": "Film · The Big Chill (Lawrence Kasdan)",
@@ -1115,7 +1116,7 @@
     {
       "slug": "how-to-make-friends-after-30",
       "status": "live",
-      "lastmod": "2026-06-22",
+      "lastmod": "2026-07-24",
       "title": "How to Make Friends After 30 | The Friendship Practice",
       "description": "After 30, friendship doesn't stop being possible. It stops being automatic. Here is how to build it deliberately without pretending adult life works like college.",
       "h1": "How to make friends after 30",
@@ -1161,6 +1162,7 @@
           "h2": "Build slowly, but keep building",
           "paragraphs": [
             "Friendship after 30 grows through small repeated acts, not instant closeness. A few good talks, a couple of plans, some follow-through, and a growing sense of ease. That can be enough to start something real.",
+            "Repetition opens the door. What deepens the friendship is what happens once you're talking: a real question, an honest answer. You don't need a big moment. A small one, said plainly, is usually enough.",
             "That's why The Friendship Practice focuses on action. Adult friendship often doesn't need a new personality. It needs visible practice. For a step-by-step approach, see <a href=\"/guides/how-to-make-friends-as-an-adult/\">how to make friends as an adult</a>. For more on the specific habits that move an acquaintance into a friend, see <a href=\"/guides/how-to-turn-acquaintances-into-friends/\">how to turn acquaintances into friends</a>."
           ],
           "cultureRef": {
@@ -1205,7 +1207,7 @@
     {
       "slug": "why-male-friendships-fade",
       "status": "live",
-      "lastmod": "2026-07-08",
+      "lastmod": "2026-07-24",
       "title": "Why Male Friendships Fade After 30 | The Friendship Practice",
       "description": "Male friendships don't end in a fight. They fade through distance, cancelled plans, and the slow disappearance of shared contexts. Here's what the research shows.",
       "h1": "Why male friendships fade after 30",
@@ -1253,6 +1255,7 @@
           "h2": "What actually works",
           "paragraphs": [
             "The research on male friendship points to one consistent answer: shared activity in a recurring context. Not deep talks. Not scheduled feelings check-ins. Just doing something alongside another person, often enough that the friendship has somewhere to grow.",
+            "That doesn't mean depth never matters. It just doesn't need to be planned or announced. Real moments still happen inside the activity. An honest answer when something's wrong. A comment that goes past the usual joking. Let them happen when they do.",
             "Close friendships grow from regular, relaxed time doing something you both enjoy, not from hitting a target. A pickleball game every Sunday, a recreational sports league, a standing lunch: these are the conditions under which real friendship happens, not substitutes for it. The format matters less than showing up again and again.",
             "The practical starting point is small: identify one person you have been meaning to see more of, and suggest one recurring activity. Not a catch-up. An activity. Then suggest it again the next time. For a step-by-step guide to rebuilding from here, see <a href=\"/guides/how-men-can-rebuild-friendships/\">how men can rebuild friendships without making it awkward</a>."
           ],
@@ -1285,7 +1288,7 @@
     {
       "slug": "how-men-can-rebuild-friendships",
       "status": "live",
-      "lastmod": "2026-07-08",
+      "lastmod": "2026-07-24",
       "title": "How Men Can Rebuild Friendships Without Making It Awkward | The Friendship Practice",
       "description": "You don't need a deep conversation or a vulnerability retreat. You need a recurring activity, one invitation, and a follow-up. Here's how to rebuild.",
       "h1": "How men can rebuild friendships without making it awkward",
@@ -1329,7 +1332,8 @@
           "paragraphs": [
             "Research on male bonding keeps finding the same thing: many men connect more easily side by side than face to face. Sitting across a table being asked how you're doing can feel loaded. A hike, a game, a shared project doesn't.",
             "That's not a weakness. It's a different way of connecting. When the focus is on something external, a task, a sport, a game, the conversation doesn't have to carry the whole relationship. Connection happens alongside the activity.",
-            "If a direct social ask feels too pointed, a side-by-side ask is easier: 'I'm trying to get back into tennis, do you still play?' takes friendship off the table as the explicit subject and puts the activity there instead."
+            "If a direct social ask feels too pointed, a side-by-side ask is easier: 'I'm trying to get back into tennis, do you still play?' takes friendship off the table as the explicit subject and puts the activity there instead.",
+            "That doesn't mean depth is off the table. It usually shows up on its own. A real answer when someone asks how you're doing. A comment that goes a little further than usual. You don't have to plan for it. Just don't shut it down when it happens."
           ]
         },
         {
@@ -1707,7 +1711,7 @@
       "pullQuote": "The friendships that survive new parenthood are almost always the ones where the friend without a baby does the adapting. Not forever. Just during this season, when one person's life has completely changed and the other's has not.",
       "intro": "Staying friends with someone who just had a baby is possible, but it requires adjusting what friendship looks like during that season. The old rhythm won't survive unchanged. A new one, built around their reality, can.",
       "authorNote": "I have watched many friendships quietly disappear in the months after someone had a child, not because anyone stopped caring, but because nobody adapted. The friends who stayed were the ones who stopped expecting things to look the same.",
-      "lastmod": "2026-06-29",
+      "lastmod": "2026-07-24",
       "sections": [
         {
           "h2": "New parents are not rejecting you. They are surviving.",
@@ -1727,6 +1731,7 @@
           "paragraphs": [
             "A voice note while they're feeding the baby. A meme that made you think of them. A short message that ends with no need to reply, just thinking of you. These micro-acts of contact signal that you're still there without adding to an already impossible to-do list.",
             "Frequency matters more than depth right now. A brief check-in every week or two does more for the friendship than one long dinner every six months that never gets scheduled.",
+            "That said, depth still matters when it happens. A short honest note, 'this stage is harder than I expected,' can do more than months of light check-ins. You don't need it every time. Just sometimes.",
             "And let them off the hook explicitly. Saying something like I know you're in the thick of it, no pressure to respond removes the guilt that makes parents go quiet in the first place."
           ],
           "quote": "The friendships that survive a baby are not built on big plans. They're built on small, consistent presence.",
@@ -1865,7 +1870,7 @@
       "pullQuote": "Remote work is not a social life problem. It's a structure problem. The office was doing the social work without you having to think about it. Now you have to build that structure yourself.",
       "intro": "Before remote work, the office did the friendship work without anyone noticing. You saw the same people every day, conversations just happened, and some of them became real. When that structure disappears, the social life built on it goes too.",
       "authorNote": "I have spent most of my adult working life without a traditional office, splitting time between Hawaii and Paris and working independently. What I know from that: the social life doesn't build itself. You have to choose where to show up, and then actually show up.",
-      "lastmod": "2026-06-29",
+      "lastmod": "2026-07-24",
       "sections": [
         {
           "h2": "The real problem with remote work and friendship",
@@ -1886,7 +1891,8 @@
           "paragraphs": [
             "The best move for remote workers: pick one activity on a regular schedule and show up for at least two months. A Pickleball club. A weekly volunteer shift. A neighborhood association. A class. A coworking space on the same days each week. The format doesn't matter. The regularity does.",
             "The goal isn't to meet as many people as possible. It's to become a recognizable face in one place. Friendship starts when someone sees you again and remembers you from before. That can't happen at one-off events.",
-            "Choose something you would enjoy even if you made no friends from it. That removes the pressure and makes the repetition sustainable."
+            "Choose something you would enjoy even if you made no friends from it. That removes the pressure and makes the repetition sustainable.",
+            "Once you're a familiar face, push a little further. Ask something real. Share something real yourself. That's what turns a friendly regular into an actual friend."
           ],
           "quote": "The social life you want won't find you at home. It will find you at the same place, at the same time, for the third week in a row.",
           "cultureRef": {
@@ -2028,7 +2034,7 @@
     {
       "slug": "why-do-friendships-fade",
       "status": "live",
-      "lastmod": "2026-06-30",
+      "lastmod": "2026-07-24",
       "title": "Why Do Friendships Fade? | The Friendship Practice",
       "description": "Friendships rarely end in a big fight. They drift away when nobody makes the next plan. Here is why it happens and how to catch it before it is too late.",
       "h1": "Why do friendships fade?",
@@ -2072,7 +2078,8 @@
           "h2": "The friendship shifts but nobody names it",
           "paragraphs": [
             "Sometimes a friendship fades not because people fall out but because they move into different life phases with different rhythms and priorities. The friendship isn't broken. It just doesn't fit the same way it once did.",
-            "Instead of adjusting expectations, people often let the friendship drift. The mismatch goes unnamed. Contact thins until both people assume it's over."
+            "Instead of adjusting expectations, people often let the friendship drift. The mismatch goes unnamed. Contact thins until both people assume it's over.",
+            "Naming it helps. A short honest note about the shift can restart things: 'I miss how we used to talk.' 'Can we try a different kind of catch-up?' Small honesty like that often works better than letting the silence answer for you."
           ],
           "cultureRef": {
             "show": "Book · My Brilliant Friend by Elena Ferrante",
@@ -2464,12 +2471,12 @@
     {
       "slug": "how-to-make-friends-as-a-new-parent",
       "status": "live",
-      "lastmod": "2026-07-01",
+      "lastmod": "2026-07-24",
       "title": "How to Make Friends as a New Parent | The Friendship Practice",
       "description": "New parenthood is isolating, and polite coffee dates aren't the answer. Here is how to find other parents who get it and build real connections fast.",
       "h1": "How to make friends as a new parent",
       "lead": "New parenthood is one of the loneliest stretches of adult life. Not because people are missing, but because everyone is overwhelmed and nobody has energy left to make friendship happen. The opportunity is there. The structure is not.",
-      "intro": "Making friends as a new parent comes down to finding other people in the same season of life and creating enough repeated contact that the connection has somewhere to go. You don't need deep conversations or long evenings. You need to show up in the same place more than once, and do something small when the moment is warm.",
+      "intro": "Making friends as a new parent comes down to finding other people in the same season of life and creating enough repeated contact that the connection has somewhere to go. You don't need deep conversations or long evenings. You need to show up in the same place more than once, and do something small when the moment is warm. A short honest moment still helps when it happens. You just don't need to force it.",
       "authorNote": "New parents surrounded by potential friends at baby groups and playgrounds still feel entirely alone six months later, because nobody had the bandwidth to follow up. The window is short and the energy is low. That's exactly why you have to make the move deliberately.",
       "pullQuote": "There's almost no lonelier time in adult life than new parenthood. And almost no time when potential new friendships are more concentrated. The gap between those two facts is almost entirely about follow-through.",
       "sections": [
@@ -2556,7 +2563,7 @@
     {
       "slug": "how-to-keep-work-friendships-after-going-remote",
       "status": "live",
-      "lastmod": "2026-07-01",
+      "lastmod": "2026-07-24",
       "title": "How to Keep Work Friendships After Going Remote | The Friendship Practice",
       "description": "When you go remote, you lose the hallway moments that kept work friendships alive. Here is how to replace that structure before the friendships quietly fade.",
       "h1": "How to keep work friendships after going remote",
@@ -2600,6 +2607,7 @@
           "paragraphs": [
             "Going remote is a useful test. It forces both people to decide whether the friendship exists on its own terms or only in the context of work.",
             "Some work friendships, when moved outside the office, reveal that you have genuine things in common: curiosity, values, humor, life situations. Those friendships can become something more durable than what you had before.",
+            "The way to find out is simple. Ask something a little more personal than work chat allows. Share something real yourself. If the conversation holds up outside work topics, the friendship probably will too.",
             "Others reveal that the shared context was doing most of the work. That's not a failure. It's useful information. You can appreciate what the friendship was without putting energy into something that was always more circumstantial than chosen."
           ],
           "cultureRef": {
