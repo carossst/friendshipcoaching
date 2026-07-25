@@ -190,6 +190,17 @@
       "lastmod": "2026-06-27"
     },
     {
+      "file": "fr/quiz.html",
+      "path": "/fr/quiz.html",
+      "status": "live",
+      "title": "Quel est votre défi amical ? | The Friendship Practice",
+      "description": "Un quiz rapide pour découvrir où votre vie amicale a le plus besoin d'attention, et quoi faire ensuite.",
+      "ogDescription": "5 questions pour trouver votre défi amical et le bon point de départ.",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-07-24"
+    },
+    {
       "file": "press.html",
       "path": "/press.html",
       "status": "live",
