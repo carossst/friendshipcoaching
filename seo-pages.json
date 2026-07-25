@@ -190,6 +190,17 @@
       "lastmod": "2026-06-27"
     },
     {
+      "file": "fr/quiz.html",
+      "path": "/fr/quiz.html",
+      "status": "live",
+      "title": "Quel est votre défi amical ? | The Friendship Practice",
+      "description": "Un quiz rapide pour découvrir où votre vie amicale a le plus besoin d'attention, et quoi faire ensuite.",
+      "ogDescription": "5 questions pour trouver votre défi amical et le bon point de départ.",
+      "changefreq": "monthly",
+      "priority": "0.8",
+      "lastmod": "2026-07-24"
+    },
+    {
       "file": "press.html",
       "path": "/press.html",
       "status": "live",
@@ -261,7 +272,7 @@
       "ogDescription": "Se faire des amis adulte semble difficile pour des raisons de structure, pas de personnalité. Voici ce qui a changé, et quoi faire.",
       "changefreq": "monthly",
       "priority": "0.7",
-      "lastmod": "2026-07-08"
+      "lastmod": "2026-07-24"
     },
     {
       "file": "fr/guides/renouer-avec-un-ancien-ami/index.html",
@@ -316,7 +327,7 @@
       "ogDescription": "Vous êtes la seule personne qui écrit, propose et relance ? Comment reconnaître une amitié à sens unique, et décider quoi en faire.",
       "changefreq": "monthly",
       "priority": "0.7",
-      "lastmod": "2026-07-08"
+      "lastmod": "2026-07-24"
     },
     {
       "file": "fr/guides/rencontrer-du-monde-dans-une-nouvelle-ville/index.html",
@@ -415,7 +426,7 @@
       "ogDescription": "Devenir un meilleur ami, ce n'est pas les grands gestes. C'est la fiabilité ordinaire : faire attention, tenir parole, écrire en premier. Voici comment.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-24"
     },
     {
       "file": "fr/guides/savoir-si-quelquun-veut-devenir-votre-ami/index.html",
@@ -701,7 +712,7 @@
     {
       "slug": "why-making-friends-as-an-adult-is-hard",
       "status": "live",
-      "lastmod": "2026-07-08",
+      "lastmod": "2026-07-24",
       "title": "Why Making Friends as an Adult Is Hard | The Friendship Practice",
       "description": "Adulthood didn't kill your social skills. It destroyed your infrastructure. Here is why adult friendship requires deliberate design, not just more willpower.",
       "h1": "Why making friends as an adult is hard",
@@ -750,6 +761,7 @@
           "paragraphs": [
             "Jobs, commutes, kids, partners, travel, plain tiredness. They all compete with friendship. Without practice, closeness gets treated like a bonus instead of a priority.",
             "That doesn't mean friendship is impossible. It means it needs time, planning, and repeated action to stay alive.",
+            "Some of this really is structural, not just about willpower. Less free time, less money for going out, needing a car to get anywhere: these make it harder no matter how much you want it. If that's your situation, the answer isn't blaming yourself for not trying hard enough. It's finding the lowest-cost, most repeatable option you actually have.",
             "In your thirties and wondering if the window has closed? See <a href=\"/guides/how-to-make-friends-after-30/\">how to make friends after 30</a>."
           ]
         },
@@ -1000,7 +1012,7 @@
     {
       "slug": "how-to-be-a-better-friend",
       "status": "live",
-      "lastmod": "2026-06-22",
+      "lastmod": "2026-07-24",
       "title": "How to Be a Better Friend | The Friendship Practice",
       "description": "Being a better friend is less about grand gestures and more about reliable small ones: following up, showing up, and being easy to reach when it matters.",
       "h1": "How to be a better friend",
@@ -1013,7 +1025,8 @@
           "paragraphs": [
             "A better friend notices. They remember something small. They ask about the thing that mattered last week. They show that your inner life didn't vanish when the conversation ended.",
             "You don't need perfect memory. You need enough attention to make the relationship feel real and not generic.",
-            "Research on close relationships points to one of the strongest predictors of friendship satisfaction: feeling truly seen, understood, and cared for. That sense that someone is actually with you, not just politely present, is what separates a real friend from a pleasant acquaintance. You don't need to be perfect. You need to pay attention."
+            "Research on close relationships points to one of the strongest predictors of friendship satisfaction: feeling truly seen, understood, and cared for. That sense that someone is actually with you, not just politely present, is what separates a real friend from a pleasant acquaintance. You don't need to be perfect. You need to pay attention.",
+            "Relationship researchers call these small openings “bids for connection”: a comment, a question, a glance that quietly asks, are you with me right now? The <a href=\"https://www.gottman.com\" rel=\"noopener noreferrer\" target=\"_blank\">Gottman Institute</a>'s research found that noticing these bids and turning toward them, even briefly, is what separates friendships that deepen from ones that quietly fade. You don't need a big gesture. You need to catch the small ones."
           ],
           "cultureRef": {
             "show": "TV show · Parks and Recreation (NBC)",
@@ -1787,7 +1800,7 @@
       "pullQuote": "There's a difference between a friendship that's temporarily unbalanced and one that has always required you to do all the work. The first is worth patience. The second is worth naming, and sometimes worth letting go.",
       "intro": "A one-sided friendship feels exhausting because you're doing the work of two people. You initiate, follow up, remember, and show up. The other person receives all of that warmly and contributes almost none of it. The relationship feels real in the moments you share but hollow in between.",
       "authorNote": "I have been on both sides of this. There have been seasons where I was the one carrying a friendship more than I should have had to. And there have been seasons, in difficult periods of my life, where I was probably the one giving less. Both experiences taught me that the imbalance is worth naming before it becomes resentment.",
-      "lastmod": "2026-06-29",
+      "lastmod": "2026-07-24",
       "sections": [
         {
           "h2": "What one-sided actually means",
@@ -1802,6 +1815,7 @@
           "paragraphs": [
             "Imbalance can develop for a few reasons. Sometimes it's temporary: the other person is going through something hard, a new baby, a health crisis, a brutal work season, and has nothing left to give. That isn't the same as a friendship that's built one-sided. Before you read the imbalance as permanent, check whether they're just in a season where they can't initiate.",
             "Sometimes it reflects a genuine mismatch in how much this friendship means to each person. You may be investing in something that the other person values but not at the same level. That's painful to recognize but important.",
+            "Sometimes it's simpler than any of that: one person keeps sending small bids for connection, texts, invitations, check-ins, and the other keeps missing or brushing past them. Not out of malice. Just distraction, or habit. Naming the pattern out loud is often what breaks it.",
             "And sometimes it has been this way from the start. You're only noticing now because you're tired.",
             "A one-sided friendship wears on both people, not just one. The one who always gives builds quiet resentment. The one who always receives often carries a guilt they never name. Both corrode the friendship. Left alone long enough, the imbalance doesn't just stay uncomfortable. It changes how you both feel about something that used to be good."
           ],
