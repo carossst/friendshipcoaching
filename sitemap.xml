@@ -225,8 +225,20 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://thefriendshippractice.com/fr/guides/se-faire-des-amis-quand-on-est-introverti/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://thefriendshippractice.com/fr/guides/se-faire-des-amis-avec-de-lanxiete-sociale/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://thefriendshippractice.com/fr/guides/</loc>
-    <lastmod>2026-07-02</lastmod>
+    <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -463,6 +475,26 @@
   <url>
     <loc>https://thefriendshippractice.com/guides/how-to-make-friends-after-a-friendship-ends/</loc>
     <lastmod>2026-07-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://thefriendshippractice.com/Carolephotobio.jpg</image:loc>
+      <image:title>Carole Stromboni, The Friendship Practice</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://thefriendshippractice.com/guides/how-to-make-friends-as-an-introvert/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://thefriendshippractice.com/Carolephotobio.jpg</image:loc>
+      <image:title>Carole Stromboni, The Friendship Practice</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://thefriendshippractice.com/guides/how-to-make-friends-with-social-anxiety/</loc>
+    <lastmod>2026-07-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>

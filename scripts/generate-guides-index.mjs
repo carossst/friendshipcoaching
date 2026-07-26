@@ -100,6 +100,15 @@ const categories = [
       "what-is-friendship-coaching",
       "friendship-quotes"
     ]
+  },
+  {
+    label: "Introvert or anxious in groups?",
+    headline: "You don't need to become someone louder. You need a different approach.",
+    slugs: [
+      "how-to-make-friends-as-an-introvert",
+      "how-to-make-friends-with-social-anxiety",
+      "how-to-follow-up-after-meeting-someone"
+    ]
   }
 ];
 

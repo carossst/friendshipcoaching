@@ -517,15 +517,37 @@
       "lastmod": "2026-07-26"
     },
     {
+      "file": "fr/guides/se-faire-des-amis-quand-on-est-introverti/index.html",
+      "path": "/fr/guides/se-faire-des-amis-quand-on-est-introverti/",
+      "status": "live",
+      "title": "Se faire des amis quand on est introverti | The Friendship Practice",
+      "description": "Se faire des amis quand on est introverti n'est pas une question de devenir plus sociable. Les recherches sur la façon dont les introvertis nouent des amitiés pointent vers moins de monde, plus de répétition, moins de small talk.",
+      "ogDescription": "Se faire des amis quand on est introverti n'est pas une question de devenir plus sociable. Les recherches sur la façon dont les introvertis nouent des amitiés pointent vers moins de monde, plus de répétition, moins de small talk.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-26"
+    },
+    {
+      "file": "fr/guides/se-faire-des-amis-avec-de-lanxiete-sociale/index.html",
+      "path": "/fr/guides/se-faire-des-amis-avec-de-lanxiete-sociale/",
+      "status": "live",
+      "title": "Se faire des amis avec de l'anxiété sociale | The Friendship Practice",
+      "description": "L'anxiété sociale rend l'amitié plus risquée qu'elle ne l'est vraiment. Les recherches montrent que les personnes anxieuses sous-estiment systématiquement ce que leurs amis ressentent vraiment pour elles. Voici ce qui aide.",
+      "ogDescription": "L'anxiété sociale rend l'amitié plus risquée qu'elle ne l'est vraiment. Les recherches montrent que les personnes anxieuses sous-estiment systématiquement ce que leurs amis ressentent vraiment pour elles. Voici ce qui aide.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-26"
+    },
+    {
       "file": "fr/guides/index.html",
       "path": "/fr/guides/",
       "status": "live",
       "title": "Tous les guides amitié en français | The Friendship Practice",
-      "description": "Les 24 guides pratiques de The Friendship Practice en français : se faire des amis, renouer, garder ses amitiés vivantes, et traverser les fins.",
+      "description": "Les 26 guides pratiques de The Friendship Practice en français : se faire des amis, renouer, garder ses amitiés vivantes, et traverser les fins.",
       "ogDescription": "Les guides pratiques de The Friendship Practice en français : se faire des amis, renouer, garder ses amitiés vivantes.",
       "changefreq": "weekly",
       "priority": "0.7",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-26"
     }
   ],
   "guides": [
@@ -2772,6 +2794,191 @@
         }
       ],
       "alternateFr": "/fr/guides/se-faire-des-amis-apres-une-amitie-perdue/"
+    },
+    {
+      "slug": "how-to-make-friends-as-an-introvert",
+      "status": "live",
+      "datePublished": "2026-07-26",
+      "lastmod": "2026-07-26",
+      "title": "How to Make Friends as an Introvert | The Friendship Practice",
+      "description": "Making friends as an introvert isn't about becoming more outgoing. Research on how introverts actually build friendships points to fewer people, more repetition, less small talk.",
+      "h1": "How to Make Friends as an Introvert",
+      "lead": "Making friends as an introvert isn't about becoming more outgoing. It's about building connection in a way your energy can actually sustain.",
+      "intro": "You can make close friends as an introvert without becoming a different person. Research on how introverts actually experience friendship points the same way coaching does: slower, steadier contact with fewer people, not wide-net socializing. What helps is picking one or two low-key, repeatable contexts, letting the connection build at its own pace, and protecting the energy you have instead of pretending you have more.",
+      "authorNote": "I've coached more introverts than people assume, given how social this work looks from the outside. What I hear most often isn't “I don't like people.” It's “I don't have it in me to meet dozens of people just to end up with three real friends.” You don't have to. The research on how introverts actually build friendships backs this up: fewer people, more repetition, less performance.",
+      "pullQuote": "Introverts don't need less friendship. They need a different route to it: fewer people, more repetition, and less small talk along the way.",
+      "sections": [
+        {
+          "h2": "Introversion is not a friendship problem",
+          "paragraphs": [
+            "Most friendship advice is written for people who recharge around others. Go to more events. Talk to more strangers. Say yes to everything. For an introvert, that advice doesn't fail because you're bad at friendship. It fails because it was never built for how you actually work.",
+            "Preferring depth over breadth is a real style, not a deficit. Research on personality and friendship maintenance finds that introversion changes how people build closeness, not whether they can build it. Once you stop measuring yourself against extravert-shaped advice, the real question gets simpler: what does connection look like when it doesn't require constant output?"
+          ],
+          "cultureRef": {
+            "show": "Movie · Good Will Hunting (Gus Van Sant)",
+            "body": "In Good Will Hunting, Will doesn't have a wide circle. He has four guys he'd fight for and who'd fight for him, built over years in the same neighborhood, the same bar, the same routines. Nobody in that group is working a room. They just keep showing up for each other. A small, well-built circle can carry more weight than a large, loose one."
+          }
+        },
+        {
+          "h2": "Friendship for introverts is a journey, not a spark",
+          "paragraphs": [
+            "Research comparing how extraverts and introverts describe becoming friends found a clear pattern: extraverts tend to describe an instant, almost explosive “friends at first sight” feeling. Introverts far more often describe something closer to a journey, a gradual shift that only looks like friendship in hindsight. (<a href=\"https://journals.sagepub.com/doi/abs/10.1002/per.1839\" rel=\"noopener noreferrer\" target=\"_blank\">European Journal of Personality</a>)",
+            "That matters because it changes what you should be watching for. If you're waiting for instant chemistry to tell you a connection is worth pursuing, you'll walk past most of the ones that would have worked. The better signal isn't excitement. It's whether you can picture seeing this person again without dreading it."
+          ]
+        },
+        {
+          "h2": "A smaller circle done well beats a wide one done thin",
+          "paragraphs": [
+            "Humans generally seem to sustain close relationships at a few natural sizes: an inner circle of roughly five people who need real contact, and a wider ring of about fifteen who need less. Spreading your attention evenly across a large number of acquaintance-level ties tends to leave everyone, including you, feeling like a stranger.",
+            "For an introvert, this isn't a consolation prize. Two or three people you see regularly and can be honest with is a complete social life, not a small one. The goal isn't to widen the circle. It's to keep it fed."
+          ]
+        },
+        {
+          "h2": "Let structure carry the weight instead of small talk",
+          "paragraphs": [
+            "Open-ended socializing, mixers, parties, big group hangouts, puts all the weight on generating conversation from nothing. That's exhausting for almost anyone, and especially costly for an introvert's energy.",
+            "A recurring, low-key context does the work differently. A class, a small volunteer shift, a reading group, a regular walk with the same one or two people: the activity gives you something to talk about and a reason to be there that doesn't depend on performing sociability.",
+            "Pick one thing you would enjoy even if it never led to a friendship, and commit to showing up for a month. The friendship, if it comes, will grow inside the routine instead of requiring you to build one from scratch."
+          ],
+          "cultureRef": {
+            "show": "Series · The Queen's Gambit (Netflix)",
+            "body": "In The Queen's Gambit, Beth Harmon doesn't make friends through conversation. She makes them through chess: the same tournaments, the same rooms, opponents who slowly become allies. The game gives the relationship a reason to exist before either person has to perform being sociable. A shared, structured activity can do that for anyone who finds open-ended mingling draining."
+          }
+        },
+        {
+          "h2": "Protect your energy without disappearing",
+          "paragraphs": [
+            "Needing real recovery time after socializing isn't a character flaw, and it doesn't need fixing. What damages a friendship isn't the need to recharge. It's disappearing without saying so.",
+            "Say it plainly instead: “I need a quiet weekend, can we do coffee next week instead?” That one sentence protects the friendship far better than either forcing yourself to show up depleted or going silent. You don't owe anyone a long explanation for needing rest."
+          ]
+        },
+        {
+          "h2": "The follow-up still matters, maybe more",
+          "paragraphs": [
+            "After a good low-key conversation, it's tempting to assume the other person will reach out, partly because initiating can feel like more output than you have left. But research on the liking gap consistently finds that people underestimate how much others enjoyed talking with them. The other person almost certainly liked the exchange more than you think they did.",
+            "A short message costs little energy and does the same work as a longer one: mention something specific, suggest one small next step. For the exact mechanics, see <a href=\"/guides/how-to-follow-up-after-meeting-someone/\">how to follow up after meeting someone</a>."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do introverts need fewer friends than extraverts?",
+          "a": "Not necessarily fewer, but usually a narrower, deeper circle. Research on introversion and friendship suggests introverts tend to invest more in fewer relationships rather than spreading attention widely. A small circle that's well maintained works better than a wide one that's thin."
+        },
+        {
+          "q": "Is it okay to skip social plans to recharge?",
+          "a": "Yes, as long as you say so instead of disappearing. “I need a quiet night, can we reschedule?” protects the friendship. Silence without explanation is what damages it, not the need for rest itself."
+        },
+        {
+          "q": "How do I meet new people without small talk draining me?",
+          "a": "Choose contexts with a built-in activity: a class, a recurring volunteer shift, a small group with a shared task. The activity carries the conversation, so you're not generating small talk from nothing."
+        },
+        {
+          "q": "Can an introvert and an extravert become close friends?",
+          "a": "Often, yes. What tends to matter more than matching energy levels is whether both people are willing to meet the other's pace, rather than expecting the introvert to keep up with an extravert's rhythm."
+        },
+        {
+          "q": "What if people think I'm unfriendly because I'm quiet?",
+          "a": "That impression usually fades with repeated contact. Familiarity does more to signal warmth than performance does. Showing up again is more convincing than trying to seem more outgoing in any single interaction."
+        },
+        {
+          "q": "How many close friends should I realistically aim for?",
+          "a": "There's no fixed number, but most people can only truly maintain a handful of close friendships at once. Two or three people you see regularly and can be honest with is a complete social life, not a small one."
+        }
+      ],
+      "alternateFr": "/fr/guides/se-faire-des-amis-quand-on-est-introverti/"
+    },
+    {
+      "slug": "how-to-make-friends-with-social-anxiety",
+      "status": "live",
+      "datePublished": "2026-07-26",
+      "lastmod": "2026-07-26",
+      "title": "How to Make Friends With Social Anxiety | The Friendship Practice",
+      "description": "Social anxiety makes friendship feel riskier than it is. Research finds anxious people consistently underrate how their friends actually feel about them. Here's what helps.",
+      "h1": "How to Make Friends With Social Anxiety",
+      "lead": "Social anxiety doesn't mean you're bad at friendship. It means your read on how you're coming across is probably wrong, usually in the harsher direction.",
+      "intro": "Making friends with social anxiety is possible, and it doesn't require the anxiety to disappear first. Research on social anxiety and friendship keeps finding the same thing: anxious people are harsher judges of their own friendships than their friends are. That gap, between how you rate a relationship and how the other person actually feels about it, is the place to start.",
+      "authorNote": "I've worked with plenty of people who assumed their anxiety disqualified them from being a good friend. It doesn't. The steadiest friendships I've watched people build weren't started by the most at-ease person in the room. They were built by people who kept showing up anyway, in small, repeatable ways. Confidence caught up later, if it came at all.",
+      "pullQuote": "The fear that comes with social anxiety is loud, but it's rarely accurate. The people who already like you like you more than you think.",
+      "sections": [
+        {
+          "h2": "Your anxiety is not a reliable narrator of your friendships",
+          "paragraphs": [
+            "Researchers at Washington University in St. Louis compared how people with social anxiety disorder rated their own friendships against how their friends rated the same relationships. The anxious person's self-report was consistently worse. Their friends' actual reports were not. (<a href=\"https://pubmed.ncbi.nlm.nih.gov/26228430/\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Abnormal Psychology</a>)",
+            "That's a sharper version of something researchers call the liking gap: people in general underestimate how much others enjoy their company, and the effect is stronger with social anxiety. The discomfort you feel in a friendship is not necessarily information about the friendship. Often, it's just the anxiety talking."
+          ],
+          "cultureRef": {
+            "show": "Movie · Eighth Grade (Bo Burnham)",
+            "body": "In Eighth Grade, Kayla records advice videos about confidence that almost nobody watches, while barely managing to speak up in her own life. The gap between how she comes across and how she believes she's coming across is the whole film. What closes it isn't a personality change. It's one classmate treating her with simple, repeated kindness. Small, repeated warmth does more than any single grand gesture."
+          }
+        },
+        {
+          "h2": "Start smaller than feels necessary",
+          "paragraphs": [
+            "Generic advice to “put yourself out there” backfires for social anxiety because it front-loads exposure: a party, a big group, a long hangout with strangers. That's the hardest possible starting point, not the easiest.",
+            "Lower the bar further than feels natural. A two-minute exchange with the same person three or four times builds more real connection than one long, high-stakes evening. Small and repeated beats big and rare."
+          ]
+        },
+        {
+          "h2": "Let structure do what confidence can't",
+          "paragraphs": [
+            "Freeform socializing is hardest with social anxiety because there's no script: what to say, when it's okay to leave, whether you're overstaying. Every one of those becomes a decision to second-guess.",
+            "Structured, recurring, task-based contexts remove most of that. A class, a volunteer shift, a small club with a fixed agenda: the format tells you what happens next, so you're not inventing the interaction as you go."
+          ],
+          "cultureRef": {
+            "show": "Movie · The Perks of Being a Wallflower (Stephen Chbosky)",
+            "body": "In The Perks of Being a Wallflower, Charlie doesn't get pulled into friendship through a bold introduction. He gets pulled in because Patrick and Sam keep including him in the same specific, recurring thing: the same table, the same shows, the same seat in the room. The structure did the work that a direct approach never could have."
+          }
+        },
+        {
+          "h2": "The follow-up message is where the anxiety gets loudest, and where it matters most",
+          "paragraphs": [
+            "Right after a good interaction, the fear that you were too much, or that they didn't really enjoy it, tends to peak exactly when the follow-up message needs to be sent. That timing is not a coincidence. It's the moment the anxiety has the most to work with.",
+            "Send it anyway, and keep it short: mention something specific from the conversation, add a small amount of warmth, suggest one concrete next step. For the exact wording and timing that works best, see <a href=\"/guides/how-to-follow-up-after-meeting-someone/\">how to follow up after meeting someone</a>."
+          ]
+        },
+        {
+          "h2": "What actual treatment research says helps",
+          "paragraphs": [
+            "This isn't just encouragement without evidence. A randomized controlled trial of a structured, friendship-building program for adults with social anxiety disorder found that participants who completed it reported lower fear of intimacy afterward, along with lower loneliness and depression at follow-up, compared with a waitlist group. (<a href=\"https://pubmed.ncbi.nlm.nih.gov/36435541/\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Behavior Therapy and Experimental Psychiatry</a>)",
+            "Friendship-building skills can be practiced, and practicing them measurably helps. That said, if your anxiety is significant or diagnosed, therapy, particularly cognitive behavioral approaches, is the primary evidence-based treatment. Coaching and practical practice can complement that work. They aren't a substitute for it."
+          ]
+        },
+        {
+          "h2": "You don't have to feel confident to be a good friend",
+          "paragraphs": [
+            "Confidence is not a prerequisite for closeness. Consistency is what actually predicts friendship quality: remembering, following through, showing up again. None of that requires feeling at ease in the moment.",
+            "Being reliable while anxious is still being reliable. For what that looks like in practice, see <a href=\"/guides/how-to-be-a-better-friend/\">how to be a better friend</a>."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does social anxiety mean I'm bad at friendship?",
+          "a": "No. Research consistently finds that people with social anxiety underrate their friendships compared to how their friends actually feel. The anxiety distorts the read, not the relationship itself."
+        },
+        {
+          "q": "Should I wait until I feel less anxious to start making friends?",
+          "a": "No. Waiting tends to make the anxiety bigger, not smaller. Starting small, with low-stakes and repeatable contact, works better than waiting for confidence that may not arrive first."
+        },
+        {
+          "q": "Is coaching a replacement for therapy if I have social anxiety?",
+          "a": "No. If your anxiety is significant or diagnosed, therapy, especially cognitive behavioral approaches, is the primary evidence-based treatment. Friendship coaching can complement that work on the practical, day-to-day side, but it isn't a substitute for clinical care."
+        },
+        {
+          "q": "Why does sending a follow-up message feel so much harder than the conversation itself?",
+          "a": "Because it's the moment your mind runs the worst-case scenario: that you misread the interaction. Research on the liking gap shows people consistently underestimate how much others enjoyed talking to them, and the effect is especially strong with social anxiety."
+        },
+        {
+          "q": "What kind of social settings are easiest with social anxiety?",
+          "a": "Structured, repeatable ones with a built-in activity, classes, volunteer shifts, recurring meetups, work better than open-ended mixers. Structure removes many of the moment-to-moment decisions that fuel anxiety."
+        },
+        {
+          "q": "Can I be a good friend even when I don't feel confident?",
+          "a": "Yes. Reliability and attention matter more to friendship quality than how at ease you feel in the moment. Showing up consistently is more convincing than appearing relaxed."
+        }
+      ],
+      "alternateFr": "/fr/guides/se-faire-des-amis-avec-de-lanxiete-sociale/"
     }
   ]
 }

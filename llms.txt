@@ -83,7 +83,9 @@ A: Keep the message simple and specific. Say you thought of them, mention someth
 - https://thefriendshippractice.com/fr/guides/presenter-ses-amis-entre-eux/, Présenter deux personnes qu'on apprécie est un des gestes d'amitié les plus sous-estimés. Bien fait, il enrichit tout le monde. Voici la méthode douce.
 - https://thefriendshippractice.com/fr/guides/quest-ce-que-le-coaching-en-amitie/, Le coaching en amitié n'est pas une thérapie. C'est une stratégie pas à pas pour votre vie sociale, comme un coach sportif pour vos amitiés.
 - https://thefriendshippractice.com/fr/guides/citations-sur-lamitie/, Des citations sur l'amitié qui ne cherchent pas à inspirer, mais à clarifier : ce que l'amitié demande vraiment aux adultes, et ce qu'elle rend.
-- https://thefriendshippractice.com/fr/guides/, Les 24 guides pratiques de The Friendship Practice en français : se faire des amis, renouer, garder ses amitiés vivantes, et traverser les fins.
+- https://thefriendshippractice.com/fr/guides/se-faire-des-amis-quand-on-est-introverti/, Se faire des amis quand on est introverti n'est pas une question de devenir plus sociable. Les recherches sur la façon dont les introvertis nouent des amitiés pointent vers moins de monde, plus de répétition, moins de small talk.
+- https://thefriendshippractice.com/fr/guides/se-faire-des-amis-avec-de-lanxiete-sociale/, L'anxiété sociale rend l'amitié plus risquée qu'elle ne l'est vraiment. Les recherches montrent que les personnes anxieuses sous-estiment systématiquement ce que leurs amis ressentent vraiment pour elles. Voici ce qui aide.
+- https://thefriendshippractice.com/fr/guides/, Les 26 guides pratiques de The Friendship Practice en français : se faire des amis, renouer, garder ses amitiés vivantes, et traverser les fins.
 - https://thefriendshippractice.com/guides/how-to-make-friends-as-an-adult/, Making friends as an adult isn't about charm. It's about repeated, relaxed time with the same people, and the quality of attention you bring to it. Here's how.
 - https://thefriendshippractice.com/guides/how-to-reconnect-with-old-friends/, The story you tell yourself before you send the message is always harder than the message itself. Here is how to reconnect without guilt or a long explanation.
 - https://thefriendshippractice.com/guides/why-making-friends-as-an-adult-is-hard/, Adulthood didn't kill your social skills. It destroyed your infrastructure. Here is why adult friendship requires deliberate design, not just more willpower.
@@ -108,6 +110,8 @@ A: Keep the message simple and specific. Say you thought of them, mention someth
 - https://thefriendshippractice.com/guides/how-to-make-friends-as-a-new-parent/, New parenthood is isolating, and polite coffee dates aren't the answer. Here is how to find other parents who get it and build real connections fast.
 - https://thefriendshippractice.com/guides/how-to-keep-work-friendships-after-going-remote/, When you go remote, you lose the hallway moments that kept work friendships alive. Here is how to replace that structure before the friendships quietly fade.
 - https://thefriendshippractice.com/guides/how-to-make-friends-after-a-friendship-ends/, Losing a close friend leaves a real void. Clearing out a broken connection makes room for something healthier. Here is how to rebuild with confidence.
+- https://thefriendshippractice.com/guides/how-to-make-friends-as-an-introvert/, Making friends as an introvert isn't about becoming more outgoing. Research on how introverts actually build friendships points to fewer people, more repetition, less small talk.
+- https://thefriendshippractice.com/guides/how-to-make-friends-with-social-anxiety/, Social anxiety makes friendship feel riskier than it is. Research finds anxious people consistently underrate how their friends actually feel about them. Here's what helps.
 
 ## Notes
 - The coaching offer is practical support, not therapy or crisis care.
