@@ -63,7 +63,7 @@ function renderGuide(guide, allGuides) {
           url: `${BASE}/`
         },
         dateModified: guide.lastmod,
-        datePublished: guide.lastmod,
+        datePublished: guide.datePublished || guide.lastmod,
         mainEntityOfPage: canonical,
         image: ogImage,
         speakable: {
