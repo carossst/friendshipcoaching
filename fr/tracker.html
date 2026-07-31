@@ -236,7 +236,7 @@
     <div class="u-container u-container--prose">
       <p class="c-label">Vos liens</p>
       <h2 class="c-heading c-heading--2">Où en est chaque amitié</h2>
-      <p class="c-body u-mt-4">Chaque barre est un repère approximatif du temps passé, pas un objectif précis à atteindre. Les repères de 50 et 200 heures viennent d'études : ce sont des moyennes, pas un quota. Le conseil affiché en gras sous chaque nom est le repère le plus utile : continuez à vous voir, et donnez du temps aux liens sincères pour grandir.</p>
+      <p class="c-body u-mt-4">Chaque barre suit les vraies conversations, celles où vous avez réellement pris des nouvelles l'un de l'autre, pas seulement le temps passé dans la même pièce. Les heures restent enregistrées en dessous, mais ce n'est pas ce qui fait avancer la barre. Le conseil affiché en gras sous chaque nom est le repère le plus utile : continuez à vous voir, et donnez du temps aux liens sincères pour grandir.</p>
       <p class="c-body u-mt-4">Et attendez-vous à ce que certains n'avancent pas. Parfois le courant ne passe pas, ou l'effort reste à sens unique. Ce n'est pas un échec, c'est une information. Laisser filer une personne fait de la place pour celles où le lien se fait naturellement.</p>
       <div id="contactList" class="u-mt-10"></div>
       <div class="u-mt-10" style="border-top:var(--border);padding-top:var(--space-8);">
@@ -339,38 +339,42 @@
   }
 
   function getStatus(contact) {
-    var hours = contact.hours;
     var logs = contact.logs || 0;
     var real = contact.realCount || 0;
     var off = contact.offCount || 0;
     var notClicking = logs >= 3 && off > real;
+    var stuckSurface = logs >= 3 && real === 0 && !notClicking;
+    var toGo = Math.max(0, 5 - real);
 
-    var status;
-    if (hours < 50) {
-      status = {
-        label: 'Connaissance',
-        progress: (hours / 50) * 100,
-        next: (50 - hours).toFixed(1) + 'h avant ami occasionnel, environ'
-      };
-    } else if (hours < 200) {
-      status = {
-        label: 'Ami occasionnel',
-        progress: ((hours - 50) / 150) * 100,
-        next: (200 - hours).toFixed(1) + 'h avant proche, environ'
-      };
-    } else {
-      status = {
-        label: 'Ami proche',
-        progress: 100,
-        next: 'Beaucoup de temps déjà passé. Continuez à vous voir.'
-      };
-    }
-
+    var label;
     if (notClicking) {
-      status.label = 'Pas encore de déclic';
+      label = 'Pas encore de déclic';
+    } else if (real >= 5) {
+      label = 'Ami proche';
+    } else if (real >= 2) {
+      label = 'Ami occasionnel';
+    } else if (stuckSurface) {
+      label = 'Amical, mais encore superficiel';
+    } else {
+      label = 'Connaissance';
     }
 
-    return status;
+    var next;
+    if (label === 'Ami proche') {
+      next = 'Un vrai schéma de conversations sincères. Continuez à vous voir.';
+    } else if (label === 'Pas encore de déclic') {
+      next = 'À surveiller avant d\'y consacrer plus de temps.';
+    } else if (label === 'Amical, mais encore superficiel') {
+      next = 'Une seule vraie conversation pourrait changer la donne.';
+    } else {
+      next = toGo + ' vraie' + (toGo === 1 ? '' : 's') + ' conversation' + (toGo === 1 ? '' : 's') + ' avant proche, environ';
+    }
+
+    return {
+      label: label,
+      progress: Math.min(100, (real / 5) * 100),
+      next: next
+    };
   }
 
   function today() {

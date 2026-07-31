@@ -237,7 +237,7 @@
     <div class="u-container u-container--prose">
       <p class="c-label">Your connections</p>
       <h2 class="c-heading c-heading--2">Where each friendship stands</h2>
-      <p class="c-body u-mt-4">Each bar is a loose marker of time spent, not a countdown to unlock. 50 and 200 hours are rough averages from research, not a quota. The bolded line under each name is the real signal: keep showing up, and let the honest ones deepen.</p>
+      <p class="c-body u-mt-4">Each bar tracks real conversations, the ones where you actually caught up on each other's lives, not just time spent in the same room. Hours are still logged underneath, but they're not what moves the bar. The bolded line under each name is the real signal: keep showing up, and let the honest ones deepen.</p>
       <p class="c-body u-mt-4">And expect some of these to stay put. Sometimes the fit isn't there, or the effort stays one-sided. That's not a failure, it's information. Letting one go makes room for the ones that feel easy.</p>
       <div id="contactList" class="u-mt-10"></div>
       <div class="u-mt-10" style="border-top:var(--border);padding-top:var(--space-8);">
@@ -341,38 +341,42 @@
   }
 
   function getStatus(contact) {
-    var hours = contact.hours;
     var logs = contact.logs || 0;
     var real = contact.realCount || 0;
     var off = contact.offCount || 0;
     var notClicking = logs >= 3 && off > real;
+    var stuckSurface = logs >= 3 && real === 0 && !notClicking;
+    var toGo = Math.max(0, 5 - real);
 
-    var status;
-    if (hours < 50) {
-      status = {
-        label: 'Acquaintance',
-        progress: (hours / 50) * 100,
-        next: (50 - hours).toFixed(1) + 'h to casual friend, roughly'
-      };
-    } else if (hours < 200) {
-      status = {
-        label: 'Casual friend',
-        progress: ((hours - 50) / 150) * 100,
-        next: (200 - hours).toFixed(1) + 'h to close, roughly'
-      };
-    } else {
-      status = {
-        label: 'Close friend',
-        progress: 100,
-        next: 'A lot of time logged. Keep showing up.'
-      };
-    }
-
+    var label;
     if (notClicking) {
-      status.label = 'Not quite clicking';
+      label = 'Not quite clicking';
+    } else if (real >= 5) {
+      label = 'Close friend';
+    } else if (real >= 2) {
+      label = 'Casual friend';
+    } else if (stuckSurface) {
+      label = 'Friendly, but still surface';
+    } else {
+      label = 'Acquaintance';
     }
 
-    return status;
+    var next;
+    if (label === 'Close friend') {
+      next = 'A strong pattern of real conversation. Keep showing up.';
+    } else if (label === 'Not quite clicking') {
+      next = 'Worth noticing before logging more time here.';
+    } else if (label === 'Friendly, but still surface') {
+      next = 'One real conversation could shift this.';
+    } else {
+      next = toGo + ' more real conversation' + (toGo === 1 ? '' : 's') + ' to close, roughly';
+    }
+
+    return {
+      label: label,
+      progress: Math.min(100, (real / 5) * 100),
+      next: next
+    };
   }
 
   function today() {
