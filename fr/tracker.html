@@ -41,10 +41,10 @@
       color: var(--color-ink);
       transition: border-color var(--duration-fast) var(--ease-out);
     }
-    .c-tracker-field input:focus,
-    .c-tracker-field select:focus {
+    .c-tracker-field input:focus-visible,
+    .c-tracker-field select:focus-visible {
       outline: 3px solid var(--color-focus);
-      outline-offset: 2px;
+      outline-offset: 4px;
       border-color: var(--color-accent);
     }
     .c-contact-card {
@@ -85,6 +85,7 @@
       margin-bottom: var(--space-3);
     }
     .c-progress__bar {
+      width: var(--progress, 0%);
       background: var(--color-accent);
       height: 100%;
       border-radius: var(--radius-pill);
@@ -178,7 +179,7 @@
     <div class="u-container u-container--prose">
       <p class="c-hero__label">The Friendship Practice</p>
       <h1 class="c-hero__title">Amis en construction</h1>
-      <p class="c-hero__sub">L'amitié ne tombe pas du ciel. Elle se pratique. Le temps partagé crée l'occasion, mais ce sont les vraies conversations dans ce temps, pas les heures seules, qui transforment quelqu'un en ami. Cet outil suit plusieurs amitiés en construction à la fois : le temps que vous y passez, et à quel point c'était réel.</p>
+      <p class="c-hero__sub">L'amitié ne tombe pas du ciel. Elle se pratique. Le temps passé ensemble crée des occasions de se rapprocher, mais ce n'est pas le nombre d'heures qui transforme une connaissance en ami : c'est la qualité des échanges. Cet outil vous aide à suivre plusieurs amitiés qui commencent : le temps passé ensemble, et la qualité de chaque moment.</p>
     </div>
   </section>
 
@@ -186,7 +187,7 @@
     <div class="u-container u-container--prose">
       <p class="c-label">Votre situation</p>
       <h2 class="c-heading c-heading--2">Où en êtes-vous en ce moment ?</h2>
-      <p class="c-body u-mt-6">Votre situation change à quoi ressemble la relance. Choisissez celle qui vous correspond le mieux. Ça ajuste les messages suggérés plus bas.</p>
+      <p class="c-body u-mt-6">Votre situation détermine le type de message à envoyer. Choisissez celle qui vous correspond le mieux. Les messages proposés plus bas s'adapteront à votre réponse.</p>
       <div class="c-tracker-form u-mt-8">
         <div class="c-tracker-field">
           <label for="personaSelect">Votre période de vie actuelle :</label>
@@ -206,7 +207,7 @@
     <div class="u-container u-container--prose">
       <p class="c-label">Enregistrer du temps partagé</p>
       <h2 class="c-heading c-heading--2">Avec qui avez-vous passé du temps ?</h2>
-      <p class="c-body u-mt-6">Entrez un prénom et le nombre d'heures passées ensemble. Chaque entrée s'ajoute au total. Les demi-heures comptent : entrez 0.5 pour 30 minutes. Et suivez plusieurs personnes : une amitié en construction grandit à partir de plusieurs liens chaleureux, pas en misant tout sur une seule.</p>
+      <p class="c-body u-mt-6">Entrez un prénom et le nombre d'heures passées ensemble. Chaque entrée s'ajoute au total. Les demi-heures comptent : entrez 0.5 pour 30 minutes, avec un point. Et suivez plusieurs personnes : une amitié en construction grandit à partir de plusieurs liens chaleureux, pas en misant tout sur une seule.</p>
       <form id="logForm" class="c-tracker-form u-mt-8" novalidate>
         <div class="c-tracker-field">
           <label for="contactName">Prénom ou surnom :</label>
@@ -236,20 +237,21 @@
     <div class="u-container u-container--prose">
       <p class="c-label">Vos liens</p>
       <h2 class="c-heading c-heading--2">Où en est chaque amitié</h2>
-      <p class="c-body u-mt-4">Chaque barre est un repère approximatif du temps passé, pas un compte à rebours à débloquer. 50 et 200 heures sont des moyennes de recherche, pas un quota. La ligne en gras sous chaque nom est le vrai signal : continuez à vous voir, et laissez les liens honnêtes s'approfondir.</p>
-      <p class="c-body u-mt-4">Et attendez-vous à ce que certains n'avancent pas. Parfois le courant ne passe pas, ou l'effort reste à sens unique. Ce n'est pas un échec, c'est une information. Laisser filer une personne fait de la place pour celles où c'est facile.</p>
+      <p class="c-body u-mt-4">Chaque barre suit les vraies conversations, celles où vous avez réellement pris des nouvelles l'un de l'autre, pas seulement le temps passé dans la même pièce. Les heures restent enregistrées en dessous, mais ce n'est pas ce qui fait avancer la barre. Le conseil affiché en gras sous chaque nom est le repère le plus utile : continuez à vous voir, et donnez du temps aux liens sincères pour grandir.</p>
+      <p class="c-body u-mt-4">Et attendez-vous à ce que certains n'avancent pas. Parfois le courant ne passe pas, ou l'effort reste à sens unique. Ce n'est pas un échec, c'est une information. Laisser filer une personne fait de la place pour celles où le lien se fait naturellement.</p>
       <div id="contactList" class="u-mt-10"></div>
-      <div class="u-mt-10" style="border-top:var(--border);padding-top:var(--space-8);">
-        <p class="c-label" style="margin-bottom:var(--space-3);">Sauvegarde</p>
-        <p class="c-body" style="font-size:var(--text-sm);color:var(--color-ink-muted);margin-bottom:var(--space-5);">Vos données sont stockées uniquement dans ce navigateur. Exportez-les pour garder une sauvegarde ou les transférer sur un autre appareil. Si vous videz le cache de votre navigateur ou ouvrez cette page depuis une appli mail, vos données peuvent devenir invisibles. Restaurez-les avec un import.</p>
-        <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;align-items:center;">
+      <div class="u-mt-10">
+        <hr class="c-divider">
+        <p class="c-label">Sauvegarde</p>
+        <p class="c-body u-text-sm u-color-muted u-mb-6">Vos données sont stockées uniquement dans ce navigateur. Exportez-les pour garder une sauvegarde ou les transférer sur un autre appareil. Si vous videz le cache de votre navigateur ou ouvrez cette page depuis une appli mail, vos données peuvent devenir invisibles. Restaurez-les avec un import.</p>
+        <div class="u-flex u-flex-wrap u-gap-3">
           <button id="exportBtn" class="c-btn c-btn--ghost c-btn--sm">Exporter la sauvegarde</button>
-          <label class="c-btn c-btn--ghost c-btn--sm" style="cursor:pointer;margin:0;">
+          <label class="c-btn c-btn--ghost c-btn--sm">
             Importer une sauvegarde
-            <input type="file" accept=".json" id="importFile" style="display:none;">
+            <input type="file" accept=".json" id="importFile" class="u-hidden">
           </label>
         </div>
-        <p id="importMsg" style="font-size:var(--text-sm);color:var(--color-accent);margin-top:var(--space-3);display:none;"></p>
+        <p id="importMsg" class="u-text-sm u-color-accent u-mt-4" style="display:none;"></p>
       </div>
     </div>
   </section>
@@ -339,38 +341,42 @@
   }
 
   function getStatus(contact) {
-    var hours = contact.hours;
     var logs = contact.logs || 0;
     var real = contact.realCount || 0;
     var off = contact.offCount || 0;
     var notClicking = logs >= 3 && off > real;
+    var stuckSurface = logs >= 3 && real === 0 && !notClicking;
+    var toGo = Math.max(0, 5 - real);
 
-    var status;
-    if (hours < 50) {
-      status = {
-        label: 'Connaissance',
-        progress: (hours / 50) * 100,
-        next: (50 - hours).toFixed(1) + 'h avant ami occasionnel, environ'
-      };
-    } else if (hours < 200) {
-      status = {
-        label: 'Ami occasionnel',
-        progress: ((hours - 50) / 150) * 100,
-        next: (200 - hours).toFixed(1) + 'h avant proche, environ'
-      };
-    } else {
-      status = {
-        label: 'Ami proche',
-        progress: 100,
-        next: 'Beaucoup de temps déjà passé. Continuez à vous voir.'
-      };
-    }
-
+    var label;
     if (notClicking) {
-      status.label = 'Pas encore de déclic';
+      label = 'Pas encore de déclic';
+    } else if (real >= 5) {
+      label = 'Ami proche';
+    } else if (real >= 2) {
+      label = 'Ami occasionnel';
+    } else if (stuckSurface) {
+      label = 'Amical, mais encore superficiel';
+    } else {
+      label = 'Connaissance';
     }
 
-    return status;
+    var next;
+    if (label === 'Ami proche') {
+      next = 'Un vrai schéma de conversations sincères. Continuez à vous voir.';
+    } else if (label === 'Pas encore de déclic') {
+      next = 'À surveiller avant d\'y consacrer plus de temps.';
+    } else if (label === 'Amical, mais encore superficiel') {
+      next = 'Une seule vraie conversation pourrait changer la donne.';
+    } else {
+      next = toGo + ' vraie' + (toGo === 1 ? '' : 's') + ' conversation' + (toGo === 1 ? '' : 's') + ' avant proche, environ';
+    }
+
+    return {
+      label: label,
+      progress: Math.min(100, (real / 5) * 100),
+      next: next
+    };
   }
 
   function today() {
@@ -423,7 +429,7 @@
         '</div>' +
         qualitySummary(contact) +
         '<div class="c-progress">' +
-          '<div class="c-progress__bar" style="width:' + s.progress.toFixed(1) + '%"></div>' +
+          '<div class="c-progress__bar" style="--progress:' + s.progress.toFixed(1) + '%"></div>' +
         '</div>' +
         '<div class="c-contact-card__meta">' +
           '<span><strong>' + contact.hours + 'h</strong> enregistrées</span>' +

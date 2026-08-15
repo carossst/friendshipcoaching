@@ -239,7 +239,7 @@
       "ogDescription": "The Friendship Practice aide les adultes à se faire de nouveaux amis, renouer avec les anciens et approfondir leurs amitiés.",
       "changefreq": "monthly",
       "priority": "0.8",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/defi.html",
@@ -257,22 +257,22 @@
       "path": "/fr/guides/se-faire-des-amis-adulte/",
       "status": "live",
       "title": "Comment se faire des amis à l'âge adulte | The Friendship Practice",
-      "description": "Se faire des amis adulte, ce n'est pas une question de charisme. C'est du temps partagé, répété, et de la qualité de présence. Voici comment, pas à pas.",
-      "ogDescription": "Se faire des amis adulte, ce n'est pas une question de charisme. C'est du temps partagé, répété, et de la qualité de présence. Voici comment.",
+      "description": "Se faire des amis à l'âge adulte, ce n'est pas une question de charisme. C'est du temps partagé, répété, et de la qualité de présence. Voici comment, pas à pas.",
+      "ogDescription": "Se faire des amis à l'âge adulte, ce n'est pas une question de charisme. C'est du temps partagé, répété, et de la qualité de présence. Voici comment.",
       "changefreq": "monthly",
       "priority": "0.7",
-      "lastmod": "2026-07-09"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/pourquoi-se-faire-des-amis-adulte-est-difficile/index.html",
       "path": "/fr/guides/pourquoi-se-faire-des-amis-adulte-est-difficile/",
       "status": "live",
-      "title": "Pourquoi se faire des amis adulte est si difficile | The Friendship Practice",
-      "description": "Se faire des amis adulte semble difficile pour des raisons de structure, pas de personnalité. Voici ce qui a changé depuis l'école, et quoi faire.",
-      "ogDescription": "Se faire des amis adulte semble difficile pour des raisons de structure, pas de personnalité. Voici ce qui a changé, et quoi faire.",
+      "title": "Pourquoi se faire des amis à l'âge adulte est si difficile | The Friendship Practice",
+      "description": "Se faire des amis à l'âge adulte semble difficile pour des raisons de structure, pas de personnalité. Voici ce qui a changé depuis l'école, et quoi faire.",
+      "ogDescription": "Se faire des amis à l'âge adulte semble difficile pour des raisons de structure, pas de personnalité. Voici ce qui a changé, et quoi faire.",
       "changefreq": "monthly",
       "priority": "0.7",
-      "lastmod": "2026-07-24"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/renouer-avec-un-ancien-ami/index.html",
@@ -283,7 +283,7 @@
       "ogDescription": "Renouer avec un ancien ami est presque toujours plus simple que l'histoire qu'on se raconte avant d'écrire. Voici quoi dire.",
       "changefreq": "monthly",
       "priority": "0.7",
-      "lastmod": "2026-07-24"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/se-faire-des-amis-apres-30-ans/index.html",
@@ -294,18 +294,18 @@
       "ogDescription": "Se faire de vrais amis après 30 ans est tout à fait possible. Il faut plus d'intention et moins d'attente. Voici ce qui marche vraiment.",
       "changefreq": "monthly",
       "priority": "0.7",
-      "lastmod": "2026-07-24"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/garder-ses-amis-adulte/index.html",
       "path": "/fr/guides/garder-ses-amis-adulte/",
       "status": "live",
       "title": "Garder ses amis à l'âge adulte | The Friendship Practice",
-      "description": "Garder ses amis adulte tient moins aux grands moments qu'au contact régulier. La plupart des amitiés se perdent parce que personne ne propose la suite.",
-      "ogDescription": "Garder ses amis adulte tient moins aux grands moments qu'au contact régulier.",
+      "description": "Garder ses amis à l'âge adulte tient moins aux grands moments qu'au contact régulier. La plupart des amitiés se perdent parce que personne ne propose la suite.",
+      "ogDescription": "Garder ses amis à l'âge adulte tient moins aux grands moments qu'au contact régulier.",
       "changefreq": "monthly",
       "priority": "0.7",
-      "lastmod": "2026-07-09"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/pourquoi-les-amities-se-perdent/index.html",
@@ -316,7 +316,7 @@
       "ogDescription": "La plupart des amitiés adultes ne se terminent pas. Elles s'éloignent doucement. Voici pourquoi, et comment les rattraper.",
       "changefreq": "monthly",
       "priority": "0.7",
-      "lastmod": "2026-07-24"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/amitie-a-sens-unique/index.html",
@@ -327,7 +327,7 @@
       "ogDescription": "Vous êtes la seule personne qui écrit, propose et relance ? Comment reconnaître une amitié à sens unique, et décider quoi en faire.",
       "changefreq": "monthly",
       "priority": "0.7",
-      "lastmod": "2026-07-24"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/rencontrer-du-monde-dans-une-nouvelle-ville/index.html",
@@ -349,7 +349,7 @@
       "ogDescription": "La plupart des amitiés ne ratent pas à la première rencontre. Elles ratent dans le silence d'après. Voici quoi écrire, quand, et comment proposer la suite.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-09"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/transformer-une-connaissance-en-ami/index.html",
@@ -360,7 +360,7 @@
       "ogDescription": "On connaît tous des gens qu'on apprécie sans les appeler des amis. L'écart n'est pas une question d'alchimie. C'est un pas que personne n'ose faire. Voici lequel.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/se-faire-des-amis-en-teletravail/index.html",
@@ -371,7 +371,7 @@
       "ogDescription": "Le télétravail supprime la source la plus fiable de contact répété : le bureau. La solution n'est pas de le recréer, mais de construire autre chose. Voici quoi.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-24"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/se-faire-des-amis-expatrie/index.html",
@@ -382,7 +382,7 @@
       "ogDescription": "Se faire des amis en expatriation est un vrai défi : pas de réseau, d'autres codes, une horloge qui tourne. Voici ce qui fonctionne vraiment à l'étranger.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-09"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/se-faire-des-amis-jeune-parent/index.html",
@@ -404,7 +404,7 @@
       "ogDescription": "Quand votre ami a un bébé, son temps libre disparaît du jour au lendemain. Pour garder le lien, il faut changer les règles. Voici comment.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-24"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/garder-ses-amities-de-bureau-en-teletravail/index.html",
@@ -415,7 +415,7 @@
       "ogDescription": "En passant en télétravail, on perd les moments de couloir qui faisaient vivre les amitiés de bureau. Voici comment remplacer cette structure avant qu'elles s'éteignent.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-24"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/devenir-un-meilleur-ami/index.html",
@@ -426,7 +426,7 @@
       "ogDescription": "Devenir un meilleur ami, ce n'est pas les grands gestes. C'est la fiabilité ordinaire : faire attention, tenir parole, écrire en premier. Voici comment.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-24"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/savoir-si-quelquun-veut-devenir-votre-ami/index.html",
@@ -437,7 +437,7 @@
       "ogDescription": "Est-ce de la politesse ou une vraie envie d'amitié ? Les signaux sont presque toujours là. Voici ce qu'il faut regarder, et quoi faire du doute.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/quand-une-amitie-se-termine/index.html",
@@ -448,18 +448,18 @@
       "ogDescription": "Les ruptures d'amitié peuvent faire aussi mal que les ruptures amoureuses, et personne n'en parle. Voici comment traverser la fin, et ce qui peut rouvrir.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/se-faire-des-amis-apres-une-amitie-perdue/index.html",
       "path": "/fr/guides/se-faire-des-amis-apres-une-amitie-perdue/",
       "status": "live",
       "title": "Se faire des amis après une amitié perdue | The Friendship Practice",
-      "description": "Perdre un ami proche laisse un vide réel. Reconstruire est possible, mais différemment. Voici comment repartir, en portant la perte sans qu'elle décide de tout.",
-      "ogDescription": "Perdre un ami proche laisse un vide réel. Reconstruire est possible, mais différemment. Voici comment repartir, en portant la perte sans qu'elle décide de tout.",
+      "description": "Perdre une amitié proche laisse un vide réel. Reconstruire est possible, mais différemment. Voici comment repartir, en portant la perte sans qu'elle décide de tout.",
+      "ogDescription": "Perdre une amitié proche laisse un vide réel. Reconstruire est possible, mais différemment. Voici comment repartir, en portant la perte sans qu'elle décide de tout.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/pourquoi-les-hommes-perdent-leurs-amis/index.html",
@@ -470,7 +470,7 @@
       "ogDescription": "La plupart des hommes ne perdent pas leurs amis d'un coup. Ils les perdent lentement, quand les contextes partagés disparaissent. Voici le mécanisme, et la sortie.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-24"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/comment-les-hommes-reconstruisent-leurs-amities/index.html",
@@ -481,7 +481,7 @@
       "ogDescription": "Pas besoin de grande conversation ni de stage d'émotions. Il faut une activité récurrente, une invitation, et un message d'après. Voici la méthode.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-24"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/presenter-ses-amis-entre-eux/index.html",
@@ -492,7 +492,7 @@
       "ogDescription": "Présenter deux personnes qu'on apprécie est un des gestes d'amitié les plus sous-estimés. Bien fait, il enrichit tout le monde. Voici la méthode douce.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/quest-ce-que-le-coaching-en-amitie/index.html",
@@ -503,7 +503,7 @@
       "ogDescription": "Le coaching en amitié n'est pas une thérapie. C'est une stratégie pas à pas pour votre vie sociale, comme un coach sportif pour vos amitiés.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-08"
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/citations-sur-lamitie/index.html",
@@ -514,24 +514,47 @@
       "ogDescription": "Des citations sur l'amitié qui ne cherchent pas à inspirer, mais à clarifier : ce que l'amitié demande vraiment aux adultes, et ce qu'elle rend.",
       "changefreq": "monthly",
       "priority": "0.6",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-26"
+    },
+    {
+      "file": "fr/guides/se-faire-des-amis-quand-on-est-introverti/index.html",
+      "path": "/fr/guides/se-faire-des-amis-quand-on-est-introverti/",
+      "status": "live",
+      "title": "Se faire des amis quand on est introverti | The Friendship Practice",
+      "description": "Se faire des amis quand on est introverti n'est pas une question de devenir plus sociable. Si un cercle plus restreint et plus stable est vraiment ce que vous voulez, voici comment le construire, sans jouer un rôle qui ne vous ressemble pas.",
+      "ogDescription": "Se faire des amis quand on est introverti n'est pas une question de devenir plus sociable. Si un cercle plus restreint et plus stable est vraiment ce que vous voulez, voici comment le construire, sans jouer un rôle qui ne vous ressemble pas.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-26"
+    },
+    {
+      "file": "fr/guides/se-faire-des-amis-avec-de-lanxiete-sociale/index.html",
+      "path": "/fr/guides/se-faire-des-amis-avec-de-lanxiete-sociale/",
+      "status": "live",
+      "title": "Se faire des amis avec de l'anxiété sociale | The Friendship Practice",
+      "description": "L'anxiété sociale rend l'amitié plus risquée qu'elle ne l'est vraiment. Les recherches montrent que les personnes anxieuses sous-estiment systématiquement ce que leurs amis ressentent vraiment pour elles. Voici ce qui aide.",
+      "ogDescription": "L'anxiété sociale rend l'amitié plus risquée qu'elle ne l'est vraiment. Les recherches montrent que les personnes anxieuses sous-estiment systématiquement ce que leurs amis ressentent vraiment pour elles. Voici ce qui aide.",
+      "changefreq": "monthly",
+      "priority": "0.6",
+      "lastmod": "2026-07-26"
     },
     {
       "file": "fr/guides/index.html",
       "path": "/fr/guides/",
       "status": "live",
       "title": "Tous les guides amitié en français | The Friendship Practice",
-      "description": "Les 24 guides pratiques de The Friendship Practice en français : se faire des amis, renouer, garder ses amitiés vivantes, et traverser les fins.",
+      "description": "Les 26 guides pratiques de The Friendship Practice en français : se faire des amis, renouer, garder ses amitiés vivantes, et traverser les fins.",
       "ogDescription": "Les guides pratiques de The Friendship Practice en français : se faire des amis, renouer, garder ses amitiés vivantes.",
       "changefreq": "weekly",
       "priority": "0.7",
-      "lastmod": "2026-07-02"
+      "lastmod": "2026-07-26"
     }
   ],
   "guides": [
     {
       "slug": "how-to-make-friends-as-an-adult",
       "status": "live",
+      "datePublished": "2026-06-22",
       "lastmod": "2026-07-09",
       "title": "How to Make Friends as an Adult | The Friendship Practice",
       "description": "Making friends as an adult isn't about charm. It's about repeated, relaxed time with the same people, and the quality of attention you bring to it. Here's how.",
@@ -625,6 +648,7 @@
     {
       "slug": "how-to-reconnect-with-old-friends",
       "status": "live",
+      "datePublished": "2026-06-22",
       "lastmod": "2026-07-24",
       "title": "How to Reconnect With Old Friends | The Friendship Practice",
       "description": "The story you tell yourself before you send the message is always harder than the message itself. Here is how to reconnect without guilt or a long explanation.",
@@ -712,6 +736,7 @@
     {
       "slug": "why-making-friends-as-an-adult-is-hard",
       "status": "live",
+      "datePublished": "2026-06-22",
       "lastmod": "2026-07-24",
       "title": "Why Making Friends as an Adult Is Hard | The Friendship Practice",
       "description": "Adulthood didn't kill your social skills. It destroyed your infrastructure. Here is why adult friendship requires deliberate design, not just more willpower.",
@@ -819,6 +844,7 @@
     {
       "slug": "how-to-keep-friends-as-an-adult",
       "status": "live",
+      "datePublished": "2026-06-22",
       "lastmod": "2026-07-09",
       "title": "How to Keep Friends as an Adult | The Friendship Practice",
       "description": "Adult friendships don't end in fights. They end in drift. Here is how to maintain them through consistent small acts, not grand gestures or perfect timing.",
@@ -927,6 +953,7 @@
     {
       "slug": "how-to-meet-people-in-a-new-city",
       "status": "live",
+      "datePublished": "2026-06-22",
       "lastmod": "2026-06-22",
       "title": "How to Meet People in a New City | The Friendship Practice",
       "description": "Meeting people in a new city runs on repetition, not luck. Here is how to create the repeated contact that turns early acquaintances into real friendships.",
@@ -1012,7 +1039,8 @@
     {
       "slug": "how-to-be-a-better-friend",
       "status": "live",
-      "lastmod": "2026-07-24",
+      "datePublished": "2026-06-22",
+      "lastmod": "2026-07-26",
       "title": "How to Be a Better Friend | The Friendship Practice",
       "description": "Being a better friend is less about grand gestures and more about reliable small ones: following up, showing up, and being easy to reach when it matters.",
       "h1": "How to be a better friend",
@@ -1036,7 +1064,7 @@
         {
           "h2": "Make friendship easier through follow-through",
           "paragraphs": [
-            "A lot of friendship trust comes from simple reliability. If you say you'll text, text. If you suggest a plan, help make it real. If someone shares something important, circle back.",
+            "A lot of friendship trust comes from simple reliability. If you say you'll text, text. If you suggest a plan, help make it real. If someone shares something important, follow up on it later.",
             "This sounds basic because it's basic. But adult friendships often strengthen or weaken around these small acts of follow-through."
           ]
         },
@@ -1129,6 +1157,7 @@
     {
       "slug": "how-to-make-friends-after-30",
       "status": "live",
+      "datePublished": "2026-06-22",
       "lastmod": "2026-07-24",
       "title": "How to Make Friends After 30 | The Friendship Practice",
       "description": "After 30, friendship doesn't stop being possible. It stops being automatic. Here is how to build it deliberately without pretending adult life works like college.",
@@ -1220,6 +1249,7 @@
     {
       "slug": "why-male-friendships-fade",
       "status": "live",
+      "datePublished": "2026-07-01",
       "lastmod": "2026-07-24",
       "title": "Why Male Friendships Fade After 30 | The Friendship Practice",
       "description": "Male friendships don't end in a fight. They fade through distance, cancelled plans, and the slow disappearance of shared contexts. Here's what the research shows.",
@@ -1301,6 +1331,7 @@
     {
       "slug": "how-men-can-rebuild-friendships",
       "status": "live",
+      "datePublished": "2026-07-01",
       "lastmod": "2026-07-24",
       "title": "How Men Can Rebuild Friendships Without Making It Awkward | The Friendship Practice",
       "description": "You don't need a deep conversation or a vulnerability retreat. You need a recurring activity, one invitation, and a follow-up. Here's how to rebuild.",
@@ -1381,6 +1412,7 @@
     {
       "slug": "friendship-quotes",
       "status": "live",
+      "datePublished": "2026-06-27",
       "lastmod": "2026-07-01",
       "title": "Friendship Quotes by Carole Stromboni | The Friendship Practice",
       "description": "Eight observations on adult friendship by Carole Stromboni, friendship coach: on following up, loneliness, repetition, and what actually builds closeness.",
@@ -1536,6 +1568,7 @@
     {
       "slug": "how-to-introduce-friends-to-each-other",
       "status": "live",
+      "datePublished": "2026-06-27",
       "lastmod": "2026-06-27",
       "title": "How to Introduce Friends to Each Other | The Friendship Practice",
       "description": "A good introduction is about preparation, not spontaneity. Here is who to ask first, what to say, and when to step back and let the friendship form on its own.",
@@ -1623,6 +1656,7 @@
     {
       "slug": "when-a-friendship-ends",
       "status": "live",
+      "datePublished": "2026-06-27",
       "lastmod": "2026-06-27",
       "title": "When a Friendship Ends | The Friendship Practice",
       "description": "Friendship breakups can hurt as much as romantic ones, but nobody talks about them. Here is how to navigate the grief, accept the closure, and heal.",
@@ -1717,6 +1751,7 @@
     {
       "slug": "how-to-stay-friends-after-a-baby",
       "status": "live",
+      "datePublished": "2026-06-29",
       "title": "How to Stay Friends With Someone Who Just Had a Baby | The Friendship Practice",
       "h1": "How to Stay Friends With Someone Who Just Had a Baby",
       "description": "When your friend has a baby, their free time drops to zero overnight. If you want to keep the bond, you have to change the rules. Here is how.",
@@ -1724,7 +1759,7 @@
       "pullQuote": "The friendships that survive new parenthood are almost always the ones where the friend without a baby does the adapting. Not forever. Just during this season, when one person's life has completely changed and the other's has not.",
       "intro": "Staying friends with someone who just had a baby is possible, but it requires adjusting what friendship looks like during that season. The old rhythm won't survive unchanged. A new one, built around their reality, can.",
       "authorNote": "I have watched many friendships quietly disappear in the months after someone had a child, not because anyone stopped caring, but because nobody adapted. The friends who stayed were the ones who stopped expecting things to look the same.",
-      "lastmod": "2026-07-24",
+      "lastmod": "2026-07-26",
       "sections": [
         {
           "h2": "New parents are not rejecting you. They are surviving.",
@@ -1757,7 +1792,7 @@
           "h2": "Make offers that are specific, not open-ended",
           "paragraphs": [
             "Saying let me know if you need anything sounds generous. But it hands the work back to a parent who is too overwhelmed to ask. Specific offers are much easier to say yes to.",
-            "I'm bringing dinner on Tuesday, does 6pm work? I'm walking past your neighborhood Saturday morning, want me to swing by for twenty minutes? Can I take the baby for an hour so you can sleep? These are actionable. Open-ended offers rarely are.",
+            "I'm bringing dinner on Tuesday, does 6pm work? I'm walking past your neighborhood Saturday morning, want me to swing by for twenty minutes? Can I take the baby for an hour so you can sleep? These are easy to say yes to. Open-ended offers rarely are.",
             "You don't need to do grand things. Showing up with a coffee and staying for thirty minutes without needing to be entertained is more valuable than most people realize."
           ]
         },
@@ -1793,6 +1828,7 @@
     {
       "slug": "one-sided-friendship",
       "status": "live",
+      "datePublished": "2026-06-29",
       "title": "What to Do When a Friendship Feels One-Sided | The Friendship Practice",
       "h1": "What to Do When a Friendship Feels One-Sided",
       "description": "Are you the only one making plans, sending texts, and checking in? Here is how to spot a one-sided friendship and decide what to do about it.",
@@ -1877,6 +1913,7 @@
     {
       "slug": "how-to-make-friends-when-you-work-from-home",
       "status": "live",
+      "datePublished": "2026-06-29",
       "title": "How to Make Friends When You Work From Home | The Friendship Practice",
       "h1": "How to Make Friends When You Work From Home",
       "description": "Remote work removes the easiest structure for repeated contact in adult life. Here is how to build a real social life when home is also your office.",
@@ -1959,6 +1996,7 @@
     {
       "slug": "how-to-follow-up-after-meeting-someone",
       "status": "live",
+      "datePublished": "2026-06-30",
       "lastmod": "2026-07-09",
       "title": "How to Follow Up After Meeting Someone | The Friendship Practice",
       "description": "Afraid to text someone you just met in case you seem too eager? Research shows people like us more than we think. Here is how to follow up without the stress.",
@@ -2048,6 +2086,7 @@
     {
       "slug": "why-do-friendships-fade",
       "status": "live",
+      "datePublished": "2026-06-30",
       "lastmod": "2026-07-24",
       "title": "Why Do Friendships Fade? | The Friendship Practice",
       "description": "Friendships rarely end in a big fight. They drift away when nobody makes the next plan. Here is why it happens and how to catch it before it is too late.",
@@ -2145,6 +2184,7 @@
     {
       "slug": "how-to-turn-acquaintances-into-friends",
       "status": "live",
+      "datePublished": "2026-06-30",
       "lastmod": "2026-07-08",
       "title": "How to Turn Acquaintances Into Friends | The Friendship Practice",
       "description": "How do you cross from someone you know to someone you trust? It takes more than hello. Here is what actually moves an acquaintance into a real friend.",
@@ -2236,6 +2276,7 @@
     {
       "slug": "how-to-make-friends-as-an-expat",
       "status": "live",
+      "datePublished": "2026-06-30",
       "lastmod": "2026-07-09",
       "title": "How to Make Friends as an Expat | The Friendship Practice",
       "description": "Making friends as an expat is a real challenge: no existing network, different cultural scripts, a ticking clock. Here is what actually works abroad.",
@@ -2324,6 +2365,7 @@
     {
       "slug": "how-to-know-if-someone-wants-to-be-your-friend",
       "status": "live",
+      "datePublished": "2026-06-30",
       "lastmod": "2026-06-30",
       "title": "How to Know if Someone Wants to Be Your Friend | The Friendship Practice",
       "description": "Reading the signals of mutual interest is one of the hardest parts of adult friendship. A practical guide to recognizing when a connection has real potential.",
@@ -2405,6 +2447,7 @@
     {
       "slug": "what-is-friendship-coaching",
       "status": "live",
+      "datePublished": "2026-06-30",
       "lastmod": "2026-06-30",
       "title": "What Is Friendship Coaching? | The Friendship Practice",
       "description": "Friendship coaching isn't therapy. It is a step-by-step strategy for your social life, like a personal trainer for your friendships.",
@@ -2485,6 +2528,7 @@
     {
       "slug": "how-to-make-friends-as-a-new-parent",
       "status": "live",
+      "datePublished": "2026-07-01",
       "lastmod": "2026-07-24",
       "title": "How to Make Friends as a New Parent | The Friendship Practice",
       "description": "New parenthood is isolating, and polite coffee dates aren't the answer. Here is how to find other parents who get it and build real connections fast.",
@@ -2577,6 +2621,7 @@
     {
       "slug": "how-to-keep-work-friendships-after-going-remote",
       "status": "live",
+      "datePublished": "2026-07-01",
       "lastmod": "2026-07-24",
       "title": "How to Keep Work Friendships After Going Remote | The Friendship Practice",
       "description": "When you go remote, you lose the hallway moments that kept work friendships alive. Here is how to replace that structure before the friendships quietly fade.",
@@ -2665,6 +2710,7 @@
     {
       "slug": "how-to-make-friends-after-a-friendship-ends",
       "status": "live",
+      "datePublished": "2026-07-01",
       "lastmod": "2026-07-01",
       "title": "How to Make New Friends After a Friendship Ends | The Friendship Practice",
       "description": "Losing a close friend leaves a real void. Clearing out a broken connection makes room for something healthier. Here is how to rebuild with confidence.",
@@ -2748,6 +2794,191 @@
         }
       ],
       "alternateFr": "/fr/guides/se-faire-des-amis-apres-une-amitie-perdue/"
+    },
+    {
+      "slug": "how-to-make-friends-as-an-introvert",
+      "status": "live",
+      "datePublished": "2026-07-26",
+      "lastmod": "2026-07-26",
+      "title": "How to Make Friends as an Introvert | The Friendship Practice",
+      "description": "Making friends as an introvert isn't about becoming more outgoing. If a smaller, steadier circle is what you actually want, here's a practical way to build it, without pretending to be someone louder.",
+      "h1": "How to Make Friends as an Introvert",
+      "lead": "Making friends as an introvert isn't about becoming more outgoing. It's about building connection in a way your energy can actually sustain.",
+      "intro": "You can build close friendships as an introvert without becoming a different person. Introversion itself doesn't predict how much connection someone wants: some introverts want an active social life, others prefer a small, steady one, and research on solitude finds that what matters for wellbeing is whether time alone is freely chosen, not whether someone scores high on introversion. If a narrower circle is genuinely what you want, the path there looks different: fewer people, more regularity, and conversations that get to what matters faster.",
+      "authorNote": "I've coached more introverts than people assume, given how social this work looks from the outside. What I hear most often isn't “I don't like people.” It's “I don't have it in me to meet dozens of people just to end up with three real friends.” You don't have to. Wanting a smaller circle isn't a symptom to fix. It's a preference the research on solitude treats as perfectly legitimate, as long as it's a choice and not something anxiety is making for you.",
+      "pullQuote": "Introverts don't need less friendship. Many just need a different route to it: less dispersion, more regularity, and conversations that go faster past small talk toward what actually matters.",
+      "sections": [
+        {
+          "h2": "Introversion is not a friendship problem",
+          "paragraphs": [
+            "Most friendship advice is written for people who recharge around others. Go to more events. Talk to more strangers. Say yes to everything. For an introvert, that advice doesn't fail because you're bad at friendship. It fails because it was never built for how you actually work.",
+            "Preferring depth over breadth is a real style, not a deficit. Research on extraversion and personal networks finds that more extraverted people tend to have more people they turn to for advice, but not necessarily closer relationships or more emotional intimacy. (<a href=\"https://doi.org/10.1016/j.paid.2020.110311\" rel=\"noopener noreferrer\" target=\"_blank\">Personality and Individual Differences</a>) Introversion doesn't reduce the capacity for depth. It mostly changes how many people you're trying to stay close to at once."
+          ],
+          "cultureRef": {
+            "show": "Movie · Good Will Hunting (Gus Van Sant)",
+            "body": "In Good Will Hunting, Will doesn't have a wide circle. He has four friends he can count on, built over years in the same neighborhood, the same bar, the same routines. None of them are working the room. Their friendship runs on shared habits and simply being there for each other. A small, well-built circle can carry more weight than a large, loose one, because what matters is the quality of the tie, not its size."
+          }
+        },
+        {
+          "h2": "Becoming friends with an introvert often looks like a journey, not a spark",
+          "paragraphs": [
+            "A study of how young adults describe becoming friends found a pattern in the metaphors people use: friendships involving a more extraverted partner were more often described in sudden, explosive terms, close to “friends at first sight.” Friendships involving a more introverted partner were more often described as a gradual journey, something that only reads as friendship in hindsight. The study looked at 59 same-sex college friendships selected to be clearly extraverted or introverted, so it's a narrow sample, not a universal law, but the pattern is worth knowing: people may not clock a friendship forming with you as fast as movies suggest it should. (<a href=\"https://journals.sagepub.com/doi/abs/10.1002/per.1839\" rel=\"noopener noreferrer\" target=\"_blank\">European Journal of Personality</a>)",
+            "That matters because it changes what to watch for. If you're waiting for instant chemistry to know a connection is worth pursuing, you'll walk past most of the ones that would have worked. A more useful signal isn't excitement. It's whether you'd want to see this person again, or at least wouldn't dread it."
+          ]
+        },
+        {
+          "h2": "A smaller circle done well beats a wide one done thin",
+          "paragraphs": [
+            "Personal networks tend to organize into a few concentric layers: a very small inner core of the most intimate relationships, then progressively larger, less intense layers going outward, roughly 5, 15, 50, and 150 in the research associated with Robin Dunbar. These layers include family as much as friends, and the numbers are averages, not targets. What they point to is simpler: nobody can give the same depth of attention to everyone they know. (<a href=\"https://doi.org/10.1016/j.socnet.2015.04.005\" rel=\"noopener noreferrer\" target=\"_blank\">Social Networks</a>)",
+            "For someone who prefers a narrower circle, two or three people you see regularly and can be honest with is a complete social life, not a consolation prize. The goal isn't to widen the circle. It's to keep what's in it well-fed, which is a question of quality, not headcount."
+          ]
+        },
+        {
+          "h2": "Let structure carry the weight instead of small talk",
+          "paragraphs": [
+            "Open-ended socializing, mixers, parties, big group hangouts, puts all the weight on generating conversation from nothing. That's exhausting for almost anyone, and especially costly for an introvert's energy.",
+            "A recurring, low-key context does the work differently. General research on proximity shows repeated contact helps relationships form; it doesn't prove one specific format works for every introvert, so treat this as a strategy that fits how introverts tend to recharge, not a law. A class, a small volunteer shift, a reading group, a regular walk with the same one or two people: the activity gives you something to talk about and a reason to be there that doesn't depend on performing sociability.",
+            "Pick one thing you would enjoy even if it never led to a friendship, and commit to showing up for a month. The friendship, if it comes, will grow inside the routine instead of requiring you to build one from scratch."
+          ],
+          "cultureRef": {
+            "show": "Series · The Queen's Gambit (Netflix)",
+            "body": "In The Queen's Gambit, Beth Harmon doesn't make friends through conversation. She makes them through chess: the same tournaments, the same rooms, opponents who slowly become allies. The game gives the relationship a reason to exist before either person has to perform being sociable. A shared, structured activity can do that for anyone who finds open-ended mingling draining."
+          }
+        },
+        {
+          "h2": "Protect your energy without disappearing",
+          "paragraphs": [
+            "Needing real recovery time after socializing isn't a character flaw, and it doesn't need fixing. What damages a friendship isn't the need to recharge. It's disappearing without saying so.",
+            "Say it plainly instead: “I need a quiet weekend, can we do coffee next week instead?” That one sentence protects the friendship far better than either forcing yourself to show up depleted or going silent. You don't owe anyone a long explanation for needing rest."
+          ]
+        },
+        {
+          "h2": "The follow-up still matters, maybe more",
+          "paragraphs": [
+            "After a good low-key conversation, it's tempting to assume the other person will reach out, partly because initiating can feel like more output than you have left. But research on the liking gap consistently finds that people underestimate how much others enjoyed talking with them. It's common for the other person to have enjoyed the exchange more than you assume.",
+            "A short message costs little energy and does the same work as a longer one: mention something specific, suggest one small next step. For the exact mechanics, see <a href=\"/guides/how-to-follow-up-after-meeting-someone/\">how to follow up after meeting someone</a>."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Do introverts need fewer friends than extraverts?",
+          "a": "Not necessarily, and research hasn't found that introversion itself predicts wanting less social contact. What predicts a genuine preference for solitude is whether time alone is freely chosen rather than driven by anxiety, not where someone falls on the introvert-extravert scale. Some introverts want a wide social life; others prefer a small, steady one. Both are legitimate. This guide is for the second group: people who want fewer, deeper relationships and a practical way to build them."
+        },
+        {
+          "q": "Is it okay to skip social plans to recharge?",
+          "a": "Yes, as long as you say so instead of disappearing. “I need a quiet night, can we reschedule?” protects the friendship. Silence without explanation is what damages it, not the need for rest itself."
+        },
+        {
+          "q": "How do I meet new people without small talk draining me?",
+          "a": "Choose contexts with a built-in activity: a class, a recurring volunteer shift, a small group with a shared task. The activity carries the conversation, so you're not generating small talk from nothing."
+        },
+        {
+          "q": "Can an introvert and an extravert become close friends?",
+          "a": "Often, yes. What tends to matter more than matching energy levels is whether both people are willing to meet the other's pace, rather than expecting the introvert to keep up with an extravert's rhythm."
+        },
+        {
+          "q": "What if people think I'm unfriendly because I'm quiet?",
+          "a": "That impression usually fades with repeated contact. Familiarity does more to signal warmth than performance does. Showing up again is more convincing than trying to seem more outgoing in any single interaction."
+        },
+        {
+          "q": "How many close friends should I realistically aim for?",
+          "a": "There's no fixed number, but most people can only truly maintain a handful of close friendships at once. Two or three people you see regularly and can be honest with is a complete social life, not a small one."
+        }
+      ],
+      "alternateFr": "/fr/guides/se-faire-des-amis-quand-on-est-introverti/"
+    },
+    {
+      "slug": "how-to-make-friends-with-social-anxiety",
+      "status": "live",
+      "datePublished": "2026-07-26",
+      "lastmod": "2026-07-26",
+      "title": "How to Make Friends With Social Anxiety | The Friendship Practice",
+      "description": "Social anxiety makes friendship feel riskier than it is. Research finds anxious people consistently underrate how their friends actually feel about them. Here's what helps.",
+      "h1": "How to Make Friends With Social Anxiety",
+      "lead": "Social anxiety doesn't mean you're bad at friendship. It can make you judge your interactions and relationships more harshly than the other person does.",
+      "intro": "Making friends with social anxiety is possible, and it doesn't require the anxiety to disappear first. Research on social anxiety and friendship keeps finding the same thing: anxious people are harsher judges of their own friendships than their friends are. That gap, between how you rate a relationship and how the other person actually feels about it, is the place to start.",
+      "authorNote": "I've worked with plenty of people who assumed their anxiety disqualified them from being a good friend. It doesn't. The steadiest friendships I've watched people build weren't started by the most at-ease person in the room. They were built by people who kept showing up anyway, in small, repeatable ways. Confidence caught up later, if it came at all.",
+      "pullQuote": "The fear that comes with social anxiety is loud, but it isn't always a reliable guide to how other people feel about you. The people who already like you usually like you more than the fear lets on.",
+      "sections": [
+        {
+          "h2": "Your anxiety is not a reliable narrator of your friendships",
+          "paragraphs": [
+            "Researchers at Washington University in St. Louis compared how people with social anxiety disorder rated their own friendships against how their friends rated the same relationships. The anxious person's self-report was consistently harsher than their friend's. Friends didn't rate the friendship itself as worse, though they did notice real differences, describing the anxious person as somewhat less dominant in the relationship and slightly less well-adjusted. (<a href=\"https://pubmed.ncbi.nlm.nih.gov/25314261/\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Abnormal Psychology</a>)",
+            "Social anxiety can make this kind of uncertainty especially hard to sit with, even though the broader tendency to underrate how much others enjoyed a conversation, what researchers call the liking gap, shows up well beyond social anxiety. The discomfort you feel in a friendship isn't necessarily evidence the friendship is going badly. It can just as easily be the anxiety talking."
+          ],
+          "cultureRef": {
+            "show": "Movie · Eighth Grade (Bo Burnham)",
+            "body": "In Eighth Grade, Kayla records advice videos about confidence that almost nobody watches, while barely managing to speak up in her own life. The gap between how she comes across and how she believes she's coming across is the whole film. What closes it isn't a personality change. It's one classmate treating her with simple, repeated kindness. Small, repeated warmth does more than any single grand gesture."
+          }
+        },
+        {
+          "h2": "Start smaller than feels necessary",
+          "paragraphs": [
+            "Generic advice to “put yourself out there” backfires for social anxiety because it front-loads exposure: a party, a big group, a long hangout with strangers. That's the hardest possible starting point, not the easiest.",
+            "Lower the bar further than feels natural. Brief, repeated contact can be a more manageable starting point than one long, high-stakes evening. The aim isn't to make every interaction meaningful. It's to make the next one possible."
+          ]
+        },
+        {
+          "h2": "Let structure do what confidence can't",
+          "paragraphs": [
+            "Freeform socializing is hardest with social anxiety because there's no script: what to say, when it's okay to leave, whether you're overstaying. Every one of those becomes a decision to second-guess.",
+            "Structured, recurring, task-based contexts remove most of that. A class, a volunteer shift, a small club with a fixed agenda: the format tells you what happens next, so you're not inventing the interaction as you go."
+          ],
+          "cultureRef": {
+            "show": "Movie · The Perks of Being a Wallflower (Stephen Chbosky)",
+            "body": "In The Perks of Being a Wallflower, Charlie doesn't get pulled into friendship through a bold introduction. He gets pulled in because Patrick and Sam keep including him in the same specific, recurring thing: the same table, the same shows, the same seat in the room. The structure did the work that a direct approach never could have."
+          }
+        },
+        {
+          "h2": "The follow-up message is where the anxiety gets loudest, and where it matters most",
+          "paragraphs": [
+            "Right after a good interaction, the fear that you were too much, or that they didn't really enjoy it, tends to peak exactly when the follow-up message needs to be sent. That timing is not a coincidence. It's the moment the anxiety has the most to work with.",
+            "Send it anyway, and keep it short: mention something specific from the conversation, add a small amount of warmth, suggest one concrete next step. For the exact wording and timing that works best, see <a href=\"/guides/how-to-follow-up-after-meeting-someone/\">how to follow up after meeting someone</a>."
+          ]
+        },
+        {
+          "h2": "What actual treatment research says helps",
+          "paragraphs": [
+            "This isn't just encouragement without evidence. A randomized controlled trial tested an online friendship-building program for 55 adults with social anxiety disorder against a waitlist group. Across everyone randomized to the program, fear of intimacy was lower by the end of treatment. Among those who completed it, loneliness and depression were also lower at follow-up. The program didn't reduce social anxiety symptoms themselves, and it didn't change behavior during an observed conversation, so the results are real but modest, not a cure. (<a href=\"https://pubmed.ncbi.nlm.nih.gov/36435541/\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Behavior Therapy and Experimental Psychiatry</a>)",
+            "Friendship-building skills can be practiced, and practicing them helps with the friendship side specifically, even though it isn't a treatment for social anxiety itself. If your anxiety is significant or diagnosed, therapy, particularly cognitive behavioral approaches, is the primary evidence-based treatment. Coaching and practical practice can complement that work. They aren't a substitute for it."
+          ]
+        },
+        {
+          "h2": "You don't have to feel confident to be a good friend",
+          "paragraphs": [
+            "Confidence is not a prerequisite for closeness. Consistency is what actually predicts friendship quality: remembering, following through, showing up again. None of that requires feeling at ease in the moment.",
+            "Being reliable while anxious is still being reliable. For what that looks like in practice, see <a href=\"/guides/how-to-be-a-better-friend/\">how to be a better friend</a>."
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does social anxiety mean I'm bad at friendship?",
+          "a": "No. Research consistently finds that people with social anxiety underrate their friendships compared to how their friends actually feel. The anxiety distorts the read, not the relationship itself."
+        },
+        {
+          "q": "Should I wait until I feel less anxious to start making friends?",
+          "a": "No. Waiting tends to make the anxiety bigger, not smaller. Starting small, with low-stakes and repeatable contact, works better than waiting for confidence that may not arrive first."
+        },
+        {
+          "q": "Is coaching a replacement for therapy if I have social anxiety?",
+          "a": "No. If your anxiety is significant or diagnosed, therapy, especially cognitive behavioral approaches, is the primary evidence-based treatment. Friendship coaching can complement that work on the practical, day-to-day side, but it isn't a substitute for clinical care."
+        },
+        {
+          "q": "Why does sending a follow-up message feel so much harder than the conversation itself?",
+          "a": "Because it's the moment your mind runs the worst-case scenario: that you misread the interaction. Research on the liking gap shows people generally underestimate how much others enjoyed talking to them, and social anxiety can make that particular uncertainty harder to shake, even though the underlying effect isn't unique to social anxiety."
+        },
+        {
+          "q": "What kind of social settings are easiest with social anxiety?",
+          "a": "Structured, repeatable ones with a built-in activity, classes, volunteer shifts, recurring meetups, work better than open-ended mixers. Structure removes many of the moment-to-moment decisions that fuel anxiety."
+        },
+        {
+          "q": "Can I be a good friend even when I don't feel confident?",
+          "a": "Yes. Reliability and attention matter more to friendship quality than how at ease you feel in the moment. Showing up consistently is more convincing than appearing relaxed."
+        }
+      ],
+      "alternateFr": "/fr/guides/se-faire-des-amis-avec-de-lanxiete-sociale/"
     }
   ]
 }
