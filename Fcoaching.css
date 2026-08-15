@@ -392,6 +392,10 @@ select {
   border: 0;
 }
 
+.u-hidden {
+  display: none;
+}
+
 /* 6. Component - Navigation */
 .c-nav {
   position: sticky;
@@ -1944,4 +1948,49 @@ select {
   img {
     filter: brightness(0.92);
   }
+}
+
+/* ============================================================
+   25. Third-party override - Kit signup forms
+   Kit's generated embed carries its own hardcoded inline styles
+   and a per-form <style> block with fixed colors, so it does not
+   follow the page's tokens and stays light even in dark mode.
+   These rules use !important, which beats the embed's plain
+   (non-important) declarations regardless of selector specificity,
+   including the inline style="" attributes on its inputs/buttons.
+   Using var() means this same block covers both color schemes.
+   ============================================================ */
+.formkit-form .formkit-input {
+  background: var(--color-surface) !important;
+  color: var(--color-ink) !important;
+  border: 1px solid var(--color-border) !important;
+  border-radius: var(--radius-sm) !important;
+}
+
+.formkit-form .formkit-input::placeholder {
+  color: var(--color-ink-subtle) !important;
+  opacity: 1 !important;
+}
+
+.formkit-form .formkit-input:focus {
+  outline: 3px solid var(--color-focus) !important;
+  outline-offset: 2px !important;
+  border-color: var(--color-accent) !important;
+}
+
+.formkit-form .formkit-submit {
+  background-color: var(--color-accent) !important;
+  color: var(--color-accent-inv) !important;
+  border-radius: var(--radius-sm) !important;
+}
+
+.formkit-form .formkit-submit:hover,
+.formkit-form .formkit-submit:focus-visible {
+  background-color: var(--color-accent-hover) !important;
+}
+
+.formkit-form .formkit-alert-error {
+  background: var(--color-danger-bg) !important;
+  border-color: var(--color-danger-border) !important;
+  color: var(--color-ink) !important;
 }

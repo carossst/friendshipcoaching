@@ -41,10 +41,10 @@
       color: var(--color-ink);
       transition: border-color var(--duration-fast) var(--ease-out);
     }
-    .c-tracker-field input:focus,
-    .c-tracker-field select:focus {
+    .c-tracker-field input:focus-visible,
+    .c-tracker-field select:focus-visible {
       outline: 3px solid var(--color-focus);
-      outline-offset: 2px;
+      outline-offset: 4px;
       border-color: var(--color-accent);
     }
     .c-contact-card {
@@ -85,6 +85,7 @@
       margin-bottom: var(--space-3);
     }
     .c-progress__bar {
+      width: var(--progress, 0%);
       background: var(--color-accent);
       height: 100%;
       border-radius: var(--radius-pill);
@@ -239,17 +240,18 @@
       <p class="c-body u-mt-4">Chaque barre suit les vraies conversations, celles où vous avez réellement pris des nouvelles l'un de l'autre, pas seulement le temps passé dans la même pièce. Les heures restent enregistrées en dessous, mais ce n'est pas ce qui fait avancer la barre. Le conseil affiché en gras sous chaque nom est le repère le plus utile : continuez à vous voir, et donnez du temps aux liens sincères pour grandir.</p>
       <p class="c-body u-mt-4">Et attendez-vous à ce que certains n'avancent pas. Parfois le courant ne passe pas, ou l'effort reste à sens unique. Ce n'est pas un échec, c'est une information. Laisser filer une personne fait de la place pour celles où le lien se fait naturellement.</p>
       <div id="contactList" class="u-mt-10"></div>
-      <div class="u-mt-10" style="border-top:var(--border);padding-top:var(--space-8);">
-        <p class="c-label" style="margin-bottom:var(--space-3);">Sauvegarde</p>
-        <p class="c-body" style="font-size:var(--text-sm);color:var(--color-ink-muted);margin-bottom:var(--space-5);">Vos données sont stockées uniquement dans ce navigateur. Exportez-les pour garder une sauvegarde ou les transférer sur un autre appareil. Si vous videz le cache de votre navigateur ou ouvrez cette page depuis une appli mail, vos données peuvent devenir invisibles. Restaurez-les avec un import.</p>
-        <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;align-items:center;">
+      <div class="u-mt-10">
+        <hr class="c-divider">
+        <p class="c-label">Sauvegarde</p>
+        <p class="c-body u-text-sm u-color-muted u-mb-6">Vos données sont stockées uniquement dans ce navigateur. Exportez-les pour garder une sauvegarde ou les transférer sur un autre appareil. Si vous videz le cache de votre navigateur ou ouvrez cette page depuis une appli mail, vos données peuvent devenir invisibles. Restaurez-les avec un import.</p>
+        <div class="u-flex u-flex-wrap u-gap-3">
           <button id="exportBtn" class="c-btn c-btn--ghost c-btn--sm">Exporter la sauvegarde</button>
-          <label class="c-btn c-btn--ghost c-btn--sm" style="cursor:pointer;margin:0;">
+          <label class="c-btn c-btn--ghost c-btn--sm">
             Importer une sauvegarde
-            <input type="file" accept=".json" id="importFile" style="display:none;">
+            <input type="file" accept=".json" id="importFile" class="u-hidden">
           </label>
         </div>
-        <p id="importMsg" style="font-size:var(--text-sm);color:var(--color-accent);margin-top:var(--space-3);display:none;"></p>
+        <p id="importMsg" class="u-text-sm u-color-accent u-mt-4" style="display:none;"></p>
       </div>
     </div>
   </section>
@@ -427,7 +429,7 @@
         '</div>' +
         qualitySummary(contact) +
         '<div class="c-progress">' +
-          '<div class="c-progress__bar" style="width:' + s.progress.toFixed(1) + '%"></div>' +
+          '<div class="c-progress__bar" style="--progress:' + s.progress.toFixed(1) + '%"></div>' +
         '</div>' +
         '<div class="c-contact-card__meta">' +
           '<span><strong>' + contact.hours + 'h</strong> enregistrées</span>' +
