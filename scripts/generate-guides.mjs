@@ -180,7 +180,7 @@ ${(guide.sections || []).map((s) => `            <li class="c-toc__item"><a clas
 ${guide.alternateFr ? `  <link rel="alternate" hreflang="en" href="${canonical}">
   <link rel="alternate" hreflang="fr" href="${BASE}${guide.alternateFr}">
   <link rel="alternate" hreflang="x-default" href="${canonical}">` : ""}
-  <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#FBF4EA" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#201711" media="(prefers-color-scheme: dark)">
   <meta name="author" content="Carole Stromboni">
   <link rel="stylesheet" href="/Fcoaching.css">
@@ -245,7 +245,7 @@ ${guide.alternateFr ? `  <link rel="alternate" hreflang="en" href="${canonical}"
 ${guide.pullQuote ? `    <section class="u-section u-section--sm">
       <div class="u-container u-container--prose">
         <div class="c-author-quote">
-          <img class="c-author-quote__photo" src="/Carolephotobio.jpg" alt="Carole Stromboni" width="112" height="112">
+          <img class="c-author-quote__photo" src="/Carolephotobio-avatar.jpg" alt="Carole Stromboni" width="112" height="112" loading="lazy">
           <div class="c-author-quote__body">
             <p class="c-author-quote__text">"${esc(guide.pullQuote)}"</p>
             <cite class="c-author-quote__cite">Carole Stromboni</cite>

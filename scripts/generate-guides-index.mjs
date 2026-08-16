@@ -186,7 +186,7 @@ const html = `<!doctype html>
   <title>${esc(pageTitle)}</title>
   <meta name="description" content="${esc(pageDescription)}">
   <link rel="canonical" href="${canonical}">
-  <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#FBF4EA" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#201711" media="(prefers-color-scheme: dark)">
   <meta name="author" content="Carole Stromboni">
   <link rel="stylesheet" href="/Fcoaching.css">
