@@ -143,6 +143,8 @@ html {
   scroll-behavior: smooth;
   hanging-punctuation: first last;
   background: var(--color-bg);
+  /* Keeps anchor jumps (TOC, #day-N, FAQ) and keyboard focus from landing under the sticky nav */
+  scroll-padding-top: 5rem;
 }
 
 body {
