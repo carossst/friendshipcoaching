@@ -135,6 +135,17 @@
       "lastmod": "2026-06-27"
     },
     {
+      "file": "science-of-friendship.html",
+      "path": "/science-of-friendship.html",
+      "status": "live",
+      "title": "The Science of Friendship: What Research Tells Us | The Friendship Practice",
+      "description": "Shared time, proximity, self-disclosure, reciprocity, friendship maintenance and life transitions: what friendship research actually allows us to say.",
+      "ogDescription": "Shared time, proximity, self-disclosure, reciprocity, friendship maintenance and life transitions: what friendship research actually allows us to say.",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "lastmod": "2026-08-19"
+    },
+    {
       "file": "thank-you.html",
       "path": "/thank-you.html",
       "status": "private",
@@ -251,6 +262,17 @@
       "changefreq": "monthly",
       "priority": "0.6",
       "lastmod": "2026-07-02"
+    },
+    {
+      "file": "fr/science-amitie.html",
+      "path": "/fr/science-amitie.html",
+      "status": "live",
+      "title": "Science de l’amitié : ce que la recherche nous apprend | The Friendship Practice",
+      "description": "Temps partagé, proximité, dévoilement de soi, réciprocité, entretien du lien et transitions de vie : ce que les recherches sur l’amitié permettent réellement de dire.",
+      "ogDescription": "Temps partagé, proximité, dévoilement de soi, réciprocité, entretien du lien et transitions de vie : ce que les recherches sur l’amitié permettent réellement de dire.",
+      "changefreq": "monthly",
+      "priority": "0.7",
+      "lastmod": "2026-08-19"
     },
     {
       "file": "fr/guides/se-faire-des-amis-adulte/index.html",
@@ -562,6 +584,7 @@
       "lead": "Making friends as an adult isn't about being more charming. It's about being more deliberate. Put yourself near people you could click with. Follow up when something feels warm. See each other again before the connection goes cold.",
       "intro": "Making friends as an adult rarely fails for lack of charm. It grows from ordinary, repeated time with the same people, and from the quality of attention you bring to it. There is no set number of hours to reach, and some friendships click faster than others. What helps is simple and doable: find a place where you will see the same person again, follow up after a warm exchange, and let closeness build at its own pace.",
       "authorNote": "I split my time between Hawaii and Paris, which means I've had to make new friends in new places more times than most people. And here's what I've learned: it's almost never about personality. It's about showing up to the same place twice and sending the message after a good conversation. You're not behind. You just haven't had a structure yet.",
+      "researchNote": "This approach lines up with what the research shows about shared time, proximity and follow-through. See <a href=\"/science-of-friendship.html\">the science of friendship</a> for the studies behind it.",
       "sections": [
         {
           "h2": "Start with places where repetition is normal",
@@ -656,6 +679,7 @@
       "lead": "Reconnecting with an old friend is often less complicated than people imagine. The hardest part is usually not the relationship itself. It's the story you tell yourself before you reach out.",
       "intro": "Yes, you can reconnect with an old friend, even after years of silence. And the message you send is almost always easier than the one you imagined writing. A short, specific note that mentions something real is enough to reopen most doors.",
       "authorNote": "Living between continents means I've reached out after long gaps many times: across time zones, after years of silence. What I know from all of those: the story you tell yourself before you send the message is always harder than the message itself. Most people are happy to hear from you.",
+      "researchNote": "Friendship-maintenance research shows that ongoing relationships need recurring behaviors, like checking in, that keep the bond active. See <a href=\"/science-of-friendship.html#maintenance\">the science of friendship</a> for what that research covers.",
       "sections": [
         {
           "h2": "The shared foundation does not disappear",
@@ -762,7 +786,8 @@
             "Friendship grows through seeing people again. School, campus life, and early jobs created that for free. Later in life, those structures get weaker or disappear.",
             "When repetition disappears, friendship requires more intention. Someone has to suggest the next coffee, the next walk, the next plan.",
             "Research suggests friendship tends to grow with repeated shared time. One well-known study put it at roughly 50 hours to move from acquaintance to friend (<a href=\"https://journals.sagepub.com/doi/full/10.1177/0265407518761225\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Social and Personal Relationships</a>). But hours are only the opportunity, not a quota. What turns time into friendship is the quality of the attention you bring and simply showing up, and some friendships form much faster. School and early work once created that shared time automatically. Nobody had to plan it. As an adult, you do.",
-            "Hall's research makes a second distinction. He separates friendships formed by obligation, at work or school, from friendships that are freely chosen. His data show that hours in an obligatory context are poor predictors of closeness. Forty hours a week next to a coworker doesn't produce the same friendship as twenty hours chosen freely. This explains why a full calendar can still feel lonely. The people are there. The choice is not. (<a href=\"https://journals.sagepub.com/doi/full/10.1177/0265407518761225\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Social and Personal Relationships</a>)"
+            "Hall's research makes a second distinction. He separates friendships formed by obligation, at work or school, from friendships that are freely chosen. His data show that hours in an obligatory context are poor predictors of closeness. Forty hours a week next to a coworker doesn't produce the same friendship as twenty hours chosen freely. This explains why a full calendar can still feel lonely. The people are there. The choice is not. (<a href=\"https://journals.sagepub.com/doi/full/10.1177/0265407518761225\" rel=\"noopener noreferrer\" target=\"_blank\">Journal of Social and Personal Relationships</a>)",
+            "These 50/90/200-hour figures are estimates from specific samples, not universal thresholds. See <a href=\"/science-of-friendship.html#shared-time\">the science of friendship</a> for what the research does and doesn't support."
           ],
           "quote": "Most adult loneliness is not about missing people. It's about missing the repetition that turns people into friends.",
           "cultureRef": {
@@ -1257,6 +1282,7 @@
       "lead": "Most men don't lose their close friends in one dramatic moment. They lose them slowly, through long gaps between texts, plans that never get made, and the steady absence of the contexts that used to make seeing each other normal.",
       "intro": "Something shifts between 25 and 35 for most men. Friends who were a constant presence start to feel like people you used to know. Not because anything went wrong. Because everything got in the way. This is the predictable result of structural changes, not a personal failure. Nothing here is exclusive to men, but the data shows men are hit hardest, so this guide speaks to them directly.",
       "authorNote": "I work with men navigating this exact situation: not a dramatic friendship breakdown, but a slow drift that one day becomes hard to ignore.",
+      "researchNote": "A meta-analysis of 277 studies on social networks confirms that life events like starting work or becoming a parent reshape our networks. See <a href=\"/science-of-friendship.html#life-transitions\">the science of friendship</a> for what that research shows.",
       "pullQuote": "Male friendship doesn't require deep conversation. It requires a recurring context. When the context disappears, so does the friendship.",
       "sections": [
         {
@@ -1836,6 +1862,7 @@
       "pullQuote": "There's a difference between a friendship that's temporarily unbalanced and one that has always required you to do all the work. The first is worth patience. The second is worth naming, and sometimes worth letting go.",
       "intro": "A one-sided friendship feels exhausting because you're doing the work of two people. You initiate, follow up, remember, and show up. The other person receives all of that warmly and contributes almost none of it. The relationship feels real in the moments you share but hollow in between.",
       "authorNote": "I have been on both sides of this. There have been seasons where I was the one carrying a friendship more than I should have had to. And there have been seasons, in difficult periods of my life, where I was probably the one giving less. Both experiences taught me that the imbalance is worth naming before it becomes resentment.",
+      "researchNote": "Reciprocity is a central feature of friendship in the research literature, though it's better read as a pattern over time than an exact tally. See <a href=\"/science-of-friendship.html#reciprocity\">the science of friendship</a> for the studies behind it.",
       "lastmod": "2026-07-24",
       "sections": [
         {
@@ -2191,6 +2218,7 @@
       "h1": "How to turn acquaintances into friends",
       "lead": "Most adults know plenty of people they like but wouldn't call friends. The gap between acquaintance and friend isn't chemistry. It's the missing step of someone deciding to go a little further.",
       "intro": "Turning an acquaintance into a friend requires one move: suggesting something specific that creates more time together. A coffee, a walk, an event, a shared activity. The friendship doesn't deepen through conversation alone. It deepens through repeated contact over time.",
+      "researchNote": "Research on self-disclosure suggests that gradually more personal conversation can help close that gap. See <a href=\"/science-of-friendship.html#self-disclosure\">the science of friendship</a> for the studies behind it.",
       "pullQuote": "Most people have plenty of acquaintances they'd call friends if someone made the move. Most of the time, no one does. The one who does is almost always surprised by how warmly it lands.",
       "sections": [
         {
@@ -2284,6 +2312,7 @@
       "lead": "Making friends as an expat is harder than moving cities at home. New language, new codes, no shared references. And that special loneliness of starting over where everyone already has their people.",
       "intro": "Making friends as an expat is possible, and the method is more deliberate than most people expect. You can't rely on organic connection. You have to create the conditions for it: find recurring contexts, invest in them consistently, follow up quickly, and give things more time than you would at home.",
       "authorNote": "Splitting my time between Hawaii and Paris means I have done this many times, in both directions. What I have learned: expat friendship doesn't come from one great event or one expat meetup. It comes from showing up to the same place for the third, fourth, fifth time. The connection starts forming before you realize it.",
+      "researchNote": "Research on life transitions confirms that a move reshapes your social network, for better and worse. See <a href=\"/science-of-friendship.html#life-transitions\">the science of friendship</a> for what that research shows.",
       "pullQuote": "Expat connection takes longer than you expect, and that is not a failure. It's the timeline. The shortcuts that work at home are mostly gone. You're building from further back, and the process reflects that.",
       "sections": [
         {
@@ -2806,6 +2835,7 @@
       "lead": "Making friends as an introvert isn't about becoming more outgoing. It's about building connection in a way your energy can actually sustain.",
       "intro": "You can build close friendships as an introvert without becoming a different person. Introversion itself doesn't predict how much connection someone wants: some introverts want an active social life, others prefer a small, steady one, and research on solitude finds that what matters for wellbeing is whether time alone is freely chosen, not whether someone scores high on introversion. If a narrower circle is genuinely what you want, the path there looks different: fewer people, more regularity, and conversations that get to what matters faster.",
       "authorNote": "I've coached more introverts than people assume, given how social this work looks from the outside. What I hear most often isn't “I don't like people.” It's “I don't have it in me to meet dozens of people just to end up with three real friends.” You don't have to. Wanting a smaller circle isn't a symptom to fix. It's a preference the research on solitude treats as perfectly legitimate, as long as it's a choice and not something anxiety is making for you.",
+      "researchNote": "This is also what proximity research suggests: repeated, low-pressure contexts create more opportunities for friendship than a string of one-off events. See <a href=\"/science-of-friendship.html#proximity\">the science of friendship</a> for the studies behind it.",
       "pullQuote": "Introverts don't need less friendship. Many just need a different route to it: less dispersion, more regularity, and conversations that go faster past small talk toward what actually matters.",
       "sections": [
         {

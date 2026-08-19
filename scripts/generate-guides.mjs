@@ -257,7 +257,10 @@ ${guide.pullQuote ? `    <section class="u-section u-section--sm">
     <section class="u-section">
       <div class="u-container u-container--prose">
         ${guide.intro.split(/\n\n+/).map((p, i) => `<p class="c-body${i > 0 ? " u-mt-6" : ""}">${p}</p>`).join("\n        ")}
-${guide.authorNote ? `        <p class="c-body u-mt-6 c-body--author-note">${esc(guide.authorNote)}</p>` : ""}
+${[
+          guide.authorNote ? `        <p class="c-body u-mt-6 c-body--author-note">${esc(guide.authorNote)}</p>` : null,
+          guide.researchNote ? `        <p class="c-body c-body--sm u-mt-6">${guide.researchNote}</p>` : null
+        ].filter(Boolean).join("\n")}
       </div>
     </section>
 
