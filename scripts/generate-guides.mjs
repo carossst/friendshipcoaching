@@ -180,7 +180,7 @@ ${(guide.sections || []).map((s) => `            <li class="c-toc__item"><a clas
 ${guide.alternateFr ? `  <link rel="alternate" hreflang="en" href="${canonical}">
   <link rel="alternate" hreflang="fr" href="${BASE}${guide.alternateFr}">
   <link rel="alternate" hreflang="x-default" href="${canonical}">` : ""}
-  <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#FBF4EA" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#201711" media="(prefers-color-scheme: dark)">
   <meta name="author" content="Carole Stromboni">
   <link rel="stylesheet" href="/Fcoaching.css">
@@ -245,7 +245,7 @@ ${guide.alternateFr ? `  <link rel="alternate" hreflang="en" href="${canonical}"
 ${guide.pullQuote ? `    <section class="u-section u-section--sm">
       <div class="u-container u-container--prose">
         <div class="c-author-quote">
-          <img class="c-author-quote__photo" src="/Carolephotobio.jpg" alt="Carole Stromboni" width="112" height="112">
+          <img class="c-author-quote__photo" src="/Carolephotobio-avatar.jpg" alt="Carole Stromboni" width="112" height="112" loading="lazy">
           <div class="c-author-quote__body">
             <p class="c-author-quote__text">"${esc(guide.pullQuote)}"</p>
             <cite class="c-author-quote__cite">Carole Stromboni</cite>
@@ -257,7 +257,10 @@ ${guide.pullQuote ? `    <section class="u-section u-section--sm">
     <section class="u-section">
       <div class="u-container u-container--prose">
         ${guide.intro.split(/\n\n+/).map((p, i) => `<p class="c-body${i > 0 ? " u-mt-6" : ""}">${p}</p>`).join("\n        ")}
-${guide.authorNote ? `        <p class="c-body u-mt-6 c-body--author-note">${esc(guide.authorNote)}</p>` : ""}
+${[
+          guide.authorNote ? `        <p class="c-body u-mt-6 c-body--author-note">${esc(guide.authorNote)}</p>` : null,
+          guide.researchNote ? `        <p class="c-body c-body--sm u-mt-6">${guide.researchNote}</p>` : null
+        ].filter(Boolean).join("\n")}
       </div>
     </section>
 

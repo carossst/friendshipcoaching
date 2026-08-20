@@ -186,7 +186,7 @@ const html = `<!doctype html>
   <title>${esc(pageTitle)}</title>
   <meta name="description" content="${esc(pageDescription)}">
   <link rel="canonical" href="${canonical}">
-  <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#FBF4EA" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#201711" media="(prefers-color-scheme: dark)">
   <meta name="author" content="Carole Stromboni">
   <link rel="stylesheet" href="/Fcoaching.css">
@@ -235,6 +235,17 @@ const html = `<!doctype html>
     </section>
 
 ${categoriesHtml}
+
+    <section class="u-section">
+      <div class="u-container u-container--prose">
+        <p class="c-label">Research</p>
+        <h2 class="c-heading c-heading--2">What research says about friendship</h2>
+        <p class="c-body u-mt-6">Shared time, proximity, self-disclosure, reciprocity, friendship maintenance, life transitions: a synthesis of friendship research, with its sources and its limits.</p>
+        <div class="c-hero__actions u-mt-8">
+          <a class="c-btn c-btn--ghost c-btn--lg" href="/science-of-friendship.html">Read the science of friendship</a>
+        </div>
+      </div>
+    </section>
 
     <section class="u-section u-bg-surface">
       <div class="u-container u-container--prose">

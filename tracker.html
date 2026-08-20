@@ -211,12 +211,12 @@
       <p class="c-body u-mt-6">Enter a first name and how many hours you spent together. Each log adds to their total. Half-hours count: enter 0.5 for 30 minutes. And track more than one person: friendship in the making grows from several warm connections, not from betting everything on one.</p>
       <form id="logForm" class="c-tracker-form u-mt-8" novalidate>
         <div class="c-tracker-field">
-          <label for="contactName">First name or nickname:</label>
-          <input type="text" id="contactName" placeholder="e.g., Sofia" autocomplete="off" maxlength="60" required>
+          <label for="contactName">First name or nickname (required):</label>
+          <input type="text" id="contactName" placeholder="e.g., Sofia" autocomplete="off" maxlength="60" required aria-describedby="formError">
         </div>
         <div class="c-tracker-field">
-          <label for="hoursSpent">Hours spent together:</label>
-          <input type="number" id="hoursSpent" min="0.5" max="72" step="0.5" placeholder="e.g., 2.5" required>
+          <label for="hoursSpent">Hours spent together (required):</label>
+          <input type="number" id="hoursSpent" min="0.5" max="72" step="0.5" placeholder="e.g., 2.5" required aria-describedby="formError">
         </div>
         <div class="c-tracker-field">
           <label for="qualityFelt">How did the time feel?</label>
@@ -262,6 +262,7 @@
       <p class="c-label">Want to go further?</p>
       <h2 class="c-heading c-heading--2">Knowing the hours is not the hard part.</h2>
       <p class="c-body u-mt-6">If you are logging time but the connection is not deepening, the obstacle is rarely how much time you are spending. It is what happens during that time, and what you do in the two days after. That is what the coaching is for.</p>
+      <p class="c-body c-body--sm u-mt-6">Research estimates like 50, 90, and 200 hours are useful reference points, not universal thresholds to hit. See <a href="/science-of-friendship.html#shared-time">the science of friendship</a> for what that research does and doesn't support.</p>
       <div class="c-hero__actions u-mt-8">
         <a class="c-btn c-btn--primary c-btn--lg" href="/challenge.html">Start the free challenge</a>
         <a class="c-btn c-btn--ghost c-btn--lg" href="/guides/">Read the guides</a>
@@ -501,20 +502,26 @@
   document.getElementById('logForm').addEventListener('submit', function (e) {
     e.preventDefault();
     var errorEl = document.getElementById('formError');
+    var nameField = document.getElementById('contactName');
+    var hoursField = document.getElementById('hoursSpent');
     errorEl.style.display = 'none';
     errorEl.textContent = '';
+    nameField.removeAttribute('aria-invalid');
+    hoursField.removeAttribute('aria-invalid');
 
-    var nameRaw = document.getElementById('contactName').value.trim();
-    var hoursRaw = parseFloat(document.getElementById('hoursSpent').value);
+    var nameRaw = nameField.value.trim();
+    var hoursRaw = parseFloat(hoursField.value);
 
     if (!nameRaw || nameRaw.length > 60) {
       errorEl.textContent = 'Please enter a name (60 characters max).';
       errorEl.style.display = 'block';
+      nameField.setAttribute('aria-invalid', 'true');
       return;
     }
     if (isNaN(hoursRaw) || hoursRaw < 0.5 || hoursRaw > 72) {
       errorEl.textContent = 'Please enter a number of hours between 0.5 and 72.';
       errorEl.style.display = 'block';
+      hoursField.setAttribute('aria-invalid', 'true');
       return;
     }
 

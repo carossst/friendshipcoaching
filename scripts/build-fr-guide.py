@@ -74,7 +74,7 @@ def build(g):
   <link rel="alternate" hreflang="en" href="{en_url}">
   <link rel="alternate" hreflang="fr" href="{canonical}">
   <link rel="alternate" hreflang="x-default" href="{en_url}">
-  <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#FBF4EA" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#201711" media="(prefers-color-scheme: dark)">
   <meta name="author" content="Carole Stromboni">
   <link rel="stylesheet" href="/Fcoaching.css">
