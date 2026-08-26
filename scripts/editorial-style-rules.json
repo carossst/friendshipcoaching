@@ -1,0 +1,133 @@
+{
+  "_comment": "Forbidden/parasite phrasing for The Friendship Practice, EN+FR. Adapted from a similar toolkit built for a different site — vocabulary rebuilt from scratch for this project's voice and content, not copy-pasted. Categories with 'scope: guides' are excluded from science-of-friendship.html and fr/science-amitie.html, whose hedging vocabulary (estimated/may/can/suggests) is deliberate and required, not a style defect.",
+
+  "self_referential": {
+    "description": "Phrases that describe the page instead of just being the page.",
+    "scope": "all",
+    "fr": [
+      "cette page vous",
+      "ce guide vous",
+      "cet article vous",
+      "cette page explique",
+      "ce guide explique",
+      "cette page présente",
+      "le site propose",
+      "le site aide",
+      "the friendship practice travaille sur"
+    ],
+    "en": [
+      "this page will help you",
+      "this guide will help you",
+      "this article will help you",
+      "this page explains",
+      "this guide explains",
+      "this page presents",
+      "the site offers"
+    ]
+  },
+
+  "ai_tics": {
+    "description": "Generic LLM-sounding filler that doesn't belong in Carole's voice.",
+    "scope": "all",
+    "fr": [
+      "il convient de noter",
+      "il est important de noter",
+      "de nos jours",
+      "en conclusion",
+      "plonger dans",
+      "décortiquer",
+      "un véritable levier",
+      "un écosystème",
+      "un game changer",
+      "il est essentiel de comprendre",
+      "dans le monde d'aujourd'hui"
+    ],
+    "en": [
+      "it's important to note",
+      "it is important to note",
+      "in today's world",
+      "in conclusion",
+      "delve into",
+      "navigate the complexities of",
+      "unlock the",
+      "game-changer",
+      "game changer",
+      "leverage the power of",
+      "seamless",
+      "elevate your",
+      "unpack",
+      "at the end of the day",
+      "boils down to",
+      "in the fast-paced world of"
+    ]
+  },
+
+  "audit_report_tics": {
+    "description": "Sounds like an analyst's memo, not an article. Does NOT include the page's own deliberate 'Source:' / 'En pratique:' / 'Ce que cela montre' pattern on the science pages, which is a designed structure, not a violation.",
+    "scope": "guides",
+    "fr": [
+      "les données montrent que" ,
+      "selon nos observations",
+      "au moment de la rédaction",
+      "il ressort de cette analyse",
+      "notons que"
+    ],
+    "en": [
+      "the data shows that",
+      "based on our observations",
+      "at the time of writing",
+      "it emerges from this analysis",
+      "it should be noted that"
+    ]
+  },
+
+  "defensive_hedging": {
+    "description": "Undermines the brand's authority without adding accuracy. Different from the science pages' epistemic hedges (estimated/associated with/may/can), which stay.",
+    "scope": "guides",
+    "fr": [
+      "n'est pas encore",
+      "doit encore faire ses preuves",
+      "reste à prouver",
+      "pas vraiment un acteur"
+    ],
+    "en": [
+      "is not yet",
+      "has yet to prove itself",
+      "remains to be proven",
+      "not really a major player"
+    ]
+  },
+
+  "vague_filler": {
+    "description": "Words that stand in for something concrete instead of naming it.",
+    "scope": "guides",
+    "fr": ["dynamique intéressante", "positionnement intéressant", "enjeu stratégique"],
+    "en": ["interesting dynamic", "interesting positioning", "strategic challenge"]
+  },
+
+  "internal_jargon": {
+    "description": "Build-process or ops vocabulary that should never reach visible copy.",
+    "scope": "all",
+    "fr": ["persona", "cluster de contenu", "page enfant", "hub final", "traitement long", "prêt à coller"],
+    "en": ["persona", "content cluster", "child page", "final hub", "long-form treatment", "ready to paste"]
+  },
+
+  "anglicisms_fr": {
+    "description": "Loanwords/calques to avoid in French copy. 'coach'/'challenge'/'tracker' are excluded: they are the established product vocabulary (coach amitié, défi, tracker), not accidental anglicisms.",
+    "scope": "guides",
+    "phrases": ["feedback", "checklist", "deep dive", "call to action", "un setup", "un framework", "pain point", "quick win", "un workshop", "un mindset"]
+  },
+
+  "placeholders": {
+    "description": "Text that should never ship. Does not match the intentional user-facing [bracket] fill-ins in the tracker's follow-up message templates.",
+    "scope": "all",
+    "phrases": ["à compléter", "photo à ajouter", "galerie secondaire", "lorem ipsum", "TODO", "TBD", "coming soon", "à venir (placeholder)"]
+  },
+
+  "weak_qualifiers": {
+    "description": "Verbal tics that just sound unsure, as opposed to the science pages' precise epistemic hedges. Advisory only, not auto-fixed: flag for a human read, since many hits will be fine in context.",
+    "scope": "guides",
+    "fr": ["un peu trop", "peut-être bien"],
+    "en": ["sort of", "a little bit"]
+  }
+}
