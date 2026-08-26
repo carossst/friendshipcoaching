@@ -10,7 +10,10 @@
     "generate:rss": "node scripts/generate-rss.mjs",
     "test:seo": "node scripts/validate-seo.mjs",
     "lint:editorial": "node scripts/lint-editorial-style.mjs",
+    "check:credentials": "node scripts/check-credential-boundaries.mjs",
+    "check:faq": "node scripts/check-faq-schema.mjs",
+    "check:links": "node scripts/check-links.mjs",
     "submit:indexnow": "node scripts/submit-indexnow.mjs",
-    "publish:seo": "npm run generate:guides && npm run generate:guides-index && npm run generate:sitemap && npm run generate:robots && npm run generate:llms && npm run generate:rss && npm run test:seo && npm run lint:editorial"
+    "publish:seo": "npm run generate:guides && npm run generate:guides-index && npm run generate:sitemap && npm run generate:robots && npm run generate:llms && npm run generate:rss && npm run test:seo && npm run lint:editorial && npm run check:credentials && npm run check:faq && npm run check:links"
   }
 }
