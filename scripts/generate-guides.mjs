@@ -45,6 +45,32 @@ function renderGuide(guide, allGuides) {
       text: item.a
     }
   }));
+  const quotationGraph = [
+    ...(guide.pullQuote ? [{
+      "@type": "Quotation",
+      text: guide.pullQuote,
+      creator: {
+        "@type": "Person",
+        name: "Carole Stromboni",
+        url: `${BASE}/about.html`
+      },
+      inLanguage: "en",
+      url: `${canonical}#author-quote`
+    }] : []),
+    ...(guide.sections || [])
+      .filter((section) => section.quote && section.quoteAuthor)
+      .map((section) => ({
+        "@type": "Quotation",
+        text: section.quote,
+        creator: {
+          "@type": "Person",
+          name: section.quoteAuthor,
+          ...(section.quoteAuthor === "Carole Stromboni" ? { url: `${BASE}/about.html` } : {})
+        },
+        inLanguage: "en",
+        url: `${canonical}#${toId(section.h2)}`
+      }))
+  ];
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -71,6 +97,7 @@ function renderGuide(guide, allGuides) {
           cssSelector: [".c-hero__title", ".c-hero__sub"]
         }
       },
+      ...quotationGraph,
       {
         "@type": "FAQPage",
         mainEntity: faqGraph
@@ -242,7 +269,7 @@ ${guide.alternateFr ? `  <link rel="alternate" hreflang="en" href="${canonical}"
       </div>
     </section>
 
-${guide.pullQuote ? `    <section class="u-section u-section--sm">
+${guide.pullQuote ? `    <section class="u-section u-section--sm" id="author-quote">
       <div class="u-container u-container--prose">
         <div class="c-author-quote">
           <img class="c-author-quote__photo" src="/Carolephotobio-avatar.jpg" alt="Carole Stromboni" width="112" height="112" loading="lazy">
