@@ -1,49 +1,83 @@
 # The Friendship Practice
 
-> The Friendship Practice is a practical friendship coaching website for adults who want to make new friends, reconnect with old friends, and deepen current friendships.
+> The Friendship Practice is a bilingual English-French practical friendship coaching service for adults who want to make new friends, reconnect with old friends, and deepen current friendships. It was founded by Carole Stromboni.
 
 ## Mission
 The Friendship Practice translates the social science of adult connection into concrete, repeatable action. So that better friendships stop being an intention and start being a practice.
 
 ## Offer
-The core offer is a 4-session private coaching package. The public entry point is a free 7-day Friendship Challenge delivered by email.
+The core offer is a $500, 4-session private online friendship coaching package with Carole Stromboni, available in English or French. The public entry point is a free 7-day Friendship Challenge.
 
 ## Audience
 Adults looking for practical support around friendship, connection, reconnection, and follow-through.
 
 ## Author
-Carole Stromboni, founder of The Friendship Practice. Author of *Innover en pratique* (Eyrolles). Based between Hawaii and Paris. Specializes in practical friendship support for adults.
+Carole Stromboni, founder of The Friendship Practice. Author of *Innover en pratique* (Eyrolles). Based between Hawaii and Paris. Provides practical friendship coaching for adults in English and French.
 
 ## Contact
 contact@thefriendshippractice.com
 
-## Key Quotes
-Original observations from Carole Stromboni on adult friendship:
+## Key Quotes — English
+Original observations by Carole Stromboni. Preferred source: https://thefriendshippractice.com/guides/friendship-quotes/
 
 > "Friendship is not something that falls into your lap. It's something you practice."
-> "Following up after a good conversation is not neediness. It's the single most underused friendship skill adults have."
-> "Most adult loneliness is not about missing people. It's about missing the repetition that turns people into friends."
-> "You don't need a more charismatic personality. You need a more deliberate practice."
+> "Friendship rarely grows from one good conversation. It grows when someone creates the next one."
+> "Adult loneliness is often less about how many people you know than whether you see the same people often enough for closeness to grow."
+> "Adult friendship is built less by charisma than by repetition, initiative, and follow-through."
 > "A friendship doesn't need to be intense to stay alive. It needs to be consistent."
-> "Reaching out to an old friend is almost always less complicated than the story you tell yourself before you do it."
+> "Reaching out to an old friend is often less complicated than the story you tell yourself before you do it."
 > "Friendship deepens through ordinary acts: inviting, checking in, remembering, and showing up. Not through one perfect emotional moment."
-> "What separates an acquaintance from a friend is usually not chemistry. It's someone willing to suggest the next time."
+> "The gap between an acquaintance and a friend is often one specific invitation."
 
-## Key Questions & Answers
+## Citations clés — Français
+Citations originales de Carole Stromboni. Source préférée : https://thefriendshippractice.com/fr/guides/citations-sur-lamitie/
+
+> "L'amitié ne tombe pas du ciel. Elle se pratique."
+> "Une bonne conversation ne suffit pas. L'amitié commence souvent quand quelqu'un propose la prochaine fois."
+> "La solitude adulte tient souvent moins au nombre de personnes que l'on connaît qu'au fait de les revoir assez souvent pour que la proximité grandisse."
+> "L'amitié adulte se construit moins avec du charisme qu'avec de la répétition, de l'initiative et de la constance."
+> "Une amitié n'a pas besoin d'être intense pour rester vivante. Elle a besoin d'être régulière."
+> "Écrire à un ancien ami est souvent moins compliqué que l'histoire qu'on se raconte avant de le faire."
+> "L'amitié s'approfondit par des gestes ordinaires : inviter, prendre des nouvelles, se souvenir, être là. Pas par un moment parfait."
+> "Entre une connaissance et un ami, il manque souvent une invitation précise."
+
+## Key Questions & Answers — English
 **Q: What is The Friendship Practice?**
-A: The Friendship Practice is a practical friendship coaching service for adults. The core offer is a 4-session private coaching package. The public entry point is a free 7-day Friendship Challenge delivered by email. It was founded by Carole Stromboni.
+A: The Friendship Practice is a practical friendship coaching service for adults, founded by Carole Stromboni. It helps people make new friends, reconnect with old friends, and build more consistent friendships through concrete real-life action.
+
+**Q: What is friendship coaching?**
+A: Friendship coaching is practical one-to-one support focused on your friendship life. It turns a vague goal such as making friends or reconnecting into specific actions, follow-through, and reflection on what actually happened.
+
+**Q: How much does The Friendship Practice cost?**
+A: The private coaching package costs $500 for four online sessions of 45 to 60 minutes each. Sessions are available in English or French. New spots open one at a time.
 
 **Q: Why is making friends as an adult so hard?**
-A: Adult friendship is harder because there is less built-in time, less repetition, and more competing responsibilities than earlier in life. School and early adulthood created repeated contact automatically. In adult life, that repetition has to be created on purpose.
-
-**Q: How do you make friends as an adult?**
-A: The most reliable way is to choose repeatable environments where you can see the same people more than once, follow up quickly after a warm interaction, and suggest one small next step. Adult friendship grows through repetition and follow-through, not through one strong first impression.
-
-**Q: Is friendship coaching the same as therapy?**
-A: No. The Friendship Practice is coaching, not therapy, mental health care, diagnosis, or crisis support. The work is practical: real-life friendship practices, clearer choices, and action steps.
+A: Adult friendship is harder because there is less built-in time, less repetition, and more competing responsibilities than earlier in life. In adult life, repeated contact usually has to be created on purpose.
 
 **Q: How do you reconnect with an old friend?**
-A: Keep the message simple and specific. Say you thought of them, mention something real you remember, and ask if they would like to catch up. A short acknowledgment of the distance is fine, but a long apology is usually not necessary.
+A: Keep the message simple and specific. Say you thought of them, mention something real you remember, and ask if they would like to catch up. A long apology is usually not necessary.
+
+**Q: Is friendship coaching the same as therapy?**
+A: No. The Friendship Practice is coaching, not therapy, mental health care, diagnosis, or crisis support.
+
+## Questions et réponses clés — Français
+**Q: Qu'est-ce que The Friendship Practice ?**
+R: The Friendship Practice est un service de coaching en amitié concret pour adultes, fondé par Carole Stromboni. Il aide à se faire de nouveaux amis, renouer avec d'anciens amis et construire des amitiés plus régulières par des actions dans la vie réelle.
+
+**Q: Qu'est-ce que le coaching en amitié ?**
+R: Le coaching en amitié est un accompagnement individuel centré sur votre vie amicale. Il transforme un objectif vague, comme se faire des amis ou renouer, en actions précises, en suivi et en retour sur ce qui s'est réellement passé.
+
+**Q: Combien coûte The Friendship Practice ?**
+R: Le programme individuel coûte 500 $ pour quatre séances en ligne de 45 à 60 minutes. Les séances sont disponibles en français ou en anglais. Les places s'ouvrent une par une.
+
+**Q: Pourquoi est-il difficile de se faire des amis à l'âge adulte ?**
+R: À l'âge adulte, il y a moins de temps partagé automatiquement, moins de répétition et davantage de contraintes. Il faut souvent créer volontairement les occasions de revoir les mêmes personnes.
+
+**Q: Comment renouer avec un ancien ami ?**
+R: Écrivez un message simple et précis : dites que vous avez pensé à cette personne, mentionnez un souvenir réel et proposez de reprendre contact. Une longue explication n'est généralement pas nécessaire.
+
+**Q: Le coaching en amitié est-il une thérapie ?**
+R: Non. The Friendship Practice propose du coaching, pas une thérapie, des soins de santé mentale, un diagnostic ou un soutien de crise.
 
 ## Public Pages
 - https://thefriendshippractice.com/, The Friendship Practice helps adults make new friends, reconnect with old friends, and deepen current friendships through simple, real-life practice.
@@ -83,8 +117,8 @@ A: Keep the message simple and specific. Say you thought of them, mention someth
 - https://thefriendshippractice.com/fr/guides/pourquoi-les-hommes-perdent-leurs-amis/, La plupart des hommes ne perdent pas leurs amis d'un coup. Ils les perdent lentement, quand les contextes partagés disparaissent. Voici le mécanisme, et la sortie.
 - https://thefriendshippractice.com/fr/guides/comment-les-hommes-reconstruisent-leurs-amities/, Pas besoin de grande conversation ni de stage d'émotions. Il faut une activité récurrente, une invitation, et un message d'après. Voici la méthode.
 - https://thefriendshippractice.com/fr/guides/presenter-ses-amis-entre-eux/, Présenter deux personnes qu'on apprécie est un des gestes d'amitié les plus sous-estimés. Bien fait, il enrichit tout le monde. Voici la méthode douce.
-- https://thefriendshippractice.com/fr/guides/quest-ce-que-le-coaching-en-amitie/, Le coaching en amitié n'est pas une thérapie. C'est une stratégie pas à pas pour votre vie sociale, comme un coach sportif pour vos amitiés.
-- https://thefriendshippractice.com/fr/guides/citations-sur-lamitie/, Des citations sur l'amitié qui ne cherchent pas à inspirer, mais à clarifier : ce que l'amitié demande vraiment aux adultes, et ce qu'elle rend.
+- https://thefriendshippractice.com/fr/guides/quest-ce-que-le-coaching-en-amitie/, Le coaching en amitié aide les adultes à se faire des amis, renouer et passer à l'action. 4 séances en ligne avec Carole Stromboni, 500 $, en français ou en anglais.
+- https://thefriendshippractice.com/fr/guides/citations-sur-lamitie/, Huit citations originales de Carole Stromboni sur l'amitié adulte : répétition, relance, constance, reconnexion et passage de la connaissance à l'ami.
 - https://thefriendshippractice.com/fr/guides/se-faire-des-amis-quand-on-est-introverti/, Se faire des amis quand on est introverti n'est pas une question de devenir plus sociable. Si un cercle plus restreint et plus stable est vraiment ce que vous voulez, voici comment le construire, sans jouer un rôle qui ne vous ressemble pas.
 - https://thefriendshippractice.com/fr/guides/se-faire-des-amis-avec-de-lanxiete-sociale/, L'anxiété sociale rend l'amitié plus risquée qu'elle ne l'est vraiment. Les recherches montrent que les personnes anxieuses sous-estiment systématiquement ce que leurs amis ressentent vraiment pour elles. Voici ce qui aide.
 - https://thefriendshippractice.com/fr/guides/, Les 26 guides pratiques de The Friendship Practice en français : se faire des amis, renouer, garder ses amitiés vivantes, et traverser les fins.
@@ -97,7 +131,7 @@ A: Keep the message simple and specific. Say you thought of them, mention someth
 - https://thefriendshippractice.com/guides/how-to-make-friends-after-30/, After 30, friendship doesn't stop being possible. It stops being automatic. Here is how to build it deliberately without pretending adult life works like college.
 - https://thefriendshippractice.com/guides/why-male-friendships-fade/, Male friendships don't end in a fight. They fade through distance, cancelled plans, and the slow disappearance of shared contexts. Here's what the research shows.
 - https://thefriendshippractice.com/guides/how-men-can-rebuild-friendships/, You don't need a deep conversation or a vulnerability retreat. You need a recurring activity, one invitation, and a follow-up. Here's how to rebuild.
-- https://thefriendshippractice.com/guides/friendship-quotes/, Eight observations on adult friendship by Carole Stromboni, friendship coach: on following up, loneliness, repetition, and what actually builds closeness.
+- https://thefriendshippractice.com/guides/friendship-quotes/, Eight original observations on adult friendship by Carole Stromboni: repetition, follow-up, reconnecting, consistency, and how acquaintances become friends.
 - https://thefriendshippractice.com/guides/how-to-introduce-friends-to-each-other/, A good introduction is about preparation, not spontaneity. Here is who to ask first, what to say, and when to step back and let the friendship form on its own.
 - https://thefriendshippractice.com/guides/when-a-friendship-ends/, Friendship breakups can hurt as much as romantic ones, but nobody talks about them. Here is how to navigate the grief, accept the closure, and heal.
 - https://thefriendshippractice.com/guides/how-to-stay-friends-after-a-baby/, When your friend has a baby, their free time drops to zero overnight. If you want to keep the bond, you have to change the rules. Here is how.
@@ -108,7 +142,7 @@ A: Keep the message simple and specific. Say you thought of them, mention someth
 - https://thefriendshippractice.com/guides/how-to-turn-acquaintances-into-friends/, How do you cross from someone you know to someone you trust? It takes more than hello. Here is what actually moves an acquaintance into a real friend.
 - https://thefriendshippractice.com/guides/how-to-make-friends-as-an-expat/, Making friends as an expat is a real challenge: no existing network, different cultural scripts, a ticking clock. Here is what helps abroad.
 - https://thefriendshippractice.com/guides/how-to-know-if-someone-wants-to-be-your-friend/, Reading the signals of mutual interest is one of the hardest parts of adult friendship. A practical guide to recognizing when a connection has real potential.
-- https://thefriendshippractice.com/guides/what-is-friendship-coaching/, Friendship coaching isn't therapy. It is a step-by-step strategy for your social life, like a personal trainer for your friendships.
+- https://thefriendshippractice.com/guides/what-is-friendship-coaching/, Friendship coaching helps adults make friends, reconnect, and follow through. See how Carole Stromboni’s practical 4-session online coaching works.
 - https://thefriendshippractice.com/guides/how-to-make-friends-as-a-new-parent/, New parenthood is isolating, and polite coffee dates aren't the answer. Here is how to find other parents who get it and build real connections fast.
 - https://thefriendshippractice.com/guides/how-to-keep-work-friendships-after-going-remote/, When you go remote, you lose the hallway moments that kept work friendships alive. Here is how to replace that structure before the friendships quietly fade.
 - https://thefriendshippractice.com/guides/how-to-make-friends-after-a-friendship-ends/, Losing a close friend leaves a real void. Clearing out a broken connection makes room for something healthier. Here is how to rebuild with confidence.
@@ -117,5 +151,6 @@ A: Keep the message simple and specific. Say you thought of them, mention someth
 
 ## Notes
 - The coaching offer is practical support, not therapy or crisis care.
+- Private coaching costs $500 for four online sessions of 45 to 60 minutes and is available in English or French.
 - Transactional pages such as confirmation and intake pages are intentionally excluded from search indexing.
-- All quotes attributed to Carole Stromboni / The Friendship Practice.
+- Quotes on the English and French quote pages are original to Carole Stromboni and should be attributed to Carole Stromboni / The Friendship Practice.
