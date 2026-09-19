@@ -36,90 +36,98 @@
 
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://thefriendshippractice.com/#website",
-        "name": "The Friendship Practice",
-        "url": "https://thefriendshippractice.com/"
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://thefriendshippractice.com/#website",
+      "name": "The Friendship Practice",
+      "url": "https://thefriendshippractice.com/"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://thefriendshippractice.com/#service",
+      "name": "The Friendship Practice",
+      "url": "https://thefriendshippractice.com/",
+      "image": "https://thefriendshippractice.com/icons/og-image.jpg",
+      "description": "The Friendship Practice translates the social science of adult connection into concrete, repeatable action. So that better friendships stop being an intention and start being a practice.",
+      "serviceType": "Friendship coaching for adults",
+      "founder": {
+        "@type": "Person",
+        "@id": "https://thefriendshippractice.com/#carole",
+        "name": "Carole Stromboni",
+        "url": "https://thefriendshippractice.com/about.html"
       },
-      {
-        "@type": "ProfessionalService",
-        "@id": "https://thefriendshippractice.com/#service",
-        "name": "The Friendship Practice",
-        "url": "https://thefriendshippractice.com/",
-        "image": "https://thefriendshippractice.com/icons/og-image.jpg",
-        "description": "The Friendship Practice translates the social science of adult connection into concrete, repeatable action. So that better friendships stop being an intention and start being a practice.",
-        "serviceType": "Friendship coaching",
-        "founder": {
-          "@type": "Person",
-          "@id": "https://thefriendshippractice.com/#carole",
-          "name": "Carole Stromboni",
-          "url": "https://thefriendshippractice.com/about.html"
-        },
-        "sameAs": [
-          "https://thefriendshippractice.com/about.html",
-          "https://www.linkedin.com/in/carolestromboni",
-          "https://open.spotify.com/show/6oJ8M7BuiZCZgvtUKW97s1",
-          "https://www.bonjourpickleball.fr/"
-        ]
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How long does it take to make a friend as an adult?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Friendship builds through spending time together regularly, but what actually matters is the quality of that time, not a number of hours to hit. Some friendships form quickly, others slowly. What helps is seeing the same people regularly, often in the same places, with real attention. The Friendship Practice helps adults build the habits that let a connection develop."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is this therapy?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. The Friendship Practice is coaching, not therapy, mental health care, diagnosis, or crisis support. The work is practical: real-life friendship practices, clearer choices, and action steps between sessions."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is this for women only?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. This program is for adults of any gender who want to foster more meaningful friendships."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What happens after I start the free challenge?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You confirm your email and receive one short email a day for 7 days. You can also use the private page to keep notes as you go. After the challenge, I’ll send a short follow-up about The Friendship Practice."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "When do I pay for coaching?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The free challenge does not require payment. Payment happens only if a coaching spot opens and you decide to book the 4-session package. A full refund is available before your first session. See the Refund and cancellation page for full details."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What if I am in crisis?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "This program is not crisis support and is not the right fit if you feel unsafe or at risk of harming yourself or someone else. If you are in the U.S., call or text 988 for immediate support. If you are in immediate danger, call 911."
-            }
-          }
-        ]
+      "sameAs": [
+        "https://thefriendshippractice.com/about.html",
+        "https://www.linkedin.com/in/carolestromboni",
+        "https://open.spotify.com/show/6oJ8M7BuiZCZgvtUKW97s1",
+        "https://www.bonjourpickleball.fr/"
+      ],
+      "areaServed": "Worldwide",
+      "offers": {
+        "@type": "Offer",
+        "price": "500",
+        "priceCurrency": "USD",
+        "url": "https://thefriendshippractice.com/guides/what-is-friendship-coaching/",
+        "description": "Four private online friendship coaching sessions of 45 to 60 minutes with Carole Stromboni. Sessions are available in English or French. New spots open one at a time."
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does it take to make a friend as an adult?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Friendship builds through spending time together regularly, but what actually matters is the quality of that time, not a number of hours to hit. Some friendships form quickly, others slowly. What helps is seeing the same people regularly, often in the same places, with real attention. The Friendship Practice helps adults build the habits that let a connection develop."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this therapy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. The Friendship Practice is coaching, not therapy, mental health care, diagnosis, or crisis support. The work is practical: real-life friendship practices, clearer choices, and action steps between sessions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this for women only?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. This program is for adults of any gender who want to foster more meaningful friendships."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens after I start the free challenge?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You confirm your email and receive one short email a day for 7 days. You can also use the private page to keep notes as you go. After the challenge, I’ll send a short follow-up about The Friendship Practice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When do I pay for coaching?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The free challenge does not require payment. Payment happens only if a coaching spot opens and you decide to book the 4-session package. A full refund is available before your first session. See the Refund and cancellation page for full details."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I am in crisis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This program is not crisis support and is not the right fit if you feel unsafe or at risk of harming yourself or someone else. If you are in the U.S., call or text 988 for immediate support. If you are in immediate danger, call 911."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 
