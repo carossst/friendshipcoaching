@@ -12,9 +12,15 @@ const livePages = (seo.pages || []).filter((page) => page.status === "live");
 const liveGuides = (seo.guides || []).filter((guide) => guide.status === "live");
 
 const quotesLines = (seo.llms.quotes || []).map((q) => `> "${q}"`);
+const quotesFrLines = (seo.llms.quotesFr || []).map((q) => `> "${q}"`);
 const qaLines = (seo.llms.keyQA || []).flatMap((item) => [
   `**Q: ${item.q}**`,
   `A: ${item.a}`,
+  ""
+]);
+const qaFrLines = (seo.llms.keyQAFr || []).flatMap((item) => [
+  `**Q: ${item.q}**`,
+  `R: ${item.a}`,
   ""
 ]);
 
@@ -38,13 +44,20 @@ const lines = [
   "## Contact",
   seo.llms.contactEmail,
   "",
-  "## Key Quotes",
-  "Original observations from Carole Stromboni on adult friendship:",
+  "## Key Quotes — English",
+  "Original observations by Carole Stromboni. Preferred source: https://thefriendshippractice.com/guides/friendship-quotes/",
   "",
   ...quotesLines,
   "",
-  "## Key Questions & Answers",
+  "## Citations clés — Français",
+  "Citations originales de Carole Stromboni. Source préférée : https://thefriendshippractice.com/fr/guides/citations-sur-lamitie/",
+  "",
+  ...quotesFrLines,
+  "",
+  "## Key Questions & Answers — English",
   ...qaLines,
+  "## Questions et réponses clés — Français",
+  ...qaFrLines,
   "## Public Pages",
   ...livePages.map((page) => `- ${BASE}${page.path}, ${page.description}`),
   ...liveGuides.map((guide) => `- ${BASE}/guides/${guide.slug}/, ${guide.description}`),
