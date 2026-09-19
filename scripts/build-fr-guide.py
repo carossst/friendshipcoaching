@@ -98,6 +98,7 @@ def build(g):
   <script type="application/ld+json">
   {json.dumps(json_ld, ensure_ascii=False, indent=2)}
   </script>
+  <script src="/funnel-tracking.js"></script>
 </head>
 <body>
   <a class="u-sr-only" href="#main-content">Aller au contenu</a>
