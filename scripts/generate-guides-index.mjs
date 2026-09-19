@@ -209,6 +209,7 @@ const html = `<!doctype html>
   <script type="application/ld+json">
   ${JSON.stringify(jsonLd, null, 2)}
   </script>
+  <script src="/funnel-tracking.js"></script>
 </head>
 <body>
   <a class="u-sr-only" href="#main-content">Skip to content</a>
